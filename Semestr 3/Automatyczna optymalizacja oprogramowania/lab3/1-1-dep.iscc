@@ -1,0 +1,87 @@
+##Znalezienie zaleznosci
+### 1. Skrypt do znalezienie relacji zaleznosci
+
+## instrukcja nizej wywoluje narzedzie PET,
+## ktore parsuje plik "my.c" i tworzy 
+# reprezentacje wieloscienna petli zawartej w pliku "my.c"
+# wynik PET jest pod zmienna P
+P := parse_file "1-my.c";
+
+## instrukcje nizej zwracaja przestrzen iteracji, Domain
+print "Loop domain:";
+Domain := P[0];
+print Domain;
+
+## instrukcje nizej zwracaja relacje, ktora  kazda instancje kazdej instrukcji
+##  mapuje na element tablicy, ktory jest odczytywany 
+print "Write:";
+Write := P[1] * Domain;
+print Write;
+
+
+## instrukcje nizej zwracaja relacje, ktora  kazda instancje kazdej instrukcji
+##  mapuje na element tablicy, ktory jest zapisywany 
+print "Read:";
+Read := P[3] * Domain;
+print Read;
+
+
+
+##  instrukcje nizej zwracaja szeregowanie oryginalne, ktore
+## mapuje kazda instance kazdej instrukcji na czas wykonania, 
+#ktory odpowiada wykonaniu  sekwencyjnemu (oryginalnemu).
+print "Orginal schedule:";
+Schedule := P[4];
+print Schedule;
+
+
+# instrukcje nizej zwracaja relacje, kt�rej  elementy dziedziny s�
+##   leksykograficznie scisle mniejsze ni� elementy  zakresu.
+Before := Schedule << Schedule;
+print "Before";
+print Before;
+
+## obliczenie relacji dla  zaleznosci Read after Write,
+## zapis-odczyt 
+RaW := (Write . (Read^-1)) * Before;
+
+## obliczenie relacji dla  zaleznosci Write after Write,
+## zapis-zapis 
+WaW := (Write . (Write^-1)) * Before;
+
+## obliczenie relacji dla  zaleznosci Write after Read,
+## odczyt-zapis 
+WaR := (Read . (Write^-1)) * Before;
+print "RaW deps";
+print RaW;
+print "WaW deps";
+print WaW;
+print "WaR deps";
+print WaR;
+
+
+# obliczenie relacji zaleznosci opisujacej
+# wszystkie zaleznosci
+R := (RaW+WaW+WaR);
+print "R";
+print R;
+
+####GENEROWANIE KODU
+
+print "\n\n---------- wave-fronting ----------";
+### aktualna wersja kalkulatora ISCC oparta na  wersji:  "barvinok-0.41"
+## generujemy kod za pomoca operatora
+
+## "codegen m", gdzie m jest szeregowanie
+##starsze wersje ISCC umozliwiaja rowniez wygenerowanie kodu dla zbioru, s
+
+## przyklad 1
+## dla szeregowania nizej implementujacego wave-fronting
+
+SCHED:=[n]->{[i,j]->[i+3j][j]: 1<=i,j<=n};
+
+## operator  
+codegen SCHED;
+
+
+print "\n\n--------- preprocessor ----------";
