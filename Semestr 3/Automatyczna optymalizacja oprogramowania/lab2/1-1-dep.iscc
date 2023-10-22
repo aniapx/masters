@@ -5,7 +5,7 @@
 ## ktore parsuje plik "my.c" i tworzy 
 # reprezentacje wieloscienna petli zawartej w pliku "my.c"
 # wynik PET jest pod zmienna P
-P := parse_file "my.c";
+P := parse_file "1-my.c";
 
 ## instrukcje nizej zwracaja przestrzen iteracji, Domain
 print "Loop domain:";

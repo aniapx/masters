@@ -1,0 +1,27 @@
+####GENEROWANIE KODU
+
+### aktualna wersja kalkulatora ISCC oparta na  wersji:  "barvinok-0.41"
+## generujemy kod za pomoca operatora
+
+## "codegen m", gdzie   m jest szeregowanie
+##starsze wersje ISCC umozliwiaja rowniez wygenerowanie kodu dla zbioru, s
+
+##UWAGA on-line wersja kalkulatora ISCC na stronie 
+#https://dtai.cs.kuleuven.be/cgi-bin/barvinok.cgi
+#implementuje wersje 0.41" czyli kod mozna wygenerowac tylko dla relacji 
+
+## natomiast wersja na stronie  http://compsys-tools.ens-lyon.fr/iscc/index.php
+## generuje kod z relacji lub zbioru
+
+## przyklad 1
+## dla szeregowania nizej implementujacego wave-fronting
+
+SCHED:=[n]->{[i,j]->[i+3j][j]: 1<=i,j<=n};
+
+## operator  
+codegen SCHED;
+
+##generuje pseudokod nizej 
+#for (int c0 = 2; c0 <= 2 * n; c0 += 1)
+#  for (int c1 = max(1, -n + c0); c1 <= min(n, c0 - 1); c1 += 1)
+#    (c0 - c1, c1);

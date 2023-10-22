@@ -184,8 +184,8 @@ codegen m;
  #zalozmy ze kod wyzej jest  w pliku "test.c"
 
 ##korzystamy z polecenia:
-#gcc test.c -E -o test.txt
-## w pliku "test.txt" jest kod wynikowy
+#gcc 3-test.c -E -o 4-test.txt
+## w pliku "4-test.txt" jest kod wynikowy
 
 
 #int main() {
