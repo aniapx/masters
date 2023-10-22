@@ -1,0 +1,3177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ot="urn:gugik:specyfikacje:gmlas:bazaDanychObiektowTopograficznych10k:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:bt="urn:gugik:specyfikacje:gmlas:modelPodstawowy:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BDOO_12b05d8b-2abb-4589-bdda-775f628b7ab5">
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-A81BC9222FA48D8F">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-A81BC9222FA48D8F</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Goleniów</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-815107fb-4419-4ff3-916f-dad6ea0af1d5-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>224558.52 640770.19</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-605295D3172A9CB0">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-605295D3172A9CB0</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Niekłonice</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-06895b5f-ae7b-4b64-a252-3fd1ebce58c8-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>313777.75 702520.68</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-7E26276A90C63E36">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-7E26276A90C63E36</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Stacja Dygowo</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-398f3b5c-6822-440b-a63b-e17618f4f445-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>286261.87 702338.46</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-4E9F1D1674100F87">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-4E9F1D1674100F87</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecin Pomorzany</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-5ab0641a-1d43-4b03-b694-408cca8233c6-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>203113.62 625818.31</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-A93D5F9BC5542C80">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-A93D5F9BC5542C80</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Będzino</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-24a29069-8cac-4d10-bce8-67f25e14ef56-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>303919.72 709389.06</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-CBD8982653829C8B">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-CBD8982653829C8B</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Sławno</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-2b99cea1-dd1a-4b81-b479-25558922656f-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>348697.07 723791.88</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-5D954B05FC9CF4DC">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-5D954B05FC9CF4DC</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Stacja Tarnowo Pomorskie</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-748c4be7-ba60-43d0-b8b8-261655829295-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>258018.23 610743.56</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-EBA4BEB036AC02B7">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-EBA4BEB036AC02B7</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Białogard Miasto</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-5b006107-766e-4aee-9548-606e07af1f42-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>302027.81 687100.45</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-144C3295297F55A9">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-144C3295297F55A9</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Górki Pomorskie</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-f483e9f2-d17b-4215-a6ba-da6d03f49725-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>225783.37 678541.15</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-5211D2F3EB87ECFB">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-5211D2F3EB87ECFB</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Świnoujście Odra</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-41e51402-2b94-4190-b110-68ff8d0a0593-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>190453.59 680931.05</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-DA1217D608652BF6">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-DA1217D608652BF6</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Stacja Dolice</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-8f17e9a5-baaf-4773-96fb-21a63fe4131b-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>246935.02 599325.29</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-490C1FCF7A6F3F78">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-490C1FCF7A6F3F78</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Nowogard</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-cd426bf5-2ddc-4f21-9a83-0ea1b37a4094-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>243872.01 651601.36</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-70DB6BF046035F75">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-70DB6BF046035F75</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Rąbino</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-4c7660f3-0765-4f03-86a9-79dc6d761649-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>299721.03 671535.33</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-DD9BF1EC15FA6971">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-DD9BF1EC15FA6971</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecinek Chyże</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-40fbcfb1-7430-4e3a-96f1-b0416280b791-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>347996.75 652914.06</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-D158DA1D813C6FB5">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-D158DA1D813C6FB5</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Stacja Kołobrzeg</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-95848d32-2a0a-48fa-81e4-2ad7bddd534a-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>276255.56 707418.54</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-2898F23DAFE9BD6D">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-2898F23DAFE9BD6D</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-dcedfe05-17ff-4f34-bc97-92f1ac35373c-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>256459.24 694787.46</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-5B3B14282AF0562D">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-5B3B14282AF0562D</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Kretlewo</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-0928a326-9deb-41c5-b886-c313c54738c3-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>230037.04 669887.62</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-A32F5F3A04AD9BEC">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-A32F5F3A04AD9BEC</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Wrześnica</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-23a3a719-3a06-4e0e-b846-0c72bfa0fe46-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>355918.87 728840.19</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-17AB17CB1C92E34A">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-17AB17CB1C92E34A</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Rutwica</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-29d6d61a-0b3b-4aa5-894b-2d81ddbaf02b-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>318699.76 599453.93</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-2A1D9D8580D7FA24">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-2A1D9D8580D7FA24</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Skolwin Dworzec</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-0ff87928-a9e2-4c42-8402-c929e0a44bd1-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>209331.81 637029.66</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-9B2A84CDAF19D20A">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-9B2A84CDAF19D20A</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Kalisz Pomorski Miasto</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-9e4ba210-2faf-4011-823f-255a264a3cc0-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>293728.6 607138.62</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-0F6ECAFEE36FBA35">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-0F6ECAFEE36FBA35</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Mścice</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-5630673a-24af-4b4f-9057-3b04da272c91-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>309222.01 709514.12</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-A1A68736148A5936">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-A1A68736148A5936</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Wysoka Kamieńska</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-b5230e7b-2e00-42cd-a18c-1f701866acf3-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>225808.52 670368.77</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-7530C62D4032F48B">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-7530C62D4032F48B</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Wolin</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-d1c109c4-d646-4ff5-ac22-06068b6dadc8-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>211359.94 673825.97</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-D6A58198EB961589">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-D6A58198EB961589</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Troszyn</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-853335dc-3fa7-4395-b12a-d7cddb4d7d69-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>218493.33 672907.57</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-67298ED494AFE9D9">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-67298ED494AFE9D9</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Międzyzdroje</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-f7803688-c7d2-454b-b72a-04412def7cc2-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>201721.77 682875.39</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-9AE56F86E3B1D5A5">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-9AE56F86E3B1D5A5</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Przystanek Stargard Szczeciński Osiedle</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-c6a14f33-8556-4abb-9f09-18a7afe417de-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>235784.1 613263.31</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-7E5B0C45F11CFD62">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-7E5B0C45F11CFD62</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Kliniska</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-963f01d8-17bd-4cb7-af97-979e18627cec-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>220232.53 630033.59</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-9F98ADAB5D1291C3">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-9F98ADAB5D1291C3</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Turowo Pomorskie</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-d176d49b-7af3-436e-8eae-5c393220b3ee-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>349545.01 644881.45</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-3F2973585C401C7D">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-3F2973585C401C7D</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Mirosławiec</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-7ccb34e6-d22c-4ffe-b0c0-10e59e686d84-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>305854.54 612556.87</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-1C628E4368B8C2EF">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-1C628E4368B8C2EF</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Przystanek Stary Borek</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-e419ebc7-123f-4d6b-8884-f0cae9f90305-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>270223.1 702784.61</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-5D00CEF7CBDF99C1">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-5D00CEF7CBDF99C1</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Złocieniec</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-5a159f74-bdd0-4c31-9e25-ef55ce988b93-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>302457.26 633355.64</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-EEE563265658367A">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-EEE563265658367A</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Czepino</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-9d0c403b-bc3e-42d9-bc74-65160bc350c0-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>201039.7 611657.77</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-B6BDAEE9F61461B3">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-B6BDAEE9F61461B3</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Gryfino</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-b6246a3f-24e5-4646-9396-94749d259c8c-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>199487.4 608265.2</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-058B0402EBACAB58">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-058B0402EBACAB58</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Przystanek Cychry</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-50928d11-3f40-4399-b45b-122e43067350-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>210372.83 544191.22</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-1D9F5192E1686155">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-1D9F5192E1686155</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Warnowo</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-b6c12db2-b81c-4e16-8296-2f112a4f4a74-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>207010.76 682989.83</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-4CD766571C8B892D">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-4CD766571C8B892D</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecin Główny</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-8378b9c4-1027-4268-b917-3d5504e84e95-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>204448.02 626294.21</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-24F806F1AFB3EFEE">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-24F806F1AFB3EFEE</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Przystanek Korzystno</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-e476fb88-145a-4001-be64-e73bacc95601-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>272054.2 703530.45</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-5C5E9B3C698CC0B4">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-5C5E9B3C698CC0B4</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Przystanek Pęzino</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-39a045de-e770-4358-9ebc-7ffb91da4446-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>246786.52 614575.97</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-6FDC9963510B42F5">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-6FDC9963510B42F5</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Płoty</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-8d78139b-69f6-4171-b65e-f964b1e1328b-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>253924.96 666912.32</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-4494D32019DF6DDB">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-4494D32019DF6DDB</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecin Port Centralny</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-b00b0e22-c78a-4749-a67a-bdbe04586095-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>205479.81 625576.86</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-8C99A93C0B22346C">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-8C99A93C0B22346C</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Darłowo</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-1520aed3-eb15-4fdb-bb64-03b886098a3d-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>331638.63 731215.26</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-114D8B1193A30C97">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-114D8B1193A30C97</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Stacja Łubowo</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-3bae868c-9232-402a-9513-8d376553bd36-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>327279.59 638601.82</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-8E64FFF143002C20">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-8E64FFF143002C20</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Wałcz</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-6b377778-61bb-4d4b-8e54-0c1f96caad39-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>332318.79 603987.27</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-3E235F700FC822BF">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-3E235F700FC822BF</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Dolna Odra</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-7ca70a1c-0ca0-4082-9b49-b29daf7346ab-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>198400.78 603575.86</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-1B53786D1648958A">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-1B53786D1648958A</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Stacja Silnowo</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-1dba17b5-94c2-4662-a33c-4f3580dede41-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>334181.28 644006.61</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-0C9639D615E3B535">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-0C9639D615E3B535</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Stacja Chociwel</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-b7c50d0f-10c8-46f1-954c-2cbd9c1b67bd-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>256897.65 629085.23</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-86ED106D61D065FD">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-86ED106D61D065FD</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecin Zdroje</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-e86b19d1-e5e7-4b43-90bb-90e592848ec5-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>209918.8 621511.64</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-CB434BDFC9912A41">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-CB434BDFC9912A41</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Krzywin Gryfiński</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-0d5c6a6c-4d8f-4586-8108-355e8d4ba814-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>195712.26 589986.18</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-8654E34393BC9274">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-8654E34393BC9274</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Choszczno</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-f3713281-cf05-4b8f-9467-976b3ad1e823-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>259660.37 594919.68</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-44A0D9A158B95FC3">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-44A0D9A158B95FC3</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Świnoujście</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-e465ad1d-5584-40d5-8da4-cde702aa69f2-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>189220.62 681521.61</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-BDFA2AD6CFB5EF4E">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-BDFA2AD6CFB5EF4E</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Stacja Stargard Szczeciński</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-f7befebd-c711-4573-926c-a94073334460-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>235885.42 615607.19</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-6E8D9CD1328BAAD1">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-6E8D9CD1328BAAD1</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Golczewo</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-9f7c41c9-af8f-42bc-b76c-d4e05ffa3243-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>235551.58 670208.99</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-76452B2A139F96D2">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-76452B2A139F96D2</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Węgorzyno</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-8e3cda02-909e-4d59-a1d2-e11296652156-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>272177.46 636463.28</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-262B8EA4A2B7BE72">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-262B8EA4A2B7BE72</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Karlino</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-eedb16b4-b903-4f39-bf2c-97ec5da42d25-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>295966.14 691362.17</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-5A63B2FA26F64024">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-5A63B2FA26F64024</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Koszalin</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-21055f29-b347-466c-9761-ae76c8c58260-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>315412.05 706631.35</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-89AB336D9ECAE6A4">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-89AB336D9ECAE6A4</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Baszewice</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-7ef07baf-f22e-4851-9944-114e4277c6a1-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>249720.49 673188.31</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-AC967E0475DC8433">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-AC967E0475DC8433</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecin Podjuchy</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-6a8c6300-b103-4ff4-b32a-060705a385e5-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>206454.19 619663.33</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-28BF445449C21484">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-28BF445449C21484</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Kalisz Pomorski</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-64cc9538-6a5b-4f7f-93de-97edda1efc57-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>292106.3 605948.67</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-2BB408074DE62155">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-2BB408074DE62155</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Dębno</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-deead50b-2a2f-4241-b59c-3f355fde94c2-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>210483.56 550036.03</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-2CE2019CEF0ACF69">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-2CE2019CEF0ACF69</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Świdwin</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-2c48594a-cf80-4be1-aa3c-30858dd0048f-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>287436.2 662216.84</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-FAE75DAC73A20E4F">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-FAE75DAC73A20E4F</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Białuń</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-d7dae3e9-2cb8-4881-bf60-6830c7308a69-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>224993.32 646889.49</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-33995DEE5CDDF638">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-33995DEE5CDDF638</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Chojna</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-3c5e4dc7-7acb-4058-a538-c3137bcea302-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>194174.65 576161.01</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-EE27BC59806566C9">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-EE27BC59806566C9</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Kamień Pomorski</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-1b0a1009-45ca-46a1-a7de-5e69ae14ed9b-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>222946.06 686246.89</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-01EA04AED9ADABA8">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-01EA04AED9ADABA8</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Wałcz Raduń</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-cd7e0669-b6c3-4abc-9a5f-549ce2662b80-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>330536.76 604312.8</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-220846707A4D51C3">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-220846707A4D51C3</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecin Gumieńce</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-939e2d14-ef00-42b7-9869-39b8d19f9456-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>200671.92 624219.79</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-E68AF40718B69AE4">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-E68AF40718B69AE4</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Łobez</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-a0bfdbf9-8a2b-4521-a4cf-1cea466c6bbf-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>277134.56 646597.65</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-B5E1C6BB14BE7D20">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-B5E1C6BB14BE7D20</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Drawsko Pomorskie</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-acdc1041-d767-41d8-9cc5-83f24f0b8511-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>289600.95 633400.76</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-120382E1EF72EF9C">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-120382E1EF72EF9C</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecin Załom</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-7f9b7342-c0a7-4d2f-a36d-785a9fa6616e-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>217380.24 626716.84</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-476F89BA70F5B2AB">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-476F89BA70F5B2AB</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa - wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Rębusz</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-f90e1d88-afcb-4013-948e-fa5eb3ce9e8c-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>271676.65 581821.12</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-C8BE01C8FE871DB9">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-C8BE01C8FE871DB9</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecinek</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-f69fd7db-c569-4317-a40f-643cc045bc59-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>348524.87 650065.03</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-252A5993C35C3509">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-252A5993C35C3509</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Mielno Koszalińskie</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-1e9499ec-9970-4cc9-906e-30b4bde24cbe-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>308165.03 714007.22</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-5557CA4A2B31D222">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-5557CA4A2B31D222</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Szczecin Dąbie</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-8748b5f1-3627-412c-aac1-844e5cb2b0d4-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>212203.34 622759.75</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-4249680CBCE1799D">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-4249680CBCE1799D</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Przystanek Witkowo Pyrzyckie</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-a7a8d06e-c34b-479d-b704-33a0a8fe0e9a-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>238473.98 609568.96</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_OIKM_P gml:id="OIKMP-32-00E1D4CDA2A6C00C">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>OIKMP-32-00E1D4CDA2A6C00C</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>OIKM05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>SG</ot:x_rodzajReprGeom>
+			<ot:x_uwagi>stacja kolejowa-wg danych PKP PLK</ot:x_uwagi>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_224</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_224</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_224</ot:x_kodKarto1000k>
+			<ot:nazwa>Przystanek Grzędzice Stargardzkie</ot:nazwa>
+			<ot:rodzaj>Pkl</ot:rodzaj>
+			<ot:geometria>
+				<gml:Point gml:id="id-b29e50ca-fa36-4d6b-96fd-86b9499de935-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>232130.36 617899.87</gml:pos>
+				</gml:Point>
+			</ot:geometria>
+		</ot:OT_OIKM_P>
+	</gml:featureMember>
+</gml:FeatureCollection>

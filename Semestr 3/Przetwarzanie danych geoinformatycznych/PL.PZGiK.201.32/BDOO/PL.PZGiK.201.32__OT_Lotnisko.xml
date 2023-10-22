@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ot="urn:gugik:specyfikacje:gmlas:bazaDanychObiektowTopograficznych10k:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:bt="urn:gugik:specyfikacje:gmlas:modelPodstawowy:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BDOO_4b8a8ffa-031d-4a1a-bd2b-40278979de2f">
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.1_0_1466">
+			<ot:idIata>missing</ot:idIata>
+			<ot:idIcao>EPKG</ot:idIcao>
+			<ot:rodzaj>Lin</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-8A48522A53339B98"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.1_1_1467">
+			<ot:idIata>OSZ</ot:idIata>
+			<ot:idIcao>missing</ot:idIcao>
+			<ot:rodzaj>Lin</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-486771D91D7F6D79"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.2_2_1461">
+			<ot:idIata>missing</ot:idIata>
+			<ot:idIcao>missing</ot:idIcao>
+			<ot:rodzaj>Lin</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-67E88F18F9A896E1"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.1_3_1461">
+			<ot:idIata>missing</ot:idIata>
+			<ot:idIcao>missing</ot:idIcao>
+			<ot:rodzaj>Lin</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-F7283942F92F9A02"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.2_4_1478">
+			<ot:idIata>2</ot:idIata>
+			<ot:idIcao>EPSD</ot:idIcao>
+			<ot:rodzaj>Lin</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-2359F1FF7C9952DD"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.3_5_1471">
+			<ot:idIata>missing</ot:idIata>
+			<ot:idIcao>missing</ot:idIcao>
+			<ot:rodzaj>Lws</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-BFD532308C3220B6"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT.Lotnisko.1_6_1464">
+			<ot:idIata>missing</ot:idIata>
+			<ot:idIcao>missing</ot:idIcao>
+			<ot:rodzaj>Lin</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-F38D43913C628537"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.1_7_1462">
+			<ot:idIata>SZZ</ot:idIata>
+			<ot:idIcao>EPSC</ot:idIcao>
+			<ot:rodzaj>Prl</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-0EF37FC5EAB10630"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.2_8_1471">
+			<ot:idIata>missing</ot:idIata>
+			<ot:idIcao>EPDA</ot:idIcao>
+			<ot:rodzaj>Lws</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-1B1AFDC09B375E48"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_Lotnisko gml:id="OT_Lotnisko.2_9_1463">
+			<ot:idIata>NON</ot:idIata>
+			<ot:idIcao>NON</ot:idIcao>
+			<ot:rodzaj>Lin</ot:rodzaj>
+			<ot:kuko_a3 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-64A0348518B8EE68"/>
+		</ot:OT_Lotnisko>
+	</gml:featureMember>
+</gml:FeatureCollection>

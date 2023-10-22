@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ot="urn:gugik:specyfikacje:gmlas:bazaDanychObiektowTopograficznych10k:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:bt="urn:gugik:specyfikacje:gmlas:modelPodstawowy:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BDOO_d7b9276e-84f2-4c54-a76f-791c65d4badb">
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-ED78AD2AF1812633">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-ED78AD2AF1812633</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_149</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-17455e6a-9de7-43df-96b0-8ecbb1ec8824-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>320636.09 631219.15</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-67E88F18F9A896E1"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-294A5E498EED6452">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-294A5E498EED6452</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_informDodatkowa>Lotnisko wojskowe</ot:x_informDodatkowa>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_148</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_148</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-29812262-82b1-4dcf-81c4-a3b02e3a53e1-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>328377.39 730287.31</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-1B1AFDC09B375E48"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-9A65FD7E3F090009">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-9A65FD7E3F090009</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_149</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-4b2f2d03-4532-43c0-8ca3-bf368729330d-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>192419.98 573799.64</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-F38D43913C628537"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-D4478E17E7789560">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-D4478E17E7789560</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_147</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_147</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_147</ot:x_kodKarto1000k>
+			<ot:geometria2>
+				<gml:Point gml:id="id-46a64b77-4677-4fa8-aa92-57bd89b9699c-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>229093.85 643329.06</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-0EF37FC5EAB10630"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-2C84E90CA00AA381">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-2C84E90CA00AA381</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_149</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-4f01049b-3bae-4c07-a176-c39317e019ab-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>255481.68 661749.17</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-64A0348518B8EE68"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-D2994AA09B6C5E42">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-D2994AA09B6C5E42</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_149</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-fb860ee1-44eb-4bb7-85a6-5a1bf4c46977-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>283093.2 708516.49</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-8A48522A53339B98"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-55DDF2DD12EADE35">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-55DDF2DD12EADE35</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_informDodatkowa>Aeroklub Szczeciński</ot:x_informDodatkowa>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_149</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-82e84fe1-f111-4b77-8660-e860a619a0ab-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>210126.02 622527.07</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-2359F1FF7C9952DD"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-F2090BEF8582CDB3">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-F2090BEF8582CDB3</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_149</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-00b1bb8e-1d35-4749-ba7a-58d265b39885-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>319958.83 690119.07</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-486771D91D7F6D79"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-E7BD6805E234D600">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-E7BD6805E234D600</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_148</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_148</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-65ad7710-13d4-4521-8bdf-350ea1d72e7d-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>345551.37 745640.74</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-BFD532308C3220B6"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-EA39BF82343151DB">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-EA39BF82343151DB</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO02</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_149</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria2>
+				<gml:Point gml:id="id-e7cdcd21-19a5-4bdd-9cb4-3006e9bff9b2-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>282751.86 628918.18</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-F7283942F92F9A02"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-BF45634DACE09413">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-BF45634DACE09413</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_625</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_625</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_625</ot:x_kodKarto1000k>
+			<ot:geometria2>
+				<gml:Point gml:id="id-f25205cc-6052-4827-9c58-14a5868e40c6-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>209419.83 634944.49</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-7D4116A17A93A804"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-20888FB43B41885F">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-20888FB43B41885F</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_625</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_625</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_625</ot:x_kodKarto1000k>
+			<ot:geometria2>
+				<gml:Point gml:id="id-4a0245e9-583a-4f37-b0d7-e1be05af7e53-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>207098.99 629514.79</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-EA2087AD48F8A69A"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUKO_P gml:id="KUKOP-32-06B0775C2325A5E5">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUKOP-32-06B0775C2325A5E5</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUKO05</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>PU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_625</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_625</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k>1000_625</ot:x_kodKarto1000k>
+			<ot:geometria2>
+				<gml:Point gml:id="id-3e70c45b-d1fc-4587-979a-b14d2e27fd9c-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:pos>189201.71 681506.55</gml:pos>
+				</gml:Point>
+			</ot:geometria2>
+			<ot:kuko_a1 xlink:href="PL.PZGiK.201.32__OT_KUKO_A.xml#KUKOA-32-879E874B50030900"/>
+		</ot:OT_KUKO_P>
+	</gml:featureMember>
+</gml:FeatureCollection>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ot="urn:gugik:specyfikacje:gmlas:bazaDanychObiektowTopograficznych10k:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:bt="urn:gugik:specyfikacje:gmlas:modelPodstawowy:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BDOO_674b73c4-5b29-4586-af14-33e4c80347f4">
+	<gml:featureMember>
+		<ot:OT_BUZM_L gml:id="BUZML-32-B873B1D2B4CE6EF4">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>BUZML-32-B873B1D2B4CE6EF4</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>BUZM03</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_doklGeom uom="m">1</ot:x_doklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia>Eks</ot:x_katIstnienia>
+			<ot:x_rodzajReprGeom>OG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_811_2</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:material>Gr</ot:material>
+			<ot:rodzaj>W</ot:rodzaj>
+			<ot:szerKorony uom="m">3</ot:szerKorony>
+			<ot:szerPodstawy uom="m">5</ot:szerPodstawy>
+			<ot:wysokosc>6</ot:wysokosc>
+			<ot:geometria>
+				<gml:LineString gml:id="id-b0ae29c5-453d-484a-9daa-bb637d3a19f9-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:posList>334777.5 641990.84 334783.05 642101.17 334954.5 642338.5 335015.59 642371.99 335089.66 642380.68 335133.76 642366.6 335204.34 642387.01 335245.02 642575.04 335117.22 642849.67</gml:posList>
+				</gml:LineString>
+			</ot:geometria>
+		</ot:OT_BUZM_L>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_BUZM_L gml:id="BUZML-32-E3845E74359A46D2">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>BUZML-32-E3845E74359A46D2</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>BUZM03</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia>Eks</ot:x_katIstnienia>
+			<ot:x_rodzajReprGeom>OG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_811_2</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_811_2</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:material>Gr</ot:material>
+			<ot:rodzaj>W</ot:rodzaj>
+			<ot:szerKorony uom="m">11</ot:szerKorony>
+			<ot:szerPodstawy uom="m">24</ot:szerPodstawy>
+			<ot:wysokosc>3</ot:wysokosc>
+			<ot:geometria>
+				<gml:LineString gml:id="id-1cebac7e-80e8-4683-bf19-1eebffbc62a6-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:posList>195841.92 542305.71 195722.59 542343.01 195628.53 542629.03 195947.08 542782.89 196035.87 542858.59 196190.85 542926.47 196297.45 542947.36 196366.54 542877.55 196392.74 542819.91 196404.97 542695.62 196368.44 542632.2 196196.72 542466.57 195948.81 542415.24 195880.02 542367.88 195841.92 542305.71</gml:posList>
+				</gml:LineString>
+			</ot:geometria>
+		</ot:OT_BUZM_L>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_BUZM_L gml:id="BUZML-32-31A87AE763167DEF">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>BUZML-32-31A87AE763167DEF</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>BUZM03</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_doklGeom uom="m">1.5</ot:x_doklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia>Eks</ot:x_katIstnienia>
+			<ot:x_rodzajReprGeom>OG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_811_2</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:material>Gr</ot:material>
+			<ot:rodzaj>W</ot:rodzaj>
+			<ot:szerKorony uom="m">3</ot:szerKorony>
+			<ot:szerPodstawy uom="m">5</ot:szerPodstawy>
+			<ot:wysokosc>5</ot:wysokosc>
+			<ot:geometria>
+				<gml:LineString gml:id="id-515823e3-b7a7-4d79-ae55-b8309558293d-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:posList>267916.92 702234.7 267927.62 702200.02 267962.35 702179.18 268007.85 702148.35 268010.84 702109.53 267939.56 702035.92 268056.27 701849.62 268063.14 701664.15 268088.34 701514.3 268189.4 701388.35</gml:posList>
+				</gml:LineString>
+			</ot:geometria>
+		</ot:OT_BUZM_L>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_BUZM_L gml:id="BUZML-32-6217444170DCB7F4">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>BUZML-32-6217444170DCB7F4</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>BUZM03</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_doklGeom uom="m">1.5</ot:x_doklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia>Eks</ot:x_katIstnienia>
+			<ot:x_rodzajReprGeom>OG</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_811_2</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:material>Gr</ot:material>
+			<ot:rodzaj>W</ot:rodzaj>
+			<ot:szerKorony uom="m">7</ot:szerKorony>
+			<ot:szerPodstawy uom="m">16</ot:szerPodstawy>
+			<ot:wysokosc>5</ot:wysokosc>
+			<ot:geometria>
+				<gml:LineString gml:id="id-aab93a1e-7e33-4946-95d3-a8efebb5db49-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:posList>191992.11 671939.01 192005.88 672003.39 191978.82 672071.61 191813.71 672301.58 191751.73 672309.43 191542.43 672187.24 191465.23 672096.91 191591.84 671822.49 191593.65 671758.4</gml:posList>
+				</gml:LineString>
+			</ot:geometria>
+		</ot:OT_BUZM_L>
+	</gml:featureMember>
+</gml:FeatureCollection>

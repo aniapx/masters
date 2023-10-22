@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ot="urn:gugik:specyfikacje:gmlas:bazaDanychObiektowTopograficznych10k:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:bt="urn:gugik:specyfikacje:gmlas:modelPodstawowy:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BDOO_b8782b63-bcb9-4fd6-9647-10a54f270a20">
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_bd9cc083-1d4b-4223-894f-8479c8eefcab">
+			<ot:nrLinii>202</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_33d58910-f798-4fab-8900-a76227183df3"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_bb67886f-c7c1-4730-a21b-a00b0ec59eee"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_6d9070e2-9395-4a28-a99d-1984889ecb13">
+			<ot:nrLinii>402</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_994f8dfd-a223-45a7-b21c-8bb045341753"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_64352521-4f34-449a-ab7f-8e22b30a5f05"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_68251c12-98c7-4157-a7e0-604445ec9ee5">
+			<ot:nrLinii>427</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_be9126d9-145c-4826-a227-55ead2305d2f"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_8a6f7acf-c872-41d8-a35b-98a6922373b2"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_5b3f4f47-f215-4a00-b0a3-10d097186970">
+			<ot:nrLinii>273</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_1b0a32ef-1901-4a89-a880-6dcb1c1339d8"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_69ba7f2f-7ae7-4895-9a2f-e56a7bb38530"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_8621e699-3c38-4656-a21b-4fbd4782998a">
+			<ot:nrLinii>351</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_b6c023db-251c-448d-98f0-0b32043952c6"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_b86c3dee-e50a-44c9-af98-e8f168193911"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_0206d0a3-01eb-4936-98a0-44ac4bcb4d1b">
+			<ot:nrLinii>403</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_537e5cb5-903d-43f5-a8b6-f3bb762dffae"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_9d923af2-42c4-4245-af9f-ee1b01378f0e"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_62aa50d0-abb3-4542-bc3e-d9a5a7753752">
+			<ot:nrLinii>420</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_c5d2b0d0-f3e2-4434-96be-eddbee756d06"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_cbbb9048-f503-46e3-aedf-5046fee76b5b"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_f46e4857-e12d-46e0-8013-10e893821f8e">
+			<ot:nrLinii>210</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_38f7c8f6-6623-457a-9c77-8840e999aa5d"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_da5f4ad1-f954-4b65-b0dd-7843c3b8116a"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_6abcb6bd-db70-4807-8afc-98a992fe8988">
+			<ot:nrLinii>421</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_86e2f1d9-5229-471d-a1dc-8dbbc7ae726e"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_6371eef9-b1e4-49de-9d10-36015e710428"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_9bf3eb0c-1f6a-4ab2-95d2-b83092e773e9">
+			<ot:nrLinii>405</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_7e105617-ce8f-4e3d-8871-966796f012b9"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_b7ec90b1-a552-4a99-a352-ad8d315ad98f"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_0ef19330-0579-4238-9247-02ec443a74e6">
+			<ot:nrLinii>404</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_8a8cadc7-7238-42d6-9718-3085786cc410"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_1a890b83-796c-438b-9061-29e704f2b3b6"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_3140dcf0-5bd6-43b6-944d-639194b0b7f0">
+			<ot:nrLinii>430</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_c569de23-30f4-467b-bc7b-dec09d0fbff2"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_a50e5009-e8a8-4781-86e9-38b5dc4b53b8"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_2a56f2cf-9268-4d54-b4a5-fac6f23de170">
+			<ot:nrLinii>401</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_9b01c465-06f2-4ad7-8caa-d2498e2077a9"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_ccd78511-374f-4f8c-a5ca-2c4a8cfe55b8"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_cbf9d0de-3fba-4514-8398-d24af8c1eb31">
+			<ot:nrLinii>407</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_8fe72a9d-37b2-4d5e-811a-51eee8b78df7"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_378ff2e4-3a8c-4e26-9d4d-f8b2275bdb31"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_64a0e093-e388-4659-82ce-c39dd8b8f0a0">
+			<ot:nrLinii>406</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_99f3a087-90fe-4de5-8697-51f0de1204ab"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_45ead460-2f5b-4e98-b65d-88f5cafb38aa"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_79265f15-a324-4b2f-9314-047df58e2e29">
+			<ot:nrLinii>408</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_dca3c038-d59e-4f11-b628-cf0feec28d90"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_db40e993-970a-4c1f-b8bd-1b627074caf7"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_e41b65c0-e158-470c-ade5-439a1b5ed492">
+			<ot:nrLinii>409</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_ba4d7b5c-b891-4a7e-b09c-2c970d72f53d"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_c6f338bf-84ba-4cb6-b0d5-ae22c30a9d48"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_d6680b5c-ee57-48fd-afca-3b34a9540dc7">
+			<ot:nrLinii>429</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_4a0f4895-e63a-463b-8d4c-383932fdecec"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_63ed9f33-172d-4be3-a007-cdd8b9f3e200"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_17442e07-5101-449f-af6f-b12945841de3">
+			<ot:nrLinii>431</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_632442a1-e2b4-4b56-a453-29ea253817d3"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_559185f3-ed05-43da-ab2c-f4350e23ef67"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_6f5e0f31-7a8e-4a97-9841-866475d87b3f">
+			<ot:nrLinii>411</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_5ae50231-df8a-4247-b767-43d70546a22b"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_39676350-b5b9-416c-a91d-89c74936021f"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_a4a4dd62-5b45-4495-8537-fea1953c64aa">
+			<ot:nrLinii>422</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_ad1e73e6-9572-4289-8b42-f3fc6057a49b"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_7620ad5c-86dd-4618-9855-09e3ba7e7b70"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_911a2ca5-24bf-497f-af84-1508c4024e22">
+			<ot:nrLinii>418</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_2c170666-d6bf-47c4-8a58-344d33189e45"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_5d67e48b-e000-4248-ad1f-97160c7c865e"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_ab4431bd-e939-4062-af14-69d7893fc8ec">
+			<ot:nrLinii>417</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_135b15ff-20f0-4483-9084-c347d8ad1590"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_b76af5e1-adf9-4ec1-a666-75b5be183722"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_f088798f-cd8f-4bfc-8d92-b9e98f125a15">
+			<ot:nrLinii>428</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_df2cc8bd-5d2a-413c-9551-0c29085bf946"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_50c061b4-2aaf-4fbb-967e-26abe08eda7a"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_a11a1ad0-197b-44fc-b0ef-b15b4df2c8c1">
+			<ot:nrLinii>432</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_5d66d76e-f863-4475-ac67-ef0141513f17"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_a9dc6586-8531-4df0-949b-7e558a6e51d0"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_423bd95d-ceb3-4c8f-9b6d-f5fa93e9af58">
+			<ot:nrLinii>433</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_51fab6fb-53ba-4e2d-92b0-1379dfa3fdc6"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_951e743d-1f26-471b-9a31-fea3243e8556"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_371848eb-d360-4e26-9821-9d162a27f225">
+			<ot:nrLinii>851</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_4392f160-0910-419d-8b0f-e12359262af4"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_5c548289-e9fb-40c0-b7dd-66cb2a223859"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_5e82a3e5-f38d-4f97-98aa-8baf1bb4831f">
+			<ot:nrLinii>854</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_b31ec6d5-bf9b-4fe3-9a14-21d568ecd87f"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_0b110408-d064-41b5-a446-7e6c6272f7a8"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_fe21a414-ba59-43a5-ac25-1673c49a661b">
+			<ot:nrLinii>855</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_91054e37-d2e7-4ab2-ba7d-88f78dbdd373"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_0b88e91f-062b-4e12-b795-1bcbd89ec476"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_5cb7a639-52ed-4b83-8498-32eefce83f38">
+			<ot:nrLinii>857</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_bc783e9d-7f48-404a-8384-3ffd234e24bc"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_aad2ccaa-f8fd-4399-a8fc-4907cc03f388"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_183f063c-92fc-4286-a016-5404e7827912">
+			<ot:nrLinii>990</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_0b88e91f-062b-4e12-b795-1bcbd89ec476"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_0bd71d8a-eaa9-4a6b-b1de-a18ba6f24231"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_LiniaKolejowa gml:id="LINIAKOLEJOWA_a99c6dd2-0e25-4091-b96a-70df06f47794">
+			<ot:nrLinii>991</ot:nrLinii>
+			<ot:wezelKolejowy1 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_40dbb71b-92c5-47a9-aa5c-e1eb46502095"/>
+			<ot:wezelKolejowy2 xlink:href="PL.PZGiK.201.32__OT_WezelKolejowy.xml#WEZELKOLEJOWY_d362014d-24a6-44df-8a08-02c9fcb7d0f2"/>
+		</ot:OT_LiniaKolejowa>
+	</gml:featureMember>
+</gml:FeatureCollection>

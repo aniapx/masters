@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ot="urn:gugik:specyfikacje:gmlas:bazaDanychObiektowTopograficznych10k:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:bt="urn:gugik:specyfikacje:gmlas:modelPodstawowy:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BDOO_d0e58636-c38f-4798-9074-4603bcfe12b0">
+	<gml:featureMember>
+		<ot:OT_KUSC_A gml:id="KUSCA-32-7457A1EBC4C0718D">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUSCA-32-7457A1EBC4C0718D</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUSC01</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>ZU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_342</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:rodzaj>Cmt</ot:rodzaj>
+			<ot:geometria>
+				<gml:Polygon gml:id="id-db750684-4b6c-427b-b8bc-3be665c7ca18-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:exterior>
+						<gml:LinearRing>
+							<gml:posList>201445.3 625502.07 201639.1 625368.45 201723.99 625458.25 201894.34 625542.37 202158.93 625615.1 202379.8 625633.09 202902.9 625959.68 202897.28 626176.39 202909.67 626537.67 202904.46 626649.1 202142.57 626630.66 201416.6 626755.27 201352.67 626595.95 201181.1 626551.17 201039.49 626185.68 201193.61 626034.87 201222.38 625990.55 201297.46 625918.12 201369.23 625749.78 201445.3 625502.07</gml:posList>
+						</gml:LinearRing>
+					</gml:exterior>
+				</gml:Polygon>
+			</ot:geometria>
+		</ot:OT_KUSC_A>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUSC_A gml:id="KUSCA-32-80933281CD18E275">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUSCA-32-80933281CD18E275</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUSC01</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>ZU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_342</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:rodzaj>Cmt</ot:rodzaj>
+			<ot:geometria>
+				<gml:Polygon gml:id="id-a29ec0b0-d62b-4d5a-a707-294c4432d703-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:exterior>
+						<gml:LinearRing>
+							<gml:posList>317572.87 704246.24 317632.12 704334.81 317566.26 704449.79 317273.43 704892.64 316840.04 704606.48 316786.33 704520.51 316797.45 704330.77 316822 704293.09 317039.33 704317.93 317236.25 704163.91 317319.2 704137.92 317476.09 704181.62 317572.87 704246.24</gml:posList>
+						</gml:LinearRing>
+					</gml:exterior>
+				</gml:Polygon>
+			</ot:geometria>
+		</ot:OT_KUSC_A>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_KUSC_A gml:id="KUSCA-32-2267820FE82E9FBA">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>KUSCA-32-2267820FE82E9FBA</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>KUSC01</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>ZU</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_342</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:rodzaj>Cmt</ot:rodzaj>
+			<ot:geometria>
+				<gml:Polygon gml:id="id-131b73dd-ef63-4b02-b727-0029561ae93f-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:exterior>
+						<gml:LinearRing>
+							<gml:posList>200089.93 624331.03 200078.43 624388.43 199903.98 624627.68 199871.32 624685.59 199898.08 624906.99 199884.1 624973.08 199852.5 625041.32 199788.29 625123.24 199696.7 625190.07 199653.02 625210 199573.11 625231.33 199496.85 625237.46 199186.42 625202.73 199184.1 625161.2 199094.21 624726.9 198891.83 624665.16 199450.68 624433.35 200072.49 624288.5 200089.93 624331.03</gml:posList>
+						</gml:LinearRing>
+					</gml:exterior>
+				</gml:Polygon>
+			</ot:geometria>
+		</ot:OT_KUSC_A>
+	</gml:featureMember>
+</gml:FeatureCollection>

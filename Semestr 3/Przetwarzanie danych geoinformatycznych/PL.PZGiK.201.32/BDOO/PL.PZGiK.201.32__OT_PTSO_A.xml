@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ot="urn:gugik:specyfikacje:gmlas:bazaDanychObiektowTopograficznych10k:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:bt="urn:gugik:specyfikacje:gmlas:modelPodstawowy:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BDOO_14d5f1fa-b351-4090-8361-a01b1756c834">
+	<gml:featureMember>
+		<ot:OT_PTSO_A gml:id="PTSOA-32-7152AAD5C2375B3C">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>PTSOA-32-7152AAD5C2375B3C</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>PTSO51</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>KR</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_736</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_736</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria>
+				<gml:Polygon gml:id="id-d7743d6c-3fa0-4b1f-931a-35cf63b51e76-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:exterior>
+						<gml:LinearRing>
+							<gml:posList>196931.63 603603.71 196914.06 603604.19 196905.61 603606.74 196894.1 603613.22 196611.27 603826.36 196611.27 603826.37 196377.52 604002.52 196291.48 604044.7 196233.83 604064.95 196202.4 604083.64 195881.28 604234.03 195763.1 604453.13 195767.86 604511.66 195778.13 604554.21 195817.49 604620.1 195867.19 604678.09 195952.25 604764.79 196069.93 604869.83 196159.42 604940.75 196294.81 605056.63 196360.21 605109.61 196427.76 605167.03 196550.29 605275.35 196680.06 605402.98 196868.93 605595.23 196925.88 605643.35 196992.31 605694.49 197131.22 605528.58 197149.16 605504.88 197220.93 605285.69 197251.09 605210.75 197322.41 605122.94 197444.52 605013.7 197452.8 604998.45 197469.67 604928.85 197586.19 604904.29 197786.68 604930.97 197886.58 604973.68 197987.59 604988.8 198013.22 604984.42 198030.67 604974.19 198042.72 604961.76 198046.95 604954.17 198050.68 604941.71 198050.46 604924.4 198039.08 604868.89 198028.57 604848.19 197979.52 604773.92 197932.36 604567.78 197914.02 604515.53 197885.85 604459.58 197858.18 604413.1 197818.67 604357.75 197620.54 604133.64 197580.56 604077.79 197566.96 604066.63 197554.67 604061.76 197537.12 604060.56 197524.27 604063.72 197516.37 604067.66 197494.94 604085.71 197372.9 604093.99 196961.95 603620.39 196948.28 603609.34 196931.63 603603.71</gml:posList>
+						</gml:LinearRing>
+					</gml:exterior>
+				</gml:Polygon>
+			</ot:geometria>
+			<ot:PRNG/>
+			<ot:rodzaj>SO</ot:rodzaj>
+		</ot:OT_PTSO_A>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_PTSO_A gml:id="PTSOA-32-8CBA5D41A15F653B">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>PTSOA-32-8CBA5D41A15F653B</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>PTSO51</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>KR</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_736</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k>0500_736</ot:x_kodKarto500k>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria>
+				<gml:Polygon gml:id="id-5e7b018a-713c-492e-a0d6-b688a0422483-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:exterior>
+						<gml:LinearRing>
+							<gml:posList>207810.51 645438.94 207841.41 645610.56 207849.36 645643.65 207859.08 645727.09 207867.21 645778.06 207870.37 645831.85 207862.18 645896.54 207840.69 645911.04 207824.57 645917.39 207807.61 645920.84 207790.3 645921.29 207773.17 645918.74 207756.75 645913.24 207741.53 645904.98 207721.96 645887.97 207711.66 645874.05 207701.11 645850.36 207697.66 645833.39 207697.21 645816.08 207699.77 645798.95 207709.06 645774.74 207718.62 645760.31 207730.53 645747.74 207687.13 645753.41 207670.81 645850.17 207672.85 645862.26 207672.07 645874.43 207664.68 645901.25 207658.63 645912.74 207646.38 645924.91 207610.86 645945.5 207580.91 645957.92 207567.68 645960.17 207554.32 645958.83 207537.88 645952.43 207468.07 645911.35 207373.23 645861.65 207291.76 645879.9 207259.02 645892.19 207245.5 645893.07 207232.24 645890.3 207185.29 645868.59 207171.43 645856.73 207164.36 645844.97 206997.1 645934.03 206967.18 645800.6 206962.19 645790.24 206936.89 645759.34 206915.36 645739.77 206901.57 645733.35 206782.51 645717.32 206753.26 645788.93 206735.31 645798.48 206715.98 645804.77 206685.67 645807.69 206655.64 645802.67 206627.93 645790.05 206604.43 645770.69 206591.91 645754.67 206582.36 645736.72 206574.22 645707.38 206573.95 645676.93 206578.17 645657.05 206590.79 645629.34 206610.15 645605.84 206626.17 645593.32 206640.71 645449.18 206657.03 645374.52 206668.13 645331.78 206676.63 645316.65 206686.14 645307.72 206693.62 645303.27 206800.3 645272.46 206816.82 645239.23 206823.92 645228.61 206833.48 645220.14 206840.92 645215.96 206857.37 645211.67 206878.92 645209.84 206944.57 645110.04 206943.57 645070.18 206955.02 645012.16 206964.51 644942.26 206953.65 644847.56 206953.57 644812.51 206969.72 644646.17 206976.28 644554.54 206987.91 644460.86 206915.22 644407.68 206723.83 644350.18 206709.08 644342.71 206700.06 644334.15 206693.43 644323.64 206655.13 644241.78 206650.44 644222.18 206647.7 644135.84 206649.03 644122.69 206656.04 644106.57 206664.74 644096.63 206675.74 644089.31 206688.28 644085.14 206701.47 644084.39 206714.4 644087.13 207209.37 644251.66 207316.93 644269.96 207332.03 644278.39 207343.36 644291.47 207360.11 644325.64 207367.97 644353.31 207376.13 644407.49 207378.35 644433.52 207382.74 644535.1 207407.14 644679.06 207439.87 644745.61 207455.3 644786.67 207497.94 644944.2 207536.12 645051.15 207539.33 645071.5 207538.78 645083.87 207545.59 645197.96 207553.28 645237.34 207559.24 645320.22 207605.16 645410.68 207639.69 645459.1 207810.51 645438.94</gml:posList>
+						</gml:LinearRing>
+					</gml:exterior>
+				</gml:Polygon>
+			</ot:geometria>
+			<ot:PRNG/>
+			<ot:rodzaj>SO</ot:rodzaj>
+		</ot:OT_PTSO_A>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_PTSO_A gml:id="PTSOA-32-E5D760F6092CE708">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>PTSOA-32-E5D760F6092CE708</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>PTSO51</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>KR</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k>0250_736</ot:x_kodKarto250k>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria>
+				<gml:Polygon gml:id="id-1cfcb4d8-2c24-4bdd-94bf-f7f6edf56e8b-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:exterior>
+						<gml:LinearRing>
+							<gml:posList>278175.53 680756.11 278174.37 680764.98 278169.72 680777.55 278158.69 680791.54 278147.56 680798.99 277957.4 680872.03 277902.72 680938.28 277968.04 681100.75 277969.24 681113.78 277965.53 681130.79 277956.22 681145.5 277942.43 681156.13 277658.2 681278.58 277649.72 681280.61 277636.67 681280.84 277557.75 681264.98 277392.07 681334.72 277374.96 681337.11 277358.06 681333.55 277343.39 681324.44 277332.68 681310.89 277270.16 681166.24 277267.58 681149.47 277270.77 681132.8 277308.2 681067.46 277268.11 681020.18 277260.63 681008.32 277227.51 680932.8 277226.09 680916.08 277230.29 680899.83 277267.57 680816.6 277255.87 680785.48 277254.88 680772.38 277257.34 680759.48 277265.64 680744.11 277271.68 680737.74 277282.57 680730.41 277352.33 680702.91 277732.88 680543.2 278036.34 680424.57 278048.89 680421.46 278057.52 680421.22 278074.25 680425.18 278088.66 680434.57 278099.03 680448.29 278105.56 680464.3 278134.3 680557.95 278156.28 680665.24 278174.28 680742.78 278175.53 680756.11</gml:posList>
+						</gml:LinearRing>
+					</gml:exterior>
+				</gml:Polygon>
+			</ot:geometria>
+			<ot:PRNG/>
+			<ot:rodzaj>SO</ot:rodzaj>
+		</ot:OT_PTSO_A>
+	</gml:featureMember>
+	<gml:featureMember>
+		<ot:OT_PTSO_A gml:id="PTSOA-32-FF19328C0701E0F0">
+			<ot:idIIP>
+				<bt:BT_Identyfikator>
+					<bt:lokalnyId>PTSOA-32-FF19328C0701E0F0</bt:lokalnyId>
+					<bt:przestrzenNazw>PL.PZGiK.201.BDOO</bt:przestrzenNazw>
+					<bt:wersjaId>2021-01-01T00:00:00</bt:wersjaId>
+				</bt:BT_Identyfikator>
+			</ot:idIIP>
+			<ot:czyObiektBDOO>true</ot:czyObiektBDOO>
+			<ot:x_kod>PTSO51</ot:x_kod>
+			<ot:x_skrKarto xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_katDoklGeom>Prz</ot:x_katDoklGeom>
+			<ot:x_zrodloDanychG>BDOT10k</ot:x_zrodloDanychG>
+			<ot:x_zrodloDanychA>BDOT10k</ot:x_zrodloDanychA>
+			<ot:x_katIstnienia xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_rodzajReprGeom>KR</ot:x_rodzajReprGeom>
+			<ot:x_uzytkownik xlink:href="Uzytkownik04.xml"/>
+			<ot:x_aktualnoscG>2020-05-08</ot:x_aktualnoscG>
+			<ot:x_aktualnoscA>2020-05-08</ot:x_aktualnoscA>
+			<ot:x_cyklZycia>
+				<bt:BT_CyklZyciaInfo>
+					<bt:poczatekWersjiObiektu>2021-01-01T00:00:00</bt:poczatekWersjiObiektu>
+				</bt:BT_CyklZyciaInfo>
+			</ot:x_cyklZycia>
+			<ot:x_dataUtworzenia>2021-01-01</ot:x_dataUtworzenia>
+			<ot:x_kodKarto10k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto25k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto50k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto100k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto250k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto500k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:x_kodKarto1000k xsi:nil="true" nilReason="inapplicable"/>
+			<ot:geometria>
+				<gml:Polygon gml:id="id-6783fef8-4624-4637-a635-e2c4d68c3e9d-0" srsName="EPSG:2180" srsDimension="2">
+					<gml:exterior>
+						<gml:LinearRing>
+							<gml:posList>220338.2 565007.71 220325.51 565006.05 220317.47 565003.18 220306.62 564996.41 220297.84 564987.11 220291.7 564975.89 220243.4 564812.59 220219.71 564710.39 220173.65 564565.36 220172.85 564547.94 220174.73 564539.39 220180.27 564527.51 220188.71 564517.48 220195.66 564512.16 220211.79 564505.54 220335.79 564478.56 220424.84 564465.33 220496 564452.7 220580.57 564451.1 220695.45 564444.05 220732.22 564438.84 220744.87 564440.6 220760.25 564447.79 220769.72 564456.35 220776.7 564467.04 220795.22 564514.85 220891.67 564606.73 220899.08 564617.84 220903.28 564630.52 220904.6 564701.12 220902.99 564714.09 220898.08 564726.19 220890.2 564736.61 220844.41 564770.07 220845.54 564846.88 220841.13 564865 220829.93 564886.1 220810.92 564908.69 220785.44 564926.91 220724.87 564960.6 220711.46 564965.67 220602.48 564989.26 220540.89 564994.06 220458.71 564986.87 220376.59 564999.4 220346.71 565007 220338.2 565007.71</gml:posList>
+						</gml:LinearRing>
+					</gml:exterior>
+				</gml:Polygon>
+			</ot:geometria>
+			<ot:PRNG/>
+			<ot:rodzaj>SO</ot:rodzaj>
+		</ot:OT_PTSO_A>
+	</gml:featureMember>
+</gml:FeatureCollection>
