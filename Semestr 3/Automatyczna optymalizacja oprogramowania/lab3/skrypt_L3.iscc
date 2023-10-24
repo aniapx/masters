@@ -37,7 +37,7 @@ IslSchedule;
 ## schedule: "[n] -> [{ [i, j] -> [(i)] }, { [i, j] -> [(j)] }]",
 ## ktore oznacza, ze sa  dwa szeregowania (dwie transformacje afiniczne):
 # pierwsze:  { [i, j] -> [(i)] }
-#drugie: { [i, j] -> [(j)]
+# drugie: { [i, j] -> [(j)]
 
 ##krok 3
 
@@ -56,14 +56,6 @@ D;
 ##!!!! Rownoleglosc pozbawiona synchronizacji istnieje wtedy gdy
 ## dla kazdego wektora dystansu d =(d1,d2) istnieje szeregowanie (c1,c2) takie, 
 ## ze  c1*d1 +c2*d2=0
-
-
-# [n] -> { 
-# [i, j] : 0 < i < n and 2 - n <= j <= -2 + n; 
-# [i = 0, j] : 0 < j <= -2 + n; 
-# [i = 0, j = 2] : n >= 4; 
-# [i] : 0 < i < n 
-# }
 
 ## wynik dla D: [n] -> { [0, 1] : n >= 2 }
 

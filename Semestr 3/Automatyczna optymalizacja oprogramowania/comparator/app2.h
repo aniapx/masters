@@ -1,1 +1,0 @@
-int runApp2(void);
