@@ -1,0 +1,197 @@
+# for(i=1;i<=n;i++)
+#  for(j=1;j<=n;j++)
+#   a[i][j] = a[i][j-1] + a[i-1][j];
+
+##Znalezienie zaleznosci
+### 1. Skrypt do znalezienie relacji zaleznosci
+
+## instrukcja nizej wywoluje narzedzie PET,
+## ktore parsuje plik "my.c" i tworzy 
+# reprezentacje wieloscienna petli zawartej w pliku "my.c"
+# wynik PET jest pod zmienna P
+P := parse_file "1-my.c";
+
+## instrukcje nizej zwracaja przestrzen iteracji, Domain
+print "Loop domain:";
+Domain := P[0];
+# print Domain;
+
+## instrukcje nizej zwracaja relacje, ktora  kazda instancje kazdej instrukcji
+##  mapuje na element tablicy, ktory jest odczytywany 
+print "Write:";
+Write := P[1] * Domain;
+# print Write;
+
+## instrukcje nizej zwracaja relacje, ktora  kazda instancje kazdej instrukcji
+##  mapuje na element tablicy, ktory jest zapisywany 
+print "Read:";
+Read := P[3] * Domain;
+# print Read;
+
+##  instrukcje nizej zwracaja szeregowanie oryginalne, ktore
+## mapuje kazda instance kazdej instrukcji na czas wykonania, 
+#ktory odpowiada wykonaniu  sekwencyjnemu (oryginalnemu).
+print "Orginal schedule:";
+Schedule := P[4];
+# print Schedule;
+
+# instrukcje nizej zwracaja relacje, kt�rej  elementy dziedziny s�
+##   leksykograficznie scisle mniejsze ni� elementy  zakresu.
+Before := Schedule << Schedule;
+print "Before";
+print Before;
+
+## obliczenie relacji dla  zaleznosci Read after Write,
+## zapis-odczyt 
+RaW := (Write . (Read^-1)) * Before;
+
+## obliczenie relacji dla  zaleznosci Write after Write,
+## zapis-zapis 
+WaW := (Write . (Write^-1)) * Before;
+
+## obliczenie relacji dla  zaleznosci Write after Read,
+## odczyt-zapis 
+WaR := (Read . (Write^-1)) * Before;
+print "RaW deps";
+print RaW;
+print "WaW deps";
+print WaW;
+print "WaR deps";
+print WaR;
+
+
+# obliczenie relacji zaleznosci opisujacej
+# wszystkie zaleznosci
+R := (RaW+WaW+WaR);
+print "R";
+print R;
+
+
+
+
+
+#krok 1
+#relacja zaleznosci
+R:=[n]-> {[i, j] -> [i, j+1] : 1 <= i <= n and 1 <= j < n;
+[i, j] -> [i+1, j] : 1 <= i < n and 1 <= j <= n;
+
+};
+print "R";
+R;
+
+# przestrzen iteracji
+LD:=[n]->{[i, j] : 1 <= i <= n && 1 <= j <= n };
+
+##uwaga: PET zazwyczaj produkuje krotki z nazwami, przyk�adowo S_0[i,j]
+## w takim przypadku pierwsza krotka relacji WAVE_FR tak�e powinna 
+# by� z nazw� czyli S_0[i,j]
+## lub trzeba usun�� nazw� S_0 w krotce LD je�li  krotki WAVE_FR s� bez nazw
+
+print "LD";
+LD;
+
+print "scan (R*[n]->{:n=6})";
+scan (R*[n]->{:n=6});
+
+
+##krok 2
+IslSchedule := schedule LD respecting R minimizing R;
+print "IslSchedule";
+IslSchedule;  
+
+## wiersz nizej reprezentuje szeregowanie ISL:
+## schedule: "[n] -> [{ [i, j] -> [(i)] }, { [i, j] -> [(j)] }]",
+## ktore oznacza, ze sa  dwa szeregowania (dwie transformacje afiniczne):
+# pierwsze:  { [i, j] -> [(i)] } czyli  transformacje afiniczne: c1=1, c2=0
+#drugie: { [i, j] -> [(j)]} czyli  transformacje afiniczne: c1=0, c2=1
+## WNIOSEK: istnieje mozliwosc implementacji techniki wavefronting 
+
+##krok 3
+# Zeby przekonwertowac drzewo szeregowania na relacje, opisujaca 
+# ISL szeregowanie, korzystamy z operatora map jak nizej
+
+SCHED:= map IslSchedule;
+print "SCHED";
+SCHED;
+
+##krok 4
+## Zeby utworzyc szeregowanie pozwalajace na wave-fronting
+## sumujemy prawe strony obydwu szeregowan, czyli uzyskujemy: i+j, 
+# w prawej krotce relacji SCHED zastepujemy pierwszy element (i) 
+# przez i+j, w wyniku uzyskujemy relacje, ktorej intersekcja ze
+#zbiorem LD, daje relacje,  WAVE_FR, ktora implemenuje 
+#wavefronting 
+
+
+WAVE_FR:=[n] -> { [i, j] -> [t=i+j] }*LD;
+print "WAVE_FR";
+WAVE_FR;
+
+#### t okre�la czas szeregowania iteracji (i,j)
+
+ 
+#krok 5 
+
+print "scan (WAVE_FR*[n]->{:n=6})";
+
+scan (WAVE_FR*[n]->{:n=6});
+
+##krok 6 wygenerowanie pseudokodu
+
+## celem wygenerowania  pseudokodu korzystamy z relacji 
+## WAVE_FR:=[n] -> { [i, j] -> [i + j]  }*LD i rozszerzamy prawa krotke #elementami i,j na jej  koncu;
+ #w wyniku uzyskujemy relacje
+
+
+CODE:= [n] -> { [i, j] -> [i + j, i,j] : 0 < i <= n and 0 < j <= n };
+print "CODE";
+CODE;
+
+scan (CODE*[n]->{:n=2});
+
+## do relacji CODE stosujemy operator codegen:
+
+codegen CODE;
+
+
+### w wyniku uzyskujemy kod nizej
+
+#for (int c0 = 2; c0 <= 2 * n; c0 += 1)
+#  for (int c1 = max(1, -n + c0); c1 <= min(n, c0 - 1); c1 += 1)
+#    (c0 - c1, c1);
+
+#ktory konwertujemy na kod kompilowalny
+
+#for (int c0 = 2; c0 <= 2 * n; c0 += 1)
+# #pragma openmp parallel for
+#  for (int c1 = max(1, -n + c0); c1 <= min(n, c0 - 1); c1 += 1)
+#    
+# a[c0 - c1][c1] = a[c0 - c1][c1-1] + a[co-c1-1][c1] ;
+
+
+## krok 8 
+
+##tworzymy relacje do wygenerowania petli calkowicie wymiennej
+## w tym celu korzystamy z szeregowania uzyskanego w kroku 2:
+# ## schedule: "[n] -> [{ [i, j] -> [(i)] }, { [i, j] -> [(j)] }]",
+## czyli szeregowanie C pozwalaj�ce na wygenerowanie petli calkowiciew wymiennej jest 
+## nastepujace  C=(i,j)
+## tworzymy relacje  FULL_PERM:= [n]->{[I]->[C]}; gdzie I=(i,j), C=(i,j)
+
+
+
+FULL_PERM:= [n]-> {[i,j]->[i,j]}*LD;
+
+## generujemy pseudokod 
+print "codegen FULL_PERM";
+codegen FULL_PERM;
+
+
+## wygenerowany pseudokod
+
+## for (int c0 = 1; c0 <= n; c0 += 1)
+##   for (int c1 = 1; c1 <= n; c1 += 1)
+##     (c0, c1);
+
+
+##kroki 9 i 10 zrealizowa� samodzielnie
