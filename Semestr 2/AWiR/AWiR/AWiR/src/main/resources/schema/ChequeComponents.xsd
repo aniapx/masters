@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="ChequeNumber" type="max12Identifier"/>
+	<xsd:element name="Cheque" type="ChequeType"/>
+	<xsd:element name="GivenCheque" type="ChequeType"/>
+	<xsd:element name="ReservedCheque" type="ChequeType"/>
+	<xsd:element name="ChequeQuantity" type="Decimal4.0"/>
+	<xsd:element name="ChequeOrderDocument">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ChequeOrderAccount" type="Account"/>
+				<xsd:element ref="ChequeOrderDetails"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ChequeOrderDetails">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="TransactionIdentifier"/>
+				<xsd:element ref="BankTransactionIdentifier" minOccurs="0"/>
+				<xsd:element ref="ChequeQuantity"/>
+				<xsd:element name="ChequeOrderAccount" type="Account" minOccurs="0"/>
+				<xsd:element name="ChequeOrderPaymentType" type="ChequeOrderPaymentType" minOccurs="0"/>
+				<xsd:element name="ChequeOrderPaymentAmount" type="AmountType" minOccurs="0"/>
+				<xsd:element name="ChequeOrderPaymentDate" type="Date" minOccurs="0"/>
+				<xsd:element name="PaidChequeQuantity" type="Decimal4.0" minOccurs="0"/>
+				<xsd:element name="ChequeOrderStatus" type="ChequeOrderStatus" minOccurs="0"/>
+				<xsd:element name="ChequeSend" type="Indicator"/>
+				<xsd:element name="AuthorizedPersonName" type="max50text" minOccurs="0"/>
+				<xsd:element name="AuthorizedPersonIdentity" type="max50text" minOccurs="0"/>
+				<xsd:element name="DeliveryAddress" type="max210text" minOccurs="0"/>
+				<xsd:element ref="GivenCheque" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ChequeDocumentCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="TransactionIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="BankTransactionIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="ChequeAccount" type="AccountNumber" minOccurs="0"/>
+				<xsd:element ref="Period" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ChequeOrderCancellationCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="TransactionIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="BankTransactionIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="ChequeType">
+		<xsd:sequence>
+			<xsd:element ref="ChequeNumber"/>
+			<xsd:element name="ChequeStatus" type="ChequeStatus" minOccurs="0"/>
+			<xsd:element name="ChequeAmount" type="AmountType" minOccurs="0"/>
+			<xsd:element name="ChequeCashDate" type="Date" minOccurs="0"/>
+			<xsd:element name="ChequeAccount" type="Account"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="ChequeReservationDocument">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ChequeReservationAccount" type="Account"/>
+				<xsd:element ref="ChequeReservationDetails"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ChequeReservationDetails">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="TransactionIdentifier"/>
+				<xsd:element ref="BankTransactionIdentifier" minOccurs="0"/>
+				<xsd:element name="ChequeReservationAccount" type="Account" minOccurs="0"/>
+				<xsd:element ref="ChequeQuantity"/>
+				<xsd:element ref="ChequeNumber"/>
+				<xsd:element name="ChequeReservationAmount" type="AmountType" minOccurs="0"/>
+				<xsd:element name="ChequeReservationStatus" type="ChequeReservationStatus" minOccurs="0"/>
+				<xsd:element name="ChequeAdditionalInformation" type="max210text" minOccurs="0"/>
+				<xsd:element ref="ReservedCheque" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ChequeCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ChequeNumber" minOccurs="0"/>
+				<xsd:element name="StartDate" type="Date" minOccurs="0"/>
+				<xsd:element name="EndDate" type="Date" minOccurs="0"/>
+				<xsd:element name="ChequeAccount" type="AccountNumber" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="ChequeOrderPaymentType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Cash"/>
+			<xsd:enumeration value="Transfer"/>
+			<xsd:enumeration value="Charge"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ChequeOrderStatus">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Scheduled"/>
+			<xsd:enumeration value="Paid"/>
+			<xsd:enumeration value="GivenCheque"/>
+			<xsd:enumeration value="Returned"/>
+			<xsd:enumeration value="Cancelled"/>
+			<xsd:enumeration value="PreparedCheque "/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ChequeReservationStatus">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Scheduled"/>
+			<xsd:enumeration value="Executed"/>
+			<xsd:enumeration value="Returned"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ChequeStatus">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Given"/>
+			<xsd:enumeration value="Cashed"/>
+			<xsd:enumeration value="Cancelled"/>
+			<xsd:enumeration value="Confirmed"/>
+			<xsd:enumeration value="Reserved"/>
+			<xsd:enumeration value="ZOK"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

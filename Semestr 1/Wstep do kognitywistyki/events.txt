@@ -1,0 +1,11 @@
+latency, timeStamp, type
+0.0000 seconds, 1670009941000, zamkniete oczy
+1.0103 seconds, 1670009942000, otwarte oczy normalne mruganie
+2.0204 seconds, 1670009943000, otwarte oczy bez mrugania
+3.0290 seconds, 1670009944000, szybkie mruganie
+4.0384 seconds, 1670009945000, zaciskanie szczek, normalne mruganie
+5.0486 seconds, 1670009946000, ruchy oczu w prawo i w lewo
+6.0567 seconds, 1670009947000, mowienie, normalne mruganie
+7.0652 seconds, 1670009948000, ruchy glowy bez mrugania
+8.0740 seconds, 1670009949000, relaks przy muzyce
+10.0822 seconds, 1670009951000, zadanie aktywizujace

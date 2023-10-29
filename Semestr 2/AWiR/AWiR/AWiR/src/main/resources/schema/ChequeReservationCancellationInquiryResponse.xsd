@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="CommonComponents.xsd"/>
+	<xsd:include schemaLocation="CommonTypes.xsd"/>
+	<xsd:include schemaLocation="ChequeComponents.xsd"/>
+	<xsd:include schemaLocation="PaymentComponents.xsd"/>
+	<xsd:include schemaLocation="CardComponents.xsd"/>
+	<xsd:include schemaLocation="BalanceComponents.xsd"/>
+	<xsd:element name="ChequeReservationCancellationInquiryResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Header"/>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="DocumentStatus"/>
+						<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+						<xsd:element ref="ResponseRecordsControl" minOccurs="0"/>
+						<xsd:element ref="ChequeDocumentCriteria" minOccurs="0"/>
+						<xsd:element ref="ChequeReservationDocument" minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element ref="ResponseRecordsControl" minOccurs="0"/>
+						<xsd:element ref="ChequeDocumentCriteria" minOccurs="0"/>
+						<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+						<xsd:element ref="ChequeReservationDocument" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

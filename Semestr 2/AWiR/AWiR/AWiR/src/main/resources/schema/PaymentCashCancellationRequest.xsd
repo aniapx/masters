@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="CommonTypes.xsd"/>
+	<xsd:include schemaLocation="CommonComponents.xsd"/>
+	<xsd:include schemaLocation="PaymentComponents.xsd"/>
+	<xsd:include schemaLocation="CardComponents.xsd"/>
+	<xsd:include schemaLocation="BalanceComponents.xsd"/>
+	<xsd:element name="PaymentCashCancellationCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="TransactionIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="BankTransactionIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PaymentCashCancellationRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Header"/>
+				<xsd:element ref="ResponseDetailsOmit" minOccurs="0"/>
+				<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+				<xsd:element ref="PaymentCashCancellationCriteria"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

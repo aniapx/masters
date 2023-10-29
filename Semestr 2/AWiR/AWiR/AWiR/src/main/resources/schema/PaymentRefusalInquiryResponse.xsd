@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="PaymentRefusalInquiryRequest.xsd"/>
+	<xsd:element name="PaymentRefusalInquiryResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Header"/>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="DocumentStatus"/>
+						<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+						<xsd:element ref="PaymentRefusalSelectionCriteria" minOccurs="0"/>
+						<xsd:element name="PaymentRefusalDocument" type="PaymentRefusalDocumentType" minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+						<xsd:element ref="PaymentRefusalSelectionCriteria" minOccurs="0"/>
+						<xsd:element name="PaymentRefusalDocument" type="PaymentRefusalDocumentType" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
