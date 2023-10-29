@@ -2,93 +2,28 @@
 #  for(j=1;j<=n;j++)
 #   a[i][j] = a[i][j-1] + a[i-1][j];
 
-##Znalezienie zaleznosci
-### 1. Skrypt do znalezienie relacji zaleznosci
+# iscc < skrypt_L4.iscc
 
-## instrukcja nizej wywoluje narzedzie PET,
-## ktore parsuje plik "my.c" i tworzy 
-# reprezentacje wieloscienna petli zawartej w pliku "my.c"
-# wynik PET jest pod zmienna P
+##Znalezienie zaleznosci
+
 P := parse_file "1-my.c";
 
-## instrukcje nizej zwracaja przestrzen iteracji, Domain
 print "Loop domain:";
 Domain := P[0];
-# print Domain;
+LD := Domain;
+print Domain;
 
-## instrukcje nizej zwracaja relacje, ktora  kazda instancje kazdej instrukcji
-##  mapuje na element tablicy, ktory jest odczytywany 
-print "Write:";
 Write := P[1] * Domain;
-# print Write;
-
-## instrukcje nizej zwracaja relacje, ktora  kazda instancje kazdej instrukcji
-##  mapuje na element tablicy, ktory jest zapisywany 
-print "Read:";
 Read := P[3] * Domain;
-# print Read;
-
-##  instrukcje nizej zwracaja szeregowanie oryginalne, ktore
-## mapuje kazda instance kazdej instrukcji na czas wykonania, 
-#ktory odpowiada wykonaniu  sekwencyjnemu (oryginalnemu).
-print "Orginal schedule:";
 Schedule := P[4];
-# print Schedule;
-
-# instrukcje nizej zwracaja relacje, kt�rej  elementy dziedziny s�
-##   leksykograficznie scisle mniejsze ni� elementy  zakresu.
 Before := Schedule << Schedule;
-print "Before";
-print Before;
-
-## obliczenie relacji dla  zaleznosci Read after Write,
-## zapis-odczyt 
 RaW := (Write . (Read^-1)) * Before;
-
-## obliczenie relacji dla  zaleznosci Write after Write,
-## zapis-zapis 
 WaW := (Write . (Write^-1)) * Before;
-
-## obliczenie relacji dla  zaleznosci Write after Read,
-## odczyt-zapis 
 WaR := (Read . (Write^-1)) * Before;
-print "RaW deps";
-print RaW;
-print "WaW deps";
-print WaW;
-print "WaR deps";
-print WaR;
 
-
-# obliczenie relacji zaleznosci opisujacej
-# wszystkie zaleznosci
 R := (RaW+WaW+WaR);
 print "R";
 print R;
-
-
-
-
-
-#krok 1
-#relacja zaleznosci
-R:=[n]-> {[i, j] -> [i, j+1] : 1 <= i <= n and 1 <= j < n;
-[i, j] -> [i+1, j] : 1 <= i < n and 1 <= j <= n;
-
-};
-print "R";
-R;
-
-# przestrzen iteracji
-LD:=[n]->{[i, j] : 1 <= i <= n && 1 <= j <= n };
-
-##uwaga: PET zazwyczaj produkuje krotki z nazwami, przyk�adowo S_0[i,j]
-## w takim przypadku pierwsza krotka relacji WAVE_FR tak�e powinna 
-# by� z nazw� czyli S_0[i,j]
-## lub trzeba usun�� nazw� S_0 w krotce LD je�li  krotki WAVE_FR s� bez nazw
-
-print "LD";
-LD;
 
 print "scan (R*[n]->{:n=6})";
 scan (R*[n]->{:n=6});

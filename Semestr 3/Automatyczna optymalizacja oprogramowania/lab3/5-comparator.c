@@ -1,4 +1,5 @@
-// gcc comparator.c && ./a.out
+// gcc 5-generated.c && ./a.out && gcc -fopenmp 5-parallel.c && ./a.out 
+// gcc 5-comparator.c && ./a.out
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,8 +40,8 @@ int compareFiles(const char *file1, const char *file2) {
 }
 
 int main() {
-    const char *file1 = "output1.txt";
-    const char *file2 = "output2.txt";
+    const char *file1 = "5-parallel.txt";
+    const char *file2 = "5-generated.txt";
 
     int result = compareFiles(file1, file2);
 
