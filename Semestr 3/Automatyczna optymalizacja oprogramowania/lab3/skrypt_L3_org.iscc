@@ -1,0 +1,107 @@
+##znajdowanie rownoleglosci pozbawionej synchronizacji 
+#za pomoc¹ transformacji afinicznych
+
+# for(i=1;i<=n;i++)
+#  for(j=1;j<=n;j++)
+#    a[i][j] = a[i][j+1];
+
+#krok 1
+#relacja zaleznosci
+R:=[n]-> {[i, j] -> [i, j+1] : 1 <= i <= n and 1 <= j < n};
+print "R";
+R;
+
+# przestrzen iteracji
+LD:=[n]->{[i, j] : 1 <= i <= n && 1 <= j <= n };
+##uwaga: PET zazwyczaj produkuje krotki z nazwami, przykladowo S_0[i,j]
+## w takim przypadku pierwsza krotka relacji CODE_SYNCH_FREE takze powinna 
+# byæ z nazwa czyli S_0[i,j]
+## lub trzeba usun¹æ nazwê S_0 w krotce LD jeœli  krotki CODE_SYNCH_FREE s¹ bez nazw
+
+print "LD";
+LD;
+
+print "scan (R*[n]->{:n=6})";
+scan (R*[n]->{:n=6});
+##krok 2
+IslSchedule := schedule LD respecting R minimizing R;
+print "IslSchedule";
+IslSchedule;  
+
+## wiersz nizej reprezentuje szeregowanie ISL:
+## schedule: "[n] -> [{ [i, j] -> [(i)] }, { [i, j] -> [(j)] }]",
+## ktore oznacza, ze sa  dwa szeregowania (dwie transformacje afiniczne):
+# pierwsze:  { [i, j] -> [(i)] }
+#drugie: { [i, j] -> [(j)]
+
+##krok 3
+
+SCHED:=map IslSchedule;
+print "SCHED";
+SCHED;
+
+## krok 4
+## obliczamy wektory dystansu:
+
+D:=deltas R;
+print "D";
+D;
+
+
+##!!!! Rownoleglosc pozbawiona synchronizacji istnieje wtedy gdy
+##  dla kazdego wektora dystansu d =(d1,d2) istnieje szeregowanie (c1,c2) takie, #ze  c1*d1 +c2*d2=0
+
+
+## wynik dla D: [n] -> { [0, 1] : n >= 2 }
+
+#### tworzymy zbior CHECK1 korzystajac z D dla pierwszego szeregowania { [i, j] -#> [(i)] }, ktore oznacza, ze rozwiazanie 
+# ograniczen partycjonowania czasu jest (1, 0) 
+#[n] -> { [i = 0, j = 1] : n >= 2 }
+
+
+CHECK1:=[n]-> {[I]:   I=1*0 + 0*1 };
+print "CHECK1";
+CHECK1;  
+
+##Wniosek: poniewaz w zbiorze CHECK1: I=0, szeregowanie
+## (1,0)  umozliwia wygenerowanie kodu reprezentujacego rownoleglosc
+## pozbawiona synchronizacji
+
+##W tym celu tworzymy relacje
+
+CODE_SYNCH_FREE:=
+
+##mapowanie nizej pokazuje jak iteracja (i, j) jest mapowana 
+# na procesor p
+[n] -> { [i, j] -> [p,i,j] :
+
+#!!! uwaga: jeœli PET zwraca dla zbioru LD krotkê z nazw¹ czyli S_0[i,j]
+# to zamiast krotki wyzej [i,j] powinna byæ krotka S_0[i,j]
+
+##rownanie, ktore okresla ktory procesor wykonuje iteracje (i,j)
+p=i 
+ }*LD;
+
+#krok 5
+print "scan (CODE_SYNCH_FREE* [n]->{:n=6})";
+scan (CODE_SYNCH_FREE* [n]->{:n=6});
+
+print "CODE_SYNCH_FREE";
+CODE_SYNCH_FREE;
+
+
+#krok 6
+##generujemy pseudokod
+codegen CODE_SYNCH_FREE;
+
+
+##for (int c0 = 1; c0 <= n; c0 += 1)
+##  for (int c1 = 1; c1 <= n; c1 += 1)
+##    (c0, c1);
+
+
+##konwertujemy pseudokod nizej na kod kompilowalny
+##pragma openmp parallel for
+# for (int c0 = 1; c0 <= n; c0 += 1)
+#  for (int c2 = 1; c2 <= n; c2 += 1)
+##     a[c0][c2] = a[c0][c2+1];

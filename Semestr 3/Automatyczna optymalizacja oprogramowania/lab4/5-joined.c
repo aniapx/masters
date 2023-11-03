@@ -1,7 +1,12 @@
 // gcc -fopenmp 5-joined.c && ./a.out
 
 #include <stdio.h>
-#include<time.h>
+#include <time.h>
+#include <math.h>
+#define ceild(n,d)  ceil(((double)(n))/((double)(d)))
+#define floord(n,d) floor(((double)(n))/((double)(d)))
+#define max(x,y)    ((x) > (y)? (x) : (y))
+#define min(x,y)    ((x) < (y)? (x) : (y))
 
 int main() {
     int n = 6; 
@@ -18,14 +23,14 @@ int main() {
     for (int i = 1; i <= n; i++) {
         #pragma openmp parallel for 
         for (int j = 2; j <= n; j++) {
-            aParallel[i][j] = aParallel[i][j-2];
+            aParallel[i][j] = aParallel[i][j-1] + aParallel[i+1][j];
         }
     }
 
     // sekwencyjny - wygenerowany
-    for (int c0 = 1; c0 <= n; c0 += 1)
-        for (int c2 = 2; c2 <= n; c2 += 1) {
-            aGenerated[c0][c2] = aGenerated[c0][c2-2];
+    for (int c0 = 2; c0 <= 2 * n; c0 += 1)
+        for (int c1 = max(1, -n + c0); c1 <= min(n, c0 - 1); c1 += 1) {
+            aParallel[c0][c1] = aParallel[c0][c1-1] + aParallel[c0+1][c1];
     }
 
     printf("Parallel code result:\n");

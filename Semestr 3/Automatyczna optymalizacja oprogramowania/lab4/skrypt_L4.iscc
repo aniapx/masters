@@ -1,11 +1,4 @@
-# for(i=1;i<=n;i++)
-#  for(j=1;j<=n;j++)
-#   a[i][j] = a[i][j-1] + a[i-1][j];
-
-# iscc < skrypt_L4.iscc
-
 ##Znalezienie zaleznosci
-
 P := parse_file "1-my.c";
 
 print "Loop domain:";
@@ -28,23 +21,12 @@ print R;
 print "scan (R*[n]->{:n=6})";
 scan (R*[n]->{:n=6});
 
-
 ##krok 2
 IslSchedule := schedule LD respecting R minimizing R;
 print "IslSchedule";
 IslSchedule;  
 
-## wiersz nizej reprezentuje szeregowanie ISL:
-## schedule: "[n] -> [{ [i, j] -> [(i)] }, { [i, j] -> [(j)] }]",
-## ktore oznacza, ze sa  dwa szeregowania (dwie transformacje afiniczne):
-# pierwsze:  { [i, j] -> [(i)] } czyli  transformacje afiniczne: c1=1, c2=0
-#drugie: { [i, j] -> [(j)]} czyli  transformacje afiniczne: c1=0, c2=1
-## WNIOSEK: istnieje mozliwosc implementacji techniki wavefronting 
-
 ##krok 3
-# Zeby przekonwertowac drzewo szeregowania na relacje, opisujaca 
-# ISL szeregowanie, korzystamy z operatora map jak nizej
-
 SCHED:= map IslSchedule;
 print "SCHED";
 SCHED;
