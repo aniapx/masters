@@ -49,6 +49,7 @@ scan (CODE*[n]->{:n=2});
 codegen CODE;
 
 ## krok 8 
+print "codegen FULL_PERM";
 FULL_PERM:= [n]-> {[i,j]->[i,j]}*LD;
 
 ## generujemy pseudokod 
