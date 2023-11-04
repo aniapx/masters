@@ -1,0 +1,56 @@
+##Znalezienie zaleznosci
+P := parse_file "1-my.c";
+
+print "Loop domain:";
+Domain := P[0];
+LD := Domain;
+print Domain;
+
+Write := P[1] * Domain;
+Read := P[3] * Domain;
+Schedule := P[4];
+Before := Schedule << Schedule;
+RaW := (Write . (Read^-1)) * Before;
+WaW := (Write . (Write^-1)) * Before;
+WaR := (Read . (Write^-1)) * Before;
+
+R := (RaW+WaW+WaR);
+print "R";
+print R;
+
+print "scan (R*[n]->{:n=6})";
+scan (R*[n]->{:n=6});
+
+##krok 2
+IslSchedule := schedule LD respecting R minimizing R;
+print "IslSchedule";
+IslSchedule;  
+
+##krok 3
+SCHED:= map IslSchedule;
+print "SCHED";
+SCHED;
+
+##krok 4 wavefronting 
+WAVE_FR:=[n] -> { [i, j] -> [t=i+j] }*LD;
+print "WAVE_FR";
+WAVE_FR;
+
+#krok 5 
+print "scan (WAVE_FR*[n]->{:n=6})";
+scan (WAVE_FR*[n]->{:n=6});
+
+##krok 6 wygenerowanie pseudokodu
+CODE:= [n] -> { [i, j] -> [i + j, i,j] : 0 < i <= n and 0 < j <= n };
+print "CODE";
+CODE;
+
+scan (CODE*[n]->{:n=2});
+codegen CODE;
+
+## krok 8 
+FULL_PERM:= [n]-> {[i,j]->[i,j]}*LD;
+
+## generujemy pseudokod 
+print "codegen FULL_PERM";
+codegen FULL_PERM;

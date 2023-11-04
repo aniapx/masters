@@ -1,0 +1,127 @@
+# for(i=1;i<=n;i++)
+#  for(j=1;j<=n;j++)
+#   a[i][j] = a[i][j-1] + a[i-1][j] ;
+
+#krok 1
+#relacja zaleznosci
+R:=[n]-> {[i, j] -> [i, j+1] : 1 <= i <= n and 1 <= j < n;
+[i, j] -> [i+1, j] : 1 <= i < n and 1 <= j <= n;
+
+};
+print "R";
+R;
+
+# przestrzen iteracji
+LD:=[n]->{[i, j] : 1 <= i <= n && 1 <= j <= n };
+
+##uwaga: PET zazwyczaj produkuje krotki z nazwami, przyk³adowo S_0[i,j]
+## w takim przypadku pierwsza krotka relacji CODE_SYNCH_FREE tak¿e powinna 
+# byæ z nazw¹ czyli S_0[i,j]
+## lub trzeba usun¹æ nazwê S_0 w krotce LD jeœli  krotki CODE_SYNCH_FREE s¹ bez nazw
+
+print "LD";
+LD;
+
+##krok 2
+IslSchedule := schedule LD respecting R minimizing R;
+print "IslSchedule";
+IslSchedule;  
+
+## wiersz nizej reprezentuje szeregowanie ISL:
+## schedule: "[n] -> [{ [i, j] -> [(i)] }, { [i, j] -> [(j)] }]",
+## ktore oznacza, ze sa  dwa szeregowania (dwie transformacje afiniczne):
+# pierwsze:  { [i, j] -> [(i)] } czyli  transformacje afiniczne: c1=1, c2=0
+#drugie: { [i, j] -> [(j)]} czyli  transformacje afiniczne: c1=0, c2=1
+## WNIOSEK: istnieje mozliwosc implementacji techniki wavefronting 
+
+##krok 3
+# Zeby przekonwertowac drzewo szeregowania na relacje, opisujaca 
+# ISL szeregowanie, korzystamy z operatora map jak nizej
+
+SCHED:= map IslSchedule;
+print "SCHED";
+SCHED;
+
+
+##krok 4 
+## Zeby utworzyc szeregowanie pozwalajace na wave-fronting na poziomie iteracji
+## sumujemy prawe strony obydwu szeregowan, czyli uzyskujemy: i+j #i w prawej krotce relacji SCHED zastepujemy pierwszy element (i) 
+# przez i+j, w wyniku uzyskujemy relacje, ktorej intersekcja ze #zbiorem LD, daje relacje,  WAVE_FR, ktora implemenuje 
+#wavefronting 
+
+
+WAVE_FR:=[n] -> { [i, j] -> [i+j, j] }*LD;
+print "WAVE_FR";
+WAVE_FR;
+
+##krok 5, kafelkowanie, generowanie kodu sekwencyjnego 
+## najpierw tworzymy relacje korzystajac z obydwu szeregowan ISL
+## uzyskanych w kroku 2
+
+CODE_TILING:= [n]->{[i,j]->[it,jt, i,j]: 
+## iteracje (i,j) naleza do przestrzeni iteracji LD:
+ 1 <= i <= n and 1 <= j <= n and 
+
+## ograniczenia dla it  biorac pod uwage pierwsze ##szeregowanie  { [i, j] -> [(i)] } i rozmiar kafelka 2x2 
+ 1<= i-2it <=2 and
+
+## ograniczenia dla jt  biorac pod uwage drugie  ##szeregowanie  { #[i, j] -> [(j)] } i rozmiar kafelka 2x2
+
+1<= j-2jt <=2
+} ;
+
+print  "CODE_TILING";
+CODE_TILING;
+
+scan (CODE_TILING*[n]->{:n=4});
+
+
+##krok 7 generowanie kodu sekwencyjnego
+codegen CODE_TILING;
+
+#### wygenerowany pseudo kod sekwencyjny:
+#for (int c0 = 0; c0 < floord(n + 1, 2); c0 += 1)
+#  for (int c1 = 0; c1 < (n + 1) / 2; c1 += 1)
+#    for (int c2 = 2 * c0 + 1; c2 <= min(n, 2 * c0 + 2); c2 += 1)
+#      for (int c3 = 2 * c1 + 1; c3 <= min(n, 2 * c1 + 2); c3 += #1)
+#        (c2, c3);
+
+
+##krok 9 tworzenie relacji pozwalajacej na implementacje wave-#fronting na poziomie kafelkow: 
+
+CODE_TILING_PAR:= [n]->{[i,j]->[it',jt, i,j]: exists it: it'=it+jt and 
+## iteracje (i,j) naleza do przestrzeni iteracji LD:
+ 1 <= i <= n and 1 <= j <= n and 
+
+## ograniczenia dla it  biorac pod uwage pierwsze ##szeregowanie  ##{ [i, j] -> [(i)] } i rozmiar kafelka 2x2 
+ 1<= i-2it <=2 and
+
+## ograniczenia dla jt  biorac pod uwage drugie  ##szeregowanie  { #[i, j] -> [(j)] } i rozmiar kafelka 2x2
+
+1<= j-2jt <=2
+} ;
+
+print  "CODE_TILING_PAR";
+CODE_TILING_PAR;
+
+#krok 11 generowanie kodu rownoleglego
+codegen CODE_TILING_PAR;
+
+#### wygenerowany pseudo kod:
+#for (int c0 = 0; c0 < n; c0 += 1)
+#  for (int c1 = max(0, -n + c0 + n / 2 + 1); c1 <= min(c0, (n + #1) / 2 - 1); c1 += 1)
+#    for (int c2 = 2 * c0 - 2 * c1 + 1; c2 <= min(n, 2 * c0 - 2 * #c1 + 2); c2 += 1)
+#      for (int c3 = 2 * c1 + 1; c3 <= min(n, 2 * c1 + 2); c3 += #1)
+#       (c2, c3);
+
+
+### równolegly kod kompilowalny
+
+#for (int c0 = 0; c0 < n; c0 += 1)
+# #pragma openmp parallel for 
+#  for (int c1 = max(0, -n + c0 + n / 2 + 1); c1 <= min(c0, (n + #1) / 2 - 1); c1 += 1)
+#    for (int c2 = 2 * c0 - 2 * c1 + 1; c2 <= min(n, 2 * c0 - 2 * #c1 + 2); c2 += 1)
+#      for (int c3 = 2 * c1 + 1; c3 <= min(n, 2 * c1 + 2); c3 += #1)
+#a[c2][c3] = a[c2][c3-1] + a[c2-1][c3] ;
+
+##Uwaga!! druga petla jest  rownoleg³a   
