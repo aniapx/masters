@@ -31,86 +31,41 @@ SCHED:= map IslSchedule;
 print "SCHED";
 SCHED;
 
-
 ##krok 4 
-## Zeby utworzyc szeregowanie pozwalajace na wave-fronting na poziomie iteracji
-## sumujemy prawe strony obydwu szeregowan, czyli uzyskujemy: i+j #i w prawej krotce relacji SCHED zastepujemy pierwszy element (i) 
-# przez i+j, w wyniku uzyskujemy relacje, ktorej intersekcja ze #zbiorem LD, daje relacje,  WAVE_FR, ktora implemenuje 
-#wavefronting 
-
-
-WAVE_FR:=[n] -> { [i, j] -> [i+j, j] }*LD;
+WAVE_FR:=[n] -> { S_0[i, j] -> [i+j, j] }*LD;
 print "WAVE_FR";
 WAVE_FR;
 
 ##krok 5, kafelkowanie, generowanie kodu sekwencyjnego 
-## najpierw tworzymy relacje korzystajac z obydwu szeregowan ISL
-## uzyskanych w kroku 2
-
-CODE_TILING:= [n]->{[i,j]->[it,jt, i,j]: 
-## iteracje (i,j) naleza do przestrzeni iteracji LD:
- 1 <= i <= n and 1 <= j <= n and 
-
-## ograniczenia dla it  biorac pod uwage pierwsze ##szeregowanie  { [i, j] -> [(i)] } i rozmiar kafelka 2x2 
- 1<= i-2it <=2 and
-
-## ograniczenia dla jt  biorac pod uwage drugie  ##szeregowanie  { #[i, j] -> [(j)] } i rozmiar kafelka 2x2
-
-1<= j-2jt <=2
-} ;
+CODE_TILING:= [n]->{
+    [i,j]->[it, jt, i, j]: 
+        1 <= i <= n and 2 <= j <= n and 
+        1 <= i - 2it <= 2 and
+        1 <= j - 2jt <= 2
+};
 
 print  "CODE_TILING";
 CODE_TILING;
 
+print "scan (CODE_TILING*[n]->{:n=4})";
 scan (CODE_TILING*[n]->{:n=4});
 
-
 ##krok 7 generowanie kodu sekwencyjnego
+print "codegen CODE_TILING";
 codegen CODE_TILING;
 
-#### wygenerowany pseudo kod sekwencyjny:
-#for (int c0 = 0; c0 < floord(n + 1, 2); c0 += 1)
-#  for (int c1 = 0; c1 < (n + 1) / 2; c1 += 1)
-#    for (int c2 = 2 * c0 + 1; c2 <= min(n, 2 * c0 + 2); c2 += 1)
-#      for (int c3 = 2 * c1 + 1; c3 <= min(n, 2 * c1 + 2); c3 += #1)
-#        (c2, c3);
-
-
-##krok 9 tworzenie relacji pozwalajacej na implementacje wave-#fronting na poziomie kafelkow: 
-
-CODE_TILING_PAR:= [n]->{[i,j]->[it',jt, i,j]: exists it: it'=it+jt and 
-## iteracje (i,j) naleza do przestrzeni iteracji LD:
- 1 <= i <= n and 1 <= j <= n and 
-
-## ograniczenia dla it  biorac pod uwage pierwsze ##szeregowanie  ##{ [i, j] -> [(i)] } i rozmiar kafelka 2x2 
- 1<= i-2it <=2 and
-
-## ograniczenia dla jt  biorac pod uwage drugie  ##szeregowanie  { #[i, j] -> [(j)] } i rozmiar kafelka 2x2
-
-1<= j-2jt <=2
-} ;
+##krok 9 tworzenie relacji pozwalajacej na implementacje wave-
+#fronting na poziomie kafelkow: 
+CODE_TILING_PAR:= [n]->{
+    [i,j]->[it', jt, i, j]: exists it: 
+        it'=it+jt and 
+        1 <= i <= n and 1 <= j <= n and 
+        1 <= i - 2it <= 2 and
+        1 <= j - 2jt <= 2
+};
 
 print  "CODE_TILING_PAR";
 CODE_TILING_PAR;
 
 #krok 11 generowanie kodu rownoleglego
 codegen CODE_TILING_PAR;
-
-#### wygenerowany pseudo kod:
-#for (int c0 = 0; c0 < n; c0 += 1)
-#  for (int c1 = max(0, -n + c0 + n / 2 + 1); c1 <= min(c0, (n + #1) / 2 - 1); c1 += 1)
-#    for (int c2 = 2 * c0 - 2 * c1 + 1; c2 <= min(n, 2 * c0 - 2 * #c1 + 2); c2 += 1)
-#      for (int c3 = 2 * c1 + 1; c3 <= min(n, 2 * c1 + 2); c3 += #1)
-#       (c2, c3);
-
-
-### r�wnolegly kod kompilowalny
-
-#for (int c0 = 0; c0 < n; c0 += 1)
-# #pragma openmp parallel for 
-#  for (int c1 = max(0, -n + c0 + n / 2 + 1); c1 <= min(c0, (n + #1) / 2 - 1); c1 += 1)
-#    for (int c2 = 2 * c0 - 2 * c1 + 1; c2 <= min(n, 2 * c0 - 2 * #c1 + 2); c2 += 1)
-#      for (int c3 = 2 * c1 + 1; c3 <= min(n, 2 * c1 + 2); c3 += #1)
-#a[c2][c3] = a[c2][c3-1] + a[c2-1][c3] ;
-
-##Uwaga!! druga petla jest  rownoleg�a   

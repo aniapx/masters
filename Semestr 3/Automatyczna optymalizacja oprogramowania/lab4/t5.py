@@ -9,7 +9,7 @@ fig_poly = plt.figure()
 # dependencies = Map("{[j,i]-> [j-2,i+1];}")
 
 # MINE
-domain = Set("{[i, j] : 0 <= i <= 6 and 0 <= j <= 6 }")
+domain = Set("{[i, j] : 1 <= i <= 6 and 1 <= j <= 6 }")
 # dependencies = Map("{[i,j]-> [i,j-2];}")
 dependencies = Map("{[j,i]-> [j-1, i+1];}")
 

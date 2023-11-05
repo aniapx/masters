@@ -14,15 +14,15 @@ int main() {
             aGenerated[i][j] = j;
     }
 
-    // równoległy - wejściowy
+    // wejściowy
     for (int i = 1; i <= n; i++) {
-        #pragma openmp parallel for 
         for (int j = 2; j <= n; j++) {
             aParallel[i][j] = aParallel[i][j-2];
         }
     }
 
-    // sekwencyjny - wygenerowany
+    // wygenerowany
+    #pragma openmp parallel for 
     for (int c0 = 1; c0 <= n; c0 += 1)
         for (int c2 = 2; c2 <= n; c2 += 1) {
             aGenerated[c0][c2] = aGenerated[c0][c2-2];

@@ -17,8 +17,8 @@ int main() {
     }
 
     // równoległy - wejściowy
+    #pragma openmp parallel for 
     for (int i = 1; i <= n; i++) {
-        #pragma openmp parallel for 
         for (int j = 2; j <= n; j++) {
             a[i][j] = a[i][j-2];
         }
