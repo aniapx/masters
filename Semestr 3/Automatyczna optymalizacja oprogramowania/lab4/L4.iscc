@@ -18,6 +18,11 @@ R := (RaW+WaW+WaR);
 print "R";
 print R;
 
+## obliczamy wektory dystansu:
+D:=deltas R;
+print "D";
+D;
+
 print "scan (R*[n]->{:n=6})";
 scan (R*[n]->{:n=6});
 
@@ -32,7 +37,7 @@ print "SCHED";
 SCHED;
 
 ##krok 4 wavefronting 
-WAVE_FR:=[n] -> { [i, j] -> [t=i+j] }*LD;
+WAVE_FR:=[n] -> { S_0[i, j] -> [t=i+j] }*LD;
 print "WAVE_FR";
 WAVE_FR;
 
@@ -50,8 +55,5 @@ codegen CODE;
 
 ## krok 8 
 print "codegen FULL_PERM";
-FULL_PERM:= [n]-> {[i,j]->[i,j]}*LD;
-
-## generujemy pseudokod 
-print "codegen FULL_PERM";
+FULL_PERM:= [n]-> {S_0[i,j]->[i,j]}*LD;
 codegen FULL_PERM;

@@ -1,43 +1,32 @@
-# for(i=1;i<=n;i++)
-#  for(j=1;j<=n;j++)
-#   a[i][j] = a[i][j-1] + a[i-1][j] ;
+##Znalezienie zaleznosci
+P := parse_file "1-my.c";
 
-#krok 1
-#relacja zaleznosci
-R:=[n]-> {[i, j] -> [i, j+1] : 1 <= i <= n and 1 <= j < n;
-[i, j] -> [i+1, j] : 1 <= i < n and 1 <= j <= n;
+print "Loop domain:";
+Domain := P[0];
+LD := Domain;
+print Domain;
 
-};
+Write := P[1] * Domain;
+Read := P[3] * Domain;
+Schedule := P[4];
+Before := Schedule << Schedule;
+RaW := (Write . (Read^-1)) * Before;
+WaW := (Write . (Write^-1)) * Before;
+WaR := (Read . (Write^-1)) * Before;
+
+R := (RaW+WaW+WaR);
 print "R";
-R;
+print R;
 
-# przestrzen iteracji
-LD:=[n]->{[i, j] : 1 <= i <= n && 1 <= j <= n };
-
-##uwaga: PET zazwyczaj produkuje krotki z nazwami, przyk³adowo S_0[i,j]
-## w takim przypadku pierwsza krotka relacji CODE_SYNCH_FREE tak¿e powinna 
-# byæ z nazw¹ czyli S_0[i,j]
-## lub trzeba usun¹æ nazwê S_0 w krotce LD jeœli  krotki CODE_SYNCH_FREE s¹ bez nazw
-
-print "LD";
-LD;
+print "scan (R*[n]->{:n=6})";
+scan (R*[n]->{:n=6});
 
 ##krok 2
 IslSchedule := schedule LD respecting R minimizing R;
 print "IslSchedule";
 IslSchedule;  
 
-## wiersz nizej reprezentuje szeregowanie ISL:
-## schedule: "[n] -> [{ [i, j] -> [(i)] }, { [i, j] -> [(j)] }]",
-## ktore oznacza, ze sa  dwa szeregowania (dwie transformacje afiniczne):
-# pierwsze:  { [i, j] -> [(i)] } czyli  transformacje afiniczne: c1=1, c2=0
-#drugie: { [i, j] -> [(j)]} czyli  transformacje afiniczne: c1=0, c2=1
-## WNIOSEK: istnieje mozliwosc implementacji techniki wavefronting 
-
 ##krok 3
-# Zeby przekonwertowac drzewo szeregowania na relacje, opisujaca 
-# ISL szeregowanie, korzystamy z operatora map jak nizej
-
 SCHED:= map IslSchedule;
 print "SCHED";
 SCHED;
@@ -115,7 +104,7 @@ codegen CODE_TILING_PAR;
 #       (c2, c3);
 
 
-### równolegly kod kompilowalny
+### rï¿½wnolegly kod kompilowalny
 
 #for (int c0 = 0; c0 < n; c0 += 1)
 # #pragma openmp parallel for 
@@ -124,4 +113,4 @@ codegen CODE_TILING_PAR;
 #      for (int c3 = 2 * c1 + 1; c3 <= min(n, 2 * c1 + 2); c3 += #1)
 #a[c2][c3] = a[c2][c3-1] + a[c2-1][c3] ;
 
-##Uwaga!! druga petla jest  rownoleg³a   
+##Uwaga!! druga petla jest  rownolegï¿½a   
