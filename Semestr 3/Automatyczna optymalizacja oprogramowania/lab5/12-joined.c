@@ -27,7 +27,7 @@ int main() {
 
     // wygenerowany
     for (int c0 = 0; c0 < n; c0 += 1)
-    #pragma openmp parallel for 
+        #pragma openmp parallel for 
         for (int c1 = max(0, -n + c0 + n / 2 + 1); c1 <= min(c0, (n + 1) / 2 - 1); c1 += 1)
             for (int c2 = 2 * c0 - 2 * c1 + 1; c2 <= min(n, 2 * c0 - 2 * c1 + 2); c2 += 1)
                 for (int c3 = 2 * c1 + 1; c3 <= min(n, 2 * c1 + 2); c3 += 1)

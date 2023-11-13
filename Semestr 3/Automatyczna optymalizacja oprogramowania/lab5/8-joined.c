@@ -1,4 +1,4 @@
-// gcc -fopenmp 2-joined.c -lm && ./a.out
+// gcc -fopenmp 8-joined.c -lm && ./a.out
 
 #include <stdio.h>
 #include <time.h>
@@ -27,7 +27,6 @@ int main() {
     }
 
     // wygenerowany
-        #pragma openmp parallel for 
         for (int c0 = 0; c0 < floord(n + 1, 2); c0 += 1)
             #pragma openmp parallel for 
             for (int c1 = 0; c1 < (n + 1) / 2; c1 += 1)

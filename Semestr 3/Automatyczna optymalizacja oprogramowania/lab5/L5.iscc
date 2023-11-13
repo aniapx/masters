@@ -39,16 +39,18 @@ WAVE_FR;
 ##krok 5, kafelkowanie, generowanie kodu sekwencyjnego 
 CODE_TILING:= [n]->{
     [i,j]->[it, jt, i, j]: 
-        1 <= i <= n and 2 <= j <= n and 
-        1 <= i - 2it <= 2 and
-        1 <= j - 2jt <= 2
+    0 < i <= n and 
+    0 < j <= n and 
+    2jt >= -2 + j and 
+    -i + 2it < 2jt <= 2 - i + 2it and 
+    2jt < j
 };
 
-print  "CODE_TILING";
+print "CODE_TILING";
 CODE_TILING;
 
-print "scan (CODE_TILING*[n]->{:n=4})";
-scan (CODE_TILING*[n]->{:n=4});
+print "scan (CODE_TILING*[n]->{:n=6})";
+scan (CODE_TILING*[n]->{:n=6});
 
 ##krok 7 generowanie kodu sekwencyjnego
 print "codegen CODE_TILING";
@@ -57,11 +59,12 @@ codegen CODE_TILING;
 ##krok 9 tworzenie relacji pozwalajacej na implementacje wave-
 #fronting na poziomie kafelkow: 
 CODE_TILING_PAR:= [n]->{
-    [i,j]->[it', jt, i, j]: exists it: 
-        it'=it+jt and 
-        1 <= i <= n and 1 <= j <= n and 
-        1 <= i - 2it <= 2 and
-        1 <= j - 2jt <= 2
+    [i,j]->[it, jt, i, j]:
+        0 < i <= n and 
+        0 < j <= n and 
+        2jt >= -2 + j and 
+        -i + 2it < 2jt <= 2 - i + 2it and 
+        2jt < j
 };
 
 print  "CODE_TILING_PAR";
