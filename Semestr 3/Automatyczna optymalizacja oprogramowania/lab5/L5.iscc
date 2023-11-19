@@ -40,10 +40,9 @@ WAVE_FR;
 CODE_TILING:= [n]->{
     [i,j]->[it, jt, i, j]: 
     0 < i <= n and 
-    0 < j <= n and 
-    2jt >= -2 + j and 
-    -i + 2it < 2jt <= 2 - i + 2it and 
-    2jt < j
+    1 < j <= n and 
+    1<= i-2it <=2 and
+   1<= j-2jt <=2
 };
 
 print "CODE_TILING";
@@ -61,10 +60,9 @@ codegen CODE_TILING;
 CODE_TILING_PAR:= [n]->{
     [i,j]->[it, jt, i, j]:
         0 < i <= n and 
-        0 < j <= n and 
-        2jt >= -2 + j and 
-        -i + 2it < 2jt <= 2 - i + 2it and 
-        2jt < j
+        1 < j <= n and 
+         1<= i-2it <=2 and
+       1<= j-2jt <=2
 };
 
 print  "CODE_TILING_PAR";

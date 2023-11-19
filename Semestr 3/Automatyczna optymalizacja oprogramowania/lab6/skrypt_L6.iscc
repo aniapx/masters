@@ -1,0 +1,146 @@
+# for(i=1;i<=n;i++)
+#  for(j=1;j<=n;j++)
+#  a[i][j] = a[i][j+1];
+
+#krok 1
+#relacja zaleznosci
+R:=[n]-> {[i, j] -> [i, j+1] : 1 <= i <= n and 1 <= j < n};
+print "R";
+R;
+
+# przestrzen iteracji
+LD:=[n]->{[i, j] : 1 <= i <= n && 1 <= j <= n };
+
+##uwaga: PET zazwyczaj produkuje krotki z nazwami, przyk³adowo S_0[i,j]
+## w takim przypadku pierwsza krotka relacji CODE_SYNCH_FREE tak¿e powinna 
+# byæ z nazw¹ czyli S_0[i,j]
+## lub trzeba usun¹æ nazwê S_0 w krotce LD jeœli  krotki CODE_SYNCH_FREE s¹ bez nazw
+
+print "LD";
+LD;
+
+#krok 3- poczatki krancowe
+UDS:= domain R - range R;
+print "UDS";
+UDS;
+
+#krok 4 - tworzenie relacji R_USC wedlug wzoru
+## R_USC :=  { [e] -> [e’] | e, e’ in UDS & e > e’ &  e’ in (R+ ##R+^-1)(e) } 
+
+#4.1 tworzymy relacja  R1:={[e]->[e']}, gdzie  e=(i1,i2) e'=i1',i2'
+
+R1:={[i1,i2]->[i1',i2']};
+
+## 4.2 twozymy relacje; R2, implementujaca warunek: domain i range ## R1 nalezy do UDS 
+
+R2:=(R1*UDS)->*UDS;
+print "R2";
+R2;
+
+scan (R2* [n]->{:n=2});
+
+##4.3  tworzymy relacje m, dla ktorej  elementy dziedziny sa
+##leksykograficznie mniejsze niz elementy  zakresu: e<e'
+ 
+S:={[i1,i2]};
+m:=S<<S;
+print "m";
+m;
+R3:=R2*m;
+print "R3";
+R3;
+
+scan (R3* [n]->{:n=2});
+
+##4.4 implementujemy warunek e' in (R+ + R+^-1)(e)
+
+RR:=R^+ + (R^+)^-1;
+print "RR";
+RR;
+e:=[i1,i2]->{[i1,i2]}*UDS;
+SET:=RR(e);
+print "SET";
+SET;
+
+scan (SET* [n]->{:n=2});
+
+
+##4.5 
+
+R_USC:=R3->*SET;
+print "R_USC";
+R_USC;
+
+#krok 5 - topologia grafu -lancuch 
+## poniewaz relacja R_USC jest pusta
+##[n, i1, i2] -> {  }
+
+
+#krok 6 tworzenie zbioru zawierajacego punkty reprezentatywne
+ #niezaleznych fragmentow kodu
+
+REPR:=UDS +(LD -(domain R +range R));
+print "REPR";
+REPR;
+
+#krok 7 - obliczenie zbioru SLICES
+
+## obliczenie pozytywnego tranzytywnego domkniecia realcji R
+R_PLUS:=R^+;
+print "R_PLUS";
+R_PLUS;
+
+#obliczenie tranzytywnego domkniecia, R_STAR
+R_STAR:=R_PLUS + {[i1,i2]->[i1,i2]};
+
+## tworzymy sparametrzyzowany punkt reprezentatywny, I
+I:=[i1,i2]->{[i1,i2]}*REPR;
+
+## obliczamy wynik zastosowania R_STAR do punktu  reprezentatywnego
+#I, S
+S:=R_STAR(I);
+print "S";
+S;
+scan (S*[n]->{:n=2});
+
+
+## krok 7 - Tworzenie zbioru SLICES
+
+#tworzymy zbior SLICES poprzez przeniesienie parametrow i1,i2 zbioru S na
+## pierwsze pozycje kazdej  krotki zbioru S:
+
+
+SLICES:=
+[n] -> { [i1,i2,i1, i1'] : i2 = 1 and n >= 2 and 0 < i1 <= n and 2 <= i1' <= n; 
+
+[i1,i2,1, 1] : i2 = 1 and n = 1 and i1 = 1; 
+
+
+[i1,i2, i1, 1] : i2 = 1 and n >= 2 and 0 < i1 <= n };
+print "SLICES";
+SLICES; 
+
+##krok 8
+
+scan (SLICES*[n]->{:n=6});
+
+
+## krok 9 - wygenerowanie pseudokodu
+
+##dla starszych wersji kalkulatora iscc
+codegen SLICES;
+
+
+
+##dla  nowszych i  starszych wersji kalkulatora iscc
+
+codegen (identity SLICES);
+
+
+## krok 10 generowanie kodu kompilowalnego
+
+#if (n >= 2)
+#pragma  parallel  for
+# for (int c0 = 1; c0 <= n; c0 += 1)
+#   for (int c3 = 1; c3 <= n; c3 += 1) 
+#    a[c0][c3] = a[c0][c3+1];
