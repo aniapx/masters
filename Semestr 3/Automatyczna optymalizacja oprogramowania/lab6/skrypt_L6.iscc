@@ -11,10 +11,10 @@ R;
 # przestrzen iteracji
 LD:=[n]->{[i, j] : 1 <= i <= n && 1 <= j <= n };
 
-##uwaga: PET zazwyczaj produkuje krotki z nazwami, przyk³adowo S_0[i,j]
-## w takim przypadku pierwsza krotka relacji CODE_SYNCH_FREE tak¿e powinna 
-# byæ z nazw¹ czyli S_0[i,j]
-## lub trzeba usun¹æ nazwê S_0 w krotce LD jeœli  krotki CODE_SYNCH_FREE s¹ bez nazw
+##uwaga: PET zazwyczaj produkuje krotki z nazwami, przykï¿½adowo S_0[i,j]
+## w takim przypadku pierwsza krotka relacji CODE_SYNCH_FREE takï¿½e powinna 
+# byï¿½ z nazwï¿½ czyli S_0[i,j]
+## lub trzeba usunï¿½ï¿½ nazwï¿½ S_0 w krotce LD jeï¿½li  krotki CODE_SYNCH_FREE sï¿½ bez nazw
 
 print "LD";
 LD;
@@ -25,7 +25,7 @@ print "UDS";
 UDS;
 
 #krok 4 - tworzenie relacji R_USC wedlug wzoru
-## R_USC :=  { [e] -> [e’] | e, e’ in UDS & e > e’ &  e’ in (R+ ##R+^-1)(e) } 
+## R_USC :=  { [e] -> [eï¿½] | e, eï¿½ in UDS & e > eï¿½ &  eï¿½ in (R+ ##R+^-1)(e) } 
 
 #4.1 tworzymy relacja  R1:={[e]->[e']}, gdzie  e=(i1,i2) e'=i1',i2'
 
