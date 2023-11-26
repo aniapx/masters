@@ -21,14 +21,14 @@ public class User {
     private String citizenship;
 
     @Email
-    private String emailAddress;
+    private String email;
     public User(String firstName, String lastName, int age, String pesel, String citizenship, String emailAddress) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.pesel = pesel;
         this.citizenship = citizenship;
-        this.emailAddress = emailAddress;
+        this.email = emailAddress;
     }
 
     public String getFirstName() {
@@ -71,12 +71,12 @@ public class User {
         this.citizenship = citizenship;
     }
 
-    public String getEmailAddress() {
-        return emailAddress;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public static void main(String[] args) {
@@ -88,6 +88,6 @@ public class User {
         System.out.println("Age: " + user.getAge());
         System.out.println("PESEL: " + user.getPesel());
         System.out.println("Citizenship: " + user.getCitizenship());
-        System.out.println("Email: " + user.getEmailAddress());
+        System.out.println("Email: " + user.getEmail());
     }
 }

@@ -24,13 +24,13 @@ R := (RaW+WaW+WaR);
 print "R";
 print R;
 
-R:=[n]->{[i,j]->[i,j+1]: 1<=i<=n and 1<=j<=n-1 };
+R:=[n] -> { [i, j] -> [i' = i, j' = 2 + j] : 0 < i < n and 2 <= j <= -2 + n };
 
 print "scan (R*[n]->{:n=3})";
 
 scan (R*[n]->{:n=3});
 
-LD:=[n]->{[i,j]: 1<=i,j<=n};
+LD:=[n] -> { [i, j] : 0 < i <= n and 2 <= j <= n };
 
 ##krok 3: Tranzytywne domkniecie realacji R:
 
@@ -46,7 +46,7 @@ print "Rk"; Rk;
 #([n] -> { [k] -> [[i, j] -> [i, k + j]] : k > 0 and 0 < i <= n and #j > 0 and 2 - k <= j <= n - k and j < n }, True)
 #nalezy przekonwertowac recznie na relacje:
 
-Rk:=[n,k] -> { [i, j] -> [i, k + j] : k > 0 and 0 < i <= n and j > 0 and 2 - k <= j <= n - k and j < n };
+Rk:=[n,k] -> { [i, j] -> [i' = i, j' = 2k + j] : k > 0 and 0 < i < n and 2 <= j <= n - 2k };
 
 #krok 5: obliczenie zbioru UDS:
 UDS:= domain R -range R;
@@ -58,12 +58,13 @@ print "Sk"; Sk;
 
 ## krok 7: Tworzenie relacji CODE w oparciu o zbior Sk 
 ##[n, k] -> { [i0, 1 + k] : 0 < k < n and 0 < i0 <= n }
-
+## [n, k] -> { [i, j] : k > 0 and 0 < i < n and 2 + 2k <= j <= 3 + 2k and j <= n }
 
 ## uwaga !!!! zeby uwzglednic punkty UDS dla danego przyk�adu 
 # ograniczenie 0 < k < n konwertujemy na 0 <= k < n
 
-CODE:=[n] ->  { [i0, k'] -> [k,i0,1+k]:k'=k+1 and  0 <= k < n and 0 < i0 <= n };
+## CODE:=[n] -> { [i0, k'] -> [k, i0, 1 + k]: k'=k+1 and  0 <= k < n and 0 < i0 <= n };
+CODE:=[n] -> { [i, k] -> [k, i, j] : k >= 0 and 0 < i < n and 2 + 2k <= j <= 3 + 2k and j <= n };
 print "CODE";
 CODE;
 scan (CODE*[n]->{:n=3});
@@ -98,11 +99,15 @@ IND;
 
 ## w przypadku, gdy zbior IND nie jest pusty, zalozmy
 
-IND:=[n]->{[i,j]: 1<=i=2 and 3<=j=6};
+## IND:=[n]->{[i,j]: 1<=i=2 and 3<=j=6};
 
 ## to tworzymy relacje, CODE_IND:
 
-CODE_IND:= [n]->{[i,j]->[i,j]: 1<=i=2 and 3<=j<=6};
+## CODE_IND:= [n]->{[i,j]->[i,j]: 1<=i=2 and 3<=j<=6};
+CODE_IND:= [n]-> {
+    [i, j] -> [i, j]         : 0 < i < n and j >= -1 + n and 2 <= j <= 3 and j <= n; 
+    [i = n, j] -> [i, j] : n > 0 and 2 <= j <= n
+};
 
 ## i korzystamy z operatora codegen
 print "CODE for IND";
