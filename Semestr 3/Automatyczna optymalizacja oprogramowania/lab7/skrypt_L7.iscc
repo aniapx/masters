@@ -12,10 +12,10 @@ scan (R*[n]->{:n=3});
 
 LD:=[n]->{[i,j]: 1<=i,j<=n};
 
-##uwaga: PET zazwyczaj produkuje krotki z nazwami, przyk³adowo S_0[i,j]
-## w takim przypadku pierwsza krotka relacji CODE_SYNCH_FREE tak¿e powinna 
-# byæ z nazw¹ czyli S_0[i,j]
-## lub trzeba usun¹æ nazwê S_0 w krotce LD jeœli  krotki CODE_SYNCH_FREE s¹ bez nazw
+##uwaga: PET zazwyczaj produkuje krotki z nazwami, przykÅ‚adowo S_0[i,j]
+## w takim przypadku pierwsza krotka relacji CODE_SYNCH_FREE takÅ¼e powinna 
+# byÄ‡ z nazwÄ… czyli S_0[i,j]
+## lub trzeba usunÄ…Ä‡ nazwÄ™ S_0 w krotce LD jeÅ›li  krotki CODE_SYNCH_FREE sÄ… bez nazw
 
 
 ##krok 3: Tranzytywne domkniecie realacji R:
@@ -51,15 +51,15 @@ Sk;
 ##[n, k] -> { [i0, 1 + k] : 0 < k < n and 0 < i0 <= n }
 
 
-## uwaga !!!! zeby uwzglednic punkty UDS dla danego przyk³adu 
+## uwaga !!!! zeby uwzglednic punkty UDS dla danego przykÅ‚adu 
 # ograniczenie 0 < k < n konwertujemy na 0 <= k < n
 
-CODE:=[n] ->  { [i0, k'] -> [k,i0,1+k]:k'=k+1 and  0 <= k < n and 0 < i0 <= n };
+CODE:=[n] ->  { [i0, k'] -> [k, i0, k+1]: k'=k+1 and  0 <= k < n and 0 < i0 <= n };
 print "CODE";
 CODE;
 scan (CODE*[n]->{:n=3});
 
-## w ogolnym przypadku, kiedy brak jest ograniczeñ na "k", zeby relacja  CODE #uwzgledniala punkty UDS trzeba  
+## w ogolnym przypadku, kiedy brak jest ograniczeÅ„ na "k", zeby relacja  CODE #uwzgledniala punkty UDS trzeba  
 # do relacji CODE   dodac relacje  [n]-> {[punkt UDS]->[k=0,punkt UDS]: #ograniczenia UDS #and k=0};
  
 
@@ -107,6 +107,6 @@ codegen CODE_IND;
 #for (int c1 = 3; c1 <= 6; c1 += 1)
 #  (2, c1);
 
-##który trzeba przekonwertowæ na kod kompilowalny
+##ktÃ³ry trzeba przekonwertowÄ‡ na kod kompilowalny
 
 #Kod docelowy jest to kod uzyskany w kroku 8 oraz kroku 9.

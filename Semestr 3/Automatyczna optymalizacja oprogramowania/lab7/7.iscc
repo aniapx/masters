@@ -1,0 +1,45 @@
+# krok 1: relacja zaleznosci, R, oraz przestrzen iteracji,LD:
+R:=[n] -> {[i, j] ->[i' = i, j' = 2 + j] : 0 < i < n and 2 <= j <= -2 + n };
+
+print "scan (R*[n]->{:n=6})";
+scan (R*[n]->{:n=6});
+
+LD:=[n] -> {[i, j] : 0 < i <= n and 2 <= j <= n };
+
+##krok 3: Tranzytywne domkniecie realacji R:
+R_PLUS:=R^+;
+print "R_PLUS";R_PLUS; 
+
+##krok 4: Obliczenie R^k:
+Rk:=pow R;
+print "Rk";Rk;
+
+Rk:=[n, k] -> { [i, j] -> [i' = i, j' = 2k + j] : k > 0 and 0 < i < n and 2 <= j <= n - 2k };
+
+#krok 5: obliczenie zbioru UDS:
+UDS:= domain R - range R;
+print "UDS";UDS; 
+
+# krok 6: Obliczenie zbioru  S(k):= R^k(UDS)  -  (R^+ . R^k)(UDS)
+Sk:=Rk(UDS) - (R_PLUS . Rk)(UDS);
+print "Sk"; Sk;
+
+## krok 7: Tworzenie relacji CODE w oparciu o zbior Sk 
+CODE:=[n] ->  { [i, j] -> [k, i, j]: k > 0 and 0 < i < n and 2 + 2k <= j <= 3 + 2k and j <= n };
+print "CODE"; CODE;
+scan (CODE*[n]->{:n=6});
+
+##krok 8 generowanie pseudokodu  i kodu kompilowalnego
+print "CODE";
+codegen  CODE;
+
+##krok 9 obliczenie zbioru IND
+IND:= LD - (domain R +  range R);
+print "IND"; IND;
+
+IND:=[n]->{[i,j]: 1<=i=2 and 3<=j=6};
+
+CODE_IND:= [n]->{[i,j]->[i,j]: 1<=i=2 and 3<=j<=6};
+
+print "CODE for IND";
+codegen CODE_IND;

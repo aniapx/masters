@@ -1,123 +1,48 @@
-##for(i=1; i<=n; i++)
-## for(i=1; i<=n; i++)
-##  a[i][j]=a[i][j-1];
-
 ##krok 1: relacja zaleznosci, R, oraz przestrzen iteracji,LD:
+R:=[n] -> {[i, j] ->[i' = i, j' = 2 + j] : 0 < i < n and 2 <= j <= -2 + n };
 
-##Znalezienie zaleznosci
-P := parse_file "1-my.c";
+print "scan (R*[n]->{:n=6})";
+scan (R*[n]->{:n=6});
 
-print "Loop domain:";
-Domain := P[0];
-LD := Domain;
-print Domain;
-
-Write := P[1] * Domain;
-Read := P[3] * Domain;
-Schedule := P[4];
-Before := Schedule << Schedule;
-RaW := (Write . (Read^-1)) * Before;
-WaW := (Write . (Write^-1)) * Before;
-WaR := (Read . (Write^-1)) * Before;
-
-R := (RaW+WaW+WaR);
-print "R";
-print R;
-
-R:=[n] -> { [i, j] -> [i' = i, j' = 2 + j] : 0 < i < n and 2 <= j <= -2 + n };
-
-print "scan (R*[n]->{:n=3})";
-
-scan (R*[n]->{:n=3});
-
-LD:=[n] -> { [i, j] : 0 < i <= n and 2 <= j <= n };
+LD:=[n] -> { [i, j] : 1 <= i <= n and 2 <= j <= n };
 
 ##krok 3: Tranzytywne domkniecie realacji R:
-
 R_PLUS:=R^+;
 print "R_PLUS"; R_PLUS; 
 
 ##krok 4: Obliczenie R^k:
-
 Rk:=pow R;
 print "Rk"; Rk;
 
-###uzyskana relacje Rk o postaci
-#([n] -> { [k] -> [[i, j] -> [i, k + j]] : k > 0 and 0 < i <= n and #j > 0 and 2 - k <= j <= n - k and j < n }, True)
-#nalezy przekonwertowac recznie na relacje:
-
-Rk:=[n,k] -> { [i, j] -> [i' = i, j' = 2k + j] : k > 0 and 0 < i < n and 2 <= j <= n - 2k };
+Rk:=[n, k] -> { [i, j] -> [i' = i, j' = 2k + j] : k > 0 and 0 < i < n and 2 <= j <= n - 2k};
 
 #krok 5: obliczenie zbioru UDS:
-UDS:= domain R -range R;
+UDS:= domain R - range R;
 print "UDS"; UDS; 
 
-# krok 6: Obliczenie zbioru  S(k):= R^k(UDS)  -  (R^+ . R^k)(UDS)
+# krok 6: Obliczenie zbioru Sk
 Sk:=Rk(UDS) - (R_PLUS . Rk)(UDS);
 print "Sk"; Sk;
 
 ## krok 7: Tworzenie relacji CODE w oparciu o zbior Sk 
-##[n, k] -> { [i0, 1 + k] : 0 < k < n and 0 < i0 <= n }
-## [n, k] -> { [i, j] : k > 0 and 0 < i < n and 2 + 2k <= j <= 3 + 2k and j <= n }
-
-## uwaga !!!! zeby uwzglednic punkty UDS dla danego przyk�adu 
-# ograniczenie 0 < k < n konwertujemy na 0 <= k < n
-
-## CODE:=[n] -> { [i0, k'] -> [k, i0, 1 + k]: k'=k+1 and  0 <= k < n and 0 < i0 <= n };
-CODE:=[n] -> { [i, k] -> [k, i, j] : k >= 0 and 0 < i < n and 2 + 2k <= j <= 3 + 2k and j <= n };
-print "CODE";
-CODE;
-scan (CODE*[n]->{:n=3});
-
-## w ogolnym przypadku, kiedy brak jest ogranicze� na "k", zeby relacja  CODE #uwzgledniala punkty UDS trzeba  
-# do relacji CODE   dodac relacje  [n]-> {[punkt UDS]->[k=0,punkt UDS]: #ograniczenia UDS #and k=0};
- 
+CODE:=[n] -> { [i, k] -> [k, i0, i1] : 
+    k > 0 and 
+    0 <= k < n and 
+    0 < i0 < n and 
+    2 + 2k <= i1 <= 3 + 2k and 
+    i1 <= n 
+};
+print "CODE"; CODE;
+scan (CODE*[n]->{:n=6});
 
 ##krok 8 generowanie pseudokodu  i kodu kompilowalnego
-print "CODE";
-codegen  CODE;
-
-### w wyniku dostajemy pseudokod kod:
-
-#for (int c0 = 0; c0 < n; c0 += 1)
-#  for (int c1 = 1; c1 <= n; c1 += 1)
-#    (c1, c0 + 1);
-
-#ktory konwertujemy na kod kompilowalny
-
-#for (int c0 = 0; c0 < n; c0 += 1)
-# #pragma openmp parallel for
-#  for (int c1 = 1; c1 <= n; c1 += 1)
-#a[c1][c0+1]=a[c1][c0];
+print "CODE"; codegen CODE;
 
 ##krok 9 obliczenie zbioru IND
-IND:= LD - (domain R +  range R);
-print "IND";
-IND;
+IND:= LD - (domain R + range R);
+print "IND"; IND;
 
-##zbior  IND jest pusty, czyli nie trzeba generowac kodu #przebierajacego elementy zbioru IND
+CODE_IND:= [n] -> { [i = n, j] : n > 0 and 2 <= j <= n };
 
-## w przypadku, gdy zbior IND nie jest pusty, zalozmy
-
-## IND:=[n]->{[i,j]: 1<=i=2 and 3<=j=6};
-
-## to tworzymy relacje, CODE_IND:
-
-## CODE_IND:= [n]->{[i,j]->[i,j]: 1<=i=2 and 3<=j<=6};
-CODE_IND:= [n]-> {
-    [i, j] -> [i, j]         : 0 < i < n and j >= -1 + n and 2 <= j <= 3 and j <= n; 
-    [i = n, j] -> [i, j] : n > 0 and 2 <= j <= n
-};
-
-## i korzystamy z operatora codegen
 print "CODE for IND";
 codegen CODE_IND;
-
-### w wyniku uzyskujemy pseudo kod
-
-#for (int c1 = 3; c1 <= 6; c1 += 1)
-#  (2, c1);
-
-##kt�ry trzeba przekonwertow� na kod kompilowalny
-
-#Kod docelowy jest to kod uzyskany w kroku 8 oraz kroku 9.
