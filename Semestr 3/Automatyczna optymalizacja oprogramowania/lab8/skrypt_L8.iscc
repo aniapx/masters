@@ -6,15 +6,20 @@
 
 ### relacja zaleznosci
 
-R := [n]-> {[i,j] -> [i,j+1] : 1 <= i <=n and 1 <= j <= n-1;
- [i,j] -> [i+1,j] : 1 <= i <=n-1 and 1 <= j <= n;
-[i,j] -> [i+1,j-1] : 1 <= i <= n-1 and 1 <= j <=n};
+R := [n]-> {
+    [i,j] -> [i,j+1]   : 1 <= i <=n and 1 <= j <= n-1;
+    [i,j] -> [i+1,j]   : 1 <= i <=n-1 and 1 <= j <= n;
+    [i,j] -> [i+1,j-1] : 1 <= i <= n-1 and 1 <= j <=n
+};
 print "R";
 R; 
 
 #Tworzenie zbioru TILE:
-#TILE(II, B) = [II]->{[I] |  B*II + LB <= I <= min( B*(II+1) 
-#+ LB -1, UB) AND II >= 0},
+#TILE(II, B) = [II] -> {
+    [I] :
+      B*II + LB <= I <= min( B*(II+1) + LB -1, UB) AND 
+    II >= 0
+},
 # gdzie II jest wektorem okreslajacym identyfikator 
 #kafelka;
 
@@ -22,17 +27,21 @@ R;
 ## II-> (ii1,ii2)
 ## szerokosc kafelka =2 
 
-TILE:=[n, ii1,ii2]->{[i,j]: 2ii1+1<=i<=min(2*(ii1+1),n) and 
-2ii2+1<=j<=min(2*(ii2+1),n) and ii1,ii2>=0};
+TILE:=[n, ii1, ii2]-> {
+    [i,j]: 
+        2ii1 + 1 <= i <= min(2 * (ii1 + 1), n) and 
+        2ii2 + 1 <= j <= min(2 * (ii2 + 1), n) and 
+        ii1,ii2 >= 0
+};
 print "TILE";
 TILE;
 
 
 
 #TILE_LT obliczamy nastepujaco:
-#TILE_LT(II):=[II]->{[I] | exists II’ s. t. II’ <  II  AND II >= 0 
-#AND  B*II+LB <= UB AND II’ >= 0 AND  B*II’+LB <= 
-#UB AND I in  TILE(II’, B)}.
+#TILE_LT(II):=[II]->{[I] : exists IIï¿½ s. t. IIï¿½ <  II  AND II >= 0 
+#AND  B*II+LB <= UB AND IIï¿½ >= 0 AND  B*IIï¿½+LB <= 
+#UB AND I in  TILE(IIï¿½, B)}.
 
 TILE_LT:=[n,ii1,ii2]->{[i,j]: exists ii1',ii2': (ii1'<ii1 or ii1'=ii1 and ii2'<ii2)
 and 2ii1'+1<=i<=min(2*(ii1'+1),n) 
@@ -45,9 +54,9 @@ TILE_LT;
 
 
 #TILE_GT obliczamy nastepujaco:
-#TILE_GT(II):=[II]->{[I] | exists II’ s. t. II’ >  II  AND II >= 0 
-#AND  B*II+LB <= UB AND II’ >= 0 AND  B*II’+LB <= 
-#UB AND I in  TILE(II’, B)}.
+#TILE_GT(II):=[II]->{[I] | exists IIï¿½ s. t. IIï¿½ >  II  AND II >= 0 
+#AND  B*II+LB <= UB AND IIï¿½ >= 0 AND  B*IIï¿½+LB <= 
+#UB AND I in  TILE(IIï¿½, B)}.
 
 TILE_GT:=[n,ii1,ii2]->{[i,j]: exists ii1',ii2': (ii1'>ii1 or ii1'=ii1 and ii2'>ii2)
 and 2ii1'+1<=i<=min(2*(ii1'+1),n) 

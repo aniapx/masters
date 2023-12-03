@@ -31,7 +31,8 @@ print "Rk";
 Rk;
 
 ###uzyskana relacje Rk o postaci
-#([n] -> { [k] -> [[i, j] -> [i, k + j]] : k > 0 and 0 < i <= n and #j > 0 and 2 - k <= j <= n - k and j < n }, True)
+#([n] -> { [k] -> [[i, j] -> [i, k + j]] : 
+    k > 0 and 0 < i <= n and #j > 0 and 2 - k <= j <= n - k and j < n }, True)
 #nalezy przekonwertowac recznie na relacje:
 
 Rk:=[n,k] -> { [i, j] -> [i, k + j] : k > 0 and 0 < i <= n and j > 0 and 2 - k <= j <= n - k and j < n };
@@ -88,7 +89,7 @@ IND:= LD - (domain R +  range R);
 print "IND";
 IND;
 
-##zbior  IND jest pusty, czyli nie trzeba generowac kodu #przebierajacego elementy zbioru IND
+##zbior IND jest pusty, czyli nie trzeba generowac kodu #przebierajacego elementy zbioru IND
 
 ## w przypadku, gdy zbior IND nie jest pusty, zalozmy
 

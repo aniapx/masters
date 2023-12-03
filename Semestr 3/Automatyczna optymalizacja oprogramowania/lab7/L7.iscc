@@ -4,7 +4,7 @@ R:=[n] -> {[i, j] ->[i' = i, j' = 2 + j] : 0 < i < n and 2 <= j <= -2 + n };
 print "scan (R*[n]->{:n=6})";
 scan (R*[n]->{:n=6});
 
-LD:=[n] -> { [i, j] : 1 <= i <= n and 2 <= j <= n };
+LD:=[n] -> {[i, j] : 0 < i <= n and 2 <= j <= n };
 
 ##krok 3: Tranzytywne domkniecie realacji R:
 R_PLUS:=R^+;
@@ -14,7 +14,11 @@ print "R_PLUS"; R_PLUS;
 Rk:=pow R;
 print "Rk"; Rk;
 
-Rk:=[n, k] -> { [i, j] -> [i' = i, j' = 2k + j] : k > 0 and 0 < i < n and 2 <= j <= n - 2k};
+Rk:=[n, k] -> { [i, j] -> [i' = i, j' = 2k + j] : 
+    k > 0 and 
+    0 < i <= n and 
+    2 <= j <= n - 2k
+};
 
 #krok 5: obliczenie zbioru UDS:
 UDS:= domain R - range R;
@@ -25,12 +29,11 @@ Sk:=Rk(UDS) - (R_PLUS . Rk)(UDS);
 print "Sk"; Sk;
 
 ## krok 7: Tworzenie relacji CODE w oparciu o zbior Sk 
-CODE:=[n] -> { [i, k] -> [k, i0, i1] : 
+CODE:=[n] -> { [i, k] -> [k, i, j] : 
     k > 0 and 
-    0 <= k < n and 
-    0 < i0 < n and 
-    2 + 2k <= i1 <= 3 + 2k and 
-    i1 <= n 
+    0 < i < n and 
+    2 + 2k <= j <= 3 + 2k and 
+    j <= n 
 };
 print "CODE"; CODE;
 scan (CODE*[n]->{:n=6});
@@ -41,8 +44,7 @@ print "CODE"; codegen CODE;
 ##krok 9 obliczenie zbioru IND
 IND:= LD - (domain R + range R);
 print "IND"; IND;
-
-CODE_IND:= [n] -> { [i = n, j] : n > 0 and 2 <= j <= n };
+CODE_IND:= [n] -> { [i, j] -> [i = n, j] : n > 0 and 2 <= j <= n };
 
 print "CODE for IND";
 codegen CODE_IND;

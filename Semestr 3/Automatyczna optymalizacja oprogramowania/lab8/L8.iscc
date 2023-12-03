@@ -1,130 +1,75 @@
-#for(i=1; i<=n; i++){ 
-# for(j=1; j<=n; j++){
-#  a[i][j] = a[i][j+1] + a[i+1][j] + a[i+1][j-1]; 
-#  }
-#}
-
 ##krok 1: relacja zaleznosci, R, oraz przestrzen iteracji,LD:
-
-##Znalezienie zaleznosci
-P := parse_file "1-my.c";
-
-print "Loop domain:";
-Domain := P[0];
-LD := Domain;
-print Domain;
-
-Write := P[1] * Domain;
-Read := P[3] * Domain;
-Schedule := P[4];
-Before := Schedule << Schedule;
-RaW := (Write . (Read^-1)) * Before;
-WaW := (Write . (Write^-1)) * Before;
-WaR := (Read . (Write^-1)) * Before;
-
-R := (RaW+WaW+WaR);
-print "R";
-print R;
+LD := [n] -> { [i, j] : 0 < i <= n and 3 <= j <= n }
+print "LD"; LD;
 
 ### relacja zaleznosci
-
-R := [n]-> {[i,j] -> [i,j+1] : 1 <= i <=n and 1 <= j <= n-1;
- [i,j] -> [i+1,j] : 1 <= i <=n-1 and 1 <= j <= n;
-[i,j] -> [i+1,j-1] : 1 <= i <= n-1 and 1 <= j <=n};
-print "R";
-R; 
+R := [n] -> { [i, j] -> [i' = i, j' = 3 + j] : 0 < i <= n and 3 <= j <= -3 + n };
+print "R"; R; 
 
 #Tworzenie zbioru TILE:
-#TILE(II, B) = [II]->{[I] |  B*II + LB <= I <= min( B*(II+1) 
-#+ LB -1, UB) AND II >= 0},
-# gdzie II jest wektorem okreslajacym identyfikator 
-#kafelka;
-
-## dla danego przykladu: lb1=lb2=1; ub1=ub2=n
-## II-> (ii1,ii2)
-## szerokosc kafelka =2 
-
-TILE:=[n, ii1,ii2]->{[i,j]: 2ii1+1<=i<=min(2*(ii1+1),n) and 
-2ii2+1<=j<=min(2*(ii2+1),n) and ii1,ii2>=0};
-print "TILE";
-TILE;
-
-
+## szerokosc kafelka = 2 
+TILE:=[n, it, jt]->{
+    [i,j]: 
+        2it + 1 <= i <= min(2 * (it + 1), n) and 
+        2jt + 1 <= j <= min(2 * (jt + 1), n) and 
+        it,jt >= 0
+};
+print "TILE"; TILE;
 
 #TILE_LT obliczamy nastepujaco:
-#TILE_LT(II):=[II]->{[I] | exists II� s. t. II� <  II  AND II >= 0 
-#AND  B*II+LB <= UB AND II� >= 0 AND  B*II�+LB <= 
-#UB AND I in  TILE(II�, B)}.
-
-TILE_LT:=[n,ii1,ii2]->{[i,j]: exists ii1',ii2': (ii1'<ii1 or ii1'=ii1 and ii2'<ii2)
-and 2ii1'+1<=i<=min(2*(ii1'+1),n) 
-and 2ii2'+1<=j<=min(2*(ii2'+1),n) 
-and ii1, ii1',ii2,ii2'>=0
- };
-
-print "TILE_LT";
-TILE_LT;
-
+TILE_LT:=[n, it, jt]->{[i, j]: exists it',jt': (it' < it or it' = it and jt' < jt)
+    and 2it' + 1 <= i <= min(2 * (it' + 1), n) 
+    and 2jt' + 1 <= j <= min(2 * (jt' + 1), n) 
+    and it, it', jt, jt' >= 0
+};
+print "TILE_LT"; TILE_LT;
 
 #TILE_GT obliczamy nastepujaco:
-#TILE_GT(II):=[II]->{[I] | exists II� s. t. II� >  II  AND II >= 0 
-#AND  B*II+LB <= UB AND II� >= 0 AND  B*II�+LB <= 
-#UB AND I in  TILE(II�, B)}.
-
-TILE_GT:=[n,ii1,ii2]->{[i,j]: exists ii1',ii2': (ii1'>ii1 or ii1'=ii1 and ii2'>ii2)
-and 2ii1'+1<=i<=min(2*(ii1'+1),n) 
-and 2ii2'+1<=j<=min(2*(ii2'+1),n) 
-and ii1, ii1',ii2,ii2'>=0
- };
-
-print "TILE_GT";
-TILE_GT;
+TILE_GT:=[n,it,jt]->{[i, j]: exists it', jt': (it' > it or it' = it and jt' > jt)
+    and 2it' + 1 <= i <= min(2 * (it' + 1),n) 
+    and 2jt' + 1 <= j <= min(2*(jt' + 1),n) 
+    and it, it', jt, jt' >= 0
+};
+print "TILE_GT"; TILE_GT;
 
 ##obliczenie relacji R+
-
 RPLUS:=R^+;
-print "RPLUS";
-RPLUS;
+print "RPLUS"; RPLUS;
 
 ##Obliczenie zbioru TILE_ITR
 TILE_ITR:= TILE  - RPLUS(TILE_GT);
-print "TILE_ITR";
-TILE_ITR;
-
+print "TILE_ITR"; TILE_ITR;
 
 ##obliczenie zbioru TVLD_LT
 TVLD_LT:= (RPLUS (TILE_ITR) * TILE_LT) -RPLUS(TILE_GT);
-print "TVLD_LT";
-TVLD_LT;
+print "TVLD_LT"; TVLD_LT;
 
 
 ##obliczenie zbioru TILE_VLD
 TILE_VLD:= TILE_ITR  +  TVLD_LT;
-print "TILE_VLD";
-TILE_VLD;
+print "TILE_VLD"; TILE_VLD;
 
 ##celem sprawdzenia zawartosci kafelkow mozemy skorzystac z #operatora scan:
 #scan (TILE_VLD*[n]->{:n=4});
 
-
 #tworzenie zbioru  TILE_VLD_EXT
-# parametry ii1,ii2 trzeba przenisc na pierwsze pozycje kazdej krotki zbioru #TILE_VLD:
+# parametry it,jt trzeba przenisc na pierwsze pozycje kazdej krotki zbioru #TILE_VLD:
 
-TILE_VLD_EXT:=[n] -> { [ii1,ii2, i, j] : ii1 >= 0 and 2ii1 <= -2 + n and i > 2ii1 and ((ii2 >= 0 and 2ii2 <= -4 + n and 2ii2 < j <= 3 + 2ii1 + 2ii2 - i) or (2ii2 = -3 + n and n >= 3 and -2 + n <= j <= n + 2ii1 - i) or ((n) mod 2 = 0 and -3 + n <= 2ii2 <= -2 + n and i <= 2 + 2ii1 and 2ii2 < j <= 2 + 2ii2));
+TILE_VLD_EXT:=[n] -> { [it,jt, i, j] : it >= 0 and 2it <= -2 + n and i > 2it and ((jt >= 0 and 2jt <= -4 + n and 2jt < j <= 3 + 2it + 2jt - i) or (2jt = -3 + n and n >= 3 and -2 + n <= j <= n + 2it - i) or ((n) mod 2 = 0 and -3 + n <= 2jt <= -2 + n and i <= 2 + 2it and 2jt < j <= 2 + 2jt));
 
- [ii1,ii2, i = 2 + 2ii1, j = -1 + n] : 2ii2 = -1 + n and ii1 >= 0 and 2ii1 <= -2 + n;
+ [it,jt, i = 2 + 2it, j = -1 + n] : 2jt = -1 + n and it >= 0 and 2it <= -2 + n;
 
- [ii1,ii2, i = 2 + 2ii1, j = -3 + n] : 2ii2 = -3 + n and n >= 4 and ii1 >= 0 and 2ii1 <= -2 + n;
+ [it,jt, i = 2 + 2it, j = -3 + n] : 2jt = -3 + n and n >= 4 and it >= 0 and 2it <= -2 + n;
 
- [ii1,ii2, i, j = n] : 2ii2 = -1 + n and ii1 >= 0 and 2ii1 <= -2 + n and 2ii1 < i <= 2 + 2ii1; 
+ [it,jt, i, j = n] : 2jt = -1 + n and it >= 0 and 2it <= -2 + n and 2it < i <= 2 + 2it; 
 
-[ii1,ii2,i = n, j] : 2ii1 = -1 + n and ii2 >= 0 and 2ii2 <= -2 + n and 2ii2 < j <= 2 + 2ii2; 
+[it,jt,i = n, j] : 2it = -1 + n and jt >= 0 and 2jt <= -2 + n and 2jt < j <= 2 + 2jt; 
 
-[ii1,ii2,i = 2 + 2ii1, j = 2ii2] : (n) mod 2 = 0 and ii1 >= 0 and 2ii1 <= -2 + n and ii2 > 0 and -3 + n <= 2ii2 <= -2 + n;
+[it,jt,i = 2 + 2it, j = 2jt] : (n) mod 2 = 0 and it >= 0 and 2it <= -2 + n and jt > 0 and -3 + n <= 2jt <= -2 + n;
 
- [ii1,ii2,i = n, j = n] : 2ii1 = -1 + n and 2ii2 = -1 + n and n > 0;
+ [it,jt,i = n, j = n] : 2it = -1 + n and 2jt = -1 + n and n > 0;
  
-[ii1,ii2, i = 2 + 2ii1, j = 2ii2] : ii1 >= 0 and 2ii1 <= -2 + n and ii2 > 0 and 2ii2 <= -4 + n 
+[it,jt, i = 2 + 2it, j = 2jt] : it >= 0 and 2it <= -2 + n and jt > 0 and 2jt <= -4 + n 
 
 };
 
