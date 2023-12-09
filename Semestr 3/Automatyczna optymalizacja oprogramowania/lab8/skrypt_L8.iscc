@@ -115,6 +115,59 @@ TILE_VLD_EXT:=[n] -> { [ii1,ii2, i, j] : ii1 >= 0 and 2ii1 <= -2 + n and i > 2ii
 
 };
 
+TILE_VLD_EXT:=[n] -> {
+    [it, jt, i, j] :
+        it >= 0 and
+        2it <= -2 + n and
+        i > 2it and
+        (
+            (jt >= 0 and 2jt <= -4 + n and 2jt < j <= 3 + 2it + 2jt - i) or
+            (2jt = -3 + n and n >= 3 and -2 + n <= j <= n + 2it - i) or
+            ((n) mod 2 = 0 and -3 + n <= 2jt <= -2 + n and i <= 2 + 2it and 2jt < j <= 2 + 2jt)
+        );
+
+    [it, jt, i = 2 + 2it, j = -1 + n] :
+        2jt = -1 + n and
+        it >= 0 and
+        2it <= -2 + n;
+
+    [it, jt, i = 2 + 2it, j = -3 + n] :
+        2jt = -3 + n and
+        n >= 4 and
+        it >= 0 and
+        2it <= -2 + n;
+
+    [it, jt, i, j = n] :
+        2jt = -1 + n and
+        it >= 0 and
+        2it <= -2 + n and
+        2it < i <= 2 + 2it;
+
+    [it, jt, i = n, j] :
+        2it = -1 + n and
+        jt >= 0 and
+        2jt <= -2 + n and
+        2jt < j <= 2 + 2jt;
+
+    [it, jt, i = 2 + 2it, j = 2jt] :
+        (n) mod 2 = 0 and
+        it >= 0 and
+        2it <= -2 + n and
+        jt > 0 and
+        -3 + n <= 2jt <= -2 + n;
+
+    [it, jt, i = n, j = n] :
+        2it = -1 + n and
+        2jt = -1 + n and
+        n > 0;
+
+    [it, jt, i = 2 + 2it, j = 2jt] :
+        it >= 0 and
+        2it <= -2 + n and
+        jt > 0 and
+        2jt <= -4 + n;
+};
+
 
 ##konwertujemy zbior TILE_VLD_EXT na relacje CODE"
 
