@@ -1,0 +1,23 @@
+pluto z flagami --tiles --parallel
+
+kafalek
+16 x 16 x 16
+128 x 16 x 128
+lub nawet 256
+
+losujemy rozmiary kafelkuów
+2-256
+2-256
+2-256
+(kafelki nie muszą być wielokrotnością 2)
+
+dla każdeg z zestwaów wyjedzie jakiś czas, jak pokazać wykres 3d?
+kafelki trzeba postortować wg objętości V (iloczyn elementów)
+
+w okolicach 2^21 będzie więcej punktów, a na brzegach mniej
+
+jaka może być lepsza metoda doboru kafelka?
+nie trzeba dobierać wszystkich boków na raz,
+trzeci kafelek decyduje jak dzielona jest najbardziej wewnęrzna pętla
+
+pkt 4 - wykres
