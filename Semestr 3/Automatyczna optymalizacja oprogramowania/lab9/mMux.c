@@ -1,46 +1,54 @@
+// gcc mMux.c -o mux
+// ./mux matrix1.txt matrix2.txt result.txt 800
+// polycc mMux.c --tile --parallel & gcc mMux.pluto.c -lm -o muxpluto & ./muxpluto matrix1.txt matrix2.txt result.txt 1000
+// ./muxpluto matrix1.txt matrix2.txt result.txt 800
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-void readMatrixFromFile(int n, int matrix[n][n], const char *filename) {
-    FILE *file = fopen(filename, "r");
+void multiplyMatrices(int **matrixA, int **matrixB, int **result, int size) {
+#pragma scop
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            result[i][j] = 0;
+            for (int k = 0; k < size; k++) {
+                result[i][j] += matrixA[i][k] * matrixB[k][j];
+            }
+        }
+    }
+#pragma endscop
+}
 
-
+void readMatrixFromFile(const char *fileName, int **matrix, int size) {
+    FILE *file = fopen(fileName, "r");
     if (file == NULL) {
-        perror("Unable to open the file");
+        perror("Error opening file");
         exit(EXIT_FAILURE);
     }
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            fscanf(file, "%d", &matrix[i][j]);
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (fscanf(file, "%d", &matrix[i][j]) != 1) {
+                fprintf(stderr, "Error reading from file\n");
+                fclose(file);
+                exit(EXIT_FAILURE);
+            }
         }
     }
 
     fclose(file);
 }
 
-void matrixMultiply(int n, int matrix1[n][n], int matrix2[n][n], int result[n][n]) {
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            result[i][j] = 0;
-            for (int k = 0; k < n; k++) {
-                result[i][j] += matrix1[i][k] * matrix2[k][j];
-            }
-        }
-    }
-}
-
-void saveMatrixToFile(int n, int matrix[n][n], const char *filename) {
-    FILE *file = fopen(filename, "w");
-
+void writeMatrixToFile(const char *fileName, int **matrix, int size) {
+    FILE *file = fopen(fileName, "w");
     if (file == NULL) {
-        perror("Unable to open the file");
+        perror("Error opening file");
         exit(EXIT_FAILURE);
     }
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
             fprintf(file, "%d ", matrix[i][j]);
         }
         fprintf(file, "\n");
@@ -49,35 +57,63 @@ void saveMatrixToFile(int n, int matrix[n][n], const char *filename) {
     fclose(file);
 }
 
-int main() {
-    int n = 1000;
+int main(int argc, char *argv[]) {
+    clock_t startTime, endTime;
 
-    int **matrix1 = (int **)malloc(n * sizeof(int *));
-    int **matrix2 = (int **)malloc(n * sizeof(int *));
-    int **result = (int **)malloc(n * sizeof(int *));
-    for (int i = 0; i < n; i++)
-    {
-        matrix1[i] = (int *)malloc(n * sizeof(int));
-        matrix2[i] = (int *)malloc(n * sizeof(int));
-        result[i] = (int *)malloc(n * sizeof(int));
+    startTime = clock();
+
+    if (argc != 5) {
+        fprintf(stderr, "Wrong number of arguments: %s matrixA_file matrixB_file result_file size\n", argv[0]);
+        return EXIT_FAILURE;
     }
 
-    readMatrixFromFile(n, matrix1, "matrix1.txt");
-    readMatrixFromFile(n, matrix2, "matrix2.txt");
+    int size = atoi(argv[4]);
 
-    clock_t begin = clock();
+    int **matrixA = malloc(size * sizeof(int *));
+    int **matrixB = malloc(size * sizeof(int *));
+    int **result = malloc(size * sizeof(int *));
+    for (int i = 0; i < size; i++) {
+        matrixA[i] = malloc(size * sizeof(int));
+        matrixB[i] = malloc(size * sizeof(int));
+        result[i] = malloc(size * sizeof(int));
+    }
+    readMatrixFromFile(argv[1], matrixA, size);
+    readMatrixFromFile(argv[2], matrixB, size);
+    // endTime = clock();
 
-    #pragma scop
-    matrixMultiply(n, matrix1, matrix2, result);
-	#pragma endscop
+    // double elapsedTime1 = (double)(endTime - startTime) / CLOCKS_PER_SEC;
 
-    clock_t end = clock();
-    double timeSpent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent on : %f\n", timeSpent);
+    // startTime = clock();
+    multiplyMatrices(matrixA, matrixB, result, size);
+    // endTime = clock();
 
-    saveMatrixToFile(n, result, "result.txt");
+    // double elapsedTime2 = (double)(endTime - startTime) / CLOCKS_PER_SEC;
 
-    printf("Matrix multiplication result has been saved to 'result.txt'.\n");
+    // startTime = clock();
+    writeMatrixToFile(argv[3], result, size);
 
-    return 0;
+    for (int i = 0; i < size; i++) {
+        free(matrixA[i]);
+        free(matrixB[i]);
+        free(result[i]);
+    }
+    free(matrixA);
+    free(matrixB);
+    free(result);
+    
+    endTime = clock();
+
+    double elapsedTime3 = (double)(endTime - startTime) / CLOCKS_PER_SEC;
+
+    // printf("Matrix multiplication completed successfully. Result saved in %s\n\n", argv[3]);
+    // printf("Sequential time 1: %.6f\n", elapsedTime1);
+    // printf("Parallel time:     %.6f\n", elapsedTime2);
+    // printf("Sequential time 2: %.6f\n", elapsedTime3);
+
+    // double sequentialRatio = ((elapsedTime1 + elapsedTime3) / (elapsedTime1 + elapsedTime2 + elapsedTime3)) * 100;
+    // printf("Sequential code execution time: %.3f%%\n", sequentialRatio);
+
+    printf("%.6f\n", elapsedTime3);
+    
+    return EXIT_SUCCESS;
 }

@@ -5,13 +5,13 @@ kafalek
 128 x 16 x 128
 lub nawet 256
 
-losujemy rozmiary kafelkuów
+losujemy rozmiary kafelków
 2-256
 2-256
 2-256
 (kafelki nie muszą być wielokrotnością 2)
 
-dla każdeg z zestwaów wyjedzie jakiś czas, jak pokazać wykres 3d?
+dla każdego z zestawów wyjedzie jakiś czas, jak pokazać wykres 3d?
 kafelki trzeba postortować wg objętości V (iloczyn elementów)
 
 w okolicach 2^21 będzie więcej punktów, a na brzegach mniej
@@ -21,3 +21,21 @@ nie trzeba dobierać wszystkich boków na raz,
 trzeci kafelek decyduje jak dzielona jest najbardziej wewnęrzna pętla
 
 pkt 4 - wykres
+
+
+
+
+
+Uruchamianie pluto:
+
+polycc lab10.c --tile --parallel
+
+Blok kodu z pętlami oznaczamy przez
+#pragma scop
+//kod mnożenia macierzy
+#pragma #endscop
+
+Natomiast wielkość kafelka definiujemy w pliku tile.sizes w sposób następujący:
+16
+43
+91

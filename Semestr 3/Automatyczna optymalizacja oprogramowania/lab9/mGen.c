@@ -1,26 +1,20 @@
+// gcc mGen.c -o gen
+// ./gen 1000 matrix1.txt & ./gen 1000 matrix2.txt
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
-void generateRandomMatrix(int n, int matrix[n][n]) {
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            matrix[i][j] = rand() % 100;
-        }
-    }
-}
-
-void saveMatrixToFile(int n, int matrix[n][n], const char *filename) {
+void generateAndSaveMatrix(int size, const char *filename) {
     FILE *file = fopen(filename, "w");
 
     if (file == NULL) {
-        perror("Unable to open the file");
+        perror("Unable to open the file for writing");
         exit(EXIT_FAILURE);
     }
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            fprintf(file, "%d ", matrix[i][j]);
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            fprintf(file, "%d ", rand() % 100);
         }
         fprintf(file, "\n");
     }
@@ -28,22 +22,24 @@ void saveMatrixToFile(int n, int matrix[n][n], const char *filename) {
     fclose(file);
 }
 
-int main() {
-    int n = 1000;
+int main(int argc, char *argv[]) {
+    if (argc != 3) {
+        fprintf(stderr, "Usage: %s <matrix_size> <file_name>\n", argv[0]);
+        return EXIT_FAILURE;
+    }
 
-    srand(time(NULL));
+    int size = atoi(argv[1]);
 
-    int matrix1[n][n];
-    int matrix2[n][n];
+    if (size <= 0) {
+        fprintf(stderr, "Error: Matrix size must be a positive number.\n");
+        return EXIT_FAILURE;
+    }
 
-    generateRandomMatrix(n, matrix1);
-    generateRandomMatrix(n, matrix2);
+    const char *filename = argv[2];
 
-    saveMatrixToFile(n, matrix1, "matrix1.txt");
-    saveMatrixToFile(n, matrix2, "matrix2.txt");
+    generateAndSaveMatrix(size, filename);
 
-    printf("Matrices have been generated and saved to files.\n");
+    printf("A matrix of size %d x %d has been saved to the file %s.\n", size, size, filename);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
-
