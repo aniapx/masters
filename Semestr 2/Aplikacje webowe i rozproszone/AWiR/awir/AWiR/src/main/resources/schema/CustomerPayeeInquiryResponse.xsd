@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="CustomerPayeeInquiryRequest.xsd"/>
+	<xsd:include schemaLocation="CustomerComponents.xsd"/>
+	<xsd:include schemaLocation="BalanceComponents.xsd"/>
+	<xsd:element name="CustomerPayeeInquiryResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Header"/>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="DocumentStatus"/>
+						<xsd:element ref="ResponseDetailsOmit" minOccurs="0"/>
+						<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+						<xsd:element ref="ResponseRecordsControl" minOccurs="0"/>
+						<xsd:element ref="CustomerPayeeCriteriaList" minOccurs="0"/>
+						<xsd:element ref="CustomerPayeeList" minOccurs="0"/>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element ref="ResponseDetailsOmit" minOccurs="0"/>
+						<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+						<xsd:element ref="ResponseRecordsControl" minOccurs="0"/>
+						<xsd:element ref="CustomerPayeeCriteriaList" minOccurs="0"/>
+						<xsd:element ref="CustomerPayeeList"/>
+					</xsd:sequence>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

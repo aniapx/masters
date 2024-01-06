@@ -1,0 +1,1187 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "API AWiR",
+    "description" : "ReST API kursu Aplikacje Webowe i Rozproszone",
+    "contact" : {
+      "name" : "Krzysztof Kraska",
+      "email" : "kkraska@zut.edu.pl"
+    },
+    "license" : {
+      "name" : "©2022 Copyright WI ZUT",
+      "url" : "https://wi.zut.edu.pl"
+    },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "http://localhost:8080/",
+    "description" : "DEV basePath"
+  }, {
+    "url" : "http://tst-wi.zut.edu.pl:8080/",
+    "description" : "TE basePath"
+  }, {
+    "url" : "http://wi.zut.edu.pl:8080/",
+    "description" : "PROD basePath"
+  } ],
+  "paths" : {
+    "/payment/{secret}" : {
+      "post" : {
+        "tags" : [ "payment-controller" ],
+        "summary" : "Zlecenie płatności",
+        "description" : "Operacja zlecania transakcji płatniczych dla banku.",
+        "operationId" : "add",
+        "parameters" : [ {
+          "name" : "secret",
+          "in" : "path",
+          "description" : "Access token.",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/PaymentAddRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "401" : {
+            "description" : "Błąd przekazanego access tokena.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PaymentAddResponse"
+                }
+              }
+            }
+          },
+          "200" : {
+            "description" : "Poprawne zlecenie płatności.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PaymentAddResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Account" : {
+        "required" : [ "accountIdentifier" ],
+        "type" : "object",
+        "properties" : {
+          "accountIdentifier" : {
+            "$ref" : "#/components/schemas/AcctIdentType"
+          },
+          "accountName" : {
+            "$ref" : "#/components/schemas/Max35Text"
+          },
+          "accountCurrencyCode" : {
+            "$ref" : "#/components/schemas/CurrencyCode"
+          },
+          "accountType" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "AccountType"
+            },
+            "enum" : [ "ROR", "RB", "LOK", "KRE", "KK", "OTHER" ]
+          }
+        }
+      },
+      "AcctIdentType" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "identificationSchemeName" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "IdentificationSchemeName",
+              "attribute" : true
+            },
+            "enum" : [ "NRB", "IBAN", "OTHER" ]
+          }
+        }
+      },
+      "AdditionalDeclarationType" : {
+        "required" : [ "declarationItemCode", "declarationItemValue" ],
+        "type" : "object",
+        "properties" : {
+          "declarationItemCode" : {
+            "$ref" : "#/components/schemas/Min1Max70Text"
+          },
+          "declarationItemValue" : {
+            "$ref" : "#/components/schemas/Min1Max210Text"
+          }
+        }
+      },
+      "AdditionalDetailsType" : {
+        "required" : [ "information", "subject" ],
+        "type" : "object",
+        "properties" : {
+          "subject" : {
+            "$ref" : "#/components/schemas/Min1Max70Text"
+          },
+          "information" : {
+            "$ref" : "#/components/schemas/Min1Max210Text"
+          }
+        }
+      },
+      "Address" : {
+        "type" : "object",
+        "properties" : {
+          "addressType" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "AddressType"
+            },
+            "enum" : [ "HOME", "OFFICE", "CORRESPONDENCE" ]
+          },
+          "streetName" : {
+            "$ref" : "#/components/schemas/Max35Text"
+          },
+          "postCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "PostCode"
+            }
+          },
+          "cityName" : {
+            "$ref" : "#/components/schemas/Max26Text"
+          },
+          "postalAddressLine1" : {
+            "$ref" : "#/components/schemas/Max70Text"
+          },
+          "postalAddressLine2" : {
+            "$ref" : "#/components/schemas/Max70Text"
+          },
+          "country" : {
+            "$ref" : "#/components/schemas/CountryCode"
+          }
+        },
+        "xml" : {
+          "name" : "Address"
+        }
+      },
+      "AdjustmentDetails" : {
+        "required" : [ "adjustmentAmount", "adjustmentReason", "documentIdentifier" ],
+        "type" : "object",
+        "properties" : {
+          "adjustmentReason" : {
+            "$ref" : "#/components/schemas/AdjustmentReasonCode"
+          },
+          "adjustmentAmount" : {
+            "$ref" : "#/components/schemas/AmountType"
+          },
+          "documentIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "DocumentIdentifier"
+            }
+          },
+          "description" : {
+            "$ref" : "#/components/schemas/Max210Text"
+          }
+        },
+        "xml" : {
+          "name" : "AdjustmentDetails"
+        }
+      },
+      "AdjustmentReasonCode" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string",
+            "enum" : [ "RETURN", "DAMAGE", "OTHER", "DEDUCTION", "AGREED", "DISCOUNT" ]
+          },
+          "codeListAgency" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CodeListAgency",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "AmountType" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "number"
+          },
+          "amountCurrencyIdentificationCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "AmountCurrencyIdentificationCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "CardIdentifier" : {
+        "type" : "object",
+        "properties" : {
+          "cardIdent" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CardIdent"
+            }
+          },
+          "cardNumber" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CardNumber"
+            }
+          },
+          "cardConcealedNumber" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CardConcealedNumber"
+            }
+          }
+        },
+        "xml" : {
+          "name" : "CardIdentifier"
+        }
+      },
+      "Charge" : {
+        "type" : "object",
+        "properties" : {
+          "amount" : {
+            "$ref" : "#/components/schemas/AmountType"
+          },
+          "reason" : {
+            "$ref" : "#/components/schemas/Max70Text"
+          },
+          "chargeOriginator" : {
+            "$ref" : "#/components/schemas/Max14Text"
+          }
+        },
+        "xml" : {
+          "name" : "Charge"
+        }
+      },
+      "CountryCode" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "codeListIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CodeListIdentifier",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "CurrencyCode" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "codeListIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CodeListIdentifier",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "CurrencyConvertor" : {
+        "required" : [ "sourceCurrencyIdentificationCode", "targetCurrencyIdentificationCode" ],
+        "type" : "object",
+        "properties" : {
+          "sourceCurrencyIdentificationCode" : {
+            "$ref" : "#/components/schemas/CurrencyCode"
+          },
+          "targetCurrencyIdentificationCode" : {
+            "$ref" : "#/components/schemas/CurrencyCode"
+          },
+          "currencyExchangeRate" : {
+            "$ref" : "#/components/schemas/Numeric"
+          },
+          "sourceCurrencyScaleValue" : {
+            "$ref" : "#/components/schemas/Numeric"
+          },
+          "targetCurrencyScaleValue" : {
+            "$ref" : "#/components/schemas/Numeric"
+          },
+          "exchangeRateDateTime" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "ExchangeRateDateTime"
+            }
+          }
+        },
+        "xml" : {
+          "name" : "CurrencyConvertor"
+        }
+      },
+      "DocumentStatus" : {
+        "required" : [ "severity", "statusCode" ],
+        "type" : "object",
+        "properties" : {
+          "statusCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "StatusCode"
+            }
+          },
+          "severity" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "Severity"
+            },
+            "enum" : [ "ERROR", "WARN", "INFO" ]
+          },
+          "statusDescription" : {
+            "$ref" : "#/components/schemas/Max140Text"
+          }
+        },
+        "xml" : {
+          "name" : "DocumentStatus"
+        }
+      },
+      "FIIdentType" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "identificationSchemeName" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "IdentificationSchemeName",
+              "attribute" : true
+            },
+            "enum" : [ "BIC", "BNR", "KKF", "OTHER" ]
+          }
+        }
+      },
+      "FinancialInstitution" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "array",
+            "xml" : {
+              "name" : "Name"
+            },
+            "items" : {
+              "$ref" : "#/components/schemas/Max35Text"
+            }
+          },
+          "address" : {
+            "$ref" : "#/components/schemas/Address"
+          },
+          "fiidentifier" : {
+            "$ref" : "#/components/schemas/FIIdentType"
+          }
+        }
+      },
+      "Header" : {
+        "required" : [ "documentIdentifier", "issueDateTime", "receiverIdentifier", "senderIdentifier" ],
+        "type" : "object",
+        "properties" : {
+          "issueDateTime" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "IssueDateTime"
+            }
+          },
+          "documentIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "DocumentIdentifier"
+            }
+          },
+          "senderIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "SenderIdentifier"
+            }
+          },
+          "receiverIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "ReceiverIdentifier"
+            }
+          }
+        },
+        "xml" : {
+          "name" : "Header"
+        }
+      },
+      "MPP" : {
+        "required" : [ "taxIdentificationNumber" ],
+        "type" : "object",
+        "properties" : {
+          "taxIdentificationNumber" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TaxIdentificationNumber"
+            }
+          },
+          "vatinvoice" : {
+            "type" : "string"
+          },
+          "vatamount" : {
+            "$ref" : "#/components/schemas/VATAmountType"
+          },
+          "vatdescription" : {
+            "$ref" : "#/components/schemas/Max33Text"
+          }
+        },
+        "xml" : {
+          "name" : "MPP"
+        }
+      },
+      "Max140Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Max14Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Max210Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Max26Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Max33Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Max35Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Max40Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Max70Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Min1Max210Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Min1Max70Text" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "textLanguageCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TextLanguageCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "Numeric" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "number"
+          },
+          "numericFormatText" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "NumericFormatText",
+              "attribute" : true
+            }
+          }
+        },
+        "default" : "1"
+      },
+      "Party" : {
+        "type" : "object",
+        "properties" : {
+          "identifier" : {
+            "$ref" : "#/components/schemas/PartyIdentType"
+          },
+          "name" : {
+            "type" : "array",
+            "xml" : {
+              "name" : "Name"
+            },
+            "items" : {
+              "$ref" : "#/components/schemas/Max35Text"
+            }
+          },
+          "additionalName" : {
+            "$ref" : "#/components/schemas/Max70Text"
+          },
+          "description" : {
+            "$ref" : "#/components/schemas/Max210Text"
+          },
+          "ultmName" : {
+            "$ref" : "#/components/schemas/Max70Text"
+          },
+          "address" : {
+            "$ref" : "#/components/schemas/Address"
+          }
+        }
+      },
+      "PartyIdentType" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "identificationSchemeName" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "IdentificationSchemeName",
+              "attribute" : true
+            },
+            "enum" : [ "EAN", "NIP", "PESEL", "REGON", "BANK_SYSTEM_ID" ]
+          }
+        }
+      },
+      "PaymentAddResponse" : {
+        "required" : [ "header" ],
+        "type" : "object",
+        "properties" : {
+          "header" : {
+            "$ref" : "#/components/schemas/Header"
+          },
+          "documentStatus" : {
+            "$ref" : "#/components/schemas/DocumentStatus"
+          },
+          "responseDetailsOmit" : {
+            "type" : "boolean",
+            "xml" : {
+              "name" : "ResponseDetailsOmit"
+            },
+            "default" : false
+          },
+          "paymentDocument" : {
+            "$ref" : "#/components/schemas/PaymentDocument"
+          }
+        },
+        "xml" : {
+          "name" : "PaymentAddResponse"
+        }
+      },
+      "PaymentDocument" : {
+        "required" : [ "paymentHeader", "paymentLineItem" ],
+        "type" : "object",
+        "properties" : {
+          "paymentHeader" : {
+            "$ref" : "#/components/schemas/PaymentHeader"
+          },
+          "paymentLineItem" : {
+            "type" : "array",
+            "xml" : {
+              "name" : "PaymentLineItem"
+            },
+            "items" : {
+              "$ref" : "#/components/schemas/PaymentLineItem"
+            }
+          },
+          "paymentSummary" : {
+            "$ref" : "#/components/schemas/PaymentSummaryType"
+          }
+        },
+        "xml" : {
+          "name" : "PaymentDocument"
+        }
+      },
+      "PaymentHeader" : {
+        "required" : [ "paymentIdentifier", "payorAccount", "payorFinancialInstitution" ],
+        "type" : "object",
+        "properties" : {
+          "paymentIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "PaymentIdentifier"
+            }
+          },
+          "bankServerPaymentIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "BankServerPaymentIdentifier"
+            }
+          },
+          "pmtCategory" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "PmtCategory"
+            },
+            "enum" : [ "DOMESTIC", "INTERNATIONAL", "US", "SEPA", "INTERNATIONAL_CHEQUE", "MPP", "CARD" ]
+          },
+          "executionDateRequested" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "ExecutionDateRequested"
+            }
+          },
+          "dueDate" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "DueDate"
+            }
+          },
+          "immediatePmt" : {
+            "type" : "boolean",
+            "xml" : {
+              "name" : "ImmediatePmt"
+            }
+          },
+          "payorParty" : {
+            "$ref" : "#/components/schemas/Party"
+          },
+          "payorAccount" : {
+            "$ref" : "#/components/schemas/Account"
+          },
+          "chargeAccount" : {
+            "$ref" : "#/components/schemas/Account"
+          },
+          "payorFinancialInstitution" : {
+            "$ref" : "#/components/schemas/FinancialInstitution"
+          },
+          "pmtAdditionalInformation" : {
+            "$ref" : "#/components/schemas/Max210Text"
+          },
+          "chargeResponsibility" : {
+            "$ref" : "#/components/schemas/ResponsibilityCode"
+          },
+          "paymentStatus" : {
+            "$ref" : "#/components/schemas/PaymentStatusType"
+          },
+          "paymentRejectionInfo" : {
+            "$ref" : "#/components/schemas/TransactionRejectionType"
+          },
+          "additionalDetails" : {
+            "type" : "array",
+            "xml" : {
+              "name" : "AdditionalDetails"
+            },
+            "items" : {
+              "$ref" : "#/components/schemas/AdditionalDetailsType"
+            }
+          }
+        },
+        "xml" : {
+          "name" : "PaymentHeader"
+        }
+      },
+      "PaymentLineItem" : {
+        "required" : [ "orderedAmount", "payeeFinancialInstitution", "remittanceInformation", "transactionIdentifier" ],
+        "type" : "object",
+        "properties" : {
+          "transactionIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TransactionIdentifier"
+            }
+          },
+          "bankTransactionIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "BankTransactionIdentifier"
+            }
+          },
+          "orderedAmount" : {
+            "$ref" : "#/components/schemas/AmountType"
+          },
+          "debitAmount" : {
+            "$ref" : "#/components/schemas/AmountType"
+          },
+          "immediatePmt" : {
+            "type" : "boolean",
+            "xml" : {
+              "name" : "ImmediatePmt"
+            }
+          },
+          "executionDate" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "ExecutionDate"
+            }
+          },
+          "currencyConvertor" : {
+            "$ref" : "#/components/schemas/CurrencyConvertor"
+          },
+          "customerPayeeIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CustomerPayeeIdentifier"
+            }
+          },
+          "payeeParty" : {
+            "$ref" : "#/components/schemas/Party"
+          },
+          "payeeAccount" : {
+            "$ref" : "#/components/schemas/Account"
+          },
+          "cardIdentifier" : {
+            "$ref" : "#/components/schemas/CardIdentifier"
+          },
+          "payeeFinancialInstitution" : {
+            "$ref" : "#/components/schemas/FinancialInstitution"
+          },
+          "charge" : {
+            "$ref" : "#/components/schemas/Charge"
+          },
+          "regulatoryReport" : {
+            "$ref" : "#/components/schemas/RegulatoryReport"
+          },
+          "remittanceInformation" : {
+            "$ref" : "#/components/schemas/RemittanceInformation"
+          },
+          "additionalDeclaration" : {
+            "type" : "array",
+            "xml" : {
+              "name" : "AdditionalDeclaration"
+            },
+            "items" : {
+              "$ref" : "#/components/schemas/AdditionalDeclarationType"
+            }
+          },
+          "closeMicroAccount" : {
+            "type" : "boolean",
+            "xml" : {
+              "name" : "CloseMicroAccount"
+            }
+          },
+          "transactionStatus" : {
+            "$ref" : "#/components/schemas/TransactionStatus"
+          },
+          "transactionRejection" : {
+            "$ref" : "#/components/schemas/TransactionRejectionType"
+          },
+          "soldCheque" : {
+            "type" : "array",
+            "xml" : {
+              "name" : "SoldCheque"
+            },
+            "items" : {
+              "type" : "string",
+              "xml" : {
+                "name" : "SoldCheque"
+              }
+            }
+          }
+        },
+        "xml" : {
+          "name" : "PaymentLineItem"
+        }
+      },
+      "PaymentStatusType" : {
+        "required" : [ "paymentStatusCode" ],
+        "type" : "object",
+        "properties" : {
+          "paymentStatusCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "PaymentStatusCode"
+            },
+            "enum" : [ "SCHEDULED", "PROCESSED", "FUND_ACCT_DEBITED", "RETURNED", "CANCELLED" ]
+          },
+          "statusDescription" : {
+            "$ref" : "#/components/schemas/Max70Text"
+          },
+          "effectiveDate" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "EffectiveDate"
+            }
+          }
+        }
+      },
+      "PaymentSummaryType" : {
+        "required" : [ "summaryAmount", "transactionsQuantity" ],
+        "type" : "object",
+        "properties" : {
+          "summaryAmount" : {
+            "$ref" : "#/components/schemas/AmountType"
+          },
+          "transactionsQuantity" : {
+            "type" : "integer",
+            "xml" : {
+              "name" : "TransactionsQuantity"
+            }
+          }
+        }
+      },
+      "PayorIdentType" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "identificationSchemeName" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "IdentificationSchemeName",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "RegInfoCode" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          },
+          "codeList" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CodeList",
+              "attribute" : true
+            },
+            "enum" : [ "TYTUL", "GRUPA", "KRAJ", "PODMIOT", "REGON", "CHARAKTER_BENEFICJENTA", "KOD_KRAJU", "KONTROLA_DEWIZOWA" ]
+          }
+        }
+      },
+      "RegulatoryReport" : {
+        "required" : [ "regulatoryInformationCoded" ],
+        "type" : "object",
+        "properties" : {
+          "regulatoryInformationCoded" : {
+            "type" : "array",
+            "xml" : {
+              "name" : "RegulatoryInformationCoded"
+            },
+            "items" : {
+              "$ref" : "#/components/schemas/RegInfoCode"
+            }
+          },
+          "description" : {
+            "$ref" : "#/components/schemas/Max210Text"
+          }
+        },
+        "xml" : {
+          "name" : "RegulatoryReport"
+        }
+      },
+      "RemittanceDetails" : {
+        "required" : [ "documentIdentifier" ],
+        "type" : "object",
+        "properties" : {
+          "documentIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "DocumentIdentifier"
+            }
+          },
+          "issueDate" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "IssueDate"
+            }
+          },
+          "paymentDate" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "PaymentDate"
+            }
+          },
+          "amountPaid" : {
+            "$ref" : "#/components/schemas/AmountType"
+          },
+          "amountDue" : {
+            "$ref" : "#/components/schemas/AmountType"
+          },
+          "documentRecipient" : {
+            "$ref" : "#/components/schemas/PartyIdentType"
+          },
+          "documentIssuer" : {
+            "$ref" : "#/components/schemas/PartyIdentType"
+          },
+          "adjustmentDetails" : {
+            "$ref" : "#/components/schemas/AdjustmentDetails"
+          }
+        },
+        "xml" : {
+          "name" : "RemittanceDetails"
+        }
+      },
+      "RemittanceInformation" : {
+        "type" : "object",
+        "properties" : {
+          "pmtId" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "PmtId"
+            }
+          },
+          "memo" : {
+            "type" : "array",
+            "xml" : {
+              "name" : "Memo"
+            },
+            "items" : {
+              "$ref" : "#/components/schemas/Max35Text"
+            }
+          },
+          "unstrd" : {
+            "$ref" : "#/components/schemas/Max140Text"
+          },
+          "remittanceDetails" : {
+            "$ref" : "#/components/schemas/RemittanceDetails"
+          },
+          "us" : {
+            "$ref" : "#/components/schemas/US"
+          },
+          "mpp" : {
+            "$ref" : "#/components/schemas/MPP"
+          }
+        },
+        "xml" : {
+          "name" : "RemittanceInformation"
+        }
+      },
+      "ResponsibilityCode" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string",
+            "enum" : [ "OUR", "BEN", "SHA" ]
+          },
+          "codeListAgency" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CodeListAgency",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "TransactionRejectionType" : {
+        "required" : [ "rejectionCode" ],
+        "type" : "object",
+        "properties" : {
+          "rejectionCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "RejectionCode"
+            }
+          },
+          "rejectionDescription" : {
+            "$ref" : "#/components/schemas/Max210Text"
+          }
+        }
+      },
+      "TransactionStatus" : {
+        "required" : [ "transactionStatusCode" ],
+        "type" : "object",
+        "properties" : {
+          "transactionStatusCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "TransactionStatusCode"
+            },
+            "enum" : [ "SCHEDULED", "QUEUE", "WAITING", "PROCESSED", "FUND_ACCT_DEBITED", "RETURNED", "CANCELLED" ]
+          },
+          "statusDescription" : {
+            "$ref" : "#/components/schemas/Max70Text"
+          },
+          "effectiveDate" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "EffectiveDate"
+            }
+          },
+          "closeMicroAccountStatusCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "CloseMicroAccountStatusCode"
+            },
+            "enum" : [ "CLOSED", "UNCLOSED_POSITIVE_BALANCE", "UNCLOSED_OTHER" ]
+          }
+        },
+        "xml" : {
+          "name" : "TransactionStatus"
+        }
+      },
+      "US" : {
+        "required" : [ "paymentFormIdentifier", "payorIdentifier" ],
+        "type" : "object",
+        "properties" : {
+          "payorIdentifier" : {
+            "$ref" : "#/components/schemas/PayorIdentType"
+          },
+          "paymentFormIdentifier" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "PaymentFormIdentifier"
+            }
+          },
+          "uspaymentPeriod" : {
+            "type" : "string"
+          },
+          "usdescription" : {
+            "$ref" : "#/components/schemas/Max40Text"
+          }
+        },
+        "xml" : {
+          "name" : "US"
+        }
+      },
+      "VATAmountType" : {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "number"
+          },
+          "amountCurrencyIdentificationCode" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "AmountCurrencyIdentificationCode",
+              "attribute" : true
+            }
+          }
+        }
+      },
+      "PaymentAddRequest" : {
+        "required" : [ "header", "paymentDocument" ],
+        "type" : "object",
+        "properties" : {
+          "header" : {
+            "$ref" : "#/components/schemas/Header"
+          },
+          "responseDetailsOmit" : {
+            "type" : "boolean",
+            "xml" : {
+              "name" : "ResponseDetailsOmit"
+            },
+            "default" : false
+          },
+          "paymentDocument" : {
+            "$ref" : "#/components/schemas/PaymentDocument"
+          }
+        },
+        "description" : "Dokument zlecenia płatniczego.",
+        "xml" : {
+          "name" : "PaymentAddRequest"
+        }
+      }
+    }
+  }
+}

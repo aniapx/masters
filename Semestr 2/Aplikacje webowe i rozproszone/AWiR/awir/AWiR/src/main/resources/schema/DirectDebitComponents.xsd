@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="DirectDebitDocument">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="DirectDebitHeader"/>
+				<xsd:element ref="DirectDebitLineItem" maxOccurs="unbounded"/>
+				<xsd:element name="DirectDebitSummary" type="PaymentSummaryType" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DirectDebitHeader">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="DirectDebitIdentifier" type="max32Identifier"/>
+				<xsd:element name="BankServerDirectDebitIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="ExecutionDateRequested" type="Date" minOccurs="0"/>
+				<xsd:element name="Creditor" type="Party" minOccurs="0"/>
+				<xsd:element name="CreditorAccount" type="Account"/>
+				<xsd:element name="CreditorFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element name="DirectDebitStatus" type="PaymentStatusType" minOccurs="0"/>
+				<xsd:element name="DirectDebitRejectionInfo" type="TransactionRejectionType" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DirectDebitLineItem">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="TransactionIdentifier" type="max32Identifier"/>
+				<xsd:element name="BankTransactionIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="OrderedAmount" type="AmountType"/>
+				<xsd:choice>
+					<xsd:element name="CustomerPayeeIdentifier" type="max35Identifier" minOccurs="0"/>
+					<xsd:element name="Debtor" type="Party" minOccurs="0"/>
+				</xsd:choice>
+				<xsd:element name="DebtorAccount" type="Account"/>
+				<xsd:element name="DebtorFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element ref="RemittanceInformation"/>
+				<xsd:element ref="TransactionRejection" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DirectDebitRefusalHeader">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="DirectDebitRefusalIdentifier" type="max32Identifier"/>
+				<xsd:element name="BankServerDirectDebitRefusalIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="DirectDebitIdentifier" type="max32Identifier"/>
+				<xsd:element name="OrderedAmount" type="AmountType" minOccurs="0"/>
+				<xsd:element name="Debtor" type="Party" minOccurs="0"/>
+				<xsd:element name="DebtorAccount" type="Account"/>
+				<xsd:element name="DebtorFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element name="Creditor" type="Party" minOccurs="0"/>
+				<xsd:element name="CreditorAccount" type="Account"/>
+				<xsd:element name="CreditorFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element ref="RemittanceInformation"/>
+				<xsd:element ref="RefusalReason" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="RefusalReason">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Reason" type="max140text" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DirectDebitAgreementHeader">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="DirectDebitAgreementIdentifier" type="max35Identifier"/>
+				<xsd:element name="DirectDebitBankServerAgreementIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="Debtor" type="Party" minOccurs="0"/>
+				<xsd:element name="DebtorAccount" type="Account"/>
+				<xsd:element name="DebtorFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element ref="AgreementCriteria" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="AgreementCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="AgreementIdentifier" type="max35Identifier"/>
+				<xsd:element name="DirectDebitBankServerAgreementIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="Creditor" type="Party" minOccurs="0"/>
+				<xsd:element name="CreditorAccount" type="Account"/>
+				<xsd:element name="CreditorFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element name="AgreementPeriod" type="PeriodType" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

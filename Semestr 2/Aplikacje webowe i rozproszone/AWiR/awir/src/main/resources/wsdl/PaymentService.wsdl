@@ -1,0 +1,1240 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.wi.zut.edu.pl/service/payment/v1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="PaymentService" targetNamespace="http://www.wi.zut.edu.pl/service/payment/v1.0">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.wi.zut.edu.pl/service/payment/v1.0" xmlns:ns1="http://www.wi.zut.edu.pl/xsd/payment/v1.0" elementFormDefault="unqualified" targetNamespace="http://www.wi.zut.edu.pl/service/payment/v1.0" version="1.0">
+
+  <xs:import namespace="http://www.wi.zut.edu.pl/xsd/payment/v1.0"/>
+
+  <xs:element name="Add" type="tns:Add"/>
+
+  <xs:element name="AddResponse" type="tns:AddResponse"/>
+
+  <xs:complexType name="Add">
+    <xs:sequence>
+      <xs:element name="secret" type="xs:string"/>
+      <xs:element name="paymentAddRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns1:Header"/>
+            <xs:element default="false" form="qualified" minOccurs="0" name="ResponseDetailsOmit" type="xs:boolean"/>
+            <xs:element ref="ns1:PaymentDocument"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AddResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns1:Header"/>
+            <xs:element minOccurs="0" ref="ns1:DocumentStatus"/>
+            <xs:element default="false" form="qualified" minOccurs="0" name="ResponseDetailsOmit" type="xs:boolean"/>
+            <xs:element minOccurs="0" ref="ns1:PaymentDocument"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.wi.zut.edu.pl/xsd/payment/v1.0" elementFormDefault="qualified" targetNamespace="http://www.wi.zut.edu.pl/xsd/payment/v1.0" version="1.0">
+
+  <xs:import namespace="http://www.wi.zut.edu.pl/service/payment/v1.0"/>
+
+  <xs:element name="Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddressType" type="xs:string"/>
+        <xs:element minOccurs="0" name="StreetName" type="tns:max35text"/>
+        <xs:element minOccurs="0" name="PostCode" type="xs:string"/>
+        <xs:element minOccurs="0" name="CityName" type="tns:max26text"/>
+        <xs:element minOccurs="0" name="PostalAddressLine1" type="tns:max70text"/>
+        <xs:element minOccurs="0" name="PostalAddressLine2" type="tns:max70text"/>
+        <xs:element minOccurs="0" name="Country" type="tns:CountryCode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="AdjustmentDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="AdjustmentReason" type="tns:AdjustmentReasonCode"/>
+        <xs:element name="AdjustmentAmount" type="tns:AmountType"/>
+        <xs:element name="DocumentIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="Description" type="tns:max210text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CardCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CustomerAccount" type="tns:AccountNumber"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CardDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CardIdent" type="xs:string"/>
+        <xs:element minOccurs="0" name="CardNumber" type="xs:string"/>
+        <xs:element minOccurs="0" name="CardConcealedNumber" type="tns:max25text"/>
+        <xs:element minOccurs="0" name="CardPassword" type="tns:max35text"/>
+        <xs:element minOccurs="0" name="CardType" type="tns:max25text"/>
+        <xs:element minOccurs="0" name="CardName" type="tns:max50text"/>
+        <xs:element minOccurs="0" name="CardDescription" type="tns:max25text"/>
+        <xs:element minOccurs="0" name="CardOwnerName" type="tns:max140text"/>
+        <xs:element minOccurs="0" name="ExpiresDate" type="xs:string"/>
+        <xs:element minOccurs="0" name="CardStatus" type="xs:string"/>
+        <xs:element minOccurs="0" name="CardAccount" type="tns:Account"/>
+        <xs:element minOccurs="0" name="CustomerAccount" type="tns:Account"/>
+        <xs:element minOccurs="0" ref="tns:CardLimit"/>
+        <xs:element minOccurs="0" name="CardBalanceDetails" type="tns:BalanceDetailsType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CardIdentifier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CardIdent" type="xs:string"/>
+        <xs:element minOccurs="0" name="CardNumber" type="xs:string"/>
+        <xs:element minOccurs="0" name="CardConcealedNumber" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CardLimit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DailyPaymentLmt" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="DailyAbroadPaymentLmt" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="DailyCashLmt" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="DailyAbroadCashLmt" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="DailyInternetPaymentLmt" type="tns:AmountType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CardStatementCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element form="unqualified" name="CardStatementInfoType" type="tns:CardStatInfoTypeCode"/>
+          <xs:element form="unqualified" name="StartDate" type="xs:string"/>
+          <xs:element form="unqualified" name="EndDate" type="xs:string"/>
+          <xs:element form="unqualified" name="CardAccountOwner" type="tns:Party"/>
+          <xs:element form="unqualified" name="CustomerAccount" type="tns:AccountNumber"/>
+          <xs:element ref="tns:CardIdentifier"/>
+          <xs:element form="unqualified" name="CardAccount" type="tns:AccountNumber"/>
+          <xs:element form="unqualified" name="CardFinancialInstitution" type="tns:FinancialInstitution"/>
+          <xs:element form="unqualified" name="CustomerFinancialInstitution" type="tns:FinancialInstitution"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Charge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Amount" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="Reason" type="tns:max70text"/>
+        <xs:element minOccurs="0" name="ChargeOriginator" type="tns:max14text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CurrencyConvertor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SourceCurrencyIdentificationCode" type="tns:CurrencyCode"/>
+        <xs:element name="TargetCurrencyIdentificationCode" type="tns:CurrencyCode"/>
+        <xs:element minOccurs="0" name="CurrencyExchangeRate" type="tns:Numeric"/>
+        <xs:element default="1" minOccurs="0" name="SourceCurrencyScaleValue" type="tns:Numeric"/>
+        <xs:element default="1" minOccurs="0" name="TargetCurrencyScaleValue" type="tns:Numeric"/>
+        <xs:element minOccurs="0" name="ExchangeRateDateTime" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Denominations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NominalName" type="tns:max35text"/>
+        <xs:element name="NominalNumber" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="NominalValue" type="tns:AmountType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DocumentStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StatusCode" type="xs:string"/>
+        <xs:element name="Severity" type="xs:string"/>
+        <xs:element minOccurs="0" name="StatusDescription" type="tns:max140text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="IssueDateTime" type="xs:string"/>
+        <xs:element name="DocumentIdentifier" type="xs:string"/>
+        <xs:element name="SenderIdentifier" type="xs:string"/>
+        <xs:element name="ReceiverIdentifier" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ImmediatePaymentDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransactionIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="BankTransactionIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="PmtCategory" type="xs:string"/>
+        <xs:element name="OrderedAmount" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="DebitAmount" type="tns:AmountType"/>
+        <xs:element minOccurs="0" ref="tns:CurrencyConvertor"/>
+        <xs:element minOccurs="0" name="PayorParty" type="tns:Party"/>
+        <xs:element name="PayorAccount" type="tns:Account"/>
+        <xs:element name="PayorFinancialInstitution" type="tns:FinancialInstitution"/>
+        <xs:element minOccurs="0" name="CustomerPayeeIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="PayeeParty" type="tns:Party"/>
+        <xs:element name="PayeeAccount" type="tns:Account"/>
+        <xs:element name="PayeeFinancialInstitution" type="tns:FinancialInstitution"/>
+        <xs:element ref="tns:RemittanceInformation"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="AdditionalDeclaration" type="tns:AdditionalDeclarationType"/>
+        <xs:element minOccurs="0" ref="tns:TransactionStatus"/>
+        <xs:element minOccurs="0" name="TransactionRejection" type="tns:TransactionRejectionType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ImmediatePaymentDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExecutionDateRequested" type="xs:string"/>
+        <xs:element minOccurs="0" name="DueDate" type="xs:string"/>
+        <xs:element ref="tns:ImmediatePaymentDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="MPP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VATAmount" type="tns:VATAmountType"/>
+        <xs:element name="TaxIdentificationNumber" type="xs:string"/>
+        <xs:element name="VATInvoice" type="xs:string"/>
+        <xs:element minOccurs="0" name="VATDescription" type="tns:max33text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentAddRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:Header"/>
+        <xs:element default="false" minOccurs="0" name="ResponseDetailsOmit" type="xs:boolean"/>
+        <xs:element ref="tns:PaymentDocument"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:Header"/>
+        <xs:element minOccurs="0" ref="tns:DocumentStatus"/>
+        <xs:element default="false" minOccurs="0" name="ResponseDetailsOmit" type="xs:boolean"/>
+        <xs:element minOccurs="0" ref="tns:PaymentDocument"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentCashDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransactionIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="BankTransactionIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="PmtCashCategory" type="xs:string"/>
+        <xs:element minOccurs="0" name="CustomerAccount" type="tns:Account"/>
+        <xs:element name="OrderedAmount" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="ImmediatePmt" type="xs:boolean"/>
+        <xs:element ref="tns:RemittanceInformation"/>
+        <xs:element minOccurs="0" name="AuthorizedPersonName" type="tns:max70text"/>
+        <xs:element minOccurs="0" name="AuthorizedPersonSurname" type="tns:max70text"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="AuthorizedPersonIdentity" type="tns:PayorIdentType"/>
+        <xs:element minOccurs="0" name="AuthorizedPersonAddress" type="tns:AddressType"/>
+        <xs:element minOccurs="0" name="AuthorizedPersonPhone" type="xs:string"/>
+        <xs:element minOccurs="0" name="AdditionalNote" type="tns:max2000text"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="AdditionalDeclaration" type="tns:AdditionalDeclarationType"/>
+        <xs:element minOccurs="0" name="ATMNetwor" type="tns:max35text"/>
+        <xs:element minOccurs="0" name="PaymentBankOffice" type="xs:string"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="tns:Denominations"/>
+        <xs:element minOccurs="0" ref="tns:TransactionStatus"/>
+        <xs:element minOccurs="0" name="TransactionRejection" type="tns:TransactionRejectionType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentCashDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExecutionDateRequested" type="xs:string"/>
+        <xs:element minOccurs="0" name="DueDate" type="xs:string"/>
+        <xs:element minOccurs="0" name="CustomerParty" type="tns:Party"/>
+        <xs:element name="CustomerAccount" type="tns:Account"/>
+        <xs:element minOccurs="0" name="CustomerFinancialInstitution" type="tns:FinancialInstitution"/>
+        <xs:element minOccurs="0" name="PaymentCashInstitution" type="tns:FinancialInstitution"/>
+        <xs:element ref="tns:PaymentCashDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:PaymentHeader"/>
+        <xs:element maxOccurs="unbounded" ref="tns:PaymentLineItem"/>
+        <xs:element minOccurs="0" name="PaymentSummary" type="tns:PaymentSummaryType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentHeader">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PaymentIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="BankServerPaymentIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="PmtCategory" type="xs:string"/>
+        <xs:element minOccurs="0" name="ExecutionDateRequested" type="xs:string"/>
+        <xs:element minOccurs="0" name="DueDate" type="xs:string"/>
+        <xs:element minOccurs="0" name="ImmediatePmt" type="xs:boolean"/>
+        <xs:element minOccurs="0" name="PayorParty" type="tns:Party"/>
+        <xs:element name="PayorAccount" type="tns:Account"/>
+        <xs:element minOccurs="0" name="ChargeAccount" type="tns:Account"/>
+        <xs:element name="PayorFinancialInstitution" type="tns:FinancialInstitution"/>
+        <xs:element minOccurs="0" name="PmtAdditionalInformation" type="tns:max210text"/>
+        <xs:element minOccurs="0" name="ChargeResponsibility" type="tns:ResponsibilityCode"/>
+        <xs:element minOccurs="0" name="PaymentStatus" type="tns:PaymentStatusType"/>
+        <xs:element minOccurs="0" name="PaymentRejectionInfo" type="tns:TransactionRejectionType"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="AdditionalDetails" type="tns:AdditionalDetailsType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentLineIdentifier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransactionIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="BankTransactionIdentifier" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentLineItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransactionIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="BankTransactionIdentifier" type="xs:string"/>
+        <xs:element name="OrderedAmount" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="DebitAmount" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="ImmediatePmt" type="xs:boolean"/>
+        <xs:element minOccurs="0" name="ExecutionDate" type="xs:string"/>
+        <xs:element minOccurs="0" ref="tns:CurrencyConvertor"/>
+        <xs:element minOccurs="0" name="CustomerPayeeIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="PayeeParty" type="tns:Party"/>
+        <xs:element minOccurs="0" name="PayeeAccount" type="tns:Account"/>
+        <xs:element minOccurs="0" ref="tns:CardIdentifier"/>
+        <xs:element name="PayeeFinancialInstitution" type="tns:FinancialInstitution"/>
+        <xs:element minOccurs="0" ref="tns:Charge"/>
+        <xs:element minOccurs="0" ref="tns:RegulatoryReport"/>
+        <xs:element ref="tns:RemittanceInformation"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="AdditionalDeclaration" type="tns:AdditionalDeclarationType"/>
+        <xs:element minOccurs="0" name="CloseMicroAccount" type="xs:boolean"/>
+        <xs:element minOccurs="0" ref="tns:TransactionStatus"/>
+        <xs:element minOccurs="0" name="TransactionRejection" type="tns:TransactionRejectionType"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="SoldCheque" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentRefusalInfoDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BankPaymentRefusalIdentifier" type="xs:string"/>
+        <xs:element name="InfoCode" type="tns:min1max4text"/>
+        <xs:element minOccurs="0" name="InfoDetails" type="tns:max105text"/>
+        <xs:element minOccurs="0" name="Customer" type="tns:Party"/>
+        <xs:element minOccurs="0" name="PaymenttInfoStatusCode" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentRefusalResponseInfoDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BankPaymentRefusalResponseIdentifier" type="xs:string"/>
+        <xs:element name="RefusalAgreement" type="xs:boolean"/>
+        <xs:element minOccurs="0" name="InfoCode" type="tns:min1max4text"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="AdditionalInfo" type="tns:max105text"/>
+        <xs:element minOccurs="0" name="Customer" type="tns:Party"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="AdditionalDeclaration" type="tns:AdditionalDeclarationType"/>
+        <xs:element minOccurs="0" name="PaymenttInfoStatusCode" type="xs:string"/>
+        <xs:element minOccurs="0" name="ExecutionDate" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentRefusalSelectionCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="PaymentIdentifier" type="xs:string"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="BankServerPaymentIdentifier" type="xs:string"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="TransactionIdentifier" type="xs:string"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="BankTransactionIdentifier" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentTransactionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransactionIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="BankTransactionIdentifier" type="xs:string"/>
+        <xs:element ref="tns:PaymentRefusalInfoDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RegulatoryReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="RegulatoryInformationCoded" type="tns:RegInfoCode"/>
+        <xs:element minOccurs="0" name="Description" type="tns:max210text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RemittanceDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DocumentIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="IssueDate" type="xs:string"/>
+        <xs:element minOccurs="0" name="PaymentDate" type="xs:string"/>
+        <xs:element minOccurs="0" name="AmountPaid" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="AmountDue" type="tns:AmountType"/>
+        <xs:element minOccurs="0" name="DocumentRecipient" type="tns:PartyIdentType"/>
+        <xs:element minOccurs="0" name="DocumentIssuer" type="tns:PartyIdentType"/>
+        <xs:element minOccurs="0" ref="tns:AdjustmentDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RemittanceInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PmtId" type="xs:string"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="Memo" type="tns:max35text"/>
+        <xs:element minOccurs="0" name="Unstrd" type="tns:max140text"/>
+        <xs:element minOccurs="0" ref="tns:RemittanceDetails"/>
+        <xs:element minOccurs="0" ref="tns:US"/>
+        <xs:element minOccurs="0" ref="tns:MPP"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ResponseRecordsControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MaxRecords" type="tns:Numeric"/>
+        <xs:element minOccurs="0" name="MatchedRecords" type="tns:Numeric"/>
+        <xs:element minOccurs="0" name="NumberPart" type="tns:Numeric"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="StopCardCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element ref="tns:CardDetails"/>
+          <xs:element form="unqualified" name="CardAccountOwner" type="tns:Party"/>
+          <xs:element form="unqualified" name="CardAccount" type="tns:AccountNumber"/>
+          <xs:element form="unqualified" name="CardFinancialInstitution" type="tns:FinancialInstitution"/>
+          <xs:element form="unqualified" name="AdditionalInformationType" type="tns:max35text"/>
+          <xs:element form="unqualified" name="AdditionalInformation" type="tns:max70text"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="StoppedCardList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="tns:CardDetails"/>
+        <xs:element minOccurs="0" name="CardAccountOwner" type="tns:Party"/>
+        <xs:element minOccurs="0" name="CardAccount" type="tns:Account"/>
+        <xs:element minOccurs="0" name="CardFinancialInstitution" type="tns:FinancialInstitution"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TransactionStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransactionStatusCode" type="xs:string"/>
+        <xs:element minOccurs="0" name="StatusDescription" type="tns:max70text"/>
+        <xs:element minOccurs="0" name="EffectiveDate" type="xs:string"/>
+        <xs:element minOccurs="0" name="CloseMicroAccountStatusCode" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="US">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PayorIdentifier" type="tns:PayorIdentType"/>
+        <xs:element name="PaymentFormIdentifier" type="xs:string"/>
+        <xs:element minOccurs="0" name="USDescription" type="tns:max40text"/>
+        <xs:element minOccurs="0" name="USPaymentPeriod" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="Party">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Identifier" type="tns:PartyIdentType"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="Name" type="tns:max35text"/>
+      <xs:element minOccurs="0" name="AdditionalName" type="tns:max70text"/>
+      <xs:element minOccurs="0" name="Description" type="tns:max210text"/>
+      <xs:element minOccurs="0" name="UltmName" type="tns:max70text"/>
+      <xs:element minOccurs="0" ref="tns:Address"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PartyIdentType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="IdentificationSchemeName" type="tns:PartyIdentNameType" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max35text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="Text">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="TextLanguageCode" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max210text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max26text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max70text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max140text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max40text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max33text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max14text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="min1max4text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max105text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max2000text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max25text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max50text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max15text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max16text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max20text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max21text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max34text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="min1max35text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max4text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="min1max70text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="min1max210text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="max350text">
+    <xs:simpleContent>
+      <xs:extension base="tns:Text"/>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="CountryCode">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="CodeListIdentifier" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="Account">
+    <xs:sequence>
+      <xs:element name="AccountIdentifier" type="tns:AcctIdentType"/>
+      <xs:element minOccurs="0" name="AccountName" type="tns:max35text"/>
+      <xs:element minOccurs="0" name="AccountCurrencyCode" type="tns:CurrencyCode"/>
+      <xs:element minOccurs="0" name="AccountType" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AcctIdentType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="IdentificationSchemeName" type="tns:AcctIdentNameType" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="CurrencyCode">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="CodeListIdentifier" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="FinancialInstitution">
+    <xs:sequence>
+      <xs:element name="FIIdentifier" type="tns:FIIdentType"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="Name" type="tns:max35text"/>
+      <xs:element minOccurs="0" ref="tns:Address"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="FIIdentType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="IdentificationSchemeName" type="tns:FIIdentNameType" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="ResponsibilityCode">
+    <xs:simpleContent>
+      <xs:extension base="tns:ResponsibilityType">
+        <xs:attribute name="CodeListAgency" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentStatusType">
+    <xs:sequence>
+      <xs:element name="PaymentStatusCode" type="xs:string"/>
+      <xs:element minOccurs="0" name="StatusDescription" type="tns:max70text"/>
+      <xs:element minOccurs="0" name="EffectiveDate" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TransactionRejectionType">
+    <xs:sequence>
+      <xs:element name="RejectionCode" type="xs:string"/>
+      <xs:element minOccurs="0" name="RejectionDescription" type="tns:max210text"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AdditionalDetailsType">
+    <xs:sequence>
+      <xs:element name="Subject" type="tns:min1max70text"/>
+      <xs:element name="Information" type="tns:min1max210text"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="AmountCurrencyIdentificationCode" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="Numeric">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="NumericFormatText" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="RegInfoCode">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="CodeList" type="tns:RegInfoType" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="AdjustmentReasonCode">
+    <xs:simpleContent>
+      <xs:extension base="tns:AdjustmentReasonType">
+        <xs:attribute name="CodeListAgency" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="PayorIdentType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="IdentificationSchemeName" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="VATAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="AmountCurrencyIdentificationCode" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="AdditionalDeclarationType">
+    <xs:sequence>
+      <xs:element name="DeclarationItemCode" type="tns:min1max70text"/>
+      <xs:element name="DeclarationItemValue" type="tns:min1max210text"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentSummaryType">
+    <xs:sequence>
+      <xs:element name="SummaryAmount" type="tns:AmountType"/>
+      <xs:element name="TransactionsQuantity" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PeriodType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="StartDateTime" type="xs:string"/>
+      <xs:element minOccurs="0" name="EndDateTime" type="xs:string"/>
+      <xs:element minOccurs="0" name="DurationDateTime" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BalanceDetailsType">
+    <xs:sequence>
+      <xs:element name="BalanceType" type="xs:string"/>
+      <xs:element name="BalanceAmount" type="tns:AmountType"/>
+      <xs:element name="BalanceDate" type="xs:string"/>
+      <xs:element minOccurs="0" name="ExpirationDate" type="xs:string"/>
+      <xs:element minOccurs="0" name="Description" type="tns:max210text"/>
+      <xs:element minOccurs="0" name="BlockedType" type="xs:string"/>
+      <xs:element minOccurs="0" name="ChequeNumber" type="xs:string"/>
+      <xs:element minOccurs="0" name="TransactionIdentifier" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AccountNumber">
+    <xs:sequence>
+      <xs:element name="AccountIdentifier" type="tns:AcctIdentType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressType" type="xs:string"/>
+      <xs:element minOccurs="0" name="StreetName" type="tns:max35text"/>
+      <xs:element minOccurs="0" name="PostCode" type="xs:string"/>
+      <xs:element minOccurs="0" name="CityName" type="tns:max26text"/>
+      <xs:element minOccurs="0" name="PostalAddressLine1" type="tns:max70text"/>
+      <xs:element minOccurs="0" name="PostalAddressLine2" type="tns:max70text"/>
+      <xs:element minOccurs="0" name="Country" type="tns:CountryCode"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DurationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="DurationCode" type="tns:DurationAtrType"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="Code">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="CodeListIdentifier" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentRefusalResponseDocumentType">
+    <xs:sequence>
+      <xs:element name="BankPaymentRefusalIdentifier" type="xs:string"/>
+      <xs:element ref="tns:PaymentRefusalResponseInfoDetails"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CommunicationNumberDetails">
+    <xs:sequence>
+      <xs:element name="CommunicationModeCode" type="xs:string"/>
+      <xs:element name="CommunicationIdentifier" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentRefusalStatementType">
+    <xs:sequence>
+      <xs:element name="TransactionIdentifier" type="xs:string"/>
+      <xs:element ref="tns:PaymentRefusalInfoDetails"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentRefusalDocumentType">
+    <xs:sequence>
+      <xs:element name="PaymentIdentifier" type="xs:string"/>
+      <xs:element minOccurs="0" name="BankServerPaymentIdentifier" type="xs:string"/>
+      <xs:element minOccurs="0" ref="tns:PaymentRefusalInfoDetails"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" ref="tns:PaymentTransactionList"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="PmtCatCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Domestic"/>
+      <xs:enumeration value="International"/>
+      <xs:enumeration value="US"/>
+      <xs:enumeration value="SEPA"/>
+      <xs:enumeration value="InternationalCheque"/>
+      <xs:enumeration value="MPP"/>
+      <xs:enumeration value="Card"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PartyIdentNameType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EAN"/>
+      <xs:enumeration value="NIP"/>
+      <xs:enumeration value="Pesel"/>
+      <xs:enumeration value="Regon"/>
+      <xs:enumeration value="BankSystemId"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AddressTypeCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Home"/>
+      <xs:enumeration value="Office"/>
+      <xs:enumeration value="Correspondence"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AcctIdentNameType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NRB"/>
+      <xs:enumeration value="IBAN"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AcctTypeCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ROR"/>
+      <xs:enumeration value="RB"/>
+      <xs:enumeration value="LOK"/>
+      <xs:enumeration value="KRE"/>
+      <xs:enumeration value="KK"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="FIIdentNameType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BIC"/>
+      <xs:enumeration value="BNR"/>
+      <xs:enumeration value="KKF"/>
+      <xs:enumeration value="Other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ResponsibilityType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OUR"/>
+      <xs:enumeration value="BEN"/>
+      <xs:enumeration value="SHA"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PmtStatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Scheduled"/>
+      <xs:enumeration value="Processed"/>
+      <xs:enumeration value="FundAcctDebited"/>
+      <xs:enumeration value="Returned"/>
+      <xs:enumeration value="Cancelled"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="RegInfoType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Tytul"/>
+      <xs:enumeration value="Grupa"/>
+      <xs:enumeration value="Kraj"/>
+      <xs:enumeration value="Podmiot"/>
+      <xs:enumeration value="REGON"/>
+      <xs:enumeration value="Charakter beneficjenta"/>
+      <xs:enumeration value="Kod kraju"/>
+      <xs:enumeration value="Kontrola dewizowa"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AdjustmentReasonType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Return"/>
+      <xs:enumeration value="Damage"/>
+      <xs:enumeration value="Other"/>
+      <xs:enumeration value="Deduction"/>
+      <xs:enumeration value="Agreed"/>
+      <xs:enumeration value="Discount"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TrnStatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Scheduled"/>
+      <xs:enumeration value="Queue"/>
+      <xs:enumeration value="Waiting"/>
+      <xs:enumeration value="Processed"/>
+      <xs:enumeration value="FundAcctDebited"/>
+      <xs:enumeration value="Returned"/>
+      <xs:enumeration value="Cancelled"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CloseMicroAccStatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Closed"/>
+      <xs:enumeration value="UnclosedPositiveBalance"/>
+      <xs:enumeration value="UnclosedOther"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SeverityCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error"/>
+      <xs:enumeration value="Warn"/>
+      <xs:enumeration value="Info"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DurationTypeCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Year"/>
+      <xs:enumeration value="Month"/>
+      <xs:enumeration value="Day"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CardStatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Active"/>
+      <xs:enumeration value="Inactive"/>
+      <xs:enumeration value="Reserved"/>
+      <xs:enumeration value="Closed"/>
+      <xs:enumeration value="Blocked"/>
+      <xs:enumeration value="InTheCourseOfClosing"/>
+      <xs:enumeration value="InTheCourseOfReserving"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="BalTypeCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Opening"/>
+      <xs:enumeration value="Closing"/>
+      <xs:enumeration value="Current"/>
+      <xs:enumeration value="Available"/>
+      <xs:enumeration value="Blocked"/>
+      <xs:enumeration value="Booked"/>
+      <xs:enumeration value="Expected"/>
+      <xs:enumeration value="Overdraft"/>
+      <xs:enumeration value="CreditLineLimit"/>
+      <xs:enumeration value="CashAvailable"/>
+      <xs:enumeration value="WithdrawalCashLimit"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="BlockedTypeCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Administrative"/>
+      <xs:enumeration value="Debt collector"/>
+      <xs:enumeration value="Cheque"/>
+      <xs:enumeration value="ImmediatePayment"/>
+      <xs:enumeration value="Another"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DurationAtrType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Year"/>
+      <xs:enumeration value="Month"/>
+      <xs:enumeration value="Week"/>
+      <xs:enumeration value="Day"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PmtInfoStatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Scheduled"/>
+      <xs:enumeration value="Sent"/>
+      <xs:enumeration value="Returned"/>
+      <xs:enumeration value="Response"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CardStatInfoTypeCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BankStatement"/>
+      <xs:enumeration value="InterimStatement"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PmtCashCatCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ZWG"/>
+      <xs:enumeration value="ZOK"/>
+      <xs:enumeration value="EWG"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CardTransactionStatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Booking"/>
+      <xs:enumeration value="Pending"/>
+      <xs:enumeration value="Info"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CommunicationCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="fax"/>
+      <xs:enumeration value="email"/>
+      <xs:enumeration value="phone"/>
+      <xs:enumeration value="http"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://www.wi.zut.edu.pl/xsd/payment/v1.0" targetNamespace="http://www.wi.zut.edu.pl/service/payment/v1.0" version="1.0">
+
+  <xs:import namespace="http://www.wi.zut.edu.pl/xsd/payment/v1.0"/>
+
+  <xs:element name="AdditionalDeclaration" type="ns1:AdditionalDeclarationType"/>
+
+  <xs:element name="AdditionalDetails" type="ns1:AdditionalDetailsType"/>
+
+  <xs:element name="BankServerPaymentIdentifier" type="xs:string"/>
+
+  <xs:element name="BankTransactionIdentifier" type="xs:string"/>
+
+  <xs:element name="CardStatementInfoType" type="ns1:CardStatInfoTypeCode"/>
+
+  <xs:element name="CardStatus" type="ns1:CardStatusCode"/>
+
+  <xs:element name="CardTransactionStatus" type="ns1:CardTransactionStatusCode"/>
+
+  <xs:element name="ChargeAccount" type="ns1:Account"/>
+
+  <xs:element name="ChargeResponsibility" type="ns1:ResponsibilityCode"/>
+
+  <xs:element name="CriteriaInclude" type="xs:boolean"/>
+
+  <xs:element name="CustomerPayeeIdentifier" type="xs:string"/>
+
+  <xs:element name="DebitAmount" type="ns1:AmountType"/>
+
+  <xs:element name="Description" type="ns1:max210text"/>
+
+  <xs:element name="DocumentIdentifier" type="xs:string"/>
+
+  <xs:element name="DueDate" type="xs:string"/>
+
+  <xs:element name="ExecutionDateRequested" type="xs:string"/>
+
+  <xs:element name="ImmediatePmt" type="xs:boolean"/>
+
+  <xs:element name="OrderedAmount" type="ns1:AmountType"/>
+
+  <xs:element name="PayeeAccount" type="ns1:Account"/>
+
+  <xs:element name="PayeeFinancialInstitution" type="ns1:FinancialInstitution"/>
+
+  <xs:element name="PayeeParty" type="ns1:Party"/>
+
+  <xs:element name="PaymentIdentifier" type="xs:string"/>
+
+  <xs:element name="PaymentRejectionInfo" type="ns1:TransactionRejectionType"/>
+
+  <xs:element name="PaymentStatus" type="ns1:PaymentStatusType"/>
+
+  <xs:element name="PayorAccount" type="ns1:Account"/>
+
+  <xs:element name="PayorFinancialInstitution" type="ns1:FinancialInstitution"/>
+
+  <xs:element name="PayorParty" type="ns1:Party"/>
+
+  <xs:element name="Period" type="ns1:PeriodType"/>
+
+  <xs:element name="PmtAdditionalInformation" type="ns1:max210text"/>
+
+  <xs:element name="PmtCashCategory" type="ns1:PmtCashCatCode"/>
+
+  <xs:element name="PmtCategory" type="ns1:PmtCatCode"/>
+
+  <xs:element name="ResponseDetailsOmit" type="xs:boolean"/>
+
+  <xs:element name="Responsibility" type="ns1:ResponsibilityCode"/>
+
+  <xs:element name="ReversalIndicator" type="xs:boolean"/>
+
+  <xs:element name="SoldCheque" type="xs:string"/>
+
+  <xs:element name="TransactionIdentifier" type="xs:string"/>
+
+  <xs:element name="TransactionRejection" type="ns1:TransactionRejectionType"/>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="Add">
+    <wsdl:part element="tns:Add" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AddResponse">
+    <wsdl:part element="tns:AddResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PaymentService">
+    <wsdl:operation name="Add">
+      <wsdl:input message="tns:Add" name="Add">
+    </wsdl:input>
+      <wsdl:output message="tns:AddResponse" name="AddResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PaymentServiceSoapBinding" type="tns:PaymentService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="Add">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="AddResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PaymentService">
+    <wsdl:port binding="tns:PaymentServiceSoapBinding" name="PaymentServicePort">
+      <soap:address location="http://localhost:8080/services/payment"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="DirectDebitAgreementInquiryRequest.xsd"/>
+	<xsd:include schemaLocation="DirectDebitAgreementRequest.xsd"/>
+	<xsd:element name="DirectDebitAgreementInquiryResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Header"/>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="DocumentStatus"/>
+						<xsd:element name="CriteriaInclude" type="Indicator" minOccurs="0"/>
+						<xsd:element ref="DirectDebitAgreementSelectionCriteriaList" minOccurs="0"/>
+						<xsd:element ref="DirectDebitAgreementHeader" minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element name="CriteriaInclude" type="Indicator" minOccurs="0"/>
+						<xsd:element ref="DirectDebitAgreementSelectionCriteriaList" minOccurs="0"/>
+						<xsd:element ref="DirectDebitAgreementHeader" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
