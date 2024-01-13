@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="CreditComplaintDocumentType">
+		<xsd:sequence>
+			<xsd:element name="TransactionIdentifier" type="max32Identifier"/>
+			<xsd:element ref="ComplaintDetails"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CreditInformationDocumentType">
+		<xsd:sequence>
+			<xsd:element ref="PaymentIdentifier"/>
+			<xsd:element ref="BankServerPaymentIdentifier" minOccurs="0"/>
+			<xsd:element ref="PaymentDocument" minOccurs="0"/>
+			<xsd:choice>
+				<xsd:element ref="ComplaintDetails"/>
+				<xsd:element ref="TransactionList" maxOccurs="unbounded"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="ComplaintDetails">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="BankInformationMessageIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="ComplaintReason" type="min1max35text" maxOccurs="4"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TransactionList">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="TransactionIdentifier" type="max32Identifier"/>
+				<xsd:element name="BankTransactionIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element ref="ComplaintDetails"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CreditComplaintCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:choice>
+					<xsd:element ref="Period"/>
+					<xsd:element name="OnlyNew" type="Indicator"/>
+				</xsd:choice>
+				<xsd:element name="CustomerAccount" type="AccountNumber"/>
+				<xsd:element name="Customer" type="Party" minOccurs="0"/>
+				<xsd:element name="CustomerFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CreditInformationCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:choice>
+					<xsd:element ref="Period"/>
+					<xsd:element name="OnlyNew" type="Indicator"/>
+				</xsd:choice>
+				<xsd:element name="CustomerAccount" type="AccountNumber"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,45 @@
+{
+  "groups": [
+    {
+      "name": "app.auth",
+      "type": "pl.szaqku.awir.auth.config.TokenStorageProperties",
+      "sourceType": "pl.szaqku.awir.auth.config.TokenStorageProperties"
+    },
+    {
+      "name": "app.ldap",
+      "type": "pl.szaqku.awir.auth.config.LdapProperties",
+      "sourceType": "pl.szaqku.awir.auth.config.LdapProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.auth.token-expire-in-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "pl.szaqku.awir.auth.config.TokenStorageProperties"
+    },
+    {
+      "name": "app.auth.tokenExpireInSeconds",
+      "type": "java.lang.String",
+      "description": "Description for app.auth.tokenExpireInSeconds."
+    },
+    {
+      "name": "app.ldap.domain",
+      "type": "java.lang.String",
+      "description": "Domain name",
+      "sourceType": "pl.szaqku.awir.auth.config.LdapProperties"
+    },
+    {
+      "name": "app.ldap.host",
+      "type": "java.lang.String",
+      "description": "LDAP server's host",
+      "sourceType": "pl.szaqku.awir.auth.config.LdapProperties"
+    },
+    {
+      "name": "app.ldap.port",
+      "type": "java.lang.String",
+      "description": "LDAP server's port",
+      "sourceType": "pl.szaqku.awir.auth.config.LdapProperties"
+    }
+  ],
+  "hints": []
+}

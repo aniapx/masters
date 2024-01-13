@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "app.ldap.domain",
+      "type": "java.lang.String",
+      "description": "Domain name"
+    },
+    {
+      "name": "app.ldap.port",
+      "type": "java.lang.String",
+      "description": "LDAP server's port"
+    },
+    {
+      "name": "app.ldap.host",
+      "type": "java.lang.String",
+      "description": "LDAP server's host"
+    },
+    {
+      "name": "app.auth.tokenExpireInSeconds",
+      "type": "java.lang.String",
+      "description": "Description for app.auth.tokenExpireInSeconds."
+    }
+  ] }

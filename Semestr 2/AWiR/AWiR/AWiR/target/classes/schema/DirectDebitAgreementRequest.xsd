@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="CommonTypes.xsd"/>
+	<xsd:include schemaLocation="CommonComponents.xsd"/>
+	<xsd:element name="DirectDebitAgreementRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Header"/>
+				<xsd:element name="ResponseDetailsOmit" type="Indicator" minOccurs="0"/>
+				<xsd:element ref="DirectDebitAgreementHeader"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DirectDebitAgreementHeader">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="DirectDebitAgreementIdentifier" type="max32Identifier"/>
+				<xsd:element name="DirectDebitBankServerAgreementIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="Debtor" type="Party" minOccurs="0"/>
+				<xsd:element name="DebtorAccount" type="Account"/>
+				<xsd:element name="DebtorFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element ref="AgreementDetails" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="AgreementDetails">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="AgreementIdentifier" type="max32Identifier"/>
+				<xsd:element name="BankServerAgreementIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="Creditor" type="Party" minOccurs="0"/>
+				<xsd:element name="CreditorAccount" type="Account"/>
+				<xsd:element name="CreditorFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element name="AgreementPeriod" type="PeriodType" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
