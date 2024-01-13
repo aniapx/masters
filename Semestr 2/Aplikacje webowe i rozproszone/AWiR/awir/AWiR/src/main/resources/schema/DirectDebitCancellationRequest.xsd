@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="CommonTypes.xsd"/>
+	<xsd:include schemaLocation="CommonComponents.xsd"/>
+	<xsd:element name="DirectDebitCancellationRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Header"/>
+				<xsd:element name="ResponseDetailsOmit" type="Indicator" minOccurs="0"/>
+				<xsd:element name="CriteriaInclude" type="Indicator" minOccurs="0"/>
+				<xsd:element ref="DirectDebitCancellationCriteria"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DirectDebitCancellationCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="DirectDebitIdentifier" type="max32Identifier"/>
+				<xsd:element name="BankServerDirectDebitIdentifier" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="ExecutionDateRequested" type="Date" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

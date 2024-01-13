@@ -1,0 +1,7 @@
+close all
+clc
+clear
+
+answers_table = readmatrix("WDK.csv");
+lillietest(answers_table(:, 4))
+kruskalwallis(answers_table(:, 4), answers_table())

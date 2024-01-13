@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="CommonComponents.xsd"/>
+	<xsd:include schemaLocation="CommonTypes.xsd"/>
+	<xsd:include schemaLocation="BalanceComponents.xsd"/>
+	<xsd:include schemaLocation="StatementComponents.xsd"/>
+	<xsd:include schemaLocation="CardComponents.xsd"/>
+	<xsd:include schemaLocation="PaymentComponents.xsd"/>
+	<xsd:element name="CardStatementDocument">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CardStatementHeader">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="CardStatementIdentifier" type="max35Ident"/>
+							<xsd:element ref="CardStatementInfoType"/>
+							<xsd:element name="CardStatementDateTime" type="DateTime"/>
+							<xsd:element name="StartDateTime" type="DateTime"/>
+							<xsd:element name="EndDateTime" type="DateTime"/>
+							<xsd:element name="DebitInterestRate" type="Numeric" minOccurs="0"/>
+							<xsd:element name="MinPaymentAmount" type="AmountType" minOccurs="0"/>
+							<xsd:element name="PaymentDeadline" type="Date" minOccurs="0"/>
+							<xsd:element ref="Description" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element name="AdditionalInformation" type="max350text" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element name="CardAccountOwner" type="Party" minOccurs="0"/>
+							<xsd:element name="CardAccount" type="Account" minOccurs="0"/>
+							<xsd:element name="CustomerAccount" type="Account" minOccurs="0"/>
+							<xsd:element name="CardFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+							<xsd:element name="CustomerFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+							<xsd:element name="BalanceDetails" type="BalanceDetailsType" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element ref="CurrencyConvertor" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element ref="CardDetails" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element ref="AdditionalDetails" minOccurs="0" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="CardStatementLineItem" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="TransactionIdentifier" type="max35Identifier"/>
+							<xsd:element name="InstructionIdentifier" type="max35Identifier" minOccurs="0"/>
+							<xsd:element name="PaymentIdentifier" type="max35Identifier" minOccurs="0"/>
+							<xsd:element ref="CardIdentifier" minOccurs="0"/>
+							<xsd:element name="TransactionType" type="EntryTypeCode" minOccurs="0"/>
+							<xsd:element ref="ReversalIndicator" minOccurs="0"/>
+							<xsd:element name="TransactionDateTime" type="DateTime"/>
+							<xsd:element name="BookingDateTime" type="DateTime" minOccurs="0"/>
+							<xsd:element ref="CardTransactionStatus" minOccurs="0"/>
+							<xsd:element name="EntryAmount" type="AmountType"/>
+							<xsd:element name="OriginalAmount" type="AmountType" minOccurs="0"/>
+							<xsd:element ref="Description" minOccurs="0"/>
+							<xsd:element ref="CurrencyConvertor" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element name="CounterParty" type="Party" minOccurs="0"/>
+							<xsd:element name="CounterPartyAccount" type="Account" minOccurs="0"/>
+							<xsd:element ref="RemittanceInformation" minOccurs="0"/>
+							<xsd:element ref="AdditionalDetails" minOccurs="0" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="CardStatementSummary" type="StatementSummaryType" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CardStatementResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Header"/>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="DocumentStatus"/>
+						<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+						<xsd:element ref="ResponseRecordsControl" minOccurs="0"/>
+						<xsd:element ref="CardStatementCriteria" minOccurs="0"/>
+						<xsd:element ref="CardStatementDocument" minOccurs="0"/>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element ref="CriteriaInclude" minOccurs="0"/>
+						<xsd:element ref="ResponseRecordsControl" minOccurs="0"/>
+						<xsd:element ref="CardStatementCriteria" minOccurs="0"/>
+						<xsd:element ref="CardStatementDocument"/>
+					</xsd:sequence>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

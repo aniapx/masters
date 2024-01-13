@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="InterestRateCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="StartDate" type="Date" minOccurs="0"/>
+				<xsd:element name="EndDate" type="Date" minOccurs="0"/>
+				<xsd:element name="CustomerAccount" type="AccountNumber"/>
+				<xsd:element name="MicroAccount" type="AccountNumber" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InterestRateDocument">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="StartDate" type="Date"/>
+				<xsd:element name="EndDate" type="Date"/>
+				<xsd:element name="CustomerAccount" type="Account"/>
+				<xsd:element ref="InterestRateDetails" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InterestRateDetails">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="MicroAccount" type="Account"/>
+				<xsd:element name="InterestRateAmount" type="AmountType"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

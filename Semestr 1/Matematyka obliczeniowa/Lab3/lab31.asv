@@ -1,0 +1,39 @@
+clc
+clear
+close all
+format long e
+
+matrixes = [
+    "A_0005.mat"
+    "A_0010.mat"
+    "A_0050.mat"
+    "A_0100.mat"
+    "A_0200.mat"
+    "A_0300.mat"
+    "A_0500.mat"
+    "A_1000.mat"
+    "A_2000.mat"
+    "A_5000.mat"
+];
+
+for i = 1:10
+    load(matrixes(i))
+end
+
+tic();
+   
+toc();
+
+m = A_5;
+n = size(A_5, 1);
+result = 1;
+
+for i=1:n-1
+    a = m(i, i)
+    if (i < n)
+    m = m / a;
+        m(i+1, :) = m(i+1, :) - m(i, :);
+    end
+    result = result * a;
+end
+result

@@ -17,56 +17,52 @@ z = [
     0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0;
 ];
 
-figure
-subplot(1, 2, 1)
-[X, Y] = meshgrid(x, y);
-contour3(X, Y, z);
-
-subplot(1, 2, 2)
-plot3(X, Y, z, '.r')
-
+% figure
+% subplot(2, 2, 1)
+% [X, Y] = meshgrid(x, y);
+% contour3(X, Y, z);
+% 
+% subplot(2, 2, 2)
+% plot3(X, Y, z, '.r')
+% 
 % subplot(2, 2, 3)
 % surf(X,Y,z)
+% 
+% subplot(2, 2, 4)
+% Vq = interp2(x,y,z,X,Y);
+% surf(X,Y,Vq);
 
-xx = 0:1:150;
-yy = 0:1:90;
-[X,Y]=meshgrid(x,y);
-[XX,YY]=meshgrid(xx,yy);
+
+[X, Y] = meshgrid(x, y);
 % [X, Y] = meshgrid(0:5:150, 0:5:90);
 
-I1=interp2(X,Y,z,XX,YY,'nearest');
-I2=interp2(X,Y,z,XX,YY,'linear');
-I3=interp2(X,Y,z,XX,YY,'spline');
-I4=interp2(X,Y,z,XX,YY,'makima');
-I5=interp2(X,Y,z,XX,YY,'cubic');
-
 figure
-subplot(3,2,1)
-plot3(X,Y,z,'.r')
+subplot(3, 2, 1)
+Vq = interp2(x, y, z, X, Y, 'linear');
 hold on
-mesh(XX,YY,I1)
-title('nearest')
+contour3(X, Y, Vq);
+plot3(X, Y, z, '.r')
 
-subplot(3,2,2)
-plot3(X,Y,z,'.r')
+subplot(3, 2, 2)
+Vq = interp2(x, y, z, X, Y, 'nearest');
 hold on
-mesh(XX,YY,I2)
-title('linear')
+contour3(X, Y, Vq);
+plot3(X, Y, z, '.r')
 
-subplot(3,2,3)
-plot3(X,Y,z,'.r')
+subplot(3, 2, 3)
+Vq = interp2(x, y, z, X, Y, 'cubic');
 hold on
-mesh(XX,YY,I3)
-title('spline')
+contour3(X, Y, Vq);
+plot3(X, Y, z, '.r')
 
-subplot(3,2,4)
-plot3(X,Y,z,'.r')
+subplot(3, 2, 4)
+Vq = interp2(x, y, z, X, Y, 'makima');
 hold on
-mesh(XX,YY,I4)
-title('makima')
+contour3(X, Y, Vq);
+plot3(X, Y, z, '.r')
 
-subplot(3,2,5)
-plot3(X,Y,z,'.r')
+subplot(3, 2, 5)
+Vq = interp2(x, y, z, X, Y, 'spline');
 hold on
-mesh(XX,YY,I5)
-title('cubic')
+contour3(X, Y, Vq);
+plot3(X, Y, z, '.r')

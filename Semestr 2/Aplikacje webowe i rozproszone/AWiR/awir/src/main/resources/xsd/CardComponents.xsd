@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="pl">
+			Standard RBE wersja 4.5		
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="CommonTypes.xsd"/>
+	<xsd:element name="CardDetails">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:sequence>
+					<xsd:element name="CardIdent" type="max35Identifier" minOccurs="0"/>
+					<xsd:element name="CardNumber" type="max16Identifier" minOccurs="0"/>
+					<xsd:element name="CardConcealedNumber" type="max25text" minOccurs="0"/>
+				</xsd:sequence>
+				<xsd:element name="CardPassword" type="max35text" minOccurs="0"/>
+				<xsd:element name="CardType" type="max25text" minOccurs="0"/>
+				<xsd:element name="CardName" type="max50text" minOccurs="0"/>
+				<xsd:element name="CardDescription" type="max25text" minOccurs="0"/>
+				<xsd:element name="CardOwnerName" type="max140text" minOccurs="0"/>
+				<xsd:element name="ExpiresDate" type="Date" minOccurs="0"/>
+				<xsd:element ref="CardStatus" minOccurs="0"/>
+				<xsd:element name="CardAccount" type="Account" minOccurs="0"/>
+				<xsd:element name="CustomerAccount" type="Account" minOccurs="0"/>
+				<xsd:element ref="CardLimit" minOccurs="0"/>
+				<xsd:element name="CardBalanceDetails" type="BalanceDetailsType" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CardStatementCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CardStatementInfoType" type="CardStatInfoTypeCode"/>
+				<xsd:element name="StartDate" type="Date"/>
+				<xsd:element name="EndDate" type="Date" minOccurs="0"/>
+				<xsd:element name="CardAccountOwner" type="Party" minOccurs="0"/>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element name="CustomerAccount" type="AccountNumber"/>
+						<xsd:element ref="CardIdentifier" minOccurs="0"/>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element name="CardAccount" type="AccountNumber"/>
+						<xsd:element ref="CardIdentifier" minOccurs="0"/>
+					</xsd:sequence>
+					<xsd:element ref="CardIdentifier"/>
+				</xsd:choice>
+				<xsd:element name="CardFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element name="CustomerFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CardCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CustomerAccount" type="AccountNumber"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="StopCardCriteria">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="CardDetails" maxOccurs="unbounded"/>
+						<xsd:element name="CardAccountOwner" type="Party" minOccurs="0"/>
+						<xsd:element name="CardAccount" type="AccountNumber" minOccurs="0"/>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element name="CardAccountOwner" type="Party" minOccurs="0"/>
+						<xsd:element name="CardAccount" type="AccountNumber"/>
+					</xsd:sequence>
+				</xsd:choice>
+				<xsd:element name="CardFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+				<xsd:element name="AdditionalInformationType" type="max35text" minOccurs="0"/>
+				<xsd:element name="AdditionalInformation" type="max70text" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="StoppedCardList">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="CardDetails" maxOccurs="unbounded"/>
+				<xsd:element name="CardAccountOwner" type="Party" minOccurs="0"/>
+				<xsd:element name="CardAccount" type="Account" minOccurs="0"/>
+				<xsd:element name="CardFinancialInstitution" type="FinancialInstitution" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="BlockTypeCode">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Card"/>
+			<xsd:enumeration value="Account"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="CardIdentifier">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CardIdent" type="max35Identifier" minOccurs="0"/>
+				<xsd:element name="CardNumber" type="max16Identifier" minOccurs="0"/>
+				<xsd:element name="CardConcealedNumber" type="max32Identifier" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="CardStatusCode">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Active"/>
+			<xsd:enumeration value="Inactive"/>
+			<xsd:enumeration value="Reserved"/>
+			<xsd:enumeration value="Closed"/>
+			<xsd:enumeration value="Blocked"/>
+			<xsd:enumeration value="InTheCourseOfClosing"/>
+			<xsd:enumeration value="InTheCourseOfReserving"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="CardStatus" type="CardStatusCode"/>
+	<xsd:element name="CardLimit">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="DailyPaymentLmt" type="AmountType" minOccurs="0"/>
+				<xsd:element name="DailyAbroadPaymentLmt" type="AmountType" minOccurs="0"/>
+				<xsd:element name="DailyCashLmt" type="AmountType" minOccurs="0"/>
+				<xsd:element name="DailyAbroadCashLmt" type="AmountType" minOccurs="0"/>
+				<xsd:element name="DailyInternetPaymentLmt" type="AmountType" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CardStatementInfoType" type="CardStatInfoTypeCode"/>
+	<xsd:simpleType name="CardStatInfoTypeCode">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="BankStatement"/>
+			<xsd:enumeration value="InterimStatement"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CardTransactionStatusCode">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Booking"/>
+			<xsd:enumeration value="Pending"/>
+			<xsd:enumeration value="Info"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="CardTransactionStatus" type="CardTransactionStatusCode"/>
+	<xsd:element name="ReversalIndicator" type="Indicator" default="false"/>
+</xsd:schema>
