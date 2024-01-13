@@ -1,5 +1,5 @@
 // gcc mGen.c -o gen
-// ./gen 1000 matrix1.txt & ./gen 1000 matrix2.txt
+// ./gen 800 matrix1.txt & ./gen 800 matrix2.txt
 
 #include <stdio.h>
 #include <stdlib.h>

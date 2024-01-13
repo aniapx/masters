@@ -50,9 +50,10 @@ matrix2_file = 'matrix2.txt'
 result_file = 'result.txt'
 values_file = 'values.txt'
 
-matrix_size = 1000
-iterations_count = 10
-iterations_per_loop_count = iterations_count // 3
+matrix_size = 800
+iterations_per_loop_count_1 = 10
+iterations_per_loop_count_2 = 10
+iterations_per_loop_count_3 = 10
 
 min_value = 2
 max_value = 256
@@ -61,12 +62,12 @@ max_value = 256
 with open(values_file, 'w') as f:
     f.write('')
 
-x_tile_sizes = evenly_spaced_values(min_value, max_value, iterations_per_loop_count)
+x_tile_sizes = evenly_spaced_values(min_value, max_value, iterations_per_loop_count_1)
 for i in x_tile_sizes:
-    y_tile_sizes = evenly_spaced_values(min_value, max_value, iterations_per_loop_count)
+    y_tile_sizes = evenly_spaced_values(min_value, max_value, iterations_per_loop_count_2)
 
     for j in y_tile_sizes:
-        z_tile_sizes = evenly_spaced_values(min_value, max_value, iterations_per_loop_count)
+        z_tile_sizes = evenly_spaced_values(min_value, max_value, iterations_per_loop_count_3)
 
         for k in z_tile_sizes:
             print(" =========> Iteration: " + str(i) + "/" + str(j) + "/" + str(k))
@@ -79,4 +80,4 @@ for i in x_tile_sizes:
             with open(values_file, 'a') as f:
                 f.write(' '.join(map(str, new_tile_sizes)) + ' ' + printed_value + '\n')
 
-print("Procedure completed for " + str(iterations_count) + " iterations.")
+print("Procedure completed for " + str(iterations_per_loop_count_1 * iterations_per_loop_count_2 * iterations_per_loop_count_3) + " iterations.")
