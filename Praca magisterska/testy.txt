@@ -1,0 +1,69 @@
+Company	URL	Country
+		
+Ecommerce:		
+Amazon	https://www.amazon.com/	USA
+Bol	https://www.bol.com/	"Holandia, Belgia"
+Allegro 	https://allegro.pl/	Polska
+		
+News/Media Outlets:		
+CNN	https://www.cnn.com/	USA
+The Guardian	https://www.theguardian.com/	UK
+El País 	https://elpais.com/	Spain
+Onet	https://www.onet.pl/	Polska
+		
+Educational:		
+Uniwersytet Harvarda	https://www.harvard.edu/	USA
+University of Tokyo	https://www.u-tokyo.ac.jp/en/	Japan
+Universiteit Leiden	https://www.universiteitleiden.nl/	Holandia
+ZUT	https://www.zut.edu.pl/	Polska
+		
+Entertainment:		
+YouTube 	https://www.youtube.com/	USA
+Spotify	https://www.spotify.com/	
+Player.pl 	https://player.pl/	Polska
+		
+Healthcare:		
+Mayo Clinic	https://www.mayoclinic.org/	USA
+National Health Service (NHS)	https://www.nhs.uk/	UK
+Luxmed	https://www.luxmed.pl/	Polska
+NFZ (Narodowy Fundusz Zdrowia)	https://www.nfz.gov.pl/	Polska
+		
+Government:		
+USA.gov 	https://www.usa.gov/	USA
+Legifrance	https://www.legifrance.gouv.fr/	Francja
+Gov.pl 	https://www.gov.pl/web/gov	Polska
+		
+Social Media:		
+Facebook 	https://www.facebook.com/	USA
+Minds	https://www.minds.com/	USA
+LinkedIn 	https://www.linkedin.com/	USA
+X	https://www.x.com	
+		
+Diverse WCAG Compliance:		
+WCAGCompliant: Microsoft 	https://www.microsoft.com/	USA
+Partially Compliant: BBC News	https://www.bbc.com/news	UK
+		
+Highly popular:		
+Google 	https://www.google.com/	USA
+DHL	https://www.dhl.com/	Europa
+ZnanyLekarz	https://www.znanylekarz.pl/	Polska
+		
+Ma?e firmy		
+		USA
+		Europa
+Piekarnia Bagietka	https://www.bagietka.pl	Polska
+		
+Firmy ?rednigo rozmiaru		
+Uber	https://www.uber.com/	USA
+Booking.com	https://www.booking.com/	Holandia
+InPost	https://www.inpost.pl/	Polska
+		
+Du?e korporacje		
+Microsoft	https://www.microsoft.com/	USA
+Volkswagen	https://www.volkswagen.pl/	Niemcy
+Orlen	https://www.orlen.pl	Polska
+		
+Organizacje Non-profit		
+American Red Cross	https://www.redcross.org/	USA
+Legambiente	https://www.legambiente.it/	W?ochy
+WO?P	https://wosp.org.pl/	Polska

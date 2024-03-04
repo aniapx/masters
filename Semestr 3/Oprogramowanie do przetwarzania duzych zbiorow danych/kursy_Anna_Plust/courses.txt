@@ -1,0 +1,6 @@
+AZ-204: Implement Azure Functions
+AZ-204: Develop solutions that use Blob storage
+AZ-204: Develop solutions that use Azure Cosmos DB
+AZ-204: Implement Azure App Service web apps
+AZ-204: Troubleshoot solutions by using Application Insights
+AZ-204: Implement API Management
