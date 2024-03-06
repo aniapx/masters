@@ -1,0 +1,29 @@
+Results for folder: healthcare
+
+Errors in file: healthcare\kcp_disease_details.json
+Critical Issues:
+- meta-viewport: 1 - Ensures <meta name="viewport"> does not disable text scaling and zooming
+
+Errors in file: healthcare\kcp_disease_list.json
+Critical Issues:
+- meta-viewport: 1 - Ensures <meta name="viewport"> does not disable text scaling and zooming
+
+Errors in file: healthcare\kcp_main_page.json
+Critical Issues:
+- meta-viewport: 1 - Ensures <meta name="viewport"> does not disable text scaling and zooming
+
+Errors in file: healthcare\mayoclinic_disease_details.json
+
+Errors in file: healthcare\mayoclinic_disease_list.json
+
+Errors in file: healthcare\mayoclinic_main_page.json
+Serious Issues:
+- link-name: 23 - Ensures links have discernible text
+
+Errors in file: healthcare\nhs_disease_details.json
+
+Errors in file: healthcare\nhs_disease_list.json
+Serious Issues:
+- list: 1 - Ensures that lists are structured correctly
+
+Errors in file: healthcare\nhs_main_page.json

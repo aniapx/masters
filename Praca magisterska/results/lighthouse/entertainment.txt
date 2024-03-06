@@ -1,0 +1,233 @@
+
+Data in file: entertainment\player_items_list.json
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: entertainment\player_item_details.json
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: entertainment\player_main_page.json
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: entertainment\spotify_items_list.json
+ID: aria-allowed-attr
+Title: `[aria-*]` attributes do not match their roles
+Description: Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.8/aria-allowed-attr).
+Score: 0
+
+ID: aria-required-attr
+Title: `[role]`s do not have all required `[aria-*]` attributes
+Description: Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.8/aria-required-attr).
+Score: 0
+
+ID: aria-required-children
+Title: Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.
+Description: Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.8/aria-required-children).
+Score: 0
+
+ID: aria-valid-attr-value
+Title: `[aria-*]` attributes do not have valid values
+Description: Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more about valid values for ARIA attributes](https://dequeuniversity.com/rules/axe/4.8/aria-valid-attr-value).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: entertainment\spotify_item_details.json
+ID: aria-allowed-attr
+Title: `[aria-*]` attributes do not match their roles
+Description: Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.8/aria-allowed-attr).
+Score: 0
+
+ID: aria-required-attr
+Title: `[role]`s do not have all required `[aria-*]` attributes
+Description: Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.8/aria-required-attr).
+Score: 0
+
+ID: aria-required-children
+Title: Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.
+Description: Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.8/aria-required-children).
+Score: 0
+
+ID: aria-valid-attr-value
+Title: `[aria-*]` attributes do not have valid values
+Description: Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more about valid values for ARIA attributes](https://dequeuniversity.com/rules/axe/4.8/aria-valid-attr-value).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: entertainment\spotify_main_page.json
+ID: aria-allowed-attr
+Title: `[aria-*]` attributes do not match their roles
+Description: Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.8/aria-allowed-attr).
+Score: 0
+
+ID: aria-required-attr
+Title: `[role]`s do not have all required `[aria-*]` attributes
+Description: Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.8/aria-required-attr).
+Score: 0
+
+ID: aria-required-children
+Title: Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.
+Description: Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.8/aria-required-children).
+Score: 0
+
+ID: aria-valid-attr-value
+Title: `[aria-*]` attributes do not have valid values
+Description: Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more about valid values for ARIA attributes](https://dequeuniversity.com/rules/axe/4.8/aria-valid-attr-value).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: entertainment\youtube_items_list.json
+ID: aria-dialog-name
+Title: Elements with `role="dialog"` or `role="alertdialog"` do not have accessible names.
+Description: ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.8/aria-dialog-name).
+Score: 0
+
+ID: aria-tooltip-name
+Title: ARIA `tooltip` elements do not have accessible names.
+Description: When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `tooltip` elements](https://dequeuniversity.com/rules/axe/4.8/aria-tooltip-name).
+Score: 0
+
+ID: duplicate-id-active
+Title: `[id]` attributes on active, focusable elements are not unique
+Description: All focusable elements must have a unique `id` to ensure that they're visible to assistive technologies. [Learn how to fix duplicate `id`s](https://dequeuniversity.com/rules/axe/4.8/duplicate-id-active).
+Score: 0
+
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: entertainment\youtube_item_details.json
+ID: aria-allowed-attr
+Title: `[aria-*]` attributes do not match their roles
+Description: Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.8/aria-allowed-attr).
+Score: 0
+
+ID: aria-dialog-name
+Title: Elements with `role="dialog"` or `role="alertdialog"` do not have accessible names.
+Description: ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.8/aria-dialog-name).
+Score: 0
+
+ID: aria-tooltip-name
+Title: ARIA `tooltip` elements do not have accessible names.
+Description: When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `tooltip` elements](https://dequeuniversity.com/rules/axe/4.8/aria-tooltip-name).
+Score: 0
+
+ID: duplicate-id-active
+Title: `[id]` attributes on active, focusable elements are not unique
+Description: All focusable elements must have a unique `id` to ensure that they're visible to assistive technologies. [Learn how to fix duplicate `id`s](https://dequeuniversity.com/rules/axe/4.8/duplicate-id-active).
+Score: 0
+
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: entertainment\youtube_main_page.json
+ID: aria-dialog-name
+Title: Elements with `role="dialog"` or `role="alertdialog"` do not have accessible names.
+Description: ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.8/aria-dialog-name).
+Score: 0
+
+ID: aria-required-attr
+Title: `[role]`s do not have all required `[aria-*]` attributes
+Description: Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.8/aria-required-attr).
+Score: 0
+
+ID: aria-tooltip-name
+Title: ARIA `tooltip` elements do not have accessible names.
+Description: When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `tooltip` elements](https://dequeuniversity.com/rules/axe/4.8/aria-tooltip-name).
+Score: 0
+
+ID: duplicate-id-active
+Title: `[id]` attributes on active, focusable elements are not unique
+Description: All focusable elements must have a unique `id` to ensure that they're visible to assistive technologies. [Learn how to fix duplicate `id`s](https://dequeuniversity.com/rules/axe/4.8/duplicate-id-active).
+Score: 0
+
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+

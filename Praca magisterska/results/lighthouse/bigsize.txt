@@ -1,0 +1,68 @@
+
+Data in file: bigsize\microsoft.json
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+
+Data in file: bigsize\orlen.json
+ID: aria-valid-attr-value
+Title: `[aria-*]` attributes do not have valid values
+Description: Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more about valid values for ARIA attributes](https://dequeuniversity.com/rules/axe/4.8/aria-valid-attr-value).
+Score: 0
+
+ID: button-name
+Title: Buttons do not have an accessible name
+Description: When a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.8/button-name).
+Score: 0
+
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+
+Data in file: bigsize\volkswagen.json
+ID: aria-allowed-role
+Title: Values assigned to `role=""` are not valid ARIA roles.
+Description: ARIA `role`s enable assistive technologies to know the role of each element on the web page. If the `role` values are misspelled, not existing ARIA `role` values, or abstract roles, then the purpose of the element will not be communicated to users of assistive technologies. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.8/aria-allowed-role).
+Score: 0
+
+ID: aria-hidden-focus
+Title: `[aria-hidden="true"]` elements contain focusable descendents
+Description: Focusable descendents within an `[aria-hidden="true"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.8/aria-hidden-focus).
+Score: 0
+
+ID: button-name
+Title: Buttons do not have an accessible name
+Description: When a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.8/button-name).
+Score: 0
+
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: bigsize\walmart.json
+ID: image-alt
+Title: Image elements do not have `[alt]` attributes
+Description: Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.8/image-alt).
+Score: 0
+
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+

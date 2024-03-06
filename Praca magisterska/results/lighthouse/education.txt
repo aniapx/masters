@@ -1,0 +1,69 @@
+
+Data in file: education\harvard_item_details.json
+
+Data in file: education\harvard_main_page.json
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+
+Data in file: education\harverd_items_list.json
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: education\pw_items_list.json
+
+Data in file: education\pw_item_details.json
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+
+Data in file: education\pw_main_page.json
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: education\uva_items_list.json
+
+Data in file: education\uva_item_details.json
+
+Data in file: education\uva_main_page.json
+
+Data in file: education\zut_items_list.json
+ID: list
+Title: Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).
+Description: Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.8/list).
+Score: 0
+
+
+Data in file: education\zut_item_details.json
+ID: list
+Title: Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).
+Description: Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.8/list).
+Score: 0
+
+
+Data in file: education\zut_main_page.json
+ID: image-alt
+Title: Image elements do not have `[alt]` attributes
+Description: Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.8/image-alt).
+Score: 0
+
+ID: list
+Title: Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).
+Description: Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.8/list).
+Score: 0
+
+ID: listitem
+Title: List items (`<li>`) are not contained within `<ul>`, `<ol>` or `<menu>` parent elements.
+Description: Screen readers require list items (`<li>`) to be contained within a parent `<ul>`, `<ol>` or `<menu>` to be announced properly. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.8/listitem).
+Score: 0
+

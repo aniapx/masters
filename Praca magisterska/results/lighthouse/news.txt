@@ -1,0 +1,151 @@
+
+Data in file: news\cnn_article.json
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+ID: tabindex
+Title: Some elements have a `[tabindex]` value greater than 0
+Description: A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.8/tabindex).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: news\cnn_main_page.json
+ID: aria-input-field-name
+Title: ARIA input fields do not have accessible names
+Description: When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about input field labels](https://dequeuniversity.com/rules/axe/4.8/aria-input-field-name).
+Score: 0
+
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: news\elpais_article.json
+
+Data in file: news\elpais_main_page.json
+ID: color-contrast
+Title: Background and foreground colors do not have a sufficient contrast ratio.
+Description: Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.8/color-contrast).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: news\onet_article.json
+ID: frame-title
+Title: `<frame>` or `<iframe>` elements do not have a title
+Description: Screen reader users rely on frame titles to describe the contents of frames. [Learn more about frame titles](https://dequeuniversity.com/rules/axe/4.8/frame-title).
+Score: 0
+
+ID: image-alt
+Title: Image elements do not have `[alt]` attributes
+Description: Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.8/image-alt).
+Score: 0
+
+ID: label
+Title: Form elements do not have associated labels
+Description: Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.8/label).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+
+Data in file: news\onet_main_page.json
+ID: color-contrast
+Title: Background and foreground colors do not have a sufficient contrast ratio.
+Description: Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.8/color-contrast).
+Score: 0
+
+ID: frame-title
+Title: `<frame>` or `<iframe>` elements do not have a title
+Description: Screen reader users rely on frame titles to describe the contents of frames. [Learn more about frame titles](https://dequeuniversity.com/rules/axe/4.8/frame-title).
+Score: 0
+
+ID: label
+Title: Form elements do not have associated labels
+Description: Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.8/label).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: news\wp_article.json
+ID: color-contrast
+Title: Background and foreground colors do not have a sufficient contrast ratio.
+Description: Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.8/color-contrast).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: news\wp_main_page.json
+ID: button-name
+Title: Buttons do not have an accessible name
+Description: When a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.8/button-name).
+Score: 0
+
+ID: color-contrast
+Title: Background and foreground colors do not have a sufficient contrast ratio.
+Description: Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.8/color-contrast).
+Score: 0
+
+ID: image-alt
+Title: Image elements do not have `[alt]` attributes
+Description: Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.8/image-alt).
+Score: 0
+
+ID: label
+Title: Form elements do not have associated labels
+Description: Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.8/label).
+Score: 0
+
+ID: link-name
+Title: Links do not have a discernible name
+Description: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.8/link-name).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+

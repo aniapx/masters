@@ -1,0 +1,48 @@
+
+Data in file: healthcare\kcp_items_list.json
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+
+Data in file: healthcare\kcp_item_details.json
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+
+Data in file: healthcare\kcp_main_page.json
+ID: image-redundant-alt
+Title: Image elements have `[alt]` attributes that are redundant text.
+Description: Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as the text adjacent to the link or image is potentially confusing for screen reader users, because the text will be read twice. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.8/image-redundant-alt).
+Score: 0
+
+
+Data in file: healthcare\mayoclinic_items_list.json
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: healthcare\mayoclinic_item_details.json
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: healthcare\mayoclinic_main_page.json
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: healthcare\nhs_items_list.json
+
+Data in file: healthcare\nhs_item_details.json
+
+Data in file: healthcare\nhs_main_page.json

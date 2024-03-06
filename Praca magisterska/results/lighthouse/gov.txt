@@ -1,0 +1,98 @@
+
+Data in file: gov\france_items_list.json
+ID: heading-order
+Title: Heading elements are not in a sequentially-descending order
+Description: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.8/heading-order).
+Score: 0
+
+ID: dom-size
+Title: Avoid an excessive DOM size
+Description: A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).
+Score: 0
+
+
+Data in file: gov\france_item_details.json
+
+Data in file: gov\france_main_page.json
+
+Data in file: gov\poland_items_list.json
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+ID: link-in-text-block
+Title: Links rely on color to be distinguishable.
+Description: Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.8/link-in-text-block).
+Score: 0
+
+ID: valid-lang
+Title: `[lang]` attributes do not have a valid value
+Description: Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.8/valid-lang).
+Score: 0
+
+
+Data in file: gov\poland_item_details.json
+ID: aria-required-children
+Title: Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.
+Description: Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.8/aria-required-children).
+Score: 0
+
+ID: aria-required-parent
+Title: `[role]`s are not contained by their required parent element
+Description: Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.8/aria-required-parent).
+Score: 0
+
+ID: listitem
+Title: List items (`<li>`) are not contained within `<ul>`, `<ol>` or `<menu>` parent elements.
+Description: Screen readers require list items (`<li>`) to be contained within a parent `<ul>`, `<ol>` or `<menu>` to be announced properly. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.8/listitem).
+Score: 0
+
+ID: valid-lang
+Title: `[lang]` attributes do not have a valid value
+Description: Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.8/valid-lang).
+Score: 0
+
+
+Data in file: gov\poland_main_page.json
+ID: aria-required-children
+Title: Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.
+Description: Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.8/aria-required-children).
+Score: 0
+
+ID: aria-required-parent
+Title: `[role]`s are not contained by their required parent element
+Description: Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.8/aria-required-parent).
+Score: 0
+
+ID: listitem
+Title: List items (`<li>`) are not contained within `<ul>`, `<ol>` or `<menu>` parent elements.
+Description: Screen readers require list items (`<li>`) to be contained within a parent `<ul>`, `<ol>` or `<menu>` to be announced properly. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.8/listitem).
+Score: 0
+
+ID: valid-lang
+Title: `[lang]` attributes do not have a valid value
+Description: Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.8/valid-lang).
+Score: 0
+
+
+Data in file: gov\usa_items_list.json
+
+Data in file: gov\usa_item_details.json
+
+Data in file: gov\usa_main_page.json
+ID: aria-allowed-role
+Title: Values assigned to `role=""` are not valid ARIA roles.
+Description: ARIA `role`s enable assistive technologies to know the role of each element on the web page. If the `role` values are misspelled, not existing ARIA `role` values, or abstract roles, then the purpose of the element will not be communicated to users of assistive technologies. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.8/aria-allowed-role).
+Score: 0
+
+ID: label-content-name-mismatch
+Title: Elements with visible text labels do not have matching accessible names.
+Description: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.8/label-content-name-mismatch).
+Score: 0
+
+ID: list
+Title: Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).
+Description: Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.8/list).
+Score: 0
+
