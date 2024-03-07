@@ -1,0 +1,102 @@
+Folder: gov
+
+
+---------- File: .\gov\france_items_list.html ----------
+
+
+
+---------- File: .\gov\france_main_page.html ----------
+
+
+
+---------- File: .\gov\frnace_item_details.html ----------
+
+Failed instances count: 2
+Failure Title: Ensures every id attribute value used in ARIA and in labels is unique
+Failure Count: 2
+How to fix: Fix the following: Document has multiple elements referenced with ARIA with the same id attribute: onglet-cas-tab-1
+
+
+
+---------- File: .\gov\poland_items_list.html ----------
+
+Failed instances count: 12
+Failure Title: Ensure links are distinguished from surrounding text in a way that does not rely on color
+Failure Count: 11
+How to fix: Fix ONE of the following: The link has insufficient color contrast of 2.25:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0052a5, surrounding text: #1b1b1b) The link has no styling (such as underline) to distinguish it from the surrounding text
+
+Failed instances count: 12
+Failure Title: Ensures lang attributes have valid values
+Failure Count: 1
+How to fix: Fix the following: Value of lang attribute not included in the list of valid languages
+
+
+
+---------- File: .\gov\poland_item_details.html ----------
+
+Failed instances count: 8
+Failure Title: Ensures elements with an ARIA role that require child roles contain them
+Failure Count: 1
+How to fix: Fix ONE of the following: Element has children which are not allowed: li[tabindex] Element uses aria-busy="true" while showing a loader
+
+Failed instances count: 8
+Failure Title: Ensures elements with an ARIA role that require parent roles are contained by them
+Failure Count: 3
+How to fix: Fix the following: Required ARIA parent role not present: tablist
+
+Failed instances count: 8
+Failure Title: Ensures <li> elements are used semantically
+Failure Count: 3
+How to fix: Fix the following: List item does not have a <ul>, <ol> parent element without a role, or a role="list"
+
+Failed instances count: 8
+Failure Title: Ensures lang attributes have valid values
+Failure Count: 1
+How to fix: Fix the following: Value of lang attribute not included in the list of valid languages
+
+
+
+---------- File: .\gov\poland_main_page.html ----------
+
+Failed instances count: 10
+Failure Title: Ensures elements with an ARIA role that require child roles contain them
+Failure Count: 1
+How to fix: Fix ONE of the following: Element has children which are not allowed: li[tabindex] Element uses aria-busy="true" while showing a loader
+
+Failed instances count: 10
+Failure Title: Ensures elements with an ARIA role that require parent roles are contained by them
+Failure Count: 4
+How to fix: Fix the following: Required ARIA parent role not present: tablist
+
+Failed instances count: 10
+Failure Title: Ensures <li> elements are used semantically
+Failure Count: 4
+How to fix: Fix the following: List item does not have a <ul>, <ol> parent element without a role, or a role="list"
+
+Failed instances count: 10
+Failure Title: Ensures lang attributes have valid values
+Failure Count: 1
+How to fix: Fix the following: Value of lang attribute not included in the list of valid languages
+
+
+
+---------- File: .\gov\usa_items_list.html ----------
+
+
+
+---------- File: .\gov\usa_item_details.html ----------
+
+
+
+---------- File: .\gov\usa_main_page.html ----------
+
+Failed instances count: 2
+Failure Title: Ensures role attribute has an appropriate value for the element
+Failure Count: 1
+How to fix: Fix the following: ARIA role region is not allowed for given element
+
+Failed instances count: 2
+Failure Title: Ensures that lists are structured correctly
+Failure Count: 1
+How to fix: Fix the following: List element has direct children that are not allowed: [role=region]
+

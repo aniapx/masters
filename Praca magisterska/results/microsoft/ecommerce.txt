@@ -1,0 +1,239 @@
+Folder: ecommerce
+
+
+---------- File: .\ecommerce\allegro_items_list.html ----------
+
+Failed instances count: 307
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 4
+How to fix: Fix the following: aria-label attribute cannot be used on a div with no valid role attribute.
+
+Failed instances count: 307
+Failure Title: Ensures every ARIA progressbar node has an accessible name
+Failure Count: 3
+How to fix: Fix ONE of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 307
+Failure Title: Ensures elements with ARIA roles have all required ARIA attributes
+Failure Count: 1
+How to fix: Fix the following: Required ARIA attribute not present: aria-expanded
+
+Failed instances count: 307
+Failure Title: Ensures buttons have discernible text
+Failure Count: 31
+How to fix: Fix ONE of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 307
+Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Failure Count: 239
+How to fix: Fix the following: Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1 Use background color: #ce4800 and the original foreground color: #ffffff to meet a contrast ratio of 4.61:1. Use background color: #ce4800 and the original foreground color: #ffffff to meet a contrast ratio of 4.61:1.
+
+Failed instances count: 307
+Failure Title: Ensures every id attribute value used in ARIA and in labels is unique
+Failure Count: 6
+How to fix: Fix the following: Document has multiple elements referenced with ARIA with the same id attribute: multi-select-inny
+
+Failed instances count: 307
+Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
+Failure Count: 21
+How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 307
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: user-scalable=no on <meta> tag disables zooming on mobile devices
+
+Failed instances count: 307
+Failure Title: Ensures select element has an accessible name
+Failure Count: 1
+How to fix: Fix ONE of the following: Form element does not have an implicit (wrapped) <label> Form element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+
+
+---------- File: .\ecommerce\allegro_item_details.html ----------
+
+Failed instances count: 52
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 2
+How to fix: Fix the following: aria-label attribute cannot be used on a div with no valid role attribute.
+
+Failed instances count: 52
+Failure Title: Ensures role attribute has an appropriate value for the element
+Failure Count: 12
+How to fix: Fix the following: ARIA role presentation is not allowed for given element
+
+Failed instances count: 52
+Failure Title: Ensures every ARIA progressbar node has an accessible name
+Failure Count: 2
+How to fix: Fix ONE of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 52
+Failure Title: Ensures elements with ARIA roles have all required ARIA attributes
+Failure Count: 1
+How to fix: Fix the following: Required ARIA attribute not present: aria-expanded
+
+Failed instances count: 52
+Failure Title: Ensures buttons have discernible text
+Failure Count: 1
+How to fix: Fix ONE of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 52
+Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Failure Count: 22
+How to fix: Fix the following: Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1 Use background color: #ce4800 and the original foreground color: #ffffff to meet a contrast ratio of 4.61:1. Use background color: #ce4800 and the original foreground color: #ffffff to meet a contrast ratio of 4.61:1.
+
+Failed instances count: 52
+Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
+Failure Count: 7
+How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 52
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: user-scalable=no on <meta> tag disables zooming on mobile devices
+
+Failed instances count: 52
+Failure Title: Ensures [role='img'] elements have alternate text
+Failure Count: 4
+How to fix: Fix ONE of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+
+
+---------- File: .\ecommerce\allegro_main_page.html ----------
+
+Failed instances count: 53
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 1
+How to fix: Fix the following: aria-label attribute cannot be used on a div with no valid role attribute.
+
+Failed instances count: 53
+Failure Title: Ensures every ARIA progressbar node has an accessible name
+Failure Count: 2
+How to fix: Fix ONE of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 53
+Failure Title: Ensures elements with ARIA roles have all required ARIA attributes
+Failure Count: 1
+How to fix: Fix the following: Required ARIA attribute not present: aria-expanded
+
+Failed instances count: 53
+Failure Title: Ensures buttons have discernible text
+Failure Count: 1
+How to fix: Fix ONE of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 53
+Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Failure Count: 28
+How to fix: Fix the following: Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1 Use background color: #ce4800 and the original foreground color: #ffffff to meet a contrast ratio of 4.61:1. Use background color: #ce4800 and the original foreground color: #ffffff to meet a contrast ratio of 4.61:1.
+
+Failed instances count: 53
+Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
+Failure Count: 15
+How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 53
+Failure Title: Ensures links have discernible text
+Failure Count: 4
+How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 53
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: user-scalable=no on <meta> tag disables zooming on mobile devices
+
+
+
+---------- File: .\ecommerce\amazon_items_list.html ----------
+
+Failed instances count: 429
+Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Failure Count: 1
+How to fix: Fix the following: Element has insufficient color contrast of 2.93 (foreground color: #ffffff, background color: #e67a00, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 2.93 (foreground color: #ffffff, background color: #e67a00, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1 Use background color: #b05c00 and the original foreground color: #ffffff to meet a contrast ratio of 4.80:1. Use background color: #b05c00 and the original foreground color: #ffffff to meet a contrast ratio of 4.80:1.
+
+Failed instances count: 429
+Failure Title: Ensures <iframe> and <frame> elements have an accessible name
+Failure Count: 3
+How to fix: Fix ONE of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 429
+Failure Title: Ensures every form element has a label
+Failure Count: 182
+How to fix: Fix ONE of the following: Form element does not have an implicit (wrapped) <label> Form element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element has no placeholder attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 429
+Failure Title: Ensures that lists are structured correctly
+Failure Count: 40
+How to fix: Fix the following: List element has direct children that are not allowed: span
+
+Failed instances count: 429
+Failure Title: Ensures <li> elements are used semantically
+Failure Count: 203
+How to fix: Fix the following: List item does not have a <ul>, <ol> parent element
+
+
+
+---------- File: .\ecommerce\amazon_main_page.html ----------
+
+Failed instances count: 5
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 5
+How to fix: Fix the following: aria-label attribute cannot be used with role "null".
+
+
+
+---------- File: .\ecommerce\bol_item_details.html ----------
+
+Failed instances count: 54
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 21
+How to fix: Fix the following: aria-label attribute cannot be used on a div with no valid role attribute.
+
+Failed instances count: 54
+Failure Title: Ensures every ARIA button, link and menuitem has an accessible name
+Failure Count: 1
+How to fix: Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 54
+Failure Title: Ensures aria-hidden elements are not focusable nor contain focusable elements
+Failure Count: 5
+How to fix: Fix the following: Focusable content should have tabindex='-1' or be removed from the DOM
+
+Failed instances count: 54
+Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Failure Count: 3
+How to fix: Fix the following: Element has insufficient color contrast of 3.01 (foreground color: #01ac3a, background color: #ffffff, font size: 9.9pt (13.2px), font weight: bold). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 3.01 (foreground color: #01ac3a, background color: #ffffff, font size: 9.9pt (13.2px), font weight: bold). Expected contrast ratio of 4.5:1 Use foreground color: #00832b and the original background color: #ffffff to meet a contrast ratio of 4.90:1. Use foreground color: #00832b and the original background color: #ffffff to meet a contrast ratio of 4.90:1.
+
+Failed instances count: 54
+Failure Title: Ensures every id attribute value of active elements is unique
+Failure Count: 2
+How to fix: Fix the following: Document has active elements with the same id attribute: active-zoom-image-trigger
+
+Failed instances count: 54
+Failure Title: Ensures links have discernible text
+Failure Count: 21
+How to fix: Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 54
+Failure Title: Ensures that lists are structured correctly
+Failure Count: 1
+How to fix: Fix the following: List element has direct children that are not allowed: wsp-main-nav-item
+
+
+
+---------- File: .\ecommerce\bol_main_page.html ----------
+
+Failed instances count: 4
+Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Failure Count: 2
+How to fix: Fix the following: Element has insufficient color contrast of 3.01 (foreground color: #01ac3a, background color: #ffffff, font size: 9.9pt (13.2px), font weight: bold). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 3.01 (foreground color: #01ac3a, background color: #ffffff, font size: 9.9pt (13.2px), font weight: bold). Expected contrast ratio of 4.5:1 Use foreground color: #00832b and the original background color: #ffffff to meet a contrast ratio of 4.90:1. Use foreground color: #00832b and the original background color: #ffffff to meet a contrast ratio of 4.90:1.
+
+Failed instances count: 4
+Failure Title: Ensure links are distinguished from surrounding text in a way that does not rely on color
+Failure Count: 1
+How to fix: Fix ONE of the following: The link has insufficient color contrast of 1.43:1 with the surrounding text. (Minimum contrast is 3:1, link text: #2b2b40, surrounding text: #0a0a0a) The link has no styling (such as underline) to distinguish it from the surrounding text
+
+Failed instances count: 4
+Failure Title: Ensures that lists are structured correctly
+Failure Count: 1
+How to fix: Fix the following: List element has direct children that are not allowed: wsp-main-nav-item
+

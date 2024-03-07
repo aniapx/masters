@@ -1,0 +1,48 @@
+Folder: smallsize
+
+
+---------- File: .\smallsize\bagietka.html ----------
+
+Failed instances count: 3
+Failure Title: Ensures every ARIA button, link and menuitem has an accessible name
+Failure Count: 3
+How to fix: Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+
+
+---------- File: .\smallsize\nomadplayhouse.html ----------
+
+Failed instances count: 11
+Failure Title: Ensures <iframe> and <frame> elements have an accessible name
+Failure Count: 1
+How to fix: Fix ONE of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 11
+Failure Title: Ensures every HTML document has a lang attribute
+Failure Count: 1
+How to fix: Fix the following: The <html> element does not have a lang attribute
+
+Failed instances count: 11
+Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
+Failure Count: 3
+How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
+
+Failed instances count: 11
+Failure Title: Ensures links have discernible text
+Failure Count: 6
+How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+
+
+---------- File: .\smallsize\osnabrueckhalle.html ----------
+
+Failed instances count: 21
+Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+Failure Count: 3
+How to fix: Fix the following: Element has insufficient color contrast of 1.7 (foreground color: #ffffff, background color: #86db61, font size: 13.6pt (18.1296px), font weight: bold). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 1.7 (foreground color: #ffffff, background color: #86db61, font size: 13.6pt (18.1296px), font weight: bold). Expected contrast ratio of 4.5:1 Use background color: #4c8036 and the original foreground color: #ffffff to meet a contrast ratio of 4.72:1. Use background color: #4c8036 and the original foreground color: #ffffff to meet a contrast ratio of 4.72:1.
+
+Failed instances count: 21
+Failure Title: Ensures links have discernible text
+Failure Count: 18
+How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+

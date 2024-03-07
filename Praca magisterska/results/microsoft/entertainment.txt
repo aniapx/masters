@@ -1,0 +1,217 @@
+Folder: entertainment
+
+
+---------- File: .\entertainment\palyer_items_list.html ----------
+
+Failed instances count: 106
+Failure Title: Ensures links have discernible text
+Failure Count: 106
+How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+
+
+---------- File: .\entertainment\player_item_details.html ----------
+
+Failed instances count: 23
+Failure Title: Ensures links have discernible text
+Failure Count: 23
+How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+
+
+---------- File: .\entertainment\player_main_page.html ----------
+
+Failed instances count: 81
+Failure Title: Ensures links have discernible text
+Failure Count: 81
+How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+
+
+---------- File: .\entertainment\spotify_items_list.html ----------
+
+Failed instances count: 75
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 8
+How to fix: Fix the following: ARIA attribute is not allowed: aria-checked="true"
+
+Failed instances count: 75
+Failure Title: Ensures elements with ARIA roles have all required ARIA attributes
+Failure Count: 1
+How to fix: Fix the following: Required ARIA attribute not present: aria-expanded
+
+Failed instances count: 75
+Failure Title: Ensures elements with an ARIA role that require child roles contain them
+Failure Count: 5
+How to fix: Fix ONE of the following: Element has children which are not allowed: [role=checkbox] Element uses aria-busy="true" while showing a loader
+
+Failed instances count: 75
+Failure Title: Ensures all ARIA attributes have valid values
+Failure Count: 1
+How to fix: Fix the following: Invalid ARIA attribute value: aria-controls="sort-and-view-picker"
+
+Failed instances count: 75
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: maximum-scale on <meta> tag disables zooming on mobile devices
+
+Failed instances count: 75
+Failure Title: Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them
+Failure Count: 59
+How to fix: Fix the following: Element does not have global ARIA attribute
+
+
+
+---------- File: .\entertainment\spotify_item_details.html ----------
+
+Failed instances count: 61
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 7
+How to fix: Fix the following: ARIA attribute is not allowed: aria-checked="true"
+
+Failed instances count: 61
+Failure Title: Ensures elements with ARIA roles have all required ARIA attributes
+Failure Count: 1
+How to fix: Fix the following: Required ARIA attribute not present: aria-expanded
+
+Failed instances count: 61
+Failure Title: Ensures elements with an ARIA role that require child roles contain them
+Failure Count: 4
+How to fix: Fix ONE of the following: Element has children which are not allowed: [role=checkbox] Element uses aria-busy="true" while showing a loader
+
+Failed instances count: 61
+Failure Title: Ensures all ARIA attributes have valid values
+Failure Count: 1
+How to fix: Fix the following: Invalid ARIA attribute value: aria-controls="sort-and-view-picker"
+
+Failed instances count: 61
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: maximum-scale on <meta> tag disables zooming on mobile devices
+
+Failed instances count: 61
+Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+Failure Count: 1
+How to fix: Fix the following: Element has focusable descendants
+
+Failed instances count: 61
+Failure Title: Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them
+Failure Count: 46
+How to fix: Fix the following: Element does not have global ARIA attribute
+
+
+
+---------- File: .\entertainment\spotify_main_page.html ----------
+
+Failed instances count: 171
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 3
+How to fix: Fix the following: ARIA attribute is not allowed: aria-expanded="false"
+
+Failed instances count: 171
+Failure Title: Ensures elements with ARIA roles have all required ARIA attributes
+Failure Count: 1
+How to fix: Fix the following: Required ARIA attribute not present: aria-expanded
+
+Failed instances count: 171
+Failure Title: Ensures elements with an ARIA role that require child roles contain them
+Failure Count: 4
+How to fix: Fix ONE of the following: Element has children which are not allowed: [role=checkbox] Element uses aria-busy="true" while showing a loader
+
+Failed instances count: 171
+Failure Title: Ensures all ARIA attributes have valid values
+Failure Count: 1
+How to fix: Fix the following: Invalid ARIA attribute value: aria-controls="sort-and-view-picker"
+
+Failed instances count: 171
+Failure Title: Ensures every id attribute value used in ARIA and in labels is unique
+Failure Count: 6
+How to fix: Fix the following: Document has multiple elements referenced with ARIA with the same id attribute: onClickHintspotify:playlist:37i9dQZF1DXa3d3ljLBxSG-5
+
+Failed instances count: 171
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: maximum-scale on <meta> tag disables zooming on mobile devices
+
+Failed instances count: 171
+Failure Title: Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them
+Failure Count: 155
+How to fix: Fix the following: Element does not have global ARIA attribute
+
+
+
+---------- File: .\entertainment\youtube_items_list.html ----------
+
+Failed instances count: 139
+Failure Title: Ensures elements with ARIA roles have all required ARIA attributes
+Failure Count: 1
+How to fix: Fix the following: Required ARIA attributes not present: aria-expanded, aria-controls
+
+Failed instances count: 139
+Failure Title: Ensures every ARIA tooltip node has an accessible name
+Failure Count: 84
+How to fix: Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 139
+Failure Title: Ensures every id attribute value of active elements is unique
+Failure Count: 7
+How to fix: Fix the following: Document has active elements with the same id attribute: search
+
+Failed instances count: 139
+Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+Failure Count: 47
+How to fix: Fix the following: Element has focusable descendants
+
+
+
+---------- File: .\entertainment\youtube_item_details.html ----------
+
+Failed instances count: 64
+Failure Title: Ensures ARIA attributes are allowed for an element's role
+Failure Count: 1
+How to fix: Fix the following: ARIA attribute is not allowed: aria-checked="false"
+
+Failed instances count: 64
+Failure Title: Ensures elements with ARIA roles have all required ARIA attributes
+Failure Count: 1
+How to fix: Fix the following: Required ARIA attributes not present: aria-expanded, aria-controls
+
+Failed instances count: 64
+Failure Title: Ensures every ARIA tooltip node has an accessible name
+Failure Count: 33
+How to fix: Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 64
+Failure Title: Ensures every id attribute value of active elements is unique
+Failure Count: 5
+How to fix: Fix the following: Document has active elements with the same id attribute: search
+
+Failed instances count: 64
+Failure Title: Ensures links have discernible text
+Failure Count: 1
+How to fix: Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 64
+Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+Failure Count: 23
+How to fix: Fix the following: Element has focusable descendants
+
+
+
+---------- File: .\entertainment\youtube_main_page.html ----------
+
+Failed instances count: 67
+Failure Title: Ensures every ARIA tooltip node has an accessible name
+Failure Count: 38
+How to fix: Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+Failed instances count: 67
+Failure Title: Ensures every id attribute value of active elements is unique
+Failure Count: 7
+How to fix: Fix the following: Document has active elements with the same id attribute: search
+
+Failed instances count: 67
+Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+Failure Count: 22
+How to fix: Fix the following: Element has focusable descendants
+

@@ -1,0 +1,52 @@
+Folder: healthcare
+
+
+---------- File: .\healthcare\kcp_items_list.html ----------
+
+Failed instances count: 1
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: user-scalable on <meta> tag disables zooming on mobile devices
+
+
+
+---------- File: .\healthcare\kcp_main_page.html ----------
+
+Failed instances count: 1
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: user-scalable on <meta> tag disables zooming on mobile devices
+
+
+
+---------- File: .\healthcare\ksp_item_details.html ----------
+
+Failed instances count: 1
+Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Failure Count: 1
+How to fix: Fix the following: user-scalable on <meta> tag disables zooming on mobile devices
+
+
+
+---------- File: .\healthcare\mayoclinic_items_list.html ----------
+
+
+
+---------- File: .\healthcare\mayoclinic_item_details.html ----------
+
+
+
+---------- File: .\healthcare\mayoclinic_main_page.html ----------
+
+
+
+---------- File: .\healthcare\nhs_items_list.html ----------
+
+
+
+---------- File: .\healthcare\nhs_item_details.html ----------
+
+
+
+---------- File: .\healthcare\nhs_main_page.html ----------
+
