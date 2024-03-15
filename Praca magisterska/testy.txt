@@ -1,69 +1,104 @@
-Company	URL	Country
-		
-Ecommerce:		
-Amazon	https://www.amazon.com/	USA
-Bol	https://www.bol.com/	"Holandia, Belgia"
-Allegro 	https://allegro.pl/	Polska
-		
-News/Media Outlets:		
-CNN	https://www.cnn.com/	USA
-The Guardian	https://www.theguardian.com/	UK
-El País 	https://elpais.com/	Spain
-Onet	https://www.onet.pl/	Polska
-		
-Educational:		
-Uniwersytet Harvarda	https://www.harvard.edu/	USA
-University of Tokyo	https://www.u-tokyo.ac.jp/en/	Japan
-Universiteit Leiden	https://www.universiteitleiden.nl/	Holandia
-ZUT	https://www.zut.edu.pl/	Polska
-		
-Entertainment:		
-YouTube 	https://www.youtube.com/	USA
-Spotify	https://www.spotify.com/	
-Player.pl 	https://player.pl/	Polska
-		
-Healthcare:		
-Mayo Clinic	https://www.mayoclinic.org/	USA
-National Health Service (NHS)	https://www.nhs.uk/	UK
-Luxmed	https://www.luxmed.pl/	Polska
-NFZ (Narodowy Fundusz Zdrowia)	https://www.nfz.gov.pl/	Polska
-		
-Government:		
-USA.gov 	https://www.usa.gov/	USA
-Legifrance	https://www.legifrance.gouv.fr/	Francja
-Gov.pl 	https://www.gov.pl/web/gov	Polska
-		
-Social Media:		
-Facebook 	https://www.facebook.com/	USA
-Minds	https://www.minds.com/	USA
-LinkedIn 	https://www.linkedin.com/	USA
-X	https://www.x.com	
-		
-Diverse WCAG Compliance:		
-WCAGCompliant: Microsoft 	https://www.microsoft.com/	USA
-Partially Compliant: BBC News	https://www.bbc.com/news	UK
-		
-Highly popular:		
-Google 	https://www.google.com/	USA
-DHL	https://www.dhl.com/	Europa
-ZnanyLekarz	https://www.znanylekarz.pl/	Polska
-		
-Ma?e firmy		
-		USA
-		Europa
-Piekarnia Bagietka	https://www.bagietka.pl	Polska
-		
-Firmy ?rednigo rozmiaru		
-Uber	https://www.uber.com/	USA
-Booking.com	https://www.booking.com/	Holandia
-InPost	https://www.inpost.pl/	Polska
-		
-Du?e korporacje		
-Microsoft	https://www.microsoft.com/	USA
-Volkswagen	https://www.volkswagen.pl/	Niemcy
-Orlen	https://www.orlen.pl	Polska
-		
-Organizacje Non-profit		
-American Red Cross	https://www.redcross.org/	USA
-Legambiente	https://www.legambiente.it/	W?ochy
-WO?P	https://wosp.org.pl/	Polska
+Company	URL	Keyboard	NVDA	Forms	Media	Responsive
+						
+Ecommerce:						
+Amazon	https://www.amazon.com/	Nie wszystkie elementy s? osi?galne.  Focus na niewidocznym elemenrcie. Focus pojawia si? na nieinteraktywnym elemencie.	pass	N/A	N/A	pass
+	list	Focus pojajwia si? na niewidocznym elemenrcie. Brak widocznego focusu na elementach interaktywnych.	pass	N/A	N/A	pass
+	details	Focus pojajwia si? na niewidocznym elemenrcie.	pass	N/A	N/A	pass
+Bol	https://www.bol.com/	Nie wszystkie elementy interaktywne s? osi?galne.	Przycisk jest oznaczony jako link.	N/A	N/A	1. Formularz wyszukiwania nie do ko?ca pasuje do mniejszy ch ekranów x1. 2. 
+	list	Nie wszystkie elementy interaktywne s? osi?glane. Nie wszystkie elementy rozwijane s? poprawnie oznaczone (collapsed).	Nie wszystkie istotne elementy s? czytane.	N/A	N/A	Formularz wyszukiwania nie jest poprawnie wy?witlany. 
+	details	Nie mo?a omin?? otwarcia zdj?cia. Tooltip nie znika po przej?ciu do innego elementu. Nie wszystkie elementy s? osiagalne. Zamkni?cie popupu przenosi focus na pocz?tek strony. Niektóre popupy nie maj? focus trap. Z niektórych popupów nie mo?na wyj??.	"Nie wszystkie istotne elementy s? czytane. Cz??? przycisków jest czytana jako ""blank"". Nie wszystkie linki maj? odpowiednie tagi HTML. Jednoski pami?ci s? czytane niepoprawnie. Nieaktywne linki nie s? oznaczone poprawnie."	N/A	N/A	Formularz wyszukiwania nie jest poprawnie wy?witlany. 
+Allegro 	https://allegro.pl/	Brak linku do omini?cia nag?ówka. Popupy i dropdowny nie maj? focus trap 4. Mo?liwo?? otwarcia b??dnego elementu poprzez u?ycie klwaitury na menu u?ytkwonika. Menu nawigacji karuzeli nie jest aktualizowany prz zmianie elementu. Nie wszystkie elementy s? osi?galne. Dost?p do ukrytych elementów. Brak widocznego focusu na elementach interaktywnych (grafika jako link).		N/A	N/A	Nie wszystkie elementy s? poprawnie wy?wietlane. Otwarte munu zajmuj?ce ca?? stron? nie blokuje przewijania ukrytej zawarto?ci.
+	list	"Brak linku do omini?cia headera.  Brak focusu na strza?kach nawigacji. Nieporaawna nawigacja po ankiecie zadowolenia. Brak wdocznego focusu na elementach kisty które maj? obrazek jako link. B??dny dost?p do elementów manu, które powinny by? ukryte."		N/A	N/A	Otwarte munu zajmuj?ce ca?? stron? nie blokuje przewijania ukrytej zawarto?ci.
+	details	Brak linku do omini?cia nag?ówka.  Niektóre elementy interaktywne nie maj? focusu. Focus trap nie jest wt??czony po zakni?ciu elementu. Nie wszystkie elementy iteraktywne s? osi?glane.  Nie osi?glane tooltip z informacj?. Dost?p do ukrytych elementów.		N/A	N/A	Otwarte munu zajmuj?ce ca?? stron? nie blokuje przewijania ukrytej zawarto?ci.
+						
+News/Media Outlets:						
+CNN	https://www.cnn.com/	"Rozwini?cei rozszerzonego menu nie przenosi focusu do menu. Focus na niewidoczym elemencie. Brak focus trap na otwearym rozszerzonym neu, które przysy?ania tre?? strony i dalsza strona i aktywne liniki nie s? widoczne. Aktywownayny i niewidoczy link który przenosi do niesprecyzownaego akrtyku?u z przed 5 dni. "		pass	Brak transkrypcji fimów. 	pass
+	article	Dwa linki obok siebie przekierowuj?ce do tego samego.		pass	Brak transkrypcji fimów. 	pass
+El País 	https://elpais.com/	Brak focusu na interaktywnym elemencie. Nieosi?galne elementy interaktywne. Brak linku do omini?cia nag?ówka. B??dna akcja na elemencie interaktywnym.		pass	n/a	pass
+	article	Otwarcie popupu z komentarzami nie przenosi focusu i nie ma focus trap.  Focus na nieistniej?cym elemencie. Brak linku do omini?cia nag?ówka. Brak focusu na elemencie interaktywnym. 		pass	n/a	pass
+Onet	https://www.onet.pl/	Brak focusu elemencie interaktywnym. Nieosi?galne elementy interaktywne. Focsu na nieistniej?cym elemencie. Brak linku do omini?cia nag?ówka.		pass	Brak transkrypcji fimów. 	pass
+	article	Brak focusu na interaktywnym elemencie. Nieosi?glany elementy interaktywny. Focus na elementach nieistniej?cych. 		pass	Brak transkrypcji fimów. 	pass
+						
+Educational:						
+Uniwersytet Harvarda	https://www.harvard.edu/	Bardzo przejrzysta nawigacja i focus		n/a	n/a	pass
+	list	pass		n/a	n/a	pass
+	details	pass		n/a	n/a	pass
+University of Amsterdam	https://www.uva.nl/	Brak wsparcia		n/a	n/a	pass
+	list	Brak wsparcia		n/a	n/a	pass
+	details	Brak wsparcia		n/a	n/a	pass
+Politechnika Warszawska	https://www.pw.edu.pl/	"Nieosi?glany element interaktywny. Focus nie zawsze na linku/e;ementcie interaktynym, tylko obok"		n/a	n/a	pass
+	list	Zduplikowane elementy interaktywne.		n/a	n/a	pass
+	details	Focus na elemencie nieinteraktywnym.		n/a	n/a	pass
+ZUT	https://www.zut.edu.pl/	Brak focus trap na dropdown.		n/a	n/a	Otwarte munu zajmuj?ce ca?? stron? nie blokuje przewijania ukrytej zawarto?ci.
+	list	pass		n/a	n/a	pass
+	details	Focus na elemencie nieinteraktywnym.		n/a	n/a	Wa?ne infroamcje s? pomnirjszone aby pokaza? niewa?y obrazek.
+						
+Entertainment:						
+YouTube 	https://www.youtube.com/	Brak focusu na elemencie interaktywnym. Brak focus trap na rozwijamyn menu pod filmem. Mo?liwo?? klikni?cia na niewidzalny element (notyfikacja -> wi?cej info kropki). Brak focus trap na notyfikacjach/dodaj film/usermenu. Exiting the dorpodwn moves focus outside of the page (into the broswer). Dropodwns do not dissapear after moving focus outside of them. No focus on invisible buttons (like action menu in the notifiacion item). Closing the dorpdown moveds the focus otside of the page. Clicking show less moves the focus back to the beinning oif the list. 	"Menu button doesn't say collapsed/expanded… Expanding the menu doen;t move the focus inside it. Some links are marked  as buttons. Some dropdowns are marked as links. In navigatyion menu no information what is the cuyrrent page. Lots of elements have double tags like link-link, button-button. The video link reads the title twice. User verified icon is read as link. Loading more content has no notification read. Navigation collapsed elements are read as tabs instead of links. "	pass	pass	pass
+	list	Brak focusu na elemencie interaktywnym. Zduplikowane linki obok siebie.	"Link to user's channel reads only as ""go to channel"" witout sataing the channel name. Some elemnts are read as ""blank"" or just ""clickable"". The added at timestamp is not always corretly read. The cappter timestamp is not always corretly ready (i.e. 0:00 is midnight). Information about how long is the video is sto correctyl stated (just a random number). "	pass	pass	pass
+	details	"Anchor do wi?cej filmów od autora, nie przekierowuje focusu. Brak focus trap na dropdown manu ustawienia filmu. Ma?o widoczny focus na (…wi?cej) rozwini?cie info o filmie. Klikni?cie na dat? dodoania komentarza od?wie?a strone. Klikni?cie na dodanie emotikonu do komentarza nie przenosi focusu do dropowna. Bardzo ma?o widoczy focus na wyborze typu emotikona. Inaccesible repot video dorpdown button. NOTE: Show transcript button is very far from the video itself. Show less button has no focus. "	The subscribers number is not read corretly. Not clickable items are read as clickable. 	No info that the for is invalid. 		pass
+Spotify	https://www.spotify.com/	"The navigation is skipped automaticly when staring to navigate the page, which results I having to go through all the iotems to reach it. Nie mo?na zmieni? g?o?no?ci. "	Dropdown user menu is not read as collapsed/expanded. 	n/a	n/a	pass
+	list	Nie mo?na zmieni? g?o?no?ci. 	No inforamtiuon that the seach results have loded. 	n/a	n/a	pass
+	details	Nie mo?na zmieni? g?o?no?ci. 	The explicit icon is not read correctly. The table with songs dos not have columns properly described which results in reading the number of litens just as a numbner with no context (same with length of the song. The information about arits is not read but the links are accessible from all of the hidden text. 	n/a	n/a	pass
+Player.pl 	https://player.pl/	Brak focusu. 		n/a	n/a	"Button ""za?ó? konto"" nie zawsze mie?ci si? na ekranie. "
+	list	Brak focusu. 		n/a	n/a	pass
+	details	Brak focusu. 		n/a	n/a	Ikona menu nie mie?ci si? na ekranie. 
+						
+Healthcare:						
+Mayo Clinic	https://www.mayoclinic.org/	pass!		pass	pass	pass
+	list	pass!		pass	n/a	pass
+	details	pass!		pass	n/a	pass
+National Health Service (NHS)	https://www.nhs.uk/	pass. Very good selection for the focus - bright yellow. 		Nazwa pola formularza znika po wpisaniu. 	n/a	pass
+	list	pass		Nazwa pola formularza znika po wpisaniu. 	n/a	pass
+	details	pass		Nazwa pola formularza znika po wpisaniu. 	n/a	pass
+ZnanyLekarz	https://www.znanylekarz.pl/	"Ma?o widoczy focus na butonie ""dla profesjonalistów"". Brak focusu na elemencie interaktywnym. Nieporawna kolejno?? w folrmularzu (skok do headera). Focus na linkach które nie s? widoczne (du?o). Brak mo?liwo?ci wyboru czy w gabinecie czy online. Brak focus trap na popupie. Brak linku do przej?cia do g?ównej tre?ci."		Brak walidacji i errorów. Nazwa pola formularza znika po wpisaniu. 	n/a	pass
+	list	"Brak linku do przej?cia do g?ównej tre?ci. Niedost?pne dropowny do wyboru miasta I specjalno?ci. Ma?o widoczy focus na sugerowanych miastach. Popup nie ma focus trap. Niedost?pny button w kalendarzy do przej?ci ado kolejnych dni. Ma?o widoczny focus na linku ""pokaz wi?cej us?ug"". Dropdown nie znika po wyj?ciu z niego. Niedost?pny paginator. "		Nazwa pola formularza znika po wpisaniu. 	N/A	pass
+	details	Popup nie ma focus trap. Niedost?pne linki do pokazania wi?cej informacji. Brak linku do przej?cia do g?ównej tre?ci.		Nazwa pola formularza znika po wpisaniu. 	n/a	pass
+						
+Government:						
+USA.gov 	https://www.usa.gov/	pass	pass	n/a	n/a	pass
+	list	pass	Breadcrumb doesn’t state current state.	n/a	n/a	pass
+	details	pass	pass	n/a	n/a	pass
+Legifrance	https://www.legifrance.gouv.fr/	Cofanie focusu nie pokazuje dropdownów. Ikona home jest za ma?a I nie ma opisu tekstowego. Pusty popup. Niedost?pny przycisk do otwarcia popupu. Brak focus trap na popupch. 	Wrong usage of h2 heading. Missing heading on the site title. Navigation does not indicate current page.	n/a	n/a	pass
+	list	pass	Breadcrumbs do not have proper tag. Wrong usage of h2 heading.	n/a	n/a	pass
+	details	pass	Breadcrumbs do not have proper tag. Wrong usage of h2 heading.	n/a	n/a	pass
+Gov.pl 	https://www.gov.pl/web/gov	pass	 Catouseld doesn't say that is is a carousel. Navigacja w stopce nie ma tagu nav. Nieporawne u?ycie h1. Info icon has no alt text. 	n/a	n/a	pass
+	list	pass	Breadcrumbs do not have proper tag. Collapsed elements do not have collaped or expanded tag. Navigacja w stopce nie ma tagu nav.Nieporawne u?ycie h1.	n/a	n/a	pass
+	details	Zb?dny selektor sposobu sk?adani awnisku.	Navigacja w stopce nie ma tagu nav.Nieporawne u?ycie h1. Niepoprawny opis button zamknij.	n/a	n/a	pass
+						
+Social Media:						
+Facebook 	https://www.facebook.com/	Inaccessible popup/tooltio on the user info. No button to skip to main content. 	Collapsable button doent say collapesed/expanded. No alt text of the user picture. 			
+	user	The page doesn’t center on the focused element in the friends area.	Tabs are in wrong order. 			
+	post	pass	No error message that the comment to be posterd is emty. 			
+Reddit	https://www.reddit.com/	Logout and dark mode buttons are inaccesible.  Going back to skip links brakes them  (they do not skip anythingn anymore). Skop to right sidebar link doesn't work. Safe search button doesn’t have focus.	Use of popups with information about subreddit and user open automaticcly which causers problems with SRs. The collapsed/expanded state of buttons ios not always read correctly. Joined button is not describled well enough (just says Joined). No inromation about loading. 			
+	user	Logout and dark mode buttons are inaccesible.  Going back to skip links brakes them  (they do not skip anythingn anymore). Skop to right sidebar link doesn't work. 	Use of popups with information about subreddit and user open automaticcly which causers problems with SRs.			
+	post	Some dropdown buttons are inaccessible. Inconsistent focus in the dropdowns. Some dropdowns do not disappear after exiting them. Button to edit user fair is inaccessible. 	Use of popups with information about subreddit and user open automaticcly which causers problems with SRs.	Form errors are not read in screen reader. The red frame doesn’t dissaera when the erroris resolved. 		
+LinkedIn 	https://www.linkedin.com/	"Dwa linki obok siebie prowadz?ce do tego samego miejsca. Button tylko dla klwaiaturey ""skip to linkedin news"" nie prowadzi do niczego. Brak focusu na wyborze osób w nowej wiadomo?ci. Brak mo?liwo?ci wybporu osoby. Side navigation dropdowns do no tfit on the page. "	Time 1w is not read properly as week. Bardzo dok?adne opisanie elenetów na stronie. 	Nazwa pola znika po wpisaniu warto?ci (search).	n/a	pass
+	user	"Niedost?pna zak??dka ""schools"". Dwa linki prowadz?ce do jednego miejsca odobk siebie (zdj?cie I nazwisko). "	Time 1w is not read properly as week. Bardzo dok?adne opisanie elenetów na stronie. 	Nazwa pola znika po wpisaniu warto?ci (search).	n/a	pass
+	post	Ma?o widoczny fous na zdj?ciu u?ytwkonika. 	Time 1w is not read properly as week. Bardzo dok?adne opisanie elenetów na stronie. 	Nazwa pola znika po wpisaniu warto?ci (search).	pass	
+						
+Big						
+Microsoft	https://www.microsoft.com/	pass		pass	n/a	pass
+Volkswagen	https://www.volkswagen.pl/	Focus na niewidocznym elemncie.		pass	pass	Opening website in the mobile version triggers opening of the login form.
+Orlen	https://www.orlen.pl	Brak linku do omini?cia nag?owka. 		pass	pass	pass
+						
+Small						
+Nomad Play House	https://www.nomadplayhouse.org/	Brak mo?liwo?ci zamkni?cia menu. Niedost?pne przyciski w menu. Brak linku do omin?cia headera.		n/a	n/a	Menu nie do ko?ca si? mie?ci na d?ugo??.
+Osnabrueck Halle	https://www.osnabrueckhalle.de/	Focus pojawia si? na zamkni?tym menu. Brak focusu na elemencie interaktywnym. Focus na niewidocznym linku. Ma?o widoczny focus na linkach które s? obrazkami. 		Nazwa pola znika po wpisaniu warto?ci. Brak walidacji czy wisane warto?ci s? poprawne. 	n/a	
+Piekarnia Bagietka	https://www.bagietka.pl	Niektóre linki nie s? dost?pne. Brak linku do omin?cia headera.		n/a	n/a	Strona jest za szeroka na najmniejszym ekranie 375px.
+						
+Medium						
+UberEats	https://www.ubereats.com/	Brak przeniesienia focusu na menu po jego otworzeniu. Brak focus trap na menu. Brak buttona do zamkni?cia menu. Niedost?pny element wyboru czaus dostawy. Niepoprawna kolejno?? wyboryu miasta. Brak linku do omini?cia nag?ówka. 		Brak wiadomo?ci b??du. Nazwa pola znika po wpisaniu warto?ci. 	n/a	pass
+Booking.com	https://www.booking.com/	"Niedost?pne buttony do wyboru typu miej?ca (miasto, pla?a, etc). Brak focusu na elemencie interaktywnym. "		 Nazwa pola znika po wpisaniu warto?ci. 	n/a	pass
+CCC	https://ccc.eu/pl/	Brak focusu.		Na ma?ych ekranach nazwa pola znika po wpisaniu warto?ci. 	n/a	Placeholder w polu wyszukiwania nie mie?cie si? na najmniejszy ekranie iPhone SE.
+						
+Organizacje Non-profit						
+American Red Cross	https://www.redcross.org/	"Dropdown menus w headerze si? nie otwieraj? a jednak focus na nich jest, mimo ?e ich nie wida?. Nie ma informacji ?e to s? elementy sub menu so otwieralne. Niedost?pny button wyszukiwania. Brak focusu na elemencie interaktywnym. Dwa linki obok siebie prowadz?ce do tego soamego miejsca (link i obrazek wiadomosci). Fokus na niewidocznym linku. Odwrócona kolejno?? focusu na stopce. Niedost?pny button chatu. Brak focus trap na chacie. Niesost?pne przyciska na czacie.  Brak linku do omini?cia nag?ówka."		pass	pass	pass
+	donate	Niedost?pny button wyboru cz?sto?ci i predefiniowanej wysoko?ci donacji. Focus na nieklikancyh elementach. Brak linku do omini?cia nag?ówka.  		Brak walidacji empty spaces. 	pass	Brak linku powrotnego. 
+	volunteer	"Dropdown menus w headerze si? nie otwieraj? a jednak focus na nich jest, mimo ?e ich nie wida?. Nie ma informacji ?e to s? elementy sub menu so otwieralne. Niedost?pny button wyszukiwania. Niedost?pne buttony wyboru prdefiniowanych warto?ci donacji. Odwrócona kolejno?? focusu na stopce.  Brak linku do omini?cia nag?ówka."		Brak walidacji niedozwolonej warto?ci donacji (mimo ?e jest ionfo o tym ?e 10$ jest min).	pass	pass
+Legambiente	https://www.legambiente.it/	Nieosi?galny element interaktywny. Focus na niewidocznym elemencie. Brak focusu na elemencie interaktywnym.			pass	Brak mo?liwo?ci otworzenie menu. Za ma?y przycisk.
+	donate	Nieosi?galny element interaktywny. Brak linku do strony g?ównej.		"Brak dynamicznej walidacji formularza (dopiero po submicie). Nie consisten walidacja, cz??? default HTML cz??? JS. Nazwy pól formularzy nie s? statyczne, i znikaj? po wpisaniu czego?.  Brak dok??dnych errorów walidacji. Brak u?ycia odpowiedniego typu pól (number, postcode)."	pass	pass
+	volunteer	Brak focusu na elemencie interaktywnym. Niedost?pne buttony. Brak linku do strony ?ównej. 		"Nazwy pól formularzy nie s? statyczne, i znikaj? po wpisaniu czego?. "	pass	pass
+WO?P	https://wosp.org.pl/	Brak focusu na elemencie interaktywnym. Niedost?pne buttony zak??dek aktualno?ci. Niedost?pne linki niewidoczne aktualnie w karuzeli.		n/a	n/a	Wileko?? buttonu do zmiany strony w karuzzeli s? za ma?e.
+	donate	Brak focusu na elemencie interaktywnym.  Niedost?pne linki niewidoczne aktualnie w karuzeli. 		n/a	n/a	Wileko?? buttonu do zmiany strony w karuzzeli s? za ma?e.
+	volunteer	Brak focusu na elemencie interaktywnym.  Niedost?pne linki niewidoczne aktualnie w karuzeli. 		n/a	n/a	Wileko?? buttonu do zmiany strony w karuzzeli s? za ma?e.
