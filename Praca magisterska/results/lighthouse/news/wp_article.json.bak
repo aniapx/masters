@@ -6070,7 +6070,7 @@
                 "height": 43
               },
               "snippet": "<div class=\"i1Jkmv-o\">",
-              "nodeLabel": "Dzieci widzą i slyszą. #StopMowieNienawisci.",
+              "nodeLabel": "Dzieci widza i slysza. #StopMowieNienawisci.",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.32 (foreground color: #aaaaaa, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -6110,7 +6110,7 @@
                       "height": 234
                     },
                     "snippet": "<div class=\"i1eI_Vgi\">",
-                    "nodeLabel": "2 godziny temu\ndziadekCo raz wiecej chemii w zywnosci, rolnicy karmią nas \"zdro…"
+                    "nodeLabel": "2 godziny temu\ndziadekCo raz wiecej chemii w zywnosci, rolnicy karmia nas \"zdro…"
                   }
                 }
               ]
@@ -6152,7 +6152,7 @@
                       "height": 234
                     },
                     "snippet": "<div class=\"i1eI_Vgi\">",
-                    "nodeLabel": "2 godziny temu\ndziadekCo raz wiecej chemii w zywnosci, rolnicy karmią nas \"zdro…"
+                    "nodeLabel": "2 godziny temu\ndziadekCo raz wiecej chemii w zywnosci, rolnicy karmia nas \"zdro…"
                   }
                 }
               ]
@@ -6194,7 +6194,7 @@
                       "height": 234
                     },
                     "snippet": "<div class=\"i1eI_Vgi\">",
-                    "nodeLabel": "2 godziny temu\ndziadekCo raz wiecej chemii w zywnosci, rolnicy karmią nas \"zdro…"
+                    "nodeLabel": "2 godziny temu\ndziadekCo raz wiecej chemii w zywnosci, rolnicy karmia nas \"zdro…"
                   }
                 }
               ]
@@ -6914,7 +6914,7 @@
                       "height": 14
                     },
                     "snippet": "<a target=\"_blank\" href=\"https://wiadomosci.wp.pl/wybory-2023-karta-do-glosowania-jak-bedzie-wyglad…\" class=\"\" data-reactid=\"529\">",
-                    "nodeLabel": "Jak wygląda karta do glosowania"
+                    "nodeLabel": "Jak wyglada karta do glosowania"
                   }
                 }
               ]
@@ -6935,7 +6935,7 @@
                 "height": 14
               },
               "snippet": "<a target=\"_blank\" href=\"https://wiadomosci.wp.pl/wybory-2023-karta-do-glosowania-jak-bedzie-wyglad…\" class=\"\" data-reactid=\"529\">",
-              "nodeLabel": "Jak wygląda karta do glosowania",
+              "nodeLabel": "Jak wyglada karta do glosowania",
               "explanation": "Fix any of the following:\n  Target has insufficient size (177.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             "subItems": {

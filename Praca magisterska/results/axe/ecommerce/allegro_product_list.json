@@ -1204,7 +1204,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "h3[data-slot-name=\"Zlącza\"] > button[type=\"button\"]"
+                "h3[data-slot-name=\"Zlacza\"] > button[type=\"button\"]"
             ],
             "summary": "Fix any of the following:\\n  Element does not have inner text that is visible to screen readers\\n  aria-label attribute does not exist or is empty\\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\\n  Element has no title attribute\\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
             "source": "<button type=\"button\" class=\"mp4t_0 m3h2_0 mryx_0 munh_0 mg9e_0 mvrt_0 mj7a_0 mh36_0 m911_5r mefy_5r mnyp_5r mdwl_5r msts_n7\" aria-expanded=\"true\">",
@@ -1306,7 +1306,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "h3[data-slot-name=\"Oferta z fakturą\"] > button[type=\"button\"]"
+                "h3[data-slot-name=\"Oferta z faktura\"] > button[type=\"button\"]"
             ],
             "summary": "Fix any of the following:\\n  Element does not have inner text that is visible to screen readers\\n  aria-label attribute does not exist or is empty\\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\\n  Element has no title attribute\\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
             "source": "<button type=\"button\" class=\"mp4t_0 m3h2_0 mryx_0 munh_0 mg9e_0 mvrt_0 mj7a_0 mh36_0 m911_5r mefy_5r mnyp_5r mdwl_5r msts_n7\" aria-expanded=\"true\">",
@@ -8257,7 +8257,7 @@
                 "div[data-analytics-view-custom-item-id=\"13279242652\"] > ._e8529_h6D1d > ._e8529_H0b0G > ._e8529_nyTNp._e8529_AwkCY.mgmw_ag:nth-child(4)"
             ],
             "summary": "Fix any of the following:\\n  Element has insufficient color contrast of 3.5 (foreground color: #767676, background color: #222222, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
-            "source": "<li class=\"mgn2_14 mp0t_0a mqu1_21 mgmw_wo mli8_k4 mpof_z0 meqh_en mgmw_ag mgn2_12 mqu1_16 _e8529_nyTNp _e8529_AwkCY\">38,89&nbsp;zl z dostawą</li>",
+            "source": "<li class=\"mgn2_14 mp0t_0a mqu1_21 mgmw_wo mli8_k4 mpof_z0 meqh_en mgmw_ag mgn2_12 mqu1_16 _e8529_nyTNp _e8529_AwkCY\">38,89&nbsp;zl z dostawa</li>",
             "tags": [
                 "cat.color",
                 "wcag2aa",
@@ -8289,7 +8289,7 @@
                 "div[data-analytics-view-custom-item-id=\"12649965833\"] > ._e8529_h6D1d > ._e8529_H0b0G > ._e8529_nyTNp._e8529_AwkCY.mgmw_ag:nth-child(4)"
             ],
             "summary": "Fix any of the following:\\n  Element has insufficient color contrast of 3.5 (foreground color: #767676, background color: #222222, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
-            "source": "<li class=\"mgn2_14 mp0t_0a mqu1_21 mgmw_wo mli8_k4 mpof_z0 meqh_en mgmw_ag mgn2_12 mqu1_16 _e8529_nyTNp _e8529_AwkCY\">24,97&nbsp;zl z dostawą</li>",
+            "source": "<li class=\"mgn2_14 mp0t_0a mqu1_21 mgmw_wo mli8_k4 mpof_z0 meqh_en mgmw_ag mgn2_12 mqu1_16 _e8529_nyTNp _e8529_AwkCY\">24,97&nbsp;zl z dostawa</li>",
             "tags": [
                 "cat.color",
                 "wcag2aa",

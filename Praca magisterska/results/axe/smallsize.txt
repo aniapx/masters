@@ -1,18 +1,18 @@
-Results for folder: smallsize
-
-Errors in file: smallsize\bagietka_main_page.json
+smallsize\bagietka_main_page.json
 Serious Issues:
-- aria-command-name: 6 - Ensures every ARIA button, link and menuitem has an accessible name
+aria-command-name: 6: Ensures every ARIA button, link and menuitem has an accessible name;
 
-Errors in file: smallsize\nomadplayhouse_main_page.json
+smallsize\nomadplayhouse_main_page.json
 Critical Issues:
-- image-alt: 3 - Ensures <img> elements have alternate text or a role of none or presentation
-Serious Issues:
-- link-name: 6 - Ensures links have discernible text
-- frame-title: 1 - Ensures <iframe> and <frame> elements have an accessible name
-- html-has-lang: 1 - Ensures every HTML document has a lang attribute
+image-alt: 3: Ensures <img> elements have alternate text or a role of none or presentation;
 
-Errors in file: smallsize\osnabrueckhalle_main_page.json
 Serious Issues:
-- link-name: 18 - Ensures links have discernible text
-- color-contrast: 3 - Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+link-name: 6: Ensures links have discernible text;
+frame-title: 1: Ensures <iframe> and <frame> elements have an accessible name;
+html-has-lang: 1: Ensures every HTML document has a lang attribute;
+
+smallsize\osnabrueckhalle_main_page.json
+Serious Issues:
+link-name: 18: Ensures links have discernible text;
+color-contrast: 3: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds;
+

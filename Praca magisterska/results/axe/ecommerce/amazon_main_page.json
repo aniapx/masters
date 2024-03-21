@@ -56,7 +56,7 @@
                 ".a-link-normal:nth-child(1) > .a-icon-star-large.a-icon[role=\"presentation\"]"
             ],
             "summary": "Fix all of the following:\\n  aria-label attribute cannot be used with role \"null\".",
-            "source": "<i aria-label=\"wybierz te opcje, aby przyznać produktowi jedną gwiazdke.\" class=\"a-icon a-icon-star-large\" role=\"presentation\"></i>",
+            "source": "<i aria-label=\"wybierz te opcje, aby przyznać produktowi jedna gwiazdke.\" class=\"a-icon a-icon-star-large\" role=\"presentation\"></i>",
             "tags": [
                 "cat.aria",
                 "wcag2a",
@@ -70,7 +70,7 @@
             "isExperimental": false,
             "testUrl": "https://www.amazon.pl/ref=nav_logo",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiązek, plyt DVD i innych"
+            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiazek, plyt DVD i innych"
         },
         {
             "issueId": null,
@@ -99,7 +99,7 @@
             "isExperimental": false,
             "testUrl": "https://www.amazon.pl/ref=nav_logo",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiązek, plyt DVD i innych"
+            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiazek, plyt DVD i innych"
         },
         {
             "issueId": null,
@@ -128,7 +128,7 @@
             "isExperimental": false,
             "testUrl": "https://www.amazon.pl/ref=nav_logo",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiązek, plyt DVD i innych"
+            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiazek, plyt DVD i innych"
         },
         {
             "issueId": null,
@@ -157,7 +157,7 @@
             "isExperimental": false,
             "testUrl": "https://www.amazon.pl/ref=nav_logo",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiązek, plyt DVD i innych"
+            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiazek, plyt DVD i innych"
         },
         {
             "issueId": null,
@@ -186,7 +186,7 @@
             "isExperimental": false,
             "testUrl": "https://www.amazon.pl/ref=nav_logo",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiązek, plyt DVD i innych"
+            "testPageTitle": "Amazon.pl: zakupy internetowe elektroniki, odziezy, komputerów, ksiazek, plyt DVD i innych"
         }
     ]
 }

@@ -83,7 +83,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -115,7 +115,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -130,7 +130,7 @@
                 ".i1Jkmv-o"
             ],
             "summary": "Fix any of the following:\\n  Element has insufficient color contrast of 2.32 (foreground color: #aaaaaa, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1",
-            "source": "<div class=\"i1Jkmv-o\">Dzieci widzą i slyszą. #StopMowieNienawisci.</div>",
+            "source": "<div class=\"i1Jkmv-o\">Dzieci widza i slysza. #StopMowieNienawisci.</div>",
             "tags": [
                 "cat.color",
                 "wcag2aa",
@@ -147,7 +147,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -179,7 +179,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -211,7 +211,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -243,7 +243,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -278,7 +278,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -314,7 +314,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -350,7 +350,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -386,7 +386,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -422,7 +422,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         },
         {
             "issueId": null,
@@ -458,7 +458,7 @@
             "isExperimental": false,
             "testUrl": "https://wiadomosci.wp.pl/sa-wyniki-badan-zatrutej-galarety-wstrzasajace-7003048216320736a",
             "axeVersion": "4.8.2",
-            "testPageTitle": "Są wyniki badań zatrutej galarety. Wstrząsające - WP Wiadomosci"
+            "testPageTitle": "Sa wyniki badań zatrutej galarety. Wstrzasajace - WP Wiadomosci"
         }
     ]
 }

@@ -247,7 +247,7 @@
                 ".category-section:nth-child(8) > .accordion-element:nth-child(14) > .accordion-link"
             ],
             "summary": "Fix any of the following:\\n  The link has insufficient color contrast of 2.25:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0052a5, surrounding text: #1b1b1b)\\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
-            "source": "<a class=\"accordion-link\" href=\"https://www.gov.pl/web/gov/skorzystaj-z-dofinansowania-do-zakupu-oprzyrzadowania-samochodu--narzad-ruchu\">Skorzystaj z dofinansowania do zakupu oprzyrządowania samochodu – narząd ruchu</a>",
+            "source": "<a class=\"accordion-link\" href=\"https://www.gov.pl/web/gov/skorzystaj-z-dofinansowania-do-zakupu-oprzyrzadowania-samochodu--narzad-ruchu\">Skorzystaj z dofinansowania do zakupu oprzyrzadowania samochodu – narzad ruchu</a>",
             "tags": [
                 "cat.color",
                 "wcag2a",
@@ -278,7 +278,7 @@
                 ".category-section:nth-child(8) > .accordion-element:nth-child(15) > .accordion-link"
             ],
             "summary": "Fix any of the following:\\n  The link has insufficient color contrast of 2.25:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0052a5, surrounding text: #1b1b1b)\\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
-            "source": "<a class=\"accordion-link\" href=\"https://www.gov.pl/web/gov/skorzystaj-z-dofinansowania-do-zakupu-oprzyrzadowania-samochodu---narzad-sluchu\">Skorzystaj z dofinansowania do zakupu oprzyrządowania samochodu - narząd sluchu</a>",
+            "source": "<a class=\"accordion-link\" href=\"https://www.gov.pl/web/gov/skorzystaj-z-dofinansowania-do-zakupu-oprzyrzadowania-samochodu---narzad-sluchu\">Skorzystaj z dofinansowania do zakupu oprzyrzadowania samochodu - narzad sluchu</a>",
             "tags": [
                 "cat.color",
                 "wcag2a",
@@ -340,7 +340,7 @@
                 ".category-section:nth-child(8) > .accordion-element:nth-child(18) > .accordion-link"
             ],
             "summary": "Fix any of the following:\\n  The link has insufficient color contrast of 2.25:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0052a5, surrounding text: #1b1b1b)\\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
-            "source": "<a class=\"accordion-link\" href=\"https://www.gov.pl/web/gov/skorzystaj-z-dofinansowania-do-zakupu-skutera-inwalidzkiego-lub-oprzyrzadowania-elektrycznego-do-wozka-recznego\">Skorzystaj z dofinansowania do zakupu skutera inwalidzkiego lub oprzyrządowania elektrycznego do wózka recznego</a>",
+            "source": "<a class=\"accordion-link\" href=\"https://www.gov.pl/web/gov/skorzystaj-z-dofinansowania-do-zakupu-skutera-inwalidzkiego-lub-oprzyrzadowania-elektrycznego-do-wozka-recznego\">Skorzystaj z dofinansowania do zakupu skutera inwalidzkiego lub oprzyrzadowania elektrycznego do wózka recznego</a>",
             "tags": [
                 "cat.color",
                 "wcag2a",
@@ -433,7 +433,7 @@
                 ".category-section:nth-child(8) > .accordion-element:nth-child(28) > .accordion-link"
             ],
             "summary": "Fix any of the following:\\n  The link has insufficient color contrast of 2.25:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0052a5, surrounding text: #1b1b1b)\\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
-            "source": "<a class=\"accordion-link\" href=\"https://www.gov.pl/gov/uzyskaj-swiadczenie-wspierajace\">Uzyskaj swiadczenie wspierające</a>",
+            "source": "<a class=\"accordion-link\" href=\"https://www.gov.pl/gov/uzyskaj-swiadczenie-wspierajace\">Uzyskaj swiadczenie wspierajace</a>",
             "tags": [
                 "cat.color",
                 "wcag2a",

@@ -313,7 +313,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "a[aria-label=\"Slupek wskazujący 61 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "a[aria-label=\"Slupek wskazujacy 61 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix any of the following:\\n  aria-label attribute does not exist or is empty\\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\\n  Element has no title attribute",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"61%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:61%\"></div></div>",
@@ -342,7 +342,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "a[aria-label=\"Slupek wskazujący 18 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "a[aria-label=\"Slupek wskazujacy 18 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix any of the following:\\n  aria-label attribute does not exist or is empty\\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\\n  Element has no title attribute",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"18%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:18%\"></div></div>",
@@ -371,7 +371,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "span[aria-label=\"Slupek wskazujący 0 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "span[aria-label=\"Slupek wskazujacy 0 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix any of the following:\\n  aria-label attribute does not exist or is empty\\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\\n  Element has no title attribute",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"0%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:0%\"></div></div>",
@@ -400,7 +400,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "a[aria-label=\"Slupek wskazujący 11 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "a[aria-label=\"Slupek wskazujacy 11 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix any of the following:\\n  aria-label attribute does not exist or is empty\\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\\n  Element has no title attribute",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"11%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:11%\"></div></div>",
@@ -429,7 +429,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "a[aria-label=\"Slupek wskazujący 10 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "a[aria-label=\"Slupek wskazujacy 10 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix any of the following:\\n  aria-label attribute does not exist or is empty\\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\\n  Element has no title attribute",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"10%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:10%\"></div></div>",
@@ -458,10 +458,10 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "span[aria-label=\"Slupek wskazujący 0 proc.\"]"
+                "span[aria-label=\"Slupek wskazujacy 0 proc.\"]"
             ],
             "summary": "Fix all of the following:\\n  aria-label attribute cannot be used on a span with no valid role attribute.",
-            "source": "<span aria-label=\"Slupek wskazujący 0 proc.\" class=\"a-size-base\"><div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"0%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:0%\"></div></div></span>",
+            "source": "<span aria-label=\"Slupek wskazujacy 0 proc.\" class=\"a-size-base\"><div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"0%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:0%\"></div></div></span>",
             "tags": [
                 "cat.aria",
                 "wcag2a",
@@ -516,7 +516,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "a[aria-label=\"Slupek wskazujący 61 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "a[aria-label=\"Slupek wskazujacy 61 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix all of the following:\\n  Invalid ARIA attribute value: aria-valuenow=\"61%\"",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"61%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:61%\"></div></div>",
@@ -545,7 +545,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "a[aria-label=\"Slupek wskazujący 18 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "a[aria-label=\"Slupek wskazujacy 18 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix all of the following:\\n  Invalid ARIA attribute value: aria-valuenow=\"18%\"",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"18%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:18%\"></div></div>",
@@ -574,7 +574,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "span[aria-label=\"Slupek wskazujący 0 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "span[aria-label=\"Slupek wskazujacy 0 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix all of the following:\\n  Invalid ARIA attribute value: aria-valuenow=\"0%\"",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"0%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:0%\"></div></div>",
@@ -603,7 +603,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "a[aria-label=\"Slupek wskazujący 11 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "a[aria-label=\"Slupek wskazujacy 11 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix all of the following:\\n  Invalid ARIA attribute value: aria-valuenow=\"11%\"",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"11%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:11%\"></div></div>",
@@ -632,7 +632,7 @@
             "needsReview": false,
             "isManual": false,
             "selector": [
-                "a[aria-label=\"Slupek wskazujący 10 proc.\"] > .a-meter[role=\"progressbar\"]"
+                "a[aria-label=\"Slupek wskazujacy 10 proc.\"] > .a-meter[role=\"progressbar\"]"
             ],
             "summary": "Fix all of the following:\\n  Invalid ARIA attribute value: aria-valuenow=\"10%\"",
             "source": "<div class=\"a-meter\" role=\"progressbar\" aria-valuenow=\"10%\"><div class=\"a-meter-bar a-meter-unfilled\" style=\"width:10%\"></div></div>",

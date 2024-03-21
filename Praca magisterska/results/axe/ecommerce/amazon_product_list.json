@@ -10822,7 +10822,7 @@
                 "#p_n_feature_two_browse-bin\\/27023129031"
             ],
             "summary": "Fix any of the following:\\n  List item does not have a <ul>, <ol> parent element",
-            "source": "<li id=\"p_n_feature_two_browse-bin/27023129031\" aria-label=\"Ekran dotykowy z obslugą rysika\" class=\"a-spacing-micro\">",
+            "source": "<li id=\"p_n_feature_two_browse-bin/27023129031\" aria-label=\"Ekran dotykowy z obsluga rysika\" class=\"a-spacing-micro\">",
             "tags": [
                 "cat.structure",
                 "wcag2a",

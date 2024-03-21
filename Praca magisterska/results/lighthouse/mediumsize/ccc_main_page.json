@@ -4727,7 +4727,7 @@
                 "height": 52
               },
               "snippet": "<div class=\"c-header_col is-utilityNav \">",
-              "nodeLabel": "Szukaj\nSzukaj zdjęciem\nZaloguj\nUlubione\nKoszyk"
+              "nodeLabel": "Szukaj\nSzukaj zdjeciem\nZaloguj\nUlubione\nKoszyk"
             },
             "score": 0.0008469720276111229
           },
@@ -4746,7 +4746,7 @@
                 "height": 74
               },
               "snippet": "<div class=\"c-header_row is-container is-flex-container\">",
-              "nodeLabel": "KOBIETY\nMĘŻCZYŹNI\nDZIECI\nPromocje\nNowości\nButy\nTorby i walizki\nAkcesoria i odzi…"
+              "nodeLabel": "KOBIETY\nMeZCZYŹNI\nDZIECI\nPromocje\nNowości\nButy\nTorby i walizki\nAkcesoria i odzi…"
             },
             "score": 0.00040568615338567313
           },
@@ -4765,7 +4765,7 @@
                 "height": 47
               },
               "snippet": "<div class=\"c-menu clearfix is-level1 is-first \">",
-              "nodeLabel": "Promocje\nNowości\nButy\nTorby i walizki\nAkcesoria i odzież\nMarki\nFashion Blog"
+              "nodeLabel": "Promocje\nNowości\nButy\nTorby i walizki\nAkcesoria i odziez\nMarki\nFashion Blog"
             },
             "score": 0.0002576655298530627
           },
@@ -4784,7 +4784,7 @@
                 "height": 74
               },
               "snippet": "<div class=\"c-header_col is-menu \">",
-              "nodeLabel": "KOBIETY\nMĘŻCZYŹNI\nDZIECI\nPromocje\nNowości\nButy\nTorby i walizki\nAkcesoria i odzi…"
+              "nodeLabel": "KOBIETY\nMeZCZYŹNI\nDZIECI\nPromocje\nNowości\nButy\nTorby i walizki\nAkcesoria i odzi…"
             },
             "score": 0.00019994071152553048
           },
@@ -4803,7 +4803,7 @@
                 "height": 30
               },
               "snippet": "<div class=\"c-header_col is-rows \">",
-              "nodeLabel": "0 zł odbiór w sklepie\n0 zł wymiana w sklepie lub zwrot\nKlub CCC\nAplikacja\nZnajd…"
+              "nodeLabel": "0 zl odbiór w sklepie\n0 zl wymiana w sklepie lub zwrot\nKlub CCC\nAplikacja\nZnajd…"
             },
             "score": 0.0001644673594806783
           },
@@ -6533,7 +6533,7 @@
                 "height": 23
               },
               "snippet": "<span class=\"is-text\">",
-              "nodeLabel": "MĘŻCZYŹNI",
+              "nodeLabel": "MeZCZYŹNI",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #9d9d9d, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -6554,7 +6554,7 @@
                       "height": 77
                     },
                     "snippet": "<div class=\"c-menu_list is-list0\">",
-                    "nodeLabel": "KOBIETY\nMĘŻCZYŹNI\nDZIECI"
+                    "nodeLabel": "KOBIETY\nMeZCZYŹNI\nDZIECI"
                   }
                 }
               ]
@@ -6596,7 +6596,7 @@
                       "height": 77
                     },
                     "snippet": "<div class=\"c-menu_list is-list0\">",
-                    "nodeLabel": "KOBIETY\nMĘŻCZYŹNI\nDZIECI"
+                    "nodeLabel": "KOBIETY\nMeZCZYŹNI\nDZIECI"
                   }
                 }
               ]
@@ -6616,8 +6616,8 @@
                 "width": 121,
                 "height": 24
               },
-              "snippet": "<a href=\"https://ccc-eu.translate.goog/pl/?_x_tr_sl=pl&amp;_x_tr_tl=uk&amp;_x_tr_hl=pl&amp;_x_t…\" class=\"c-menu_link is-link0   is-col1 is-limit-4 \" data-analytics-on=\"click\" data-analytics-settings=\"{&quot;analyticsEvent&quot;:{&quot;event&quot;:&quot;toggleSend&quot;,&quot;category&quot;:&quot;Moje CCC&quot;,&quot;action&quot;:&quot;\\u…\" data-event-action=\"Українська версія\">",
-              "nodeLabel": "Українська версія",
+              "snippet": "<a href=\"https://ccc-eu.translate.goog/pl/?_x_tr_sl=pl&amp;_x_tr_tl=uk&amp;_x_tr_hl=pl&amp;_x_t…\" class=\"c-menu_link is-link0   is-col1 is-limit-4 \" data-analytics-on=\"click\" data-analytics-settings=\"{&quot;analyticsEvent&quot;:{&quot;event&quot;:&quot;toggleSend&quot;,&quot;category&quot;:&quot;Moje CCC&quot;,&quot;action&quot;:&quot;\\u…\" data-event-action=\"\">",
+              "nodeLabel": "",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #f7ef80, background color: #0096d5, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           }
@@ -8198,7 +8198,7 @@
                 "height": 234
               },
               "snippet": "<ul>",
-              "nodeLabel": "Pomoc dla Ukrainy\n\nУкраїнська версія\n\nDaj swoim butom drugie życie\n\nWeCare: raz…",
+              "nodeLabel": "Pomoc dla Ukrainy\n\n\n\nDaj swoim butom drugie zycie\n\nWeCare: raz…",
               "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: a"
             },
             "subItems": {
@@ -12123,7 +12123,7 @@
                 "height": 0
               },
               "snippet": "<a href=\"/pl/esizeme\" style=\"font-size: 12px; font-weight: 500; line-height: 20px; text-align: center;\">",
-              "nodeLabel": "Dowiedz się więcej o esize.me"
+              "nodeLabel": "Dowiedz sie wiecej o esize.me"
             },
             "statistic": "Maximum DOM Depth",
             "value": {

@@ -3934,7 +3934,7 @@
                 "height": 632
               },
               "snippet": "<div class=\"card card-shadow-1 mb-1\" id=\"addresses-section\">",
-              "nodeLabel": "Adres\nNiepubliczny Zakład Opieki Zdrowotnej Bartosz Jadczyk\nBandurskiego 15/2, …"
+              "nodeLabel": "Adres\nNiepubliczny Zaklad Opieki Zdrowotnej Bartosz Jadczyk\nBandurskiego 15/2, …"
             },
             "score": 0.0007940490452540197
           },
@@ -3972,7 +3972,7 @@
                 "height": 51
               },
               "snippet": "<div class=\"d-none d-md-flex flex-wrap unified-doctor-header-buttons mt-auto\">",
-              "nodeLabel": "Umów wizytę\nWyślij wiadomość"
+              "nodeLabel": "Umów wizyte\nWyślij wiadomość"
             },
             "score": 0.00005976278802862245
           },
@@ -5898,7 +5898,7 @@
                 "height": 23
               },
               "snippet": "<a class=\"collapse-header text-base-color  collapsed  align-items-center\" role=\"button\" data-toggle=\"collapse\" data-target=\"#collapse-body-3\" aria-expanded=\" false \" aria-controls=\"collapse-body-3\">",
-              "nodeLabel": "Czy Bartosz Jadczyk przyjmuje online, bez konieczności pojawiania się w placówc…",
+              "nodeLabel": "Czy Bartosz Jadczyk przyjmuje online, bez konieczności pojawiania sie w placówc…",
               "explanation": "Fix all of the following:\n  Invalid ARIA attribute value: aria-expanded=\" false \""
             }
           },
@@ -5917,7 +5917,7 @@
                 "height": 23
               },
               "snippet": "<a class=\"collapse-header text-base-color  collapsed  align-items-center\" role=\"button\" data-toggle=\"collapse\" data-target=\"#collapse-body-4\" aria-expanded=\" false \" aria-controls=\"collapse-body-4\">",
-              "nodeLabel": "Jak Bartosz Jadczyk akceptuje płatności po wizycie?",
+              "nodeLabel": "Jak Bartosz Jadczyk akceptuje platności po wizycie?",
               "explanation": "Fix all of the following:\n  Invalid ARIA attribute value: aria-expanded=\" false \""
             }
           },
@@ -5936,7 +5936,7 @@
                 "height": 23
               },
               "snippet": "<a class=\"collapse-header text-base-color  collapsed  align-items-center\" role=\"button\" data-toggle=\"collapse\" data-target=\"#collapse-body-5\" aria-expanded=\" false \" aria-controls=\"collapse-body-5\">",
-              "nodeLabel": "W jakich językach konsultuje Bartosz Jadczyk?",
+              "nodeLabel": "W jakich jezykach konsultuje Bartosz Jadczyk?",
               "explanation": "Fix all of the following:\n  Invalid ARIA attribute value: aria-expanded=\" false \""
             }
           },
@@ -5993,7 +5993,7 @@
                 "height": 23
               },
               "snippet": "<a class=\"collapse-header text-base-color  collapsed  align-items-center\" role=\"button\" data-toggle=\"collapse\" data-target=\"#collapse-body-8\" aria-expanded=\" false \" aria-controls=\"collapse-body-8\">",
-              "nodeLabel": "Bartosz Jadczyk: co mówią pacjenci?",
+              "nodeLabel": "Bartosz Jadczyk: co mówia pacjenci?",
               "explanation": "Fix all of the following:\n  Invalid ARIA attribute value: aria-expanded=\" false \""
             }
           },
@@ -6182,7 +6182,7 @@
                       "height": 60
                     },
                     "snippet": "<nav data-id=\"main-header\" role=\"navigation\" class=\"navbar navbar-dark bg-secondary navbar-expand-md navbar-custom mb-0 mx-aut…\">",
-                    "nodeLabel": "Zaloguj się\nDla profesjonalistów"
+                    "nodeLabel": "Zaloguj sie\nDla profesjonalistów"
                   }
                 }
               ]
@@ -6224,7 +6224,7 @@
                       "height": 60
                     },
                     "snippet": "<nav data-id=\"main-header\" role=\"navigation\" class=\"navbar navbar-dark bg-secondary navbar-expand-md navbar-custom mb-0 mx-aut…\">",
-                    "nodeLabel": "Zaloguj się\nDla profesjonalistów"
+                    "nodeLabel": "Zaloguj sie\nDla profesjonalistów"
                   }
                 }
               ]
@@ -6245,7 +6245,7 @@
                 "height": 48
               },
               "snippet": "<a href=\"#\" class=\"nav-link mr-0-5\" data-id=\"navbar-link\" data-test-id=\"navbar-login\" data-url=\"https://www.znanylekarz.pl/social-connect/pl_sso?_redirect=https%3A//www.z…\">",
-              "nodeLabel": "Zaloguj się",
+              "nodeLabel": "Zaloguj sie",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #ffffff, background color: #00c3a5, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -6266,7 +6266,7 @@
                       "height": 60
                     },
                     "snippet": "<nav data-id=\"main-header\" role=\"navigation\" class=\"navbar navbar-dark bg-secondary navbar-expand-md navbar-custom mb-0 mx-aut…\">",
-                    "nodeLabel": "Zaloguj się\nDla profesjonalistów"
+                    "nodeLabel": "Zaloguj sie\nDla profesjonalistów"
                   }
                 }
               ]
@@ -6287,7 +6287,7 @@
                 "height": 26
               },
               "snippet": "<h3 data-v-be637caa=\"\" data-v-0828b77c=\"\" class=\"text-white mb-0\">",
-              "nodeLabel": "Umów wizytę",
+              "nodeLabel": "Umów wizyte",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #3d83df, font size: 15.0pt (19.995px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -6308,7 +6308,7 @@
                       "height": 47
                     },
                     "snippet": "<div data-v-be637caa=\"\" data-v-0828b77c=\"\" class=\"card-header py-1 bg-primary\">",
-                    "nodeLabel": "Umów wizytę"
+                    "nodeLabel": "Umów wizyte"
                   }
                 }
               ]
@@ -6329,7 +6329,7 @@
                 "height": 23
               },
               "snippet": "<span>",
-              "nodeLabel": "Umów wizytę",
+              "nodeLabel": "Umów wizyte",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #3d83df, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -6350,7 +6350,7 @@
                       "height": 41
                     },
                     "snippet": "<a role=\"button\" class=\"btn btn-primary btn-sm-block btn-lg mt-1 mr-1\" data-id=\"book-visit-btn\" data-hide-on-saas-booking-widget=\"\" data-action=\"show-calendar\" data-context=\"book a visit\" data-ga-event=\"click\" data-ga-category=\"Book a visit button - commercial doctor profile\" data-ga-action=\"Click\" data-ga-label=\"Top of the profile\" data-ga-interaction=\"true\" data-patient-app-event-name=\"start-booking-flow\" data-patient-app-selector=\"patient-app-event\" data-one-tracking-event=\"click\" data-one-tracking-category=\"entityProfile\" data-one-tracking-action=\"navigate\" …>",
-                    "nodeLabel": "Umów wizytę"
+                    "nodeLabel": "Umów wizyte"
                   }
                 }
               ]
@@ -6410,7 +6410,7 @@
                       "height": 1180
                     },
                     "snippet": "<div class=\"card card-shadow-1 mb-1\" data-id=\"experience-doctor-items-wrapper\">",
-                    "nodeLabel": "Moje doświadczenie\n\nO mnie\n\nWłaściciel oraz od 2001 roku lekarz prowadzący Cent…"
+                    "nodeLabel": "Moje doświadczenie\n\nO mnie\n\nWlaściciel oraz od 2001 roku lekarz prowadzacy Cent…"
                   }
                 }
               ]
@@ -6430,7 +6430,7 @@
                 "width": 548,
                 "height": 41
               },
-              "snippet": "<input id=\"dpcmp-83\" placeholder=\"Wpisz szukane słowo\" type=\"text\" class=\"form-control form-control-lg\">",
+              "snippet": "<input id=\"dpcmp-83\" placeholder=\"Wpisz szukane slowo\" type=\"text\" class=\"form-control form-control-lg\">",
               "nodeLabel": "div > div.form-group > div.input-group > input#dpcmp-83",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #98a1ab, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
@@ -6471,7 +6471,7 @@
                       "height": 3946
                     },
                     "snippet": "<div class=\"card card-shadow-1 mb-1\">",
-                    "nodeLabel": "87 opinii pacjentów\nDodaj swoją opinię\n\nOgólna ocena\n\nTrzymamy rękę na pulsie\n1…"
+                    "nodeLabel": "87 opinii pacjentów\nDodaj swoja opinie\n\nOgólna ocena\n\nTrzymamy reke na pulsie\n1…"
                   }
                 }
               ]
@@ -6513,7 +6513,7 @@
                       "height": 3946
                     },
                     "snippet": "<div class=\"card card-shadow-1 mb-1\">",
-                    "nodeLabel": "87 opinii pacjentów\nDodaj swoją opinię\n\nOgólna ocena\n\nTrzymamy rękę na pulsie\n1…"
+                    "nodeLabel": "87 opinii pacjentów\nDodaj swoja opinie\n\nOgólna ocena\n\nTrzymamy reke na pulsie\n1…"
                   }
                 }
               ]
@@ -6555,7 +6555,7 @@
                       "height": 3946
                     },
                     "snippet": "<div class=\"card card-shadow-1 mb-1\">",
-                    "nodeLabel": "87 opinii pacjentów\nDodaj swoją opinię\n\nOgólna ocena\n\nTrzymamy rękę na pulsie\n1…"
+                    "nodeLabel": "87 opinii pacjentów\nDodaj swoja opinie\n\nOgólna ocena\n\nTrzymamy reke na pulsie\n1…"
                   }
                 }
               ]
@@ -6597,7 +6597,7 @@
                       "height": 3946
                     },
                     "snippet": "<div class=\"card card-shadow-1 mb-1\">",
-                    "nodeLabel": "87 opinii pacjentów\nDodaj swoją opinię\n\nOgólna ocena\n\nTrzymamy rękę na pulsie\n1…"
+                    "nodeLabel": "87 opinii pacjentów\nDodaj swoja opinie\n\nOgólna ocena\n\nTrzymamy reke na pulsie\n1…"
                   }
                 }
               ]
@@ -6639,7 +6639,7 @@
                       "height": 3946
                     },
                     "snippet": "<div class=\"card card-shadow-1 mb-1\">",
-                    "nodeLabel": "87 opinii pacjentów\nDodaj swoją opinię\n\nOgólna ocena\n\nTrzymamy rękę na pulsie\n1…"
+                    "nodeLabel": "87 opinii pacjentów\nDodaj swoja opinie\n\nOgólna ocena\n\nTrzymamy reke na pulsie\n1…"
                   }
                 }
               ]
@@ -6681,7 +6681,7 @@
                       "height": 3946
                     },
                     "snippet": "<div class=\"card card-shadow-1 mb-1\">",
-                    "nodeLabel": "87 opinii pacjentów\nDodaj swoją opinię\n\nOgólna ocena\n\nTrzymamy rękę na pulsie\n1…"
+                    "nodeLabel": "87 opinii pacjentów\nDodaj swoja opinie\n\nOgólna ocena\n\nTrzymamy reke na pulsie\n1…"
                   }
                 }
               ]
@@ -6723,7 +6723,7 @@
                       "height": 3946
                     },
                     "snippet": "<div class=\"card card-shadow-1 mb-1\">",
-                    "nodeLabel": "87 opinii pacjentów\nDodaj swoją opinię\n\nOgólna ocena\n\nTrzymamy rękę na pulsie\n1…"
+                    "nodeLabel": "87 opinii pacjentów\nDodaj swoja opinie\n\nOgólna ocena\n\nTrzymamy reke na pulsie\n1…"
                   }
                 }
               ]
@@ -6762,8 +6762,8 @@
                 "width": 183,
                 "height": 17
               },
-              "snippet": "<a class=\"text-muted\" href=\"/stomatolog/szczecin/prawobrzeze\" data-ga-event=\"click\" data-ga-label=\"Stomatolodzy Prawobrzeże\" data-ga-category=\"recommended-box-link\" data-ga-action=\"specialization_city_district\">",
-              "nodeLabel": "Stomatolodzy Prawobrzeże",
+              "snippet": "<a class=\"text-muted\" href=\"/stomatolog/szczecin/prawobrzeze\" data-ga-event=\"click\" data-ga-label=\"Stomatolodzy Prawobrzeze\" data-ga-category=\"recommended-box-link\" data-ga-action=\"specialization_city_district\">",
+              "nodeLabel": "Stomatolodzy Prawobrzeze",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #627282, background color: #edeff2, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -6781,8 +6781,8 @@
                 "width": 134,
                 "height": 17
               },
-              "snippet": "<a class=\"text-muted\" href=\"/stomatolog/szczecin/dabie\" data-ga-event=\"click\" data-ga-label=\"Stomatolodzy Dąbie\" data-ga-category=\"recommended-box-link\" data-ga-action=\"specialization_city_district\">",
-              "nodeLabel": "Stomatolodzy Dąbie",
+              "snippet": "<a class=\"text-muted\" href=\"/stomatolog/szczecin/dabie\" data-ga-event=\"click\" data-ga-label=\"Stomatolodzy Dabie\" data-ga-category=\"recommended-box-link\" data-ga-action=\"specialization_city_district\">",
+              "nodeLabel": "Stomatolodzy Dabie",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #627282, background color: #edeff2, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -6819,8 +6819,8 @@
                 "width": 315,
                 "height": 17
               },
-              "snippet": "<a class=\"text-muted\" href=\"/stomatolog/szczecin/wielgowo-slawociesze-zdunowo\" data-ga-event=\"click\" data-ga-label=\"Stomatolodzy Wielgowo-Sławociesze-Zdunowo\" data-ga-category=\"recommended-box-link\" data-ga-action=\"specialization_city_district\">",
-              "nodeLabel": "Stomatolodzy Wielgowo-Sławociesze-Zdunowo",
+              "snippet": "<a class=\"text-muted\" href=\"/stomatolog/szczecin/wielgowo-slawociesze-zdunowo\" data-ga-event=\"click\" data-ga-label=\"Stomatolodzy Wielgowo-Slawociesze-Zdunowo\" data-ga-category=\"recommended-box-link\" data-ga-action=\"specialization_city_district\">",
+              "nodeLabel": "Stomatolodzy Wielgowo-Slawociesze-Zdunowo",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #627282, background color: #edeff2, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -6838,8 +6838,8 @@
                 "width": 68,
                 "height": 17
               },
-              "snippet": "<a class=\"text-muted\" href=\"#show-more\" data-target=\"[data-id='recommended-block-link-specialization_city_district']\" data-text-more=\"Więcej (4)\" data-text-less=\"Mniej\">",
-              "nodeLabel": "Więcej (4)",
+              "snippet": "<a class=\"text-muted\" href=\"#show-more\" data-target=\"[data-id='recommended-block-link-specialization_city_district']\" data-text-more=\"Wiecej (4)\" data-text-less=\"Mniej\">",
+              "nodeLabel": "Wiecej (4)",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #627282, background color: #edeff2, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -6876,8 +6876,8 @@
                 "width": 149,
                 "height": 17
               },
-              "snippet": "<a class=\"text-muted\" href=\"/choroby/bol-zeba/szczecin\" data-ga-event=\"click\" data-ga-label=\"Ból zęba w Szczecinie\" data-ga-category=\"recommended-box-link\" data-ga-action=\"disease_city\">",
-              "nodeLabel": "Ból zęba w Szczecinie",
+              "snippet": "<a class=\"text-muted\" href=\"/choroby/bol-zeba/szczecin\" data-ga-event=\"click\" data-ga-label=\"Ból zeba w Szczecinie\" data-ga-category=\"recommended-box-link\" data-ga-action=\"disease_city\">",
+              "nodeLabel": "Ból zeba w Szczecinie",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #627282, background color: #edeff2, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -6895,8 +6895,8 @@
                 "width": 181,
                 "height": 17
               },
-              "snippet": "<a class=\"text-muted\" href=\"/choroby/braki-zebowe/szczecin\" data-ga-event=\"click\" data-ga-label=\"Braki zębowe w Szczecinie\" data-ga-category=\"recommended-box-link\" data-ga-action=\"disease_city\">",
-              "nodeLabel": "Braki zębowe w Szczecinie",
+              "snippet": "<a class=\"text-muted\" href=\"/choroby/braki-zebowe/szczecin\" data-ga-event=\"click\" data-ga-label=\"Braki zebowe w Szczecinie\" data-ga-category=\"recommended-box-link\" data-ga-action=\"disease_city\">",
+              "nodeLabel": "Braki zebowe w Szczecinie",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #627282, background color: #edeff2, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -6933,8 +6933,8 @@
                 "width": 233,
                 "height": 17
               },
-              "snippet": "<a class=\"text-muted\" href=\"/choroby/przebarwienia-zebow/szczecin\" data-ga-event=\"click\" data-ga-label=\"Przebarwienia zębów w Szczecinie\" data-ga-category=\"recommended-box-link\" data-ga-action=\"disease_city\">",
-              "nodeLabel": "Przebarwienia zębów w Szczecinie",
+              "snippet": "<a class=\"text-muted\" href=\"/choroby/przebarwienia-zebow/szczecin\" data-ga-event=\"click\" data-ga-label=\"Przebarwienia zebów w Szczecinie\" data-ga-category=\"recommended-box-link\" data-ga-action=\"disease_city\">",
+              "nodeLabel": "Przebarwienia zebów w Szczecinie",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #627282, background color: #edeff2, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -6952,8 +6952,8 @@
                 "width": 76,
                 "height": 17
               },
-              "snippet": "<a class=\"text-muted\" href=\"#show-more\" data-target=\"[data-id='recommended-block-link-disease_city']\" data-text-more=\"Więcej (15)\" data-text-less=\"Mniej\">",
-              "nodeLabel": "Więcej (15)",
+              "snippet": "<a class=\"text-muted\" href=\"#show-more\" data-target=\"[data-id='recommended-block-link-disease_city']\" data-text-more=\"Wiecej (15)\" data-text-less=\"Mniej\">",
+              "nodeLabel": "Wiecej (15)",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #627282, background color: #edeff2, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           },
@@ -7308,7 +7308,7 @@
                 "height": 17
               },
               "snippet": "<a href=\"https://www.znanylekarz.pl/jak-dziala-ranking\" class=\"text-placeholder\">",
-              "nodeLabel": "Jak działają wyniki wyszukiwania",
+              "nodeLabel": "Jak dzialaja wyniki wyszukiwania",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #98a1ab, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -7476,7 +7476,7 @@
                 "height": 17
               },
               "snippet": "<a href=\"https://www.znanylekarz.pl/uslugi-zabiegi\" class=\"text-placeholder\">",
-              "nodeLabel": "Usługi i zabiegi",
+              "nodeLabel": "Uslugi i zabiegi",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #98a1ab, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -8064,7 +8064,7 @@
                 "height": 23
               },
               "snippet": "<p class=\"text-center\">",
-              "nodeLabel": "www.znanylekarz.pl © 2024 - Znajdź lekarza i umów wizytę",
+              "nodeLabel": "www.znanylekarz.pl © 2024 - Znajdź lekarza i umów wizyte",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #98a1ab, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -8727,7 +8727,7 @@
                 "height": 34
               },
               "snippet": "<ul class=\"nav nav-pills pl-1 pr-1\" data-action-footprint=\"sorting-container\">",
-              "nodeLabel": "Najnowsza\nNajwyższa ocena\nNajniższa ocena",
+              "nodeLabel": "Najnowsza\nNajwyzsza ocena\nNajnizsza ocena",
               "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: [role=presentation]"
             },
             "subItems": {
@@ -8766,7 +8766,7 @@
                       "height": 31
                     },
                     "snippet": "<li role=\"presentation\" class=\"nav-item\">",
-                    "nodeLabel": "Najwyższa ocena"
+                    "nodeLabel": "Najwyzsza ocena"
                   }
                 },
                 {
@@ -8784,7 +8784,7 @@
                       "height": 31
                     },
                     "snippet": "<li role=\"presentation\" class=\"nav-item\">",
-                    "nodeLabel": "Najniższa ocena"
+                    "nodeLabel": "Najnizsza ocena"
                   }
                 }
               ]
@@ -9098,7 +9098,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"/choroby/bol-zeba/szczecin\" class=\"text-muted\">",
-                    "nodeLabel": "Ból zęba"
+                    "nodeLabel": "Ból zeba"
                   }
                 }
               ]
@@ -9119,7 +9119,7 @@
                 "height": 17
               },
               "snippet": "<a href=\"/choroby/bol-zeba/szczecin\" class=\"text-muted\">",
-              "nodeLabel": "Ból zęba",
+              "nodeLabel": "Ból zeba",
               "explanation": "Fix any of the following:\n  Target has insufficient size (58.4px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 21.8px instead of at least 24px."
             },
             "subItems": {
@@ -10996,7 +10996,7 @@
                 "height": 120
               },
               "snippet": "<a class=\"map map-placeholder map-xs show-cta\" href=\"https://www.google.com/maps/search/?api=1&amp;query=53.4556274,14.561923\" target=\"_blank\" data-id=\"doctor-profile-map-placeholder\">",
-              "nodeLabel": "powiększ mapę"
+              "nodeLabel": "powieksz mape"
             },
             "url": "https://platform.docplanner.com/img/general/map-placeholder/map-placeholder-300-600.jpg",
             "fromProtocol": true,
@@ -12490,7 +12490,7 @@
                 "height": 0
               },
               "snippet": "<ul class=\"list-unstyled text-list\">",
-              "nodeLabel": "Próchnica  Ból zęba  Choroby dziąseł  Braki zębowe  Bóle głowy  Choroby miazgi …"
+              "nodeLabel": "Próchnica  Ból zeba  Choroby dziasel  Braki zebowe  Bóle glowy  Choroby miazgi …"
             },
             "statistic": "Maximum Child Elements",
             "value": {

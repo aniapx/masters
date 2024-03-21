@@ -20,7 +20,8 @@ def process_file(file_path, output_file):
     # Write to output file
     with open(output_file, 'a') as out:
         # Write the filename
-        out.write(f"\nErrors in file: {file_path}\n")
+        # out.write(f"\nErrors in file: {file_path}\n")
+        out.write(f"{file_path}\n")
         
         # Write sorted errors
         for impact, error_list in sorted_errors.items():
@@ -28,7 +29,8 @@ def process_file(file_path, output_file):
             for error, count in error_list:
                 # Find the issue description by rule ID
                 description = next((issue['description'] for issue in data['allIssues'] if issue['ruleId'] == error), '')
-                out.write(f"- {error}: {count} - {description}\n")
+                out.write(f"{error}: {count}: {description};\n")
+            out.write(f"\n")
 
 # Iterate over the folders and files
 folders = ['bigsize', 'courier', 'ecommerce', 'education', 'entertainment', 'gov', 'healthcare', 'news', 'nonprofit', 'mediumsize', 'smallsize', 'socialmedia']
@@ -37,7 +39,7 @@ for folder in folders:
     if os.path.isdir(folder):
         output_file = f"{folder}.txt"
         with open(output_file, 'w') as out:
-            out.write(f"Results for folder: {folder}\n")
+            out.write(f"")
         
         for root, _, files in os.walk(folder):
             for file in files:

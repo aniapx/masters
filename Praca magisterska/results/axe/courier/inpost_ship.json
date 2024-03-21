@@ -197,7 +197,7 @@
                 ".sticky-element > app-parcel-form-summary > .summaryForm[_ngcontent-ng-c439330497=\"\"] > .padding-top[_ngcontent-ng-c439330497=\"\"] > .chosen > li:nth-child(4) > .row[_ngcontent-ng-c439330497=\"\"] > .col-12[_ngcontent-ng-c439330497=\"\"] > .insurance-text[_ngcontent-ng-c439330497=\"\"]"
             ],
             "summary": "Fix any of the following:\\n  Element has insufficient color contrast of 2.45 (foreground color: #929497, background color: #e6e7e8, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1",
-            "source": "<div _ngcontent-ng-c439330497=\"\" class=\"insurance-text\">Przesylka jest objeta dodatkową ochroną do kwoty 5000&nbsp;zl.</div>",
+            "source": "<div _ngcontent-ng-c439330497=\"\" class=\"insurance-text\">Przesylka jest objeta dodatkowa ochrona do kwoty 5000&nbsp;zl.</div>",
             "tags": [
                 "cat.color",
                 "wcag2aa",

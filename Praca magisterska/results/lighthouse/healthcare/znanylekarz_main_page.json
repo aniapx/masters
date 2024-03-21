@@ -3067,8 +3067,8 @@
                 "width": 60,
                 "height": 60
               },
-              "snippet": "<img data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\" alt=\"Iwona Wrzecionek (Domagała)\" class=\" lazyloaded\" src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\">",
-              "nodeLabel": "Iwona Wrzecionek (Domagała)"
+              "snippet": "<img data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\" alt=\"Iwona Wrzecionek (Domagala)\" class=\" lazyloaded\" src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\">",
+              "nodeLabel": "Iwona Wrzecionek (Domagala)"
             }
           },
           {
@@ -3086,8 +3086,8 @@
                 "width": 80,
                 "height": 80
               },
-              "snippet": "<img src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/2c2be3/2c2be385eff1de7d…\" alt=\"lek. dent. Marta Przybył\" itemprop=\"image\" class=\"lazyload\">",
-              "nodeLabel": "lek. dent. Marta Przybył"
+              "snippet": "<img src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/2c2be3/2c2be385eff1de7d…\" alt=\"lek. dent. Marta Przybyl\" itemprop=\"image\" class=\"lazyload\">",
+              "nodeLabel": "lek. dent. Marta Przybyl"
             }
           },
           {
@@ -3143,8 +3143,8 @@
                 "width": 80,
                 "height": 80
               },
-              "snippet": "<img src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/79ae22/79ae227db4e65847…\" alt=\"mgr Małgorzata Mazur\" itemprop=\"image\" class=\"lazyload\">",
-              "nodeLabel": "mgr Małgorzata Mazur"
+              "snippet": "<img src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/79ae22/79ae227db4e65847…\" alt=\"mgr Malgorzata Mazur\" itemprop=\"image\" class=\"lazyload\">",
+              "nodeLabel": "mgr Malgorzata Mazur"
             }
           },
           {
@@ -3219,8 +3219,8 @@
                 "width": 80,
                 "height": 80
               },
-              "snippet": "<img src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" data-src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" alt=\"lek. Aleksandra Wysłocka-Kubiak\" itemprop=\"image\" class=\"lazyload\">",
-              "nodeLabel": "lek. Aleksandra Wysłocka-Kubiak"
+              "snippet": "<img src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" data-src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" alt=\"lek. Aleksandra Wyslocka-Kubiak\" itemprop=\"image\" class=\"lazyload\">",
+              "nodeLabel": "lek. Aleksandra Wyslocka-Kubiak"
             }
           },
           {
@@ -3295,8 +3295,8 @@
                 "width": 80,
                 "height": 80
               },
-              "snippet": "<img src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" data-src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" alt=\" Magdalena Mendyk-Przybyła\" itemprop=\"image\" class=\"lazyload\">",
-              "nodeLabel": " Magdalena Mendyk-Przybyła"
+              "snippet": "<img src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" data-src=\"//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981…\" alt=\" Magdalena Mendyk-Przybyla\" itemprop=\"image\" class=\"lazyload\">",
+              "nodeLabel": " Magdalena Mendyk-Przybyla"
             }
           },
           {
@@ -4059,7 +4059,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item4\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "mgr Anna Wieja\n\nDietetyk, Skoczów\n\nPokaż profil",
+              "nodeLabel": "mgr Anna Wieja\n\nDietetyk, Skoczów\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4116,7 +4116,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/anna-wieja/dietetyk/skoczow2\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4137,7 +4137,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item5\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "lek. Marek Olek\n\nOrtopeda, Suchy Las\n\nPokaż profil",
+              "nodeLabel": "lek. Marek Olek\n\nOrtopeda, Suchy Las\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4194,7 +4194,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/marek-olek/ortopeda/suchy-las\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4215,7 +4215,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item6\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "mgr Maciej Gerka\n\nPsycholog, Tczew\n\nPokaż profil",
+              "nodeLabel": "mgr Maciej Gerka\n\nPsycholog, Tczew\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4272,7 +4272,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/maciej-gerka/psycholog/tczew\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4293,7 +4293,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item7\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "lek. Aleksandra Wysłocka-Kubiak\n\nRadiolog, Gdynia\n\nPokaż profil",
+              "nodeLabel": "lek. Aleksandra Wyslocka-Kubiak\n\nRadiolog, Gdynia\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4314,7 +4314,7 @@
                       "height": 80
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/aleksandra-wyslocka-kubiak-2/radiolog/gdynia\">",
-                    "nodeLabel": "lek. Aleksandra Wysłocka-Kubiak"
+                    "nodeLabel": "lek. Aleksandra Wyslocka-Kubiak"
                   }
                 },
                 {
@@ -4332,7 +4332,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/aleksandra-wyslocka-kubiak-2/radiolog/gdynia\" class=\"text-body\">",
-                    "nodeLabel": "lek. Aleksandra Wysłocka-Kubiak"
+                    "nodeLabel": "lek. Aleksandra Wyslocka-Kubiak"
                   }
                 },
                 {
@@ -4350,7 +4350,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/aleksandra-wyslocka-kubiak-2/radiolog/gdynia\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4371,7 +4371,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item8\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "lek. Karolina Bartoszkiewicz\n\nStomatolog, Toruń\n\nPokaż profil",
+              "nodeLabel": "lek. Karolina Bartoszkiewicz\n\nStomatolog, Toruń\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4428,7 +4428,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/karolina-bartoszkiewicz/stomatolog/torun\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4449,7 +4449,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item9\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "mgr Barbara Kanclerz\n\nFizjoterapeuta, Oświęcim\n\nPokaż profil",
+              "nodeLabel": "mgr Barbara Kanclerz\n\nFizjoterapeuta, Oświecim\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4506,7 +4506,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/barbara-kanclerz/fizjoterapeuta/oswiecim\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4527,7 +4527,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item10\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "mgr Anna Cichacka\n\nPsycholog, Warszawa\n\nPokaż profil",
+              "nodeLabel": "mgr Anna Cichacka\n\nPsycholog, Warszawa\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4584,7 +4584,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/anna-cichacka/psycholog-seksuolog/warszawa\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4605,7 +4605,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item11\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "Magdalena Mendyk-Przybyła\n\nPsycholog, Wrocław\n\nPokaż profil",
+              "nodeLabel": "Magdalena Mendyk-Przybyla\n\nPsycholog, Wroclaw\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4626,7 +4626,7 @@
                       "height": 80
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/magdalena-mendyk-przybyla/psycholog/wroclaw\">",
-                    "nodeLabel": " Magdalena Mendyk-Przybyła"
+                    "nodeLabel": " Magdalena Mendyk-Przybyla"
                   }
                 },
                 {
@@ -4644,7 +4644,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/magdalena-mendyk-przybyla/psycholog/wroclaw\" class=\"text-body\">",
-                    "nodeLabel": "Magdalena Mendyk-Przybyła"
+                    "nodeLabel": "Magdalena Mendyk-Przybyla"
                   }
                 },
                 {
@@ -4662,7 +4662,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/magdalena-mendyk-przybyla/psycholog/wroclaw\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4683,7 +4683,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item12\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "Kornelia Wójcik\n\nHigienistka/higienista stomatologiczny, Wrocław\n\nPokaż profil",
+              "nodeLabel": "Kornelia Wójcik\n\nHigienistka/higienista stomatologiczny, Wroclaw\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4740,7 +4740,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/kornelia-wojcik/higienistka-stomatologiczna/wro…\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4761,7 +4761,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item13\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "lek. Maciej Brzyk\n\nLekarz rehabilitacji medycznej, Wrocław\n\nPokaż profil",
+              "nodeLabel": "lek. Maciej Brzyk\n\nLekarz rehabilitacji medycznej, Wroclaw\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4818,7 +4818,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/maciej-brzyk/lekarz-rehabilitacji-medycznej/wro…\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4839,7 +4839,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item14\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "Magda Bazan\n\nW trakcie specjalizacji (Psychiatra), Toruń\n\nPokaż profil",
+              "nodeLabel": "Magda Bazan\n\nW trakcie specjalizacji (Psychiatra), Toruń\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4896,7 +4896,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/magda-bazan-2/psychiatra/torun\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4917,7 +4917,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item15\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "mgr Marta Nowerska\n\nPsycholog, Warszawa\n\nPokaż profil",
+              "nodeLabel": "mgr Marta Nowerska\n\nPsycholog, Warszawa\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -4974,7 +4974,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/marta-nowerska/psycholog-psychotraumatolog/wars…\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -4995,7 +4995,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item16\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "mgr Magdalena Cienkowska\n\nPsycholog, Warszawa\n\nPokaż profil",
+              "nodeLabel": "mgr Magdalena Cienkowska\n\nPsycholog, Warszawa\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -5052,7 +5052,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/magdalena-cienkowska/psycholog/warszawa\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -5073,7 +5073,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item17\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "lek. Aleksandra Kulikowska\n\nReumatolog, Olsztyn\n\nPokaż profil",
+              "nodeLabel": "lek. Aleksandra Kulikowska\n\nReumatolog, Olsztyn\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -5130,7 +5130,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/aleksandra-kulikowska/reumatolog/olsztyn\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -5151,7 +5151,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item18\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "lek. Anna Niemiro\n\nLekarz rodzinny, Poznań\n\nPokaż profil",
+              "nodeLabel": "lek. Anna Niemiro\n\nLekarz rodzinny, Poznań\n\nPokaz profil",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -5208,7 +5208,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/anna-niemiro/lekarz-rodzinny/poznan\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -5229,7 +5229,7 @@
                 "height": 124
               },
               "snippet": "<li class=\"pr-1 tns-item\" id=\"new-doctors-carousel-item19\" aria-hidden=\"true\" tabindex=\"-1\">",
-              "nodeLabel": "lek. Aleksandra Bubniak\n\nW trakcie specjalizacji (Psychiatra), Wrocław\n\nPokaż p…",
+              "nodeLabel": "lek. Aleksandra Bubniak\n\nW trakcie specjalizacji (Psychiatra), Wroclaw\n\nPokaz p…",
               "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
             },
             "subItems": {
@@ -5286,7 +5286,7 @@
                       "height": 17
                     },
                     "snippet": "<a href=\"https://www.znanylekarz.pl/aleksandra-bubniak/psychiatra/wroclaw\">",
-                    "nodeLabel": "Pokaż profil"
+                    "nodeLabel": "Pokaz profil"
                   }
                 }
               ]
@@ -5540,7 +5540,7 @@
                       "height": 60
                     },
                     "snippet": "<nav data-id=\"main-header\" role=\"navigation\" class=\"navbar navbar-dark bg-secondary navbar-expand-md navbar-custom mb-0 mx-aut…\">",
-                    "nodeLabel": "Prywatność danych\nZapytaj lekarza\nZarejestruj się za darmo\nZaloguj się\nDla prof…"
+                    "nodeLabel": "Prywatność danych\nZapytaj lekarza\nZarejestruj sie za darmo\nZaloguj sie\nDla prof…"
                   }
                 }
               ]
@@ -5582,7 +5582,7 @@
                       "height": 60
                     },
                     "snippet": "<nav data-id=\"main-header\" role=\"navigation\" class=\"navbar navbar-dark bg-secondary navbar-expand-md navbar-custom mb-0 mx-aut…\">",
-                    "nodeLabel": "Prywatność danych\nZapytaj lekarza\nZarejestruj się za darmo\nZaloguj się\nDla prof…"
+                    "nodeLabel": "Prywatność danych\nZapytaj lekarza\nZarejestruj sie za darmo\nZaloguj sie\nDla prof…"
                   }
                 }
               ]
@@ -5603,7 +5603,7 @@
                 "height": 48
               },
               "snippet": "<a class=\"nav-link justify-content-between\" href=\"#\" data-toggle=\"dropdown\" data-vwo-id=\"register-dropdown-btn\">",
-              "nodeLabel": "Zarejestruj się za darmo",
+              "nodeLabel": "Zarejestruj sie za darmo",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #ffffff, background color: #00c3a5, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -5624,7 +5624,7 @@
                       "height": 60
                     },
                     "snippet": "<nav data-id=\"main-header\" role=\"navigation\" class=\"navbar navbar-dark bg-secondary navbar-expand-md navbar-custom mb-0 mx-aut…\">",
-                    "nodeLabel": "Prywatność danych\nZapytaj lekarza\nZarejestruj się za darmo\nZaloguj się\nDla prof…"
+                    "nodeLabel": "Prywatność danych\nZapytaj lekarza\nZarejestruj sie za darmo\nZaloguj sie\nDla prof…"
                   }
                 }
               ]
@@ -5645,7 +5645,7 @@
                 "height": 48
               },
               "snippet": "<a href=\"#\" class=\"nav-link mr-0-5\" data-id=\"navbar-link\" data-test-id=\"navbar-login\" data-url=\"https://www.znanylekarz.pl/social-connect/pl_sso\">",
-              "nodeLabel": "Zaloguj się",
+              "nodeLabel": "Zaloguj sie",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #ffffff, background color: #00c3a5, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -5666,7 +5666,7 @@
                       "height": 60
                     },
                     "snippet": "<nav data-id=\"main-header\" role=\"navigation\" class=\"navbar navbar-dark bg-secondary navbar-expand-md navbar-custom mb-0 mx-aut…\">",
-                    "nodeLabel": "Prywatność danych\nZapytaj lekarza\nZarejestruj się za darmo\nZaloguj się\nDla prof…"
+                    "nodeLabel": "Prywatność danych\nZapytaj lekarza\nZarejestruj sie za darmo\nZaloguj sie\nDla prof…"
                   }
                 }
               ]
@@ -5750,7 +5750,7 @@
                       "height": 763
                     },
                     "snippet": "<section id=\"says-opinions\">",
-                    "nodeLabel": "Porady\n\nMam do usunięcia zab który się rusza i boli . I strasznie się boję. Czy…"
+                    "nodeLabel": "Porady\n\nMam do usuniecia zab który sie rusza i boli . I strasznie sie boje. Czy…"
                   }
                 }
               ]
@@ -5792,7 +5792,7 @@
                       "height": 763
                     },
                     "snippet": "<section id=\"says-opinions\">",
-                    "nodeLabel": "Porady\n\nMam do usunięcia zab który się rusza i boli . I strasznie się boję. Czy…"
+                    "nodeLabel": "Porady\n\nMam do usuniecia zab który sie rusza i boli . I strasznie sie boje. Czy…"
                   }
                 }
               ]
@@ -5813,7 +5813,7 @@
                 "height": 28
               },
               "snippet": "<li class=\"pb-0-5\">",
-              "nodeLabel": "Dotrzyj do pacjentów, którzy szukają specjalistów w Twojej okolicy.",
+              "nodeLabel": "Dotrzyj do pacjentów, którzy szukaja specjalistów w Twojej okolicy.",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #627282, background color: #e0f7f4, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -5834,7 +5834,7 @@
                       "height": 360
                     },
                     "snippet": "<div class=\"bg-secondary-light container d-flex flex-column flex-md-row align-items-ce…\">",
-                    "nodeLabel": "Prowadzisz własny gabinet lub placówkę i szukasz nowych pacjentów?\nDotrzyj do p…"
+                    "nodeLabel": "Prowadzisz wlasny gabinet lub placówke i szukasz nowych pacjentów?\nDotrzyj do p…"
                   }
                 }
               ]
@@ -5855,7 +5855,7 @@
                 "height": 50
               },
               "snippet": "<li class=\"pb-0-5\">",
-              "nodeLabel": "Pozwól im zapisać się na wizytę o każdej porze dnia i nocy. Koniec z czekaniem …",
+              "nodeLabel": "Pozwól im zapisać sie na wizyte o kazdej porze dnia i nocy. Koniec z czekaniem …",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #627282, background color: #e0f7f4, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -5876,7 +5876,7 @@
                       "height": 360
                     },
                     "snippet": "<div class=\"bg-secondary-light container d-flex flex-column flex-md-row align-items-ce…\">",
-                    "nodeLabel": "Prowadzisz własny gabinet lub placówkę i szukasz nowych pacjentów?\nDotrzyj do p…"
+                    "nodeLabel": "Prowadzisz wlasny gabinet lub placówke i szukasz nowych pacjentów?\nDotrzyj do p…"
                   }
                 }
               ]
@@ -5897,7 +5897,7 @@
                 "height": 28
               },
               "snippet": "<li class=\"pb-0-5\">",
-              "nodeLabel": "Zbuduj reputację w Internecie pozyskując wiarygodne opinie.",
+              "nodeLabel": "Zbuduj reputacje w Internecie pozyskujac wiarygodne opinie.",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #627282, background color: #e0f7f4, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -5918,7 +5918,7 @@
                       "height": 360
                     },
                     "snippet": "<div class=\"bg-secondary-light container d-flex flex-column flex-md-row align-items-ce…\">",
-                    "nodeLabel": "Prowadzisz własny gabinet lub placówkę i szukasz nowych pacjentów?\nDotrzyj do p…"
+                    "nodeLabel": "Prowadzisz wlasny gabinet lub placówke i szukasz nowych pacjentów?\nDotrzyj do p…"
                   }
                 }
               ]
@@ -6294,7 +6294,7 @@
                 "height": 17
               },
               "snippet": "<a href=\"https://www.znanylekarz.pl/jak-dziala-ranking\" class=\"text-placeholder\">",
-              "nodeLabel": "Jak działają wyniki wyszukiwania",
+              "nodeLabel": "Jak dzialaja wyniki wyszukiwania",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #98a1ab, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -6462,7 +6462,7 @@
                 "height": 17
               },
               "snippet": "<a href=\"https://www.znanylekarz.pl/uslugi-zabiegi\" class=\"text-placeholder\">",
-              "nodeLabel": "Usługi i zabiegi",
+              "nodeLabel": "Uslugi i zabiegi",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #98a1ab, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -7050,7 +7050,7 @@
                 "height": 23
               },
               "snippet": "<p class=\"text-center\">",
-              "nodeLabel": "www.znanylekarz.pl © 2024 - Znajdź lekarza i umów wizytę",
+              "nodeLabel": "www.znanylekarz.pl © 2024 - Znajdź lekarza i umów wizyte",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #98a1ab, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -7648,7 +7648,7 @@
                 "height": 17
               },
               "snippet": "<a href=\"https://www.znanylekarz.pl/pytania-odpowiedzi/moja-przyjaciolka-od-jakiego…\">",
-              "nodeLabel": "Więcej",
+              "nodeLabel": "Wiecej",
               "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.59:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1662c6, surrounding text: #1b2734)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             },
             "subItems": {
@@ -7669,7 +7669,7 @@
                       "height": 113
                     },
                     "snippet": "<p itemprop=\"text\">",
-                    "nodeLabel": "Rozumiem, że to może być trudna sytuacja. Warto podejść do tego delikatnie i z …"
+                    "nodeLabel": "Rozumiem, ze to moze być trudna sytuacja. Warto podejść do tego delikatnie i z …"
                   }
                 }
               ]
@@ -9699,8 +9699,8 @@
                 "width": 60,
                 "height": 60
               },
-              "snippet": "<img data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\" alt=\"Iwona Wrzecionek (Domagała)\" class=\" lazyloaded\" src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\">",
-              "nodeLabel": "Iwona Wrzecionek (Domagała)"
+              "snippet": "<img data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\" alt=\"Iwona Wrzecionek (Domagala)\" class=\" lazyloaded\" src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\">",
+              "nodeLabel": "Iwona Wrzecionek (Domagala)"
             },
             "url": "https://s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd8c0c7365efc6220a_140_square.jpg",
             "fromProtocol": true,
@@ -9923,8 +9923,8 @@
                 "width": 60,
                 "height": 60
               },
-              "snippet": "<img data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\" alt=\"Iwona Wrzecionek (Domagała)\" class=\" lazyloaded\" src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\">",
-              "nodeLabel": "Iwona Wrzecionek (Domagała)"
+              "snippet": "<img data-src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\" alt=\"Iwona Wrzecionek (Domagala)\" class=\" lazyloaded\" src=\"//s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd…\">",
+              "nodeLabel": "Iwona Wrzecionek (Domagala)"
             },
             "url": "https://s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/d116b7/d116b74405e664dd8c0c7365efc6220a_140_square.jpg",
             "totalBytes": 10677,
