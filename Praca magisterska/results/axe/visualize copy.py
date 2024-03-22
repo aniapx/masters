@@ -6,31 +6,43 @@ import math
 # Define the list of file names
 file_names = ['bigsize', 'courier', 'ecommerce', 'education', 'entertainment', 'gov', 'healthcare', 'news', 'nonprofit', 'mediumsize', 'smallsize', 'socialmedia']
 
-# Create the directory if it doesn't exist
-if not os.path.exists('couriers_graphs'):
-    os.makedirs('couriers_graphs')
-
-# Initialize dictionaries to store data
-all_issues = set()
-courier_issues = {}
+severity_colors = {
+    "critical": "red",
+    "serious": "orange",
+}
+severity_hatches = {
+    "critical": "x",
+    "serious": "/",
+}
 
 # Iterate over each file
 for file_name in file_names:
+    # Create the directory for the current file if it doesn't exist
+    folder_name = f"{file_name}_graphs"
+    if not os.path.exists(folder_name):
+        os.makedirs(folder_name)
+
+    # Initialize dictionaries to store data for this file
+    all_issues = set()
+    file_issues = {}
+
     # Read data from the file
     with open(f"{file_name}.txt", "r") as file:
         data = file.read()
 
-    # Split the data into sections for each courier
-    sections = re.split(r"courier\\", data)[1:]
+    # Split the data into sections
+    sections = re.split(r"[\w]+\\", data)[1:]
 
     # Parse each section
     for section in sections:
         lines = section.split("\n")
-        courier_name = lines[0].split("_")[0]
+
+        # Extract the JSON file name
+        json_file_name = lines[0].split("_")[0]
 
         # Find and parse Critical Issues
-        critical_index = lines.index("Critical Issues:") + 1
-        end_critical_index = lines.index("Serious Issues:")
+        critical_index = lines.index("Critical Issues:") + 1 if "Critical Issues:" in lines else len(lines)
+        end_critical_index = lines.index("Serious Issues:") if "Serious Issues:" in lines else len(lines)
         critical_issues_data = lines[critical_index:end_critical_index]
 
         for issue_data in critical_issues_data:
@@ -38,11 +50,14 @@ for file_name in file_names:
                 issue, count, description = issue_data.strip().split(":")
                 count = int(count.strip())
                 all_issues.add(issue.strip())
-                courier_issues.setdefault(courier_name, {}).setdefault(issue.strip(), 0)
-                courier_issues[courier_name][issue.strip()] += count
+                file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('count', 0)
+                file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('severity', 'critical')
+                x = file_issues[json_file_name][issue.strip()]
+                file_issues[json_file_name][issue.strip()]["count"] += count
+                file_issues[json_file_name][issue.strip()]["severity"] = "critical"
 
         # Find and parse Serious Issues
-        serious_index = lines.index("Serious Issues:") + 1
+        serious_index = lines.index("Serious Issues:") + 1 if "Serious Issues:" in lines else len(lines)
         serious_issues_data = lines[serious_index:]
 
         for issue_data in serious_issues_data:
@@ -50,44 +65,54 @@ for file_name in file_names:
                 issue, count, description = issue_data.strip().split(":")
                 count = int(count.strip())
                 all_issues.add(issue.strip())
-                courier_issues.setdefault(courier_name, {}).setdefault(issue.strip(), 0)
-                courier_issues[courier_name][issue.strip()] += count
+                file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('count', 0)
+                file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('severity', 'critical')
+                file_issues[json_file_name][issue.strip()]["count"] += count
+                file_issues[json_file_name][issue.strip()]["severity"] = "serious"
 
-# Convert the set of all issues to a sorted list
-all_issues = sorted(list(all_issues))
+    # Convert the set of all issues to a sorted list
+    all_issues = sorted(list(all_issues))
 
-# Calculate the maximum count among all issues for setting the same y-axis size
-max_count = max([count for issues in courier_issues.values() for count in issues.values()])
+    # Calculate the maximum total count among all issues for setting the y-axis size
+    max_total_count = max([sum(file_issues.get(json_file, {}).get(issue, {}).get("count", 0) for json_file in file_issues.keys()) for issue in all_issues], default=0)
 
-# Round up the maximum count to the nearest full number
-max_count = math.ceil(max_count)
+    # Round up the maximum total count to the nearest full number
+    max_total_count = math.ceil(max_total_count)
 
-# Add a little space between the topmost number and the top border
-max_count += 2
+    # Add a little space between the topmost number and the top border
+    max_total_count += 5
 
-# Plotting Total Issues
-plt.figure(figsize=(12, 6))
-total_issue_bars = plt.bar(all_issues, [sum(courier_issues[courier_name].get(issue, 0) for courier_name in courier_issues.keys()) for issue in all_issues])
-plt.title('Total Issues')
-plt.xlabel('Issue Type')
-plt.ylabel('Count')
-plt.xticks(rotation=90)
-plt.ylim(0, max_count)
-plt.yticks(range(0, max_count + 1, max_count // 5))  # Set y-axis ticks with equal intervals
-plt.tight_layout()
-plt.savefig(os.path.join('couriers_graphs', 'total_issues.png'))  # Save total issues plot to a file in couriers_graphs folder
-plt.close()
-
-# Plotting Issues by Courier
-for courier_name, issues in courier_issues.items():
+    # Plotting Total Issues
     plt.figure(figsize=(12, 6))
-    plt.bar(all_issues, [issues.get(issue, 0) for issue in all_issues])
-    plt.title(f"Issues for {courier_name}")
+    total_issue_counts = [sum(file_issues.get(json_file, {}).get(issue, {}).get("count", 0) for json_file in file_issues.keys()) for issue in all_issues]
+    colors = [severity_colors[file_issues.get(json_file, {}).get(issue, {"severity": "serious"})["severity"]] for json_file in file_issues.keys() for issue in all_issues]
+    # hatches = [severity_hatches[file_issues.get(json_file, {}).get(issue, {"severity": "serious"})["severity"]] for json_file in file_issues.keys() for issue in all_issues]
+    plt.bar(all_issues, total_issue_counts, edgecolor='black', color=colors)
+    plt.title(f'Total Issues for {file_name}')
     plt.xlabel('Issue Type')
     plt.ylabel('Count')
-    plt.xticks(rotation=90)
-    plt.ylim(0, max_count)  # Set the same y-axis limits as the total issues plot
-    plt.yticks(range(0, max_count + 1, max_count // 5))  # Set y-axis ticks with equal intervals
+    plt.xticks(rotation=45)
+    plt.ylim(0, max_total_count)  # Set the y-axis limits using the maximum total count
     plt.tight_layout()
-    plt.savefig(os.path.join('couriers_graphs', f'{courier_name}_issues.png'))  # Save individual company issues plot to a file in couriers_graphs folder
+    for i, count in enumerate(total_issue_counts):
+        plt.text(i, count + 0.1, str(count), ha='center', va='bottom')
+    plt.savefig(os.path.join(folder_name, 'total_issues.png'))  # Save total issues plot to a file in the current folder
     plt.close()
+
+    # Plotting Issues for each JSON file
+    for json_file_name in file_issues.keys():
+        plt.figure(figsize=(12, 10))
+        individual_issue_counts = [file_issues[json_file_name].get(issue, {}).get("count", 0) for issue in all_issues]
+        colors = [severity_colors[file_issues.get(json_file, {}).get(issue, {"severity": "serious"})["severity"]] for json_file in file_issues.keys() for issue in all_issues]
+        # hatches = [severity_hatches[file_issues.get(json_file, {}).get(issue, {"severity": "serious"})["severity"]] for json_file in file_issues.keys() for issue in all_issues]
+        plt.bar(all_issues, total_issue_counts, edgecolor='black', color=colors)
+        plt.title(f"Issues for {json_file_name}")
+        plt.xlabel('Issue Type')
+        plt.ylabel('Count')
+        plt.xticks(rotation=90)
+        plt.ylim(0, max_total_count)  # Set the y-axis limits using the maximum total count
+        plt.tight_layout()
+        for i, count in enumerate(individual_issue_counts):
+            plt.text(i, count + 0.1, str(count), ha='center', va='bottom')
+        plt.savefig(os.path.join(folder_name, f'{json_file_name}_issues.png'))  # Save individual file issues plot to a file in the current folder
+        plt.close()
