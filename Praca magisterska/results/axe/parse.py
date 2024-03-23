@@ -24,17 +24,23 @@ def process_file(file_path, output_file):
         out.write(f"{file_path}\n")
         
         # Write sorted errors
-        for impact, error_list in sorted_errors.items():
-            out.write(f"{impact.capitalize()} Issues:\n")
-            for error, count in error_list:
-                # Find the issue description by rule ID
-                description = next((issue['description'] for issue in data['allIssues'] if issue['ruleId'] == error), '')
-                out.write(f"{error}: {count}: {description};\n")
-            out.write(f"\n")
+        print(f"{sorted_errors}")
+        if len(sorted_errors):
+            for impact, error_list in sorted_errors.items():
+                out.write(f"{impact.capitalize()} Issues:\n")
+                for error, count in error_list:
+                    # Find the issue description by rule ID
+                    description = next((issue['description'] for issue in data['allIssues'] if issue['ruleId'] == error), '')
+                    out.write(f"{error}: {count}: {description};\n")
+                out.write(f"\n")
+        else:
+            out.write(f"Critical Issues:\n\n")
+            out.write(f"Serious Issues:\n")
+
 
 # Iterate over the folders and files
 folders = ['bigsize', 'courier', 'ecommerce', 'education', 'entertainment', 'gov', 'healthcare', 'news', 'nonprofit', 'mediumsize', 'smallsize', 'socialmedia']
-# folders = ['courier']
+# folders = ['education']
 for folder in folders:
     if os.path.isdir(folder):
         output_file = f"{folder}.txt"

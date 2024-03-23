@@ -1,6 +1,15 @@
 gov\france_main_page.json
+Critical Issues:
+
+Serious Issues:
 gov\france_services_list.json
+Critical Issues:
+
+Serious Issues:
 gov\france_service_details.json
+Critical Issues:
+
+Serious Issues:
 gov\poland_main_page.json
 Critical Issues:
 aria-required-parent: 4: Ensures elements with an ARIA role that require parent roles are contained by them;
@@ -29,4 +38,10 @@ Serious Issues:
 list: 1: Ensures that lists are structured correctly;
 
 gov\usa_service_details.json
+Critical Issues:
+
+Serious Issues:
 gov\use_services_list.json
+Critical Issues:
+
+Serious Issues:

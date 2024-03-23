@@ -1,4 +1,7 @@
 bigsize\microsoft_main_page.json
+Critical Issues:
+
+Serious Issues:
 bigsize\orlen_main_page.json
 Critical Issues:
 aria-valid-attr-value: 1: Ensures all ARIA attributes have valid values;
@@ -16,4 +19,3 @@ svg-img-alt: 2: Ensures <svg> elements with an img, graphics-document or graphic
 aria-hidden-focus: 1: Ensures aria-hidden elements are not focusable nor contain focusable elements;
 aria-prohibited-attr: 1: Ensures ARIA attributes are not prohibited for an element's role;
 
-bigsize\walmart_main_page.json

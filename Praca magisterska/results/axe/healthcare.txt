@@ -1,15 +1,27 @@
 healthcare\mayoclinic_disease_details.json
+Critical Issues:
+
+Serious Issues:
 healthcare\mayoclinic_disease_list.json
+Critical Issues:
+
+Serious Issues:
 healthcare\mayoclinic_main_page.json
 Serious Issues:
 link-name: 23: Ensures links have discernible text;
 
 healthcare\nhs_disease_details.json
+Critical Issues:
+
+Serious Issues:
 healthcare\nhs_disease_list.json
 Serious Issues:
 list: 1: Ensures that lists are structured correctly;
 
 healthcare\nhs_main_page.json
+Critical Issues:
+
+Serious Issues:
 healthcare\znanylekarz_details.json
 Critical Issues:
 aria-valid-attr-value: 9: Ensures all ARIA attributes have valid values;
