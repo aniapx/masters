@@ -1,18 +1,17 @@
-import os
 import re
 import matplotlib.pyplot as plt
 import math
 import numpy as np  
 
-file_names = ['bigsize', 'courier', 'ecommerce', 'education', 'entertainment', 'gov', 'healthcare', 'news', 'nonprofit', 'mediumsize', 'smallsize', 'socialmedia']
-# file_names = ['courier']
+categories = ['bigsize', 'courier', 'ecommerce', 'education', 'entertainment', 'gov', 'healthcare', 'news', 'nonprofit', 'mediumsize', 'smallsize', 'socialmedia']
+# categories = ['courier']
 
-for file_name in file_names:
+for category in categories:
     json_file_names = set()
     all_issues = set()
     file_issues = {}
 
-    with open(f"{file_name}.txt", "r") as file:
+    with open(f"{category}.txt", "r") as file:
         data = file.read()
 
     sections = re.split(r"[\w]+\\", data)[1:]
@@ -86,7 +85,7 @@ for file_name in file_names:
     for ticklabel, tickcolor in zip(plt.gca().get_xticklabels(), colors):
         ticklabel.set_color(tickcolor)
 
-    plt.title(f'Total Issues for {file_name}')
+    plt.title(f'Total Issues for {category}')
     plt.xlabel('Issue Type')
     plt.ylabel('Count')
     plt.xticks(rotation=90)
@@ -94,7 +93,7 @@ for file_name in file_names:
     plt.tight_layout()
     for i, count in enumerate(total_issue_counts):
         plt.text(i, count + 0.1, str(count), ha='center', va='bottom')
-    plt.savefig(f'{file_name}_total_issues.png')  # Save total issues plot to a file in the current folder
+    plt.savefig(f'{category}_total_issues.png')  # Save total issues plot to a file in the current folder
     plt.close()
 
     idx = -0.4
@@ -114,7 +113,7 @@ for file_name in file_names:
             plt.text(i + idx, count + 0.1, str(count), ha='center', va='bottom')
         idx += 0.2
     
-    plt.title(f"Issues for {file_name}")
+    plt.title(f"Issues for {category}")
     plt.ylabel('Count')
     plt.xlabel('Issue Type')
     plt.xticks(X_axis-idx, all_issues) 
@@ -125,5 +124,5 @@ for file_name in file_names:
 
     plt.ylim(0, max_count + 5)  # Set the y-axis limits using the maximum total count
     plt.tight_layout()
-    plt.savefig(f'{file_name}_issues.png')  # Save individual file issues plot to a file in the current folder
+    plt.savefig(f'{category}_issues.png')  # Save individual file issues plot to a file in the current folder
     plt.close()
