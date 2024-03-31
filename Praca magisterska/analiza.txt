@@ -1,0 +1,97 @@
+WSZYTSKO
+Najwięcej błędów serius to color-contrast - 639, link-name - 574, listitem - 336, nested-interactive - 286.
+Najwięcej błędów critical image-alt (critical, 202) i label (critical, 189)
+
+Najwięcej śrdnio błędów serious (82) i critial (33) ma e-commerce.
+Najwiecej błedów serious ma ecommecce - 82, medium - 55, entertainemnt - 60.
+Najwięcej critiacl to ecommerce - 33, medium - 16 .
+Najmniej błędów średnio serious i critical mają gov (1, 3), bigsize (1, 4) i education (1, 9).
+
+Mediana błędów critical to 15 i 16.
+Mediana błędów serious to 2 i 6.
+
+BIGSIZE
+Brak błędów w Microsoft.
+Ogólnie mało błędów.
+Nawięcej ma Orlen (serius, 7) i critial, 1.
+
+COURIER.
+Najwięcej błędów jest krytycznych z image-alt (23)
+najwięcej serious to color contrast (23)
+7 grup błędów krytycznych (50) i 8 serious (87)
+Najwięcej critial jest w inpost (image-alt, 23), a serious w dhl (color-contrast, 18).
+Zsumowane - zbliżona ilość błędów serous i critical (87, 50)
+
+ECOMMERCE
+Bardzo duza ilość błędów serious - color-contrast w amazonie (252).
+Bardzo duza ilość błędów serious - listitem w allegro (183).
+Bardzo duza ilość błędów critical - label (183).
+Mediana critical to 1, a serious 1. 
+Brdzo duża ilosć błędów seriious - color-contrast (309) i listitem (201).
+Bardzo dyża ilość błędów critical - label (183).
+
+EDUCATION
+Duża ilosć błędów nested-interactive (serius, 84) dla PW.
+Zaledwie jeden błąd critial (image-alt) i to jest zut.
+ZUT ma 11 błędów serious, z czego 9 to list item, a 2 to list.
+Harvard i UVA bez błędów. 
+
+ENTEWRTAINMENT.
+Duż ailość błędów serious w youtube (aria-tooltip-name, 166; nested-interactive, 82) i player.pl (link-name, 192).
+najwięcej błedów critial ma spotify - 37, pdczas gdy player ma 0, a youtube ma 16.
+Media błędów serious to 1, sa 4 rodzaje błedów serious.
+Media błędów critical to 1, sa 6 rodzajów błedów critical.
+
+GOV. 
+Brak błędów frnacja. 
+Polska ma 23 serious i 9 critical.
+USA ma tylko 1 (serious, 1
+
+HEALTCARE
+Doża ilość serius dla znany lekarz - 175, z czego najwięcej color-contrast - 133.
+Najwięcej critial to znany lekarz - 54, z czwego najwięcej image-alt - 32.
+mediana seriuos to 0, a critial to 0.
+
+MEDIUM
+Najwięcej serius to ubereats, (listiem, 81).
+najwięcej critital to ccc (button0-name, 20; image-alt, 22), w sumie 45.
+serius w sumie to 72 dla ccc i 83 dka ubereats.
+Najwięcej serius to listitem (100), a critical to image-alt (22) i button-name (21)
+
+NEWS
+Najwięcej serius to cnn (lin-in-the-text-block, 29). 
+Wszystkie strony mają sporo błędów color-contast: elpais - 6, cnn - 15, wp- 19
+Niewielka ilość błeów krytycznych, wsystkei strony w sume maja - 8.
+
+NONPROFIT
+Najwięcej serius to link name (wosp, 61) i color-contrast  (lambiente, 57).
+W sumie najwięcej serius jest dla conol contrast (124) i link-anem (77), a critial dla image-alt (59).
+mediana critical to 0, a dla serius to 1.
+
+
+SMALL
+najwięcej seroius to link name (18, osnabruck halle).
+tylko nomad playhous ma critical (image-alt, 3).
+
+SOCIALMEDIA
+Bardzo odbiegająca ilośc błeów critial nested-interactive - 102, reddit.
+Mediana serious to 1. 
+Tylko 3 cirial dla wszstkich stron.
+
+
+
+COUNTRIES
+Nawięcej ma Polska serius - 1053, critical  - 271.
+Najmniej Europa critical - 74 i serius 318. 
+
+W polsce najwiecej serius to color-contrast - 468, link-name - 328. nested-interactive - 90.
+w polsce najwięcej crititcal to image-alt - 163, button-name - 59
+
+W usa najwiecej serious to list-item - 282, aria-tooltip-name - 166, nested-interactive - 91.
+W usa najwiecej critical to label - 184.
+
+W eu najwiecej serious to color-contrast - 121, link-name - 90, aria-prohibited-attr - 50.
+W eu najwiecej critical to image-alt 16, aria-required-children - 17.
+
+Najwięcej problemów jest z color-contrast, image-alt, link-name, listitem. (wszystkie serious)
+Najwięcej critical to image-alt
