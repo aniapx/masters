@@ -1,205 +1,48 @@
-Folder: courier
+.\courier\dhl_main_page.html
+aria-allowed-attr: 21: Ensures ARIA attributes are allowed for an element's role;
+aria-required-children: 21: Ensures elements with an ARIA role that require child roles contain them;
+aria-valid-attr-value: 21: Ensures all ARIA attributes have valid values;
+image-alt: 21: Ensures <img> elements have alternate text or a role of none or presentation;
+listitem: 21: Ensures <li> elements are used semantically;
+meta-viewport: 21: Ensures <meta name="viewport"> does not disable text scaling and zooming;
+nested-interactive: 21: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies;
+object-alt: 21: Ensures <object> elements have alternate text;
+svg-img-alt: 21: Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text;
 
+.\courier\dhl_ship.html
+aria-allowed-attr: 45: Ensures ARIA attributes are allowed for an element's role;
+aria-required-children: 45: Ensures elements with an ARIA role that require child roles contain them;
+autocomplete-valid: 45: Ensure the autocomplete attribute is correct and suitable for the form field;
+color-contrast: 45: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds;
+listitem: 45: Ensures <li> elements are used semantically;
+meta-viewport: 45: Ensures <meta name="viewport"> does not disable text scaling and zooming;
+svg-img-alt: 45: Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text;
 
----------- File: .\courier\dhl_main_page.html ----------
+.\courier\inpost_main_page.html
+aria-required-children: 33: Ensures elements with an ARIA role that require child roles contain them;
+button-name: 33: Ensures buttons have discernible text;
+color-contrast: 33: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds;
+image-alt: 33: Ensures <img> elements have alternate text or a role of none or presentation;
+link-name: 33: Ensures links have discernible text;
+listitem: 33: Ensures <li> elements are used semantically;
 
-Failed instances count: 21
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 6
-How to fix: Fix the following: ARIA attribute is not allowed: aria-selected="false"
+.\courier\inpost_ship.html
+aria-allowed-role: 30: Ensures role attribute has an appropriate value for the element;
+autocomplete-valid: 30: Ensure the autocomplete attribute is correct and suitable for the form field;
+color-contrast: 30: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds;
+duplicate-id-aria: 30: Ensures every id attribute value used in ARIA and in labels is unique;
+image-alt: 30: Ensures <img> elements have alternate text or a role of none or presentation;
+label: 30: Ensures every form element has a label;
 
-Failed instances count: 21
-Failure Title: Ensures elements with an ARIA role that require child roles contain them
-Failure Count: 2
-How to fix: Fix ONE of the following: Element has children which are not allowed: li[tabindex] Element uses aria-busy="true" while showing a loader
+.\courier\ups_main_page.html
+aria-allowed-attr: 8: Ensures ARIA attributes are allowed for an element's role;
+aria-required-children: 8: Ensures elements with an ARIA role that require child roles contain them;
+color-contrast: 8: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds;
+duplicate-id-aria: 8: Ensures every id attribute value used in ARIA and in labels is unique;
+list: 8: Ensures that lists are structured correctly;
 
-Failed instances count: 21
-Failure Title: Ensures all ARIA attributes have valid values
-Failure Count: 3
-How to fix: Fix the following: Invalid ARIA attribute value: aria-details="PORTOBERATER-CATEGORY-select-info-selected"
-
-Failed instances count: 21
-Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
-Failure Count: 1
-How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 21
-Failure Title: Ensures <li> elements are used semantically
-Failure Count: 2
-How to fix: Fix the following: List item does not have a <ul>, <ol> parent element without a role, or a role="list"
-
-Failed instances count: 21
-Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
-Failure Count: 1
-How to fix: Fix the following: maximum-scale on <meta> tag disables zooming on mobile devices
-
-Failed instances count: 21
-Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-Failure Count: 1
-How to fix: Fix the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with 'aria-hidden=true')
-
-Failed instances count: 21
-Failure Title: Ensures <object> elements have alternate text
-Failure Count: 3
-How to fix: Fix ONE of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 21
-Failure Title: Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text
-Failure Count: 2
-How to fix: Fix ONE of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-
-
----------- File: .\courier\dhl_ship.html ----------
-
-Failed instances count: 45
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 3
-How to fix: Fix the following: ARIA attribute is not allowed: aria-selected="true"
-
-Failed instances count: 45
-Failure Title: Ensures elements with an ARIA role that require child roles contain them
-Failure Count: 2
-How to fix: Fix ONE of the following: Element has children which are not allowed: li[tabindex] Element uses aria-busy="true" while showing a loader
-
-Failed instances count: 45
-Failure Title: Ensure the autocomplete attribute is correct and suitable for the form field
-Failure Count: 14
-How to fix: Fix the following: the autocomplete attribute is incorrectly formatted
-
-Failed instances count: 45
-Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-Failure Count: 16
-How to fix: Fix the following: Element has insufficient color contrast of 2.65 (foreground color: #48b451, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 2.65 (foreground color: #48b451, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1 Use foreground color: #338239 and the original background color: #ffffff to meet a contrast ratio of 4.78:1. Use foreground color: #338239 and the original background color: #ffffff to meet a contrast ratio of 4.78:1.
-
-Failed instances count: 45
-Failure Title: Ensures <li> elements are used semantically
-Failure Count: 2
-How to fix: Fix the following: List item does not have a <ul>, <ol> parent element without a role, or a role="list"
-
-Failed instances count: 45
-Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
-Failure Count: 1
-How to fix: Fix the following: maximum-scale on <meta> tag disables zooming on mobile devices
-
-Failed instances count: 45
-Failure Title: Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text
-Failure Count: 7
-How to fix: Fix ONE of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-
-
----------- File: .\courier\inpost_main_page.html ----------
-
-Failed instances count: 33
-Failure Title: Ensures elements with an ARIA role that require child roles contain them
-Failure Count: 2
-How to fix: Fix ONE of the following: Element has children which are not allowed: li[tabindex] Element uses aria-busy="true" while showing a loader
-
-Failed instances count: 33
-Failure Title: Ensures buttons have discernible text
-Failure Count: 1
-How to fix: Fix ONE of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 33
-Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-Failure Count: 2
-How to fix: Fix the following: Element has insufficient color contrast of 2.64 (foreground color: #007bff, background color: #ffcd00, font size: 0.0pt (0px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 2.64 (foreground color: #007bff, background color: #ffcd00, font size: 0.0pt (0px), font weight: normal). Expected contrast ratio of 4.5:1 Use foreground color: #0058b9 and the original background color: #ffcd00 to meet a contrast ratio of 4.52:1. Use foreground color: #0058b9 and the original background color: #ffcd00 to meet a contrast ratio of 4.52:1.
-
-Failed instances count: 33
-Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
-Failure Count: 1
-How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 33
-Failure Title: Ensures links have discernible text
-Failure Count: 12
-How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-Failed instances count: 33
-Failure Title: Ensures <li> elements are used semantically
-Failure Count: 15
-How to fix: Fix the following: List item does not have a <ul>, <ol> parent element without a role, or a role="list"
-
-
-
----------- File: .\courier\inpost_ship.html ----------
-
-Failed instances count: 30
-Failure Title: Ensures role attribute has an appropriate value for the element
-Failure Count: 1
-How to fix: Fix the following: ARIA role form is not allowed for given element
-
-Failed instances count: 30
-Failure Title: Ensure the autocomplete attribute is correct and suitable for the form field
-Failure Count: 1
-How to fix: Fix the following: the autocomplete attribute is incorrectly formatted
-
-Failed instances count: 30
-Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-Failure Count: 4
-How to fix: Fix the following: Element has insufficient color contrast of 3.04 (foreground color: #929497, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 3.04 (foreground color: #929497, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1 Use foreground color: #6f7172 and the original background color: #ffffff to meet a contrast ratio of 4.91:1. Use foreground color: #6f7172 and the original background color: #ffffff to meet a contrast ratio of 4.91:1.
-
-Failed instances count: 30
-Failure Title: Ensures every id attribute value used in ARIA and in labels is unique
-Failure Count: 1
-How to fix: Fix the following: Document has multiple elements referenced with ARIA with the same id attribute: promoCode
-
-Failed instances count: 30
-Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
-Failure Count: 22
-How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 30
-Failure Title: Ensures every form element has a label
-Failure Count: 1
-How to fix: Fix ONE of the following: Form element does not have an implicit (wrapped) <label> Form element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element has no placeholder attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-
-
----------- File: .\courier\ups_main_page.html ----------
-
-Failed instances count: 8
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 2
-How to fix: Fix the following: ARIA attribute is not allowed: aria-selected="false"
-
-Failed instances count: 8
-Failure Title: Ensures elements with an ARIA role that require child roles contain them
-Failure Count: 1
-How to fix: Fix ONE of the following: Element has children which are not allowed: a[tabindex] Element uses aria-busy="true" while showing a loader
-
-Failed instances count: 8
-Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-Failure Count: 1
-How to fix: Fix the following: Element has insufficient color contrast of 3.47 (foreground color: #ffffff, background color: #7f8c8d, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 3.47 (foreground color: #ffffff, background color: #7f8c8d, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1 Use background color: #6c7777 and the original foreground color: #ffffff to meet a contrast ratio of 4.62:1. Use background color: #6c7777 and the original foreground color: #ffffff to meet a contrast ratio of 4.62:1.
-
-Failed instances count: 8
-Failure Title: Ensures every id attribute value used in ARIA and in labels is unique
-Failure Count: 2
-How to fix: Fix the following: Document has multiple elements referenced with ARIA with the same id attribute: utilNavDropdown3
-
-Failed instances count: 8
-Failure Title: Ensures that lists are structured correctly
-Failure Count: 2
-How to fix: Fix the following: List element has direct children that are not allowed: [role=none]
-
-
-
----------- File: .\courier\ups_ship.html ----------
-
-Failed instances count: 3
-Failure Title: Ensure the autocomplete attribute is correct and suitable for the form field
-Failure Count: 1
-How to fix: Fix the following: the autocomplete attribute is incorrectly formatted
-
-Failed instances count: 3
-Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-Failure Count: 1
-How to fix: Fix the following: Element has insufficient color contrast of 3.47 (foreground color: #ffffff, background color: #7f8c8d, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 3.47 (foreground color: #ffffff, background color: #7f8c8d, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1 Use background color: #6c7777 and the original foreground color: #ffffff to meet a contrast ratio of 4.62:1. Use background color: #6c7777 and the original foreground color: #ffffff to meet a contrast ratio of 4.62:1.
-
-Failed instances count: 3
-Failure Title: Ensures every form element has a label
-Failure Count: 1
-How to fix: Fix ONE of the following: Form element does not have an implicit (wrapped) <label> Form element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element has no placeholder attribute Element's default semantics were not overridden with role="none" or role="presentation"
+.\courier\ups_ship.html
+autocomplete-valid: 3: Ensure the autocomplete attribute is correct and suitable for the form field;
+color-contrast: 3: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds;
+label: 3: Ensures every form element has a label;
 

@@ -1,84 +1,31 @@
-Folder: education
+.\education\harvard_items_list.html
 
+.\education\harvard_item_details.html
 
----------- File: .\education\harvard_items_list.html ----------
+.\education\harvard_main_page.html
 
+.\education\pw_items_list.html
+aria-required-children: 85: Ensures elements with an ARIA role that require child roles contain them;
+nested-interactive: 85: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies;
 
+.\education\pw_item_details.html
 
----------- File: .\education\harvard_item_details.html ----------
+.\education\pw_main_page.html
 
+.\education\uva_items_list.html
 
+.\education\uva_item_details.html
 
----------- File: .\education\harvard_main_page.html ----------
+.\education\uva_main_page.html
 
+.\education\zut_items_list.html
+list: 1: Ensures that lists are structured correctly;
 
+.\education\zut_item_details.html
+list: 1: Ensures that lists are structured correctly;
 
----------- File: .\education\pw_items_list.html ----------
-
-Failed instances count: 85
-Failure Title: Ensures elements with an ARIA role that require child roles contain them
-Failure Count: 1
-How to fix: Fix ONE of the following: Element has children which are not allowed: [role=tabpanel] Element uses aria-busy="true" while showing a loader
-
-Failed instances count: 85
-Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-Failure Count: 84
-How to fix: Fix the following: Element has focusable descendants
-
-
-
----------- File: .\education\pw_item_details.html ----------
-
-
-
----------- File: .\education\pw_main_page.html ----------
-
-
-
----------- File: .\education\uva_items_list.html ----------
-
-
-
----------- File: .\education\uva_item_details.html ----------
-
-
-
----------- File: .\education\uva_main_page.html ----------
-
-
-
----------- File: .\education\zut_items_list.html ----------
-
-Failed instances count: 1
-Failure Title: Ensures that lists are structured correctly
-Failure Count: 1
-How to fix: Fix the following: List element has direct children that are not allowed: div
-
-
-
----------- File: .\education\zut_item_details.html ----------
-
-Failed instances count: 1
-Failure Title: Ensures that lists are structured correctly
-Failure Count: 1
-How to fix: Fix the following: List element has direct children that are not allowed: div
-
-
-
----------- File: .\education\zut_main_page.html ----------
-
-Failed instances count: 12
-Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
-Failure Count: 1
-How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 12
-Failure Title: Ensures that lists are structured correctly
-Failure Count: 2
-How to fix: Fix the following: List element has direct children that are not allowed: div
-
-Failed instances count: 12
-Failure Title: Ensures <li> elements are used semantically
-Failure Count: 9
-How to fix: Fix the following: List item does not have a <ul>, <ol> parent element
+.\education\zut_main_page.html
+image-alt: 12: Ensures <img> elements have alternate text or a role of none or presentation;
+list: 12: Ensures that lists are structured correctly;
+listitem: 12: Ensures <li> elements are used semantically;
 

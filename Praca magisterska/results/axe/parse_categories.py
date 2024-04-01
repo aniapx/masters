@@ -50,6 +50,6 @@ for folder in folders:
         for root, _, files in os.walk(folder):
             for file in files:
                 if file.endswith('.json'):
-                    print(f"{file}")
+                    print(f"Parsing: {file}")
                     file_path = os.path.join(root, file)
                     process_file(file_path, output_file)

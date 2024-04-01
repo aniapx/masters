@@ -1,157 +1,42 @@
-Folder: socialmedia
+.\socialmedia\facebook_main_page.html
+aria-allowed-attr: 90: Ensures ARIA attributes are allowed for an element's role;
+aria-hidden-focus: 90: Ensures aria-hidden elements are not focusable nor contain focusable elements;
+aria-required-children: 90: Ensures elements with an ARIA role that require child roles contain them;
+aria-required-parent: 90: Ensures elements with an ARIA role that require parent roles are contained by them;
+link-name: 90: Ensures links have discernible text;
 
+.\socialmedia\facebook_post.html
+aria-allowed-attr: 3: Ensures ARIA attributes are allowed for an element's role;
+aria-hidden-focus: 3: Ensures aria-hidden elements are not focusable nor contain focusable elements;
 
----------- File: .\socialmedia\facebook_main_page.html ----------
+.\socialmedia\facebook_user.html
+aria-allowed-attr: 5: Ensures ARIA attributes are allowed for an element's role;
+aria-hidden-focus: 5: Ensures aria-hidden elements are not focusable nor contain focusable elements;
+list: 5: Ensures that lists are structured correctly;
+nested-interactive: 5: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies;
 
-Failed instances count: 90
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 46
-How to fix: Fix the following: ARIA attribute is not allowed: aria-posinset="18"
+.\socialmedia\linkedin_main_page.html
+frame-title: 1: Ensures <iframe> and <frame> elements have an accessible name;
 
-Failed instances count: 90
-Failure Title: Ensures aria-hidden elements are not focusable nor contain focusable elements
-Failure Count: 18
-How to fix: Fix the following: Focusable content should have tabindex='-1' or be removed from the DOM
+.\socialmedia\linkedin_post.html
+frame-title: 1: Ensures <iframe> and <frame> elements have an accessible name;
 
-Failed instances count: 90
-Failure Title: Ensures elements with an ARIA role that require child roles contain them
-Failure Count: 7
-How to fix: Fix ONE of the following: Element has children which are not allowed: [role=button] Element uses aria-busy="true" while showing a loader
+.\socialmedia\linkedin_user.html
+aria-hidden-focus: 3: Ensures aria-hidden elements are not focusable nor contain focusable elements;
+duplicate-id-active: 3: Ensures every id attribute value of active elements is unique;
+frame-title: 3: Ensures <iframe> and <frame> elements have an accessible name;
 
-Failed instances count: 90
-Failure Title: Ensures elements with an ARIA role that require parent roles are contained by them
-Failure Count: 14
-How to fix: Fix the following: Required ARIA parent role not present: row
+.\socialmedia\reddit_main_page.html
+nested-interactive: 2: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies;
 
-Failed instances count: 90
-Failure Title: Ensures links have discernible text
-Failure Count: 5
-How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+.\socialmedia\reddit_post.html
+nested-interactive: 4: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies;
 
-
-
----------- File: .\socialmedia\facebook_post.html ----------
-
-Failed instances count: 3
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 1
-How to fix: Fix the following: ARIA attribute is not allowed: aria-posinset="1"
-
-Failed instances count: 3
-Failure Title: Ensures aria-hidden elements are not focusable nor contain focusable elements
-Failure Count: 2
-How to fix: Fix the following: Focusable content should have tabindex='-1' or be removed from the DOM
-
-
-
----------- File: .\socialmedia\facebook_user.html ----------
-
-Failed instances count: 5
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 1
-How to fix: Fix the following: ARIA attribute is not allowed: aria-posinset="1"
-
-Failed instances count: 5
-Failure Title: Ensures aria-hidden elements are not focusable nor contain focusable elements
-Failure Count: 2
-How to fix: Fix the following: Focusable content should have tabindex='-1' or be removed from the DOM
-
-Failed instances count: 5
-Failure Title: Ensures that lists are structured correctly
-Failure Count: 1
-How to fix: Fix the following: List element has direct children that are not allowed: div
-
-Failed instances count: 5
-Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-Failure Count: 1
-How to fix: Fix the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with 'aria-hidden=true')
-
-
-
----------- File: .\socialmedia\linkedin_main_page.html ----------
-
-Failed instances count: 1
-Failure Title: Ensures <iframe> and <frame> elements have an accessible name
-Failure Count: 1
-How to fix: Fix ONE of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's default semantics were not overridden with role="none" or role="presentation"
-
-
-
----------- File: .\socialmedia\linkedin_post.html ----------
-
-Failed instances count: 1
-Failure Title: Ensures <iframe> and <frame> elements have an accessible name
-Failure Count: 1
-How to fix: Fix ONE of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's default semantics were not overridden with role="none" or role="presentation"
-
-
-
----------- File: .\socialmedia\linkedin_user.html ----------
-
-Failed instances count: 3
-Failure Title: Ensures aria-hidden elements are not focusable nor contain focusable elements
-Failure Count: 1
-How to fix: Fix the following: Focusable content should have tabindex='-1' or be removed from the DOM
-
-Failed instances count: 3
-Failure Title: Ensures every id attribute value of active elements is unique
-Failure Count: 1
-How to fix: Fix the following: Document has active elements with the same id attribute: navigation-overlay-section-see-more
-
-Failed instances count: 3
-Failure Title: Ensures <iframe> and <frame> elements have an accessible name
-Failure Count: 1
-How to fix: Fix ONE of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's default semantics were not overridden with role="none" or role="presentation"
-
-
-
----------- File: .\socialmedia\reddit_main_page.html ----------
-
-Failed instances count: 2
-Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-Failure Count: 2
-How to fix: Fix the following: Element has focusable descendants
-
-
-
----------- File: .\socialmedia\reddit_post.html ----------
-
-Failed instances count: 4
-Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-Failure Count: 4
-How to fix: Fix the following: Element has focusable descendants
-
-
-
----------- File: .\socialmedia\reddit_user.html ----------
-
-Failed instances count: 116
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 25
-How to fix: Fix the following: aria-label attribute cannot be used on a faceplate-hovercard with no valid role attribute.
-
-Failed instances count: 116
-Failure Title: Ensures role attribute has an appropriate value for the element
-Failure Count: 30
-How to fix: Fix the following: ARIA role presentation is not allowed for given element
-
-Failed instances count: 116
-Failure Title: Ensure links are distinguished from surrounding text in a way that does not rely on color
-Failure Count: 3
-How to fix: Fix ONE of the following: The link has insufficient color contrast of 2.4:1 with the surrounding text. (Minimum contrast is 3:1, link text: #629fff, surrounding text: #f2f4f5) The link has no styling (such as underline) to distinguish it from the surrounding text
-
-Failed instances count: 116
-Failure Title: Ensures links have discernible text
-Failure Count: 25
-How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-Failed instances count: 116
-Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-Failure Count: 3
-How to fix: Fix the following: Element has focusable descendants
-
-Failed instances count: 116
-Failure Title: Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them
-Failure Count: 30
-How to fix: Fix ALL of the following: Element is not focusable. Element does not have global ARIA attribute
+.\socialmedia\reddit_user.html
+aria-allowed-attr: 116: Ensures ARIA attributes are allowed for an element's role;
+aria-allowed-role: 116: Ensures role attribute has an appropriate value for the element;
+link-in-text-block: 116: Ensure links are distinguished from surrounding text in a way that does not rely on color;
+link-name: 116: Ensures links have discernible text;
+nested-interactive: 116: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies;
+presentation-role-conflict: 116: Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them;
 

@@ -20,7 +20,13 @@ def parse_html(html_file):
                 h3_element = instance.find('h3')
                 failed_count = h3_element.find('span', class_='count').text.strip() if h3_element else "Failed instances count not found"
                 instance_data['failed_count'] = failed_count
-
+                
+                # Extracting failure id
+                failure_id_span = table.find('span', class_='rule-details-id')
+                failure_id = failure_id_span.text.strip().replace('\n', ' ') if failure_id_span else None
+                failure_id = re.sub(r'\s+', ' ', failure_id) if failure_id else None
+                instance_data['failure_id'] = failure_id
+                
                 # Extracting failure title
                 failure_title_span = table.find('span', class_='rule-details-description')
                 failure_title = failure_title_span.text.strip().replace('\n', ' ') if failure_title_span else None
@@ -32,29 +38,16 @@ def parse_html(html_file):
                 failure_count = failure_count_span.text.strip() if failure_count_span else None
                 instance_data['failure_count'] = failure_count
 
-                # Extracting how to fix information
-                how_to_fix_div = table.find('div', class_=re.compile(r'how-to-fix-content'))
-                if how_to_fix_div:
-                    how_to_fix = how_to_fix_div.text.strip().replace('\n', ' ')
-                    how_to_fix = re.sub(r'\s+', ' ', how_to_fix) if how_to_fix else None
-                    instance_data['how_to_fix'] = how_to_fix
-                else:
-                    instance_data['how_to_fix'] = "How to fix: information not found"
-
                 results.append(instance_data)
 
         return results
     
 def print_to_file(file, data):
         for instance in data:
-            file.write("Failed instances count: {}\n".format(instance['failed_count']))
-            file.write("Failure Title: {}\n".format(instance['failure_title']))
-            file.write("Failure Count: {}\n".format(instance['failure_count']))
-            file.write("How to fix: {}\n".format(instance['how_to_fix']))
-            file.write("\n")
+            file.write("{}: {}: {};\n".format(instance['failure_id'], instance['failed_count'], instance['failure_title']))
 
-# folders = ['courier']
 folders = ['bigsize', 'courier', 'ecommerce', 'education', 'entertainment', 'gov', 'healthcare', 'news', 'nonprofit', 'mediumsize', 'smallsize', 'socialmedia']
+# folders = ['socialmedia']
 
 for folder in folders:
     folder_path = os.path.join('.', folder)
@@ -63,7 +56,7 @@ for folder in folders:
     # Create a file with the folder name
     output_file_name = f"{folder}.txt"
     with open(output_file_name, 'w', encoding='utf-8') as output_file:
-        output_file.write(f"Folder: {folder}\n")
+        output_file.write(f"")
 
     for html_file in html_files:
         print("Parsing file:", html_file)
@@ -71,5 +64,7 @@ for folder in folders:
 
         # Append the parsed data to the output file
         with open(output_file_name, 'a', encoding='utf-8') as output_file:
-            output_file.write(f"\n\n---------- File: {html_file} ----------\n\n")
+            output_file.write(f"{html_file}\n")
             print_to_file(output_file, parsed_data)
+            output_file.write("\n")
+            

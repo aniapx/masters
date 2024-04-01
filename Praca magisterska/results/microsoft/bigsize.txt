@@ -1,57 +1,16 @@
-Folder: bigsize
+.\bigsize\microsoft.html
 
+.\bigsize\orlen.html
+aria-valid-attr-value: 8: Ensures all ARIA attributes have valid values;
+link-name: 8: Ensures links have discernible text;
+nested-interactive: 8: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies;
 
----------- File: .\bigsize\microsoft.html ----------
+.\bigsize\volkswagen.html
+aria-allowed-attr: 6: Ensures ARIA attributes are allowed for an element's role;
+aria-allowed-role: 6: Ensures role attribute has an appropriate value for the element;
+aria-hidden-focus: 6: Ensures aria-hidden elements are not focusable nor contain focusable elements;
+button-name: 6: Ensures buttons have discernible text;
+svg-img-alt: 6: Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text;
 
-
-
----------- File: .\bigsize\orlen.html ----------
-
-Failed instances count: 8
-Failure Title: Ensures all ARIA attributes have valid values
-Failure Count: 1
-How to fix: Fix the following: Invalid ARIA attribute value: aria-controls="-tabpanel"
-
-Failed instances count: 8
-Failure Title: Ensures links have discernible text
-Failure Count: 1
-How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-Failed instances count: 8
-Failure Title: Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-Failure Count: 6
-How to fix: Fix the following: Element has focusable descendants
-
-
-
----------- File: .\bigsize\volkswagen.html ----------
-
-Failed instances count: 6
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 1
-How to fix: Fix the following: aria-label attribute cannot be used on a div with no valid role attribute.
-
-Failed instances count: 6
-Failure Title: Ensures role attribute has an appropriate value for the element
-Failure Count: 1
-How to fix: Fix the following: ARIA role slider is not allowed for given element
-
-Failed instances count: 6
-Failure Title: Ensures aria-hidden elements are not focusable nor contain focusable elements
-Failure Count: 1
-How to fix: Fix the following: Focusable content should be disabled or be removed from the DOM
-
-Failed instances count: 6
-Failure Title: Ensures buttons have discernible text
-Failure Count: 1
-How to fix: Fix ONE of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 6
-Failure Title: Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text
-Failure Count: 2
-How to fix: Fix ONE of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-
-
----------- File: .\bigsize\walmart.html ----------
+.\bigsize\walmart.html
 

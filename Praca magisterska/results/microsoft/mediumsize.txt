@@ -1,93 +1,24 @@
-Folder: mediumsize
+.\mediumsize\booking.html
+aria-progressbar-name: 2: Ensures every ARIA progressbar node has an accessible name;
+aria-valid-attr-value: 2: Ensures all ARIA attributes have valid values;
 
+.\mediumsize\ccc.html
+aria-allowed-attr: 121: Ensures ARIA attributes are allowed for an element's role;
+aria-input-field-name: 121: Ensures every ARIA input field has an accessible name;
+aria-required-children: 121: Ensures elements with an ARIA role that require child roles contain them;
+button-name: 121: Ensures buttons have discernible text;
+color-contrast: 121: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds;
+image-alt: 121: Ensures <img> elements have alternate text or a role of none or presentation;
+link-name: 121: Ensures links have discernible text;
+list: 121: Ensures that lists are structured correctly;
+listitem: 121: Ensures <li> elements are used semantically;
+meta-viewport: 121: Ensures <meta name="viewport"> does not disable text scaling and zooming;
 
----------- File: .\mediumsize\booking.html ----------
-
-Failed instances count: 2
-Failure Title: Ensures every ARIA progressbar node has an accessible name
-Failure Count: 1
-How to fix: Fix ONE of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-Failed instances count: 2
-Failure Title: Ensures all ARIA attributes have valid values
-Failure Count: 1
-How to fix: Fix the following: Invalid ARIA attribute value: aria-controls="BEACH"
-
-
-
----------- File: .\mediumsize\ubereats.html ----------
-
-Failed instances count: 195
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 5
-How to fix: Fix the following: ARIA attribute is not allowed: aria-expanded="false"
-
-Failed instances count: 195
-Failure Title: Ensures buttons have discernible text
-Failure Count: 1
-How to fix: Fix ONE of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 195
-Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-Failure Count: 5
-How to fix: Fix the following: Element has insufficient color contrast of 4.34 (foreground color: #0e8345, background color: #f3f3f3, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 4.34 (foreground color: #0e8345, background color: #f3f3f3, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1 Use foreground color: #0d7c41 and the original background color: #f3f3f3 to meet a contrast ratio of 4.76:1 Use foreground color: #0d7c41 and the original background color: #f3f3f3 to meet a contrast ratio of 4.76:1 Or use background color: #ffffff and the original foreground color: #0e8345 to meet a contrast ratio of 4.83:1.Or use background color: #ffffff and the original foreground color: #0e8345 to meet a contrast ratio of 4.83:1.
-
-Failed instances count: 195
-Failure Title: Ensures links have discernible text
-Failure Count: 2
-How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-Failed instances count: 195
-Failure Title: Ensures that lists are structured correctly
-Failure Count: 1
-How to fix: Fix the following: List element has direct children that are not allowed: a
-
-Failed instances count: 195
-Failure Title: Ensures <li> elements are used semantically
-Failure Count: 181
-How to fix: Fix the following: List item does not have a <ul>, <ol> parent element
-
-
-
----------- File: .\mediumsize\znanylekarz.html ----------
-
-Failed instances count: 63
-Failure Title: Ensures ARIA attributes are allowed for an element's role
-Failure Count: 2
-How to fix: Fix the following: ARIA attribute is not allowed: aria-expanded="false"
-
-Failed instances count: 63
-Failure Title: Ensures aria-hidden elements are not focusable nor contain focusable elements
-Failure Count: 16
-How to fix: Fix the following: Focusable content should have tabindex='-1' or be removed from the DOM
-
-Failed instances count: 63
-Failure Title: Ensures buttons have discernible text
-Failure Count: 1
-How to fix: Fix ONE of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 63
-Failure Title: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-Failure Count: 38
-How to fix: Fix the following: Element has insufficient color contrast of 2.24 (foreground color: #ffffff, background color: #00c3a5, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1Element has insufficient color contrast of 2.24 (foreground color: #ffffff, background color: #00c3a5, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1 Use background color: #008571 and the original foreground color: #ffffff to meet a contrast ratio of 4.57:1. Use background color: #008571 and the original foreground color: #ffffff to meet a contrast ratio of 4.57:1.
-
-Failed instances count: 63
-Failure Title: Ensures <img> elements have alternate text or a role of none or presentation
-Failure Count: 1
-How to fix: Fix ONE of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element's default semantics were not overridden with role="none" or role="presentation"
-
-Failed instances count: 63
-Failure Title: Ensure links are distinguished from surrounding text in a way that does not rely on color
-Failure Count: 1
-How to fix: Fix ONE of the following: The link has insufficient color contrast of 2.59:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1662c6, surrounding text: #1b2734) The link has no styling (such as underline) to distinguish it from the surrounding text
-
-Failed instances count: 63
-Failure Title: Ensures links have discernible text
-Failure Count: 3
-How to fix: Fix the following: Element is in tab order and does not have accessible text Fix ONE of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-Failed instances count: 63
-Failure Title: Ensures <meta name="viewport"> does not disable text scaling and zooming
-Failure Count: 1
-How to fix: Fix the following: user-scalable=no on <meta> tag disables zooming on mobile devices
+.\mediumsize\ubereats.html
+aria-allowed-attr: 195: Ensures ARIA attributes are allowed for an element's role;
+button-name: 195: Ensures buttons have discernible text;
+color-contrast: 195: Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds;
+link-name: 195: Ensures links have discernible text;
+list: 195: Ensures that lists are structured correctly;
+listitem: 195: Ensures <li> elements are used semantically;
 
