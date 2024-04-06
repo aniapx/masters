@@ -7,6 +7,7 @@ def Average(lst):
     return sum(lst) / len(lst) 
 
 categories = ['bigsize', 'courier', 'ecommerce', 'education', 'entertainment', 'gov', 'healthcare', 'news', 'nonprofit', 'mediumsize', 'smallsize', 'socialmedia']
+categories_pl = ['duże przedsiębiorstwa', 'firmy kurieskie', 'firmy e-commerce', 'instytucje edukacyjne', 'rozrywka', 'strony rządowe', 'instytucje zdrowia', 'wiadomości', 'non-profit', 'średnie przedsiębiorstwa', 'małe przedziębiorstwa', 'media społecznościowe']
 # categories = ['courier', 'bigsize', 'ecommerce', 'education']
 
 all_issues = set()
@@ -17,7 +18,7 @@ critical_counts = {}
 serious_counts = {}
 
 
-for category in categories:
+for index, category in enumerate(categories):
     json_file_names = set()
     all_issues = set()
     file_issues = {}
@@ -57,7 +58,7 @@ for category in categories:
                     all_issues.add(issue.strip())
                     file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('count', 0)
                     file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('color', 'red')
-                    file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('hatch', 'X')
+                    file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('hatch', 'xx')
                     file_issues[json_file_name][issue.strip()]["count"] += count
                     all_issues_detail_counts[issue] += count
                     all_issues_counts[category]['critical'] += count
@@ -78,7 +79,7 @@ for category in categories:
                     all_issues.add(issue.strip())
                     file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('count', 0)
                     file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('color', 'orange')
-                    file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('hatch', '/')
+                    file_issues.setdefault(json_file_name, {}).setdefault(issue.strip(), {}).setdefault('hatch', '//')
                     file_issues[json_file_name][issue.strip()]["count"] += count
                     all_issues_detail_counts[issue] += count
                     all_issues_counts[category]['serious'] += count
@@ -103,18 +104,18 @@ for category in categories:
     colors = ['red' if 'red' in subarr else 'orange' for subarr in colors_arrays]
     
     hatches_arrays = [[file_issues.get(json_file, {}).get(issue, {}).get("hatch", "") for json_file in file_issues.keys()] for issue in all_issues]
-    hatches = ['X' if 'X' in subarr else '/' for subarr in hatches_arrays]
+    hatches = ['xx' if 'xx' in subarr else '//' for subarr in hatches_arrays]
 
     if not all_issues:
         total_issue_counts = [0] * len(total_issue_counts)
 
     plt.bar(all_issues, total_issue_counts, edgecolor='black', color=colors, hatch=hatches, alpha=0.7)
     
-    for ticklabel, tickcolor in zip(plt.gca().get_xticklabels(), colors):
-        ticklabel.set_color(tickcolor)
+    # for ticklabel, tickcolor in zip(plt.gca().get_xticklabels(), colors):
+    #     ticklabel.set_color(tickcolor)
 
-    plt.title(f'Total Issues for {category}')
-    plt.xlabel('Issue Type')
+    plt.title(f'Suma błędów w kategorii {categories_pl[index]}')
+    plt.xlabel('Rodzaj błędu')
     plt.ylabel('Count')
     plt.xticks(rotation=90)
     plt.ylim(0, max_total_count)  # Set the y-axis limits using the maximum total count
@@ -141,14 +142,14 @@ for category in categories:
         for i, count in enumerate(individual_issue_counts):
             plt.text(i + idx_offset, count + 0.1, f"{json_file_name[0]}{str(count)}", ha='center', va='bottom')
 
-    plt.title(f"Issues count for {category}")
-    plt.ylabel('Count')
-    plt.xlabel('Issue Type')
+    plt.title(f"Suma błędów w kategorii {categories_pl[index]}")
+    plt.ylabel('Ilość błędów')
+    plt.xlabel('Rodzaj błędu')
     plt.xticks(X_axis + bar_width * (len(json_file_names) - 1) / 2, all_issues, rotation=90)
     plt.legend()
 
-    for ticklabel, tickcolor in zip(plt.gca().get_xticklabels(), colors):
-        ticklabel.set_color(tickcolor)
+    # for ticklabel, tickcolor in zip(plt.gca().get_xticklabels(), colors):
+    #     ticklabel.set_color(tickcolor)
 
     plt.ylim(0, max_count + 5)  # Set the y-axis limits using the maximum total count
     plt.tight_layout()
@@ -157,7 +158,7 @@ for category in categories:
 
 
 # Plot detailed issues count
-hatches = ['x', '/']
+hatches = ['xx', '//']
 plt.figure(figsize=(12, 8))
 bar_width = 0.35  # Width of each bar
 idx = np.arange(len(all_issues_detail_counts))  # Array to hold the indices for each category
@@ -176,9 +177,9 @@ for bars in [critical_bars, serious_bars]:
         if height != 0:  # Check if the height is not zero
             plt.text(bar.get_x() + bar.get_width() / 2, height, '%d' % int(height), ha='center', va='bottom')
 
-plt.title("Issue type counts")
-plt.ylabel('Count')
-plt.xlabel('Issue')
+plt.title("Ilość występujących błędów")
+plt.ylabel('Ilość błędów')
+plt.xlabel('Błąd')
 plt.xticks(idx, all_issues_detail_counts.keys(), rotation=90)
 plt.legend()  # Adding legend for severities
 plt.tight_layout()
@@ -191,7 +192,7 @@ plt.close()
 # Plot aggregated issues for all categories
 severities = ['critical', 'serious']
 colors = ['red', 'orange'] 
-hatches = ['x', '/'] 
+hatches = ['xx', '//'] 
 plt.figure(figsize=(12, 8))
 bar_width = 0.35  # Width of each bar
 idx = np.arange(len(categories))  # Array to hold the indices for each category
@@ -206,9 +207,9 @@ for j, severity in enumerate(severities):
     for i, count in enumerate(individual_issue_counts):
         plt.text(idx[i] + j * bar_width, count + 0.1, str(count), ha='center', va='bottom')
 
-plt.title("Sum of issue count for all categories")
-plt.ylabel('Count')
-plt.xlabel('Category')
+plt.title("Suma błędów dla wszystkich kategorii")
+plt.ylabel('Ilość błędów')
+plt.xlabel('Kategoria')
 plt.xticks(idx + bar_width / 2, categories)  # Adjusting xticks position
 plt.xticks(rotation=60)
 plt.legend()  # Adding legend for severities
@@ -222,7 +223,7 @@ plt.close()
 # Plot average issues (critical and serious) per file
 severities = ['critical', 'serious']
 colors = ['red', 'orange'] 
-hatches = ['x', '/'] 
+hatches = ['xx', '//'] 
 plt.figure(figsize=(12, 8))
 bar_width = 0.35  # Width of each bar
 idx = np.arange(len(categories))  # Array to hold the indices for each category
@@ -237,9 +238,9 @@ for j, severity in enumerate(severities):
     for i, count in enumerate(individual_issue_counts):
         plt.text(idx[i] + j * bar_width, count + 0.1, str(count), ha='center', va='bottom')
 
-plt.title("Average issue count for all categories")
-plt.ylabel('Count')
-plt.xlabel('Category')
+plt.title("Średnia ilość błędów dla wszystich kategorii")
+plt.ylabel('Ilość błędów')
+plt.xlabel('Kategoria')
 plt.xticks(idx + bar_width / 2, categories)  # Adjusting xticks position
 plt.xticks(rotation=60)
 plt.legend()  # Adding legend for severities

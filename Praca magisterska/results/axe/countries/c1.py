@@ -23,7 +23,7 @@ def read_data(country_name):
                         country_issues.setdefault(issue.strip(), {}).setdefault('count', 0)
                         country_issues[issue]['count'] += count
                         country_issues.setdefault(issue.strip(), {}).setdefault('color', 'red')
-                        country_issues.setdefault(issue.strip(), {}).setdefault('hatch', 'X')
+                        country_issues.setdefault(issue.strip(), {}).setdefault('hatch', 'xx')
 
             if "Serious Issues:" in lines:
                 serious_index = lines.index("Serious Issues:") + 1
@@ -51,7 +51,7 @@ def plot_severity_issues(issues_data):
 
     idx = -0.2
     for severity_issues in [
-        {'issues': critical_counts, 'color': 'red', 'hatch': 'x'}, 
+        {'issues': critical_counts, 'color': 'red', 'hatch': 'xx'}, 
         {'issues': serious_counts, 'color': 'orange', 'hatch': '/'}
     ]:
         plt.bar(X_axis + idx, severity_issues['issues'], 0.2, alpha=0.7, edgecolor='black', color=severity_issues['color'], hatch=severity_issues['hatch'])
@@ -128,7 +128,7 @@ for country in countries:
         countries_issues[country].setdefault(issue_name, {'count': 0})
         countries_issues[country][issue_name]['count'] += issue_props.get('count', 0)
         countries_issues[country][issue_name]['color'] = issue_props.get('color', 'red')
-        countries_issues[country][issue_name]['hatch'] = issue_props.get('hatch', 'x')
+        countries_issues[country][issue_name]['hatch'] = issue_props.get('hatch', 'xx')
 
         if issue_props['color'] == 'red':
             countries_severities[country]['critical'] += issue_props.get('count', 0)

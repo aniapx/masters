@@ -13,7 +13,7 @@ def extract_issue_data(lines, issue_type):
         if ";" in line:
             issue, count, description = line.strip().split(":")
             count = int(count.strip())
-            issue_data[issue.strip()] = {'count': count, 'color': 'red' if issue_type == 'critical' else 'orange', 'hatch': 'X' if issue_type == 'critical' else '/'}
+            issue_data[issue.strip()] = {'count': count, 'color': 'red' if issue_type == 'critical' else 'orange', 'hatch': 'xx' if issue_type == 'critical' else '/'}
     return issue_data
 
 def process_category(category):
@@ -49,7 +49,7 @@ def plot_total_issues(category, all_issues):
     plt.figure(figsize=(12, 8))
     total_issue_counts = [sum(all_issues.get(category, {}).get(issue, {}).get("count", 0)) for issue in all_issues]
     colors = ['red' if 'red' in [all_issues.get(category, {}).get(issue, {}).get("color", "")] else 'orange' for issue in all_issues]
-    hatches = ['X' if 'X' in [all_issues.get(category, {}).get(issue, {}).get("hatch", "")] else '/' for issue in all_issues]
+    hatches = ['xx' if 'xx' in [all_issues.get(category, {}).get(issue, {}).get("hatch", "")] else '/' for issue in all_issues]
 
     plt.bar(all_issues, total_issue_counts, edgecolor='black', color=colors, hatch=hatches, alpha=0.7)
     plt.title(f'Total Issues for {category}')
@@ -96,7 +96,7 @@ def plot_detailed_issues(all_issues_detail_counts):
     idx = np.arange(len(all_issues_detail_counts))
     max_count = max(issue_attrs['count'] for issue_attrs in all_issues_detail_counts.values())
 
-    # critical_bars = plt.bar(idx, [critical_counts.get(label, 0) for label in all_issues_detail_counts.keys()], bar_width, alpha=0.7, color='red', hatch='x', label='Critical', edgecolor='black')
+    # critical_bars = plt.bar(idx, [critical_counts.get(label, 0) for label in all_issues_detail_counts.keys()], bar_width, alpha=0.7, color='red', hatch='xx', label='Critical', edgecolor='black')
     # serious_bars = plt.bar(idx, [serious_counts.get(label, 0) for label in all_issues_detail_counts.keys()], bar_width, alpha=0.7, edgecolor='black', bottom=[critical_counts.get(label, 0) for label in all_issues_detail_counts.keys()], color='orange', hatch='/')
 
     for i, issue in enumerate(all_issues_detail_counts.values()):
@@ -125,7 +125,7 @@ def plot_aggregated_issues(categories, all_issues_counts):
         individual_issue_counts = [all_issues_counts[category].get(severity, 0) for category in categories]
         max_count = max(max(individual_issue_counts), max_count)
 
-        plt.bar(idx + j * bar_width, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, label=severity, color='red' if severity == 'critical' else 'orange', hatch='x' if severity == 'critical' else '/')
+        plt.bar(idx + j * bar_width, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, label=severity, color='red' if severity == 'critical' else 'orange', hatch='xx' if severity == 'critical' else '/')
         
     for i, count in enumerate(individual_issue_counts):
         plt.text(idx[i] + j * bar_width, count + 0.1, str(count), ha='center', va='bottom')
@@ -151,7 +151,7 @@ def plot_average_issues(categories, all_issues_average):
         individual_issue_counts = [all_issues_average[category].get(severity, 0) for category in categories]
         max_count = max(max(individual_issue_counts), max_count)
 
-        plt.bar(idx + j * bar_width, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, label=severity, color='red' if severity == 'critical' else 'orange', hatch='x' if severity == 'critical' else '/')
+        plt.bar(idx + j * bar_width, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, label=severity, color='red' if severity == 'critical' else 'orange', hatch='xx' if severity == 'critical' else '/')
         
         for i, count in enumerate(individual_issue_counts):
             plt.text(idx[i] + j * bar_width, count + 0.1, str(count), ha='center', va='bottom')
@@ -189,11 +189,11 @@ for category in categories:
     all_issues_counts[category] = {'critical': sum(category_critical_counts.values()), 'serious': sum(category_serious_counts.values())}
 
     for issue, count in all_issues.get(category, {}).items():
-        all_issues_detail_counts.setdefault(issue, {'count': 0, 'color': 'red', 'hatch': 'x'})
+        all_issues_detail_counts.setdefault(issue, {'count': 0, 'color': 'red', 'hatch': 'xx'})
         sum_count = all_issues_detail_counts.get(issue, 0).get('count', 0) + count.get('count', 0)
         all_issues_detail_counts[issue]['count'] = sum_count
         all_issues_detail_counts[issue]['color'] = count.get('color', 'red')
-        all_issues_detail_counts[issue]['hatch'] = count.get('hatch', 'x')
+        all_issues_detail_counts[issue]['hatch'] = count.get('hatch', 'xx')
 
     sorted_all_issues_detail_counts = {k: v for k, v in sorted(all_issues_detail_counts.items())}
 
