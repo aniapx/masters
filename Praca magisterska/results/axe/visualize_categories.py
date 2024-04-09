@@ -1,5 +1,6 @@
 import re
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 import math
 import numpy as np  
 
@@ -8,7 +9,8 @@ def Average(lst):
 
 categories = ['bigsize', 'courier', 'ecommerce', 'education', 'entertainment', 'gov', 'healthcare', 'news', 'nonprofit', 'mediumsize', 'smallsize', 'socialmedia']
 categories_pl = ['duże przedsiębiorstwa', 'firmy kurieskie', 'firmy e-commerce', 'instytucje edukacyjne', 'rozrywka', 'strony rządowe', 'instytucje zdrowia', 'wiadomości', 'non-profit', 'średnie przedsiębiorstwa', 'małe przedziębiorstwa', 'media społecznościowe']
-# categories = ['courier', 'bigsize', 'ecommerce', 'education']
+categories = ['gov']
+categories_pl = ['strony rządowe']
 
 all_issues = set()
 all_issues_counts = {}
@@ -127,31 +129,64 @@ for index, category in enumerate(categories):
 
 
 # Plot individual issues for each file
-    plt.figure(figsize=(12, 8))
+    # plt.figure(figsize=(13, 8))
+    fig, ax1 = plt.subplots(figsize=(13, 8))
     X_axis = np.arange(len(all_issues))
     max_count = 0
-    bar_width = 0.2
+    bar_width = 0.17
     idx = np.arange(len(json_file_names)) * bar_width
 
+    # cols = ['#fd581b', '#fdbc6e', '#0507a2']; # ecommerce
+    # cols = ['#a31a32', '#064a6b', '#cccccc', '#218d51']; # education
+    # cols = ['#cccccc', '#005eb8', '#1bc3a5']; # healthcare
+    # cols = ['blue', '#2bd764', 'red']; # entertainment
+    cols = ['white', 'red', 'blue']; # gov
+    legend_handles = []
+    json_file_names = sorted(json_file_names)
+    pie_numbers = [];
+
+    j = 0
     for idx_offset, json_file_name in zip(idx, json_file_names):
         individual_issue_counts = [file_issues[json_file_name].get(issue, {}).get("count", 0) for issue in all_issues]
         max_count = max(max(individual_issue_counts), max_count)
 
-        plt.bar(X_axis + idx_offset, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, color=colors, hatch=hatches)
+        # plt.bar(X_axis + idx_offset, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, color=colors, hatch=hatches)
+        ax1.bar(X_axis + idx_offset, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, color=cols[j], hatch=hatches)
+        legend_handles.append(mpatches.Patch(facecolor=cols[j], edgecolor='black', alpha=0.7))
         
+        colors_arrays = [[file_issues.get(json_file, {}).get(issue, {}).get("color", "") for json_file in file_issues.keys()] for issue in all_issues]
+    
+        critical_count = sum(inner_dict['count'] for inner_dict in file_issues[json_file_name].values() if inner_dict.get('color') == 'red')
+        serious_count = sum(inner_dict['count'] for inner_dict in file_issues[json_file_name].values() if inner_dict.get('color') == 'orange')
+        pie_numbers.append(critical_count)
+        pie_numbers.append(serious_count)
+
+        j = (j + 1) % len(cols)
         for i, count in enumerate(individual_issue_counts):
-            plt.text(i + idx_offset, count + 0.1, f"{json_file_name[0]}{str(count)}", ha='center', va='bottom')
+            # plt.text(i + idx_offset, count + 0.1, f"{json_file_name[0]}{str(count)}", ha='center', va='bottom')
+            ax1.text(i + idx_offset, count + 0.1, f"{str(count)}", ha='center', va='bottom', fontsize=9)
 
-    plt.title(f"Suma błędów w kategorii {categories_pl[index]}")
-    plt.ylabel('Ilość błędów')
-    plt.xlabel('Rodzaj błędu')
-    plt.xticks(X_axis + bar_width * (len(json_file_names) - 1) / 2, all_issues, rotation=90)
-    plt.legend()
+    ax1.set_title(f"Suma błędów w kategorii {categories_pl[index]}")
+    ax1.set_ylabel('Ilość błędów')
+    ax1.set_xlabel('Rodzaj błędu')
+    ax1.set_xticks(X_axis + bar_width * (len(json_file_names) - 1) / 2, all_issues, rotation=90)
+    legend_handles.append(mpatches.Patch(facecolor='white', edgecolor='black', hatch='xx'))
+    legend_handles.append(mpatches.Patch(facecolor='white', edgecolor='black', hatch='//'))
+    xx = [s.capitalize() for s in json_file_names]
+    # xx = ['Harvard', 'Politechnika Warszawska', 'Universiteit van Amsterdam', 'Zachodniopomorski Uniwersytet Technologiczny w Szczecinie']
+    # xx = ['Mayo Clinic', 'NHS', 'Znany Lekarz']
+    xx = ['Francja', 'Polska','USA']
+    ax1.legend(legend_handles, xx + ['Błąd krytyczny', 'Błąd poważny'], loc='upper left')
+    ax1.set_ylim(0, max_count + 10)  # Set the y-axis limits using the maximum total count
+    
+    # ax2 = fig.add_axes([0.815, 0.75, 0.2, 0.2])   # [left, bottom, width, height]
+    ax2 = fig.add_axes([0.035, 0.575, 0.2, 0.2])   # [left, bottom, width, height]
+    wedges, texts = ax2.pie(pie_numbers, labels=['' if x == 0 else x for x in pie_numbers], colors=[color for color in cols for _ in range(2)], hatch=['xx','//', 'xx','//', 'xx','//'])
+    for w in wedges:
+        w.set_linewidth(1)
+        w.set_edgecolor('black')
+        w.set_alpha(0.7)
 
-    # for ticklabel, tickcolor in zip(plt.gca().get_xticklabels(), colors):
-    #     ticklabel.set_color(tickcolor)
-
-    plt.ylim(0, max_count + 5)  # Set the y-axis limits using the maximum total count
     plt.tight_layout()
     plt.savefig(f'{category}_issues.png')  # Save individual file issues plot to a file in the current folder
     plt.close()
@@ -165,10 +200,10 @@ idx = np.arange(len(all_issues_detail_counts))  # Array to hold the indices for 
 max_count = max(max(critical_counts.values()), max(serious_counts.values()))  # Find maximum count for setting y-axis limit
 
 # Plotting critical issues
-critical_bars = plt.bar(idx, [critical_counts.get(label, 0) for label in all_issues_detail_counts.keys()], alpha=0.7, color='red', hatch=hatches[0], label='Critical', edgecolor='black')
+critical_bars = plt.bar(idx, [critical_counts.get(label, 0) for label in all_issues_detail_counts.keys()], alpha=0.7, color='red', hatch=hatches[0], label='Błędy krytyczne', edgecolor='black')
 
 # Plotting serious issues
-serious_bars = plt.bar(idx, [serious_counts.get(label, 0) for label in all_issues_detail_counts.keys()], alpha=0.7, edgecolor='black' , bottom=[critical_counts.get(label, 0) for label in all_issues_detail_counts.keys()], color='orange', hatch=hatches[1], label='Serious')
+serious_bars = plt.bar(idx, [serious_counts.get(label, 0) for label in all_issues_detail_counts.keys()], alpha=0.7, edgecolor='black' , bottom=[critical_counts.get(label, 0) for label in all_issues_detail_counts.keys()], color='orange', hatch=hatches[1], label='Błędy poważne')
 
 # Add values above bars
 for bars in [critical_bars, serious_bars]:
@@ -177,13 +212,13 @@ for bars in [critical_bars, serious_bars]:
         if height != 0:  # Check if the height is not zero
             plt.text(bar.get_x() + bar.get_width() / 2, height, '%d' % int(height), ha='center', va='bottom')
 
-plt.title("Ilość występujących błędów")
+plt.title("Suma poszczególnych błędów we wszystkich kategoriach")
 plt.ylabel('Ilość błędów')
 plt.xlabel('Błąd')
 plt.xticks(idx, all_issues_detail_counts.keys(), rotation=90)
 plt.legend()  # Adding legend for severities
 plt.tight_layout()
-plt.ylim(0, max_count + 15)  # Set the y-axis limits using the maximum total count
+plt.ylim(0, max_count + 20)  # Set the y-axis limits using the maximum total count
 plt.tight_layout()
 plt.savefig(f'all_categories_detailed_issues.png')  # Save individual file issues plot to a file in the current folder
 plt.close()
@@ -202,7 +237,7 @@ for j, severity in enumerate(severities):
     individual_issue_counts = [all_issues_counts[category].get(severity, 0) for category in categories]
     max_count = max(max(individual_issue_counts), max_count)
 
-    plt.bar(idx + j * bar_width, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, label=severity, color=colors[j], hatch=hatches[j])
+    plt.bar(idx + j * bar_width, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, label=['Błędy krytyczne', 'Błędy poważne'][j], color=colors[j], hatch=hatches[j])
     
     for i, count in enumerate(individual_issue_counts):
         plt.text(idx[i] + j * bar_width, count + 0.1, str(count), ha='center', va='bottom')
@@ -229,23 +264,25 @@ bar_width = 0.35  # Width of each bar
 idx = np.arange(len(categories))  # Array to hold the indices for each category
 max_count = 0
 
+print(f"LABELS: {categories}")
 for j, severity in enumerate(severities):
     individual_issue_counts = [all_issues_average[category].get(severity, 0) for category in categories]
+    print(f"{severity}: {individual_issue_counts}")
     max_count = max(max(individual_issue_counts), max_count)
 
-    plt.bar(idx + j * bar_width, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, label=severity, color=colors[j], hatch=hatches[j])
+    plt.bar(idx + j * bar_width, individual_issue_counts, bar_width, edgecolor='black', alpha=0.7, label=['Błędy krytyczne', 'Błędy poważne'][j], color=colors[j], hatch=hatches[j])
     
     for i, count in enumerate(individual_issue_counts):
         plt.text(idx[i] + j * bar_width, count + 0.1, str(count), ha='center', va='bottom')
 
-plt.title("Średnia ilość błędów dla wszystich kategorii")
+plt.title("Średnia ilość błędów dla pojedynczych stron we wszystich kategoriach")
 plt.ylabel('Ilość błędów')
 plt.xlabel('Kategoria')
 plt.xticks(idx + bar_width / 2, categories)  # Adjusting xticks position
 plt.xticks(rotation=60)
 plt.legend()  # Adding legend for severities
 plt.tight_layout()
-plt.ylim(0, max_count + 15)  # Set the y-axis limits using the maximum total count
+plt.ylim(0, max_count + 5)  # Set the y-axis limits using the maximum total count
 plt.tight_layout()
 plt.savefig(f'all_categories_issues_avg.png')  # Save individual file issues plot to a file in the current folder
 plt.close()
